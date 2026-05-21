@@ -1,0 +1,40 @@
+import Link from "next/link";
+
+export default function Footer() {
+  return (
+    <footer className="footer">
+      <div className="footer-inner">
+        <div className="footer-brand">
+          <div className="brand">Bank<span>DeMark</span></div>
+          <p className="footer-tagline">Modern finance intelligence for smarter decisions.</p>
+        </div>
+        <div className="footer-cols">
+          <div className="footer-col">
+            <h4>Explore</h4>
+            <Link href="/pillars">Finance Pillars</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/about">About</Link>
+            <Link href="/contact">Contact</Link>
+          </div>
+          <div className="footer-col">
+            <h4>Topics</h4>
+            <Link href="/pillars/personal-finance">Personal Finance</Link>
+            <Link href="/pillars/investing">Investing</Link>
+            <Link href="/pillars/business-credit">Business Credit</Link>
+            <Link href="/pillars/financial-freedom">Financial Freedom</Link>
+          </div>
+          <div className="footer-col">
+            <h4>Legal</h4>
+            <Link href="/privacy">Privacy Policy</Link>
+            <Link href="/terms">Terms of Service</Link>
+            <Link href="/disclaimer">Disclaimer</Link>
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <p>2025 BankDeMark. All rights reserved.</p>
+        <p className="footer-legal-note">Content is for informational purposes only. Not financial advice. <Link href="/disclaimer">See full disclaimer.</Link></p>
+      </div>
+    </footer>
+  );
+}

@@ -1,19 +1,32 @@
 import "./globals.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 export const metadata = {
-  title: "BankDeMark | Modern Finance Platform Coming Soon",
+  title: {
+    default: "BankDeMark | Modern Finance Intelligence",
+    template: "%s | BankDeMark",
+  },
   description:
-    "BankDeMark is a modern finance-focused platform preparing tools, insights, and digital resources for smarter money decisions. Coming soon at bankdemark.com.",
-  robots: "index, follow",
-  alternates: {
-    canonical: "https://bankdemark.com/",
+    "BankDeMark delivers expert finance insights across personal finance, investing, business credit, banking, and financial freedom strategies.",
+  metadataBase: new URL("https://bankdemark.com"),
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    siteName: "BankDeMark",
+    type: "website",
+    locale: "en_US",
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Nav />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   );
 }

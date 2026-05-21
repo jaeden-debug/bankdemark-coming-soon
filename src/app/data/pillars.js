@@ -1,0 +1,44 @@
+export const pillars = [
+  {
+    slug: "personal-finance",
+    title: "Personal Finance",
+    subtitle: "Master the fundamentals of money management.",
+    icon: "💰",
+    description: "Build budgets that work, develop saving habits, and take control of your financial future with clarity and confidence.",
+  },
+  {
+    slug: "business-credit",
+    title: "Business Credit",
+    subtitle: "Separate your business finances and build leverage.",
+    icon: "🏛️",
+    description: "Learn how to establish, build, and leverage business credit to fund growth without relying on personal assets.",
+  },
+  {
+    slug: "investing",
+    title: "Investing",
+    subtitle: "Grow wealth through disciplined capital allocation.",
+    icon: "📈",
+    description: "From index funds to real estate, understand how to deploy capital intelligently across asset classes.",
+  },
+  {
+    slug: "banking",
+    title: "Banking",
+    subtitle: "Optimize every account you hold.",
+    icon: "🏦",
+    description: "Maximize interest earned, minimize fees paid, and structure your banking relationships for maximum efficiency.",
+  },
+  {
+    slug: "debt-management",
+    title: "Debt Management",
+    subtitle: "Eliminate debt strategically and rebuild credit.",
+    icon: "🔓",
+    description: "Proven frameworks for paying off debt faster, negotiating with creditors, and repairing your credit profile.",
+  },
+  {
+    slug: "financial-freedom",
+    title: "Financial Freedom",
+    subtitle: "Design a life where work becomes optional.",
+    icon: "🚀",
+    description: "The strategies, mindsets, and milestones used by those who achieved financial independence and how you can too.",
+  },
+];
