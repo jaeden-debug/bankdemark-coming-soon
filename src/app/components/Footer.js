@@ -5,9 +5,20 @@ export default function Footer() {
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <div className="brand">Bank<span>DeMark</span></div>
-          <p className="footer-tagline">Modern finance intelligence for smarter decisions.</p>
+          <Link href="/" className="brand">
+            Bank<span>DeMark</span>
+          </Link>
+          <p className="footer-tagline">
+            Modern finance intelligence for smarter business, money, and wealth decisions.
+          </p>
+          <p className="footer-credit">
+            Built by{" "}
+            <a href="https://stillawakemedia.com" target="_blank" rel="noopener noreferrer">
+              StillAwake Media
+            </a>
+          </p>
         </div>
+
         <div className="footer-cols">
           <div className="footer-col">
             <h4>Explore</h4>
@@ -16,6 +27,7 @@ export default function Footer() {
             <Link href="/about">About</Link>
             <Link href="/contact">Contact</Link>
           </div>
+
           <div className="footer-col">
             <h4>Topics</h4>
             <Link href="/pillars/personal-finance">Personal Finance</Link>
@@ -23,6 +35,7 @@ export default function Footer() {
             <Link href="/pillars/business-credit">Business Credit</Link>
             <Link href="/pillars/financial-freedom">Financial Freedom</Link>
           </div>
+
           <div className="footer-col">
             <h4>Legal</h4>
             <Link href="/privacy">Privacy Policy</Link>
@@ -31,9 +44,13 @@ export default function Footer() {
           </div>
         </div>
       </div>
+
       <div className="footer-bottom">
-        <p>2025 BankDeMark. All rights reserved.</p>
-        <p className="footer-legal-note">Content is for informational purposes only. Not financial advice. <Link href="/disclaimer">See full disclaimer.</Link></p>
+        <p>© 2025 BankDeMark. All rights reserved.</p>
+        <p className="footer-legal-note">
+          Informational content only. Not financial advice.{" "}
+          <Link href="/disclaimer">See disclaimer.</Link>
+        </p>
       </div>
     </footer>
   );

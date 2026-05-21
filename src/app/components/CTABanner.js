@@ -4,10 +4,11 @@ export default function CTABanner({ title, sub, btnText, btnHref }) {
   return (
     <section className="cta-banner">
       <div className="cta-banner-inner">
-        <h2>{title || "Ready to take control of your finances?"}</h2>
-        <p>{sub || "Join thousands getting smarter about money every week."}</p>
-        <Link href={btnHref || "/contact"} className="cta-btn-large">
-          {btnText || "Get Started Free"}
+        <span className="eyebrow">BankDeMark Intelligence</span>
+        <h2>{title}</h2>
+        <p>{sub}</p>
+        <Link href={btnHref} className="cta-btn-large">
+          {btnText}
         </Link>
       </div>
     </section>
