@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Investing Guide | Investing for Beginners, ETFs, Index Funds & Wealth Building",
@@ -477,6 +478,8 @@ export default function InvestingPage() {
           </ul>
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/pillars/investing" />
 
       <CTABanner
         title="Invest with a system, not emotion."

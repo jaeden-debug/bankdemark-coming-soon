@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import FireCalculator from "../../components/FireCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "FIRE Calculator | Coast FIRE Calculator",
@@ -84,6 +85,8 @@ export default function FireCalculatorPage() {
           {faq.map((item) => <div key={item.q} style={{ marginBottom: "28px" }}><h3>{item.q}</h3><p>{item.a}</p></div>)}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/fire-calculator" />
 
       <CTABanner title="Turn FIRE math into a financial freedom system." sub="Use BankDeMark calculators and finance pillars to compare investing, retirement, cash flow, debt, and financial independence." btnText="Join the Newsletter" btnHref="/contact" />
     </>

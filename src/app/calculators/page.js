@@ -1,4 +1,5 @@
 import Link from "next/link";
+import SEOLinkMap from "../components/SEOLinkMap";
 
 export const metadata = {
   title: "Financial Calculators | Free Money Tools by BankDeMark",
@@ -11,10 +12,46 @@ export const metadata = {
 
 const calculators = [
   {
+    href: "/financial-freedom-quiz",
+    title: "Financial Freedom Quiz",
+    tag: "Lead Magnet",
+    desc: "Find your money personality, wealth stage, and next best financial move.",
+  },
+  {
+    href: "/calculators/emergency-fund-calculator",
+    title: "Emergency Fund Calculator",
+    tag: "Safety Fund",
+    desc: "Estimate emergency savings needed, current coverage, savings gap, and time to goal.",
+  },
+  {
+    href: "/money-health-score",
+    title: "Money Health Score",
+    tag: "Financial Diagnostic",
+    desc: "Get a live financial health score across cash flow, debt, savings, investing, housing, and credit strength.",
+  },
+  {
+    href: "/financial-freedom-roadmap",
+    title: "Financial Freedom Roadmap Generator",
+    tag: "Custom Plan",
+    desc: "Answer key money questions and generate a custom 30-day, 90-day, and 12-month financial freedom plan.",
+  },
+  {
+    href: "/calculators/net-worth-calculator",
+    title: "Net Worth Calculator",
+    tag: "Wealth Tracker",
+    desc: "Track assets, liabilities, net worth, liquidity, debt ratio, and your current wealth stage.",
+  },
+  {
     href: "/calculators/compound-interest-calculator",
     title: "Compound Interest Calculator",
     tag: "Growth",
     desc: "Estimate savings, investment growth, monthly contributions, and long-term compound returns.",
+  },
+  {
+    href: "/calculators/rent-vs-buy-calculator",
+    title: "Rent vs Buy Calculator",
+    tag: "Housing",
+    desc: "Compare renting versus buying using mortgage costs, rent increases, home growth, and investment returns.",
   },
   {
     href: "/calculators/mortgage-calculator",
@@ -45,6 +82,12 @@ const calculators = [
     title: "TFSA Calculator",
     tag: "Canada",
     desc: "Estimate TFSA room, tax-free growth, and long-term Canadian investment value.",
+  },
+  {
+    href: "/calculators/credit-card-payoff-calculator",
+    title: "Credit Card Payoff Optimizer",
+    tag: "Debt Strategy",
+    desc: "Compare avalanche vs snowball across multiple credit cards and find the best payoff order.",
   },
   {
     href: "/calculators/debt-payoff-calculator",
@@ -90,6 +133,8 @@ export default function CalculatorsPage() {
           ))}
         </div>
       </section>
+      <SEOLinkMap currentPath="/calculators" />
+
     </>
   );
 }

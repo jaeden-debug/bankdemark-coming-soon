@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Debt Management Guide | Pay Off Debt, Rebuild Credit & Escape the Cycle",
@@ -554,6 +555,8 @@ export default function DebtManagementPage() {
           </ul>
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/pillars/debt-management" />
 
       <CTABanner
         title="Debt freedom starts with a system."

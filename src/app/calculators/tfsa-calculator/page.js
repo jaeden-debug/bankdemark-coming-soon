@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import RegisteredAccountCalculator from "../../components/RegisteredAccountCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "TFSA Calculator Canada | Free TFSA Contribution & Growth Calculator",
@@ -140,6 +141,8 @@ export default function TFSACalculatorPage() {
           ))}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/tfsa-calculator" />
 
       <CTABanner
         title="Turn TFSA room into tax-free growth."

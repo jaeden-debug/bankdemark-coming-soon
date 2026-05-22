@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import BudgetCalculator from "../../components/BudgetCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Budget Calculator | Free Monthly Budget Planner",
@@ -85,6 +86,8 @@ export default function BudgetCalculatorPage() {
           {faq.map((item) => <div key={item.q} style={{ marginBottom: "28px" }}><h3>{item.q}</h3><p>{item.a}</p></div>)}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/budget-calculator" />
 
       <CTABanner title="Turn your budget into a wealth-building system." sub="Use BankDeMark calculators and finance pillars to control cash flow, reduce debt, and build financial freedom." btnText="Join the Newsletter" btnHref="/contact" />
     </>

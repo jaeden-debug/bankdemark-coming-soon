@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Financial Freedom Guide | Financial Independence, FIRE & Wealth Building",
@@ -576,6 +577,8 @@ export default function FinancialFreedomPage() {
           </ul>
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/pillars/financial-freedom" />
 
       <CTABanner
         title="Financial freedom is a system, not a fantasy."

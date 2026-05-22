@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { pillars } from "../data/pillars";
+import SEOLinkMap from "../components/SEOLinkMap";
 
 export const metadata = {
   title: "Finance Pillars",
@@ -27,6 +28,8 @@ export default function PillarsPage() {
           ))}
         </div>
       </section>
+      <SEOLinkMap currentPath="/pillars" />
+
     </>
   );
 }

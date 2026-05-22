@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import MortgageCalculator from "../../components/MortgageCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Mortgage Calculator | Free Monthly Mortgage Payment Calculator",
@@ -186,6 +187,8 @@ export default function MortgageCalculatorPage() {
           ))}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/mortgage-calculator" />
 
       <CTABanner
         title="Make the mortgage decision part of the full money system."

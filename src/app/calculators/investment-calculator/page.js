@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import InvestmentCalculator from "../../components/InvestmentCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Investment Calculator | Free Portfolio Growth Calculator",
@@ -180,6 +181,8 @@ export default function InvestmentCalculatorPage() {
           ))}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/investment-calculator" />
 
       <CTABanner
         title="Turn investment projections into a real money system."

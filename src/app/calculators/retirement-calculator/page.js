@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import RetirementCalculator from "../../components/RetirementCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Retirement Calculator | Free Retirement Savings Calculator",
@@ -182,6 +183,8 @@ export default function RetirementCalculatorPage() {
           ))}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/retirement-calculator" />
 
       <CTABanner
         title="Turn retirement goals into a financial freedom system."

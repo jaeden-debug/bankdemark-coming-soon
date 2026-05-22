@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import DebtPayoffCalculator from "../../components/DebtPayoffCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Debt Payoff Calculator | Free Debt Repayment Calculator",
@@ -84,6 +85,8 @@ export default function DebtPayoffCalculatorPage() {
           {faq.map((item) => <div key={item.q} style={{ marginBottom: "28px" }}><h3>{item.q}</h3><p>{item.a}</p></div>)}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/debt-payoff-calculator" />
 
       <CTABanner title="Turn debt payoff into a financial system." sub="Use BankDeMark calculators and guides to improve cash flow, reduce interest, and build long-term wealth." btnText="Join the Newsletter" btnHref="/contact" />
     </>

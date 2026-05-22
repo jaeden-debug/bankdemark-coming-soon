@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Personal Finance Guide | Budgeting, Saving, Credit & Money Management",
@@ -520,6 +521,8 @@ export default function PersonalFinancePage() {
           </ul>
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/pillars/personal-finance" />
 
       <CTABanner
         title="Build your personal finance system."

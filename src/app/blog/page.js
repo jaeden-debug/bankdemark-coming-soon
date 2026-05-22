@@ -1,19 +1,27 @@
 import Link from "next/link";
-import { posts } from "../data/posts";
+import { getAllPosts } from "../../lib/blog";
+import SEOLinkMap from "../components/SEOLinkMap";
 
 export const metadata = {
-  title: "Finance Blog",
-  description: "Expert articles on personal finance, investing, business credit, banking, debt management, and financial freedom from BankDeMark.",
+  title: "Finance Blog | BankDeMark",
+  description:
+    "Expert articles on personal finance, investing, business credit, banking, debt management, AI tools, SEO, and financial freedom from BankDeMark.",
 };
 
 export default function BlogPage() {
+  const posts = getAllPosts();
+
   return (
     <>
       <div className="page-hero">
         <p className="eyebrow">The BankDeMark Blog</p>
         <h1>Finance intelligence, no filler.</h1>
-        <p>Deep-dive guides written for people serious about building wealth, eliminating debt, and making smarter money decisions.</p>
+        <p>
+          Deep-dive guides for building wealth, eliminating debt, improving
+          credit, growing businesses, and making smarter financial decisions.
+        </p>
       </div>
+
       <section className="section" style={{ paddingTop: 0 }}>
         <div className="blog-grid">
           {posts.map((post) => (
@@ -31,6 +39,8 @@ export default function BlogPage() {
           ))}
         </div>
       </section>
+      <SEOLinkMap currentPath="/blog" />
+
     </>
   );
 }

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Banking Guide | Best Bank Accounts, HYSA & Banking Strategy",
@@ -661,6 +662,8 @@ export default function BankingPage() {
           </ul>
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/pillars/banking" />
 
       <CTABanner
         title="Optimize your banking system first."

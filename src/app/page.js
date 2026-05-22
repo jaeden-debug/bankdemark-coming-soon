@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { posts } from "./data/posts";
+import { getAllPosts } from "@/lib/blog";
 import { pillars } from "./data/pillars";
 import CTABanner from "./components/CTABanner";
 
@@ -9,6 +9,7 @@ export const metadata = {
 };
 
 export default function HomePage() {
+  const posts = getAllPosts();
   const featuredPosts = posts.filter((p) => p.featured).slice(0, 3);
   return (
     <>

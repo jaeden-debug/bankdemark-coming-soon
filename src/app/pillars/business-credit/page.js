@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "Business Credit Guide | Build Business Credit From Scratch",
@@ -471,6 +472,8 @@ export default function BusinessCreditPage() {
           </ul>
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/pillars/business-credit" />
 
       <CTABanner
         title="Build business credit like a system."

@@ -1,6 +1,7 @@
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
+import GlobalCalculatorShare from "./components/GlobalCalculatorShare";
 
 export const metadata = {
   title: {
@@ -28,6 +29,7 @@ export default function RootLayout({ children }) {
         <Nav />
         <main>{children}</main>
         <Footer />
+              <GlobalCalculatorShare />
       </body>
     </html>
   );

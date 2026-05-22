@@ -2,6 +2,7 @@ import Link from "next/link";
 import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import RegisteredAccountCalculator from "../../components/RegisteredAccountCalculator";
+import SEOLinkMap from "../../components/SEOLinkMap";
 
 export const metadata = {
   title: "RRSP Calculator Canada | Free RRSP Contribution & Tax Refund Calculator",
@@ -141,6 +142,8 @@ export default function RRSPCalculatorPage() {
           ))}
         </div>
       </div>
+
+      <SEOLinkMap currentPath="/calculators/rrsp-calculator" />
 
       <CTABanner
         title="Turn RRSP planning into a retirement system."
