@@ -1,4 +1,115 @@
 export const seoNodes = {
+  "/blog/how-compound-interest-works": {
+    label: "How Compound Interest Works",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/calculators/investment-calculator",
+      "/pillars/investing",
+      "/blog/compound-interest-formula"
+    ],
+  },
+
+  "/blog/compound-interest-formula": {
+    label: "Compound Interest Formula",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/blog/how-compound-interest-works",
+      "/blog/daily-vs-monthly-compound-interest",
+      "/pillars/investing"
+    ],
+  },
+
+  "/blog/daily-vs-monthly-compound-interest": {
+    label: "Daily vs Monthly Compound Interest",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/blog/compound-interest-formula",
+      "/blog/compound-interest-savings-account",
+      "/pillars/banking"
+    ],
+  },
+
+  "/blog/compound-interest-examples": {
+    label: "Compound Interest Examples",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/calculators/investment-calculator",
+      "/blog/how-much-will-500-a-month-grow",
+      "/blog/how-much-will-100-a-month-grow"
+    ],
+  },
+
+  "/blog/how-much-will-500-a-month-grow": {
+    label: "How Much Will $500 a Month Grow?",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/calculators/investment-calculator",
+      "/calculators/retirement-calculator",
+      "/blog/how-long-to-reach-1-million-investing"
+    ],
+  },
+
+  "/blog/how-long-to-reach-1-million-investing": {
+    label: "How Long to Reach $1 Million Investing",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/calculators/investment-calculator",
+      "/calculators/fire-calculator",
+      "/blog/how-much-will-500-a-month-grow"
+    ],
+  },
+
+  "/blog/best-compound-interest-investments": {
+    label: "Best Compound Interest Investments",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/investment-calculator",
+      "/calculators/compound-interest-calculator",
+      "/pillars/investing",
+      "/blog/compound-interest-calculator-canada"
+    ],
+  },
+
+  "/blog/compound-interest-calculator-canada": {
+    label: "Compound Interest Calculator Canada",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/calculators/tfsa-calculator",
+      "/calculators/rrsp-calculator",
+      "/pillars/investing"
+    ],
+  },
+
+  "/blog/how-much-will-100-a-month-grow": {
+    label: "How Much Will $100 a Month Grow?",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/calculators/investment-calculator",
+      "/blog/compound-interest-examples",
+      "/pillars/investing"
+    ],
+  },
+
+  "/blog/compound-interest-savings-account": {
+    label: "Compound Interest Savings Account",
+    cluster: "compound-interest",
+    links: [
+      "/calculators/compound-interest-calculator",
+      "/calculators/emergency-fund-calculator",
+      "/pillars/banking",
+      "/blog/daily-vs-monthly-compound-interest"
+    ],
+  },
+
+
   "/pillars/personal-finance": {
     label: "Personal Finance Pillar",
     cluster: "personal-finance",

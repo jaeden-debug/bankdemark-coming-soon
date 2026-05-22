@@ -61,7 +61,9 @@ export function getAllPosts() {
       const raw = fs.readFileSync(path.join(BLOG_DIR, file), "utf8");
       const { data, content } = matter(raw);
 
-      const slug = data.slug || cleanSlug(file);
+      const slug = String(data.slug || cleanSlug(file))
+        .replace(/^\/blog\//, "")
+        .replace(/^\//, "");
       const cleanContent = cleanMarkdown(content || raw);
 
       const title =
