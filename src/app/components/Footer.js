@@ -13,7 +13,13 @@ export default function Footer() {
           </p>
           <p className="footer-credit">
             Built by{" "}
-            <a href="https://stillawakemedia.com" target="_blank" rel="noopener noreferrer">
+            {/* Added a modern, glowing gold underline animation on hover */}
+            <a 
+              href="https://stillawakemedia.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-[var(--cream)] relative font-medium transition-colors hover:text-[var(--gold)] duration-200 after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-[var(--gold)] after:transition-all after:duration-300"
+            >
               StillAwake Media
             </a>
           </p>
@@ -46,7 +52,7 @@ export default function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 BankDeMark. All rights reserved.</p>
+        <p>© 2026 BankDeMark. All rights reserved.</p>
         <p className="footer-legal-note">
           Informational content only. Not financial advice.{" "}
           <Link href="/disclaimer">See disclaimer.</Link>

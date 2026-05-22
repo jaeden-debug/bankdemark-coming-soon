@@ -8,61 +8,55 @@ export default function Nav() {
 
   const links = [
     { href: "/pillars", label: "Pillars" },
+    { href: "/calculators", label: "Calculators" },
     { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <header className="nav-wrapper">
-      <nav className="nav-inner">
+    <>
+      <header className="site-nav">
         <Link href="/" className="brand" onClick={() => setOpen(false)}>
           Bank<span>DeMark</span>
         </Link>
 
-        <div className="nav-links-desktop">
+        <nav className="desktop-menu" aria-label="Primary navigation">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="nav-link-item">
+            <Link key={link.href} href={link.href}>
               {link.label}
             </Link>
           ))}
-          <Link href="/contact" className="nav-cta">
-            Get Early Access
-          </Link>
-        </div>
+        </nav>
+
+        <Link href="/contact" className="nav-cta">
+          Join Newsletter
+        </Link>
 
         <button
-          className={`hamburger ${open ? "active" : ""}`}
+          type="button"
+          className={`menu-btn ${open ? "active" : ""}`}
           onClick={() => setOpen(!open)}
           aria-label="Toggle navigation menu"
+          aria-expanded={open}
         >
-          <span className="ham-line"></span>
-          <span className="ham-line"></span>
-          <span className="ham-line"></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
-      </nav>
+      </header>
 
-      {open && (
-        <div className="mobile-drawer">
-          {links.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="mobile-link"
-              onClick={() => setOpen(false)}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link
-            href="/contact"
-            className="nav-cta mobile-cta"
-            onClick={() => setOpen(false)}
-          >
-            Get Early Access
+      <nav className={`mobile-menu ${open ? "open" : ""}`} aria-label="Mobile navigation">
+        {links.map((link) => (
+          <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            {link.label}
           </Link>
-        </div>
-      )}
-    </header>
+        ))}
+
+        <Link href="/contact" className="mobile-cta" onClick={() => setOpen(false)}>
+          Join Newsletter
+        </Link>
+      </nav>
+    </>
   );
 }

@@ -22,6 +22,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      {/* 1. Added the structural head context wrapper */}
+      <head /> 
       <body>
         <Nav />
         <main>{children}</main>
