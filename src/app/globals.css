@@ -6581,3 +6581,52 @@ a {
   color: var(--gold);
   font-weight: 600;
 }
+
+.newsletter-form {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 12px;
+}
+
+.newsletter-form input {
+  min-height: 50px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,0.06);
+  color: var(--cream);
+  padding: 0 16px;
+  outline: none;
+}
+
+.newsletter-form input:focus {
+  border-color: var(--gold);
+}
+
+.newsletter-form button {
+  min-height: 50px;
+  border: 0;
+  border-radius: 999px;
+  padding: 0 22px;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold-dark));
+  color: #10100c;
+  font-weight: 900;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.newsletter-form button:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.newsletter-form button:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+@media (max-width: 760px) {
+  .newsletter-form {
+    grid-template-columns: 1fr;
+  }
+}

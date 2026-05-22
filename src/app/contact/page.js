@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import NewsletterForm from "../components/NewsletterForm";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
@@ -102,6 +103,18 @@ export default function ContactPage() {
           </form>
         )}
       </div>
+
+      <section className="section" style={{ paddingTop: 0 }}>
+        <div className="about-card">
+          <p className="eyebrow">BankDeMark Intelligence</p>
+          <h3>Join the finance intelligence newsletter.</h3>
+          <p>
+            Get new calculators, finance guides, business strategy, investing frameworks,
+            and ZYLX-powered tools as they launch.
+          </p>
+          <NewsletterForm />
+        </div>
+      </section>
     </>
   );
 }
