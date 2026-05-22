@@ -18,7 +18,7 @@ export default function Footer() {
               href="https://stillawakemedia.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-[var(--cream)] relative font-medium transition-colors hover:text-[var(--gold)] duration-200 after:absolute after:bottom-[-2px] after:left-0 after:h-[1px] after:w-0 hover:after:w-full after:bg-[var(--gold)] after:transition-all after:duration-300"
+              className="text-(--cream) relative font-medium transition-colors hover:text-(--gold) duration-200 after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-(--gold) after:transition-all after:duration-300"
             >
               StillAwake Media
             </a>

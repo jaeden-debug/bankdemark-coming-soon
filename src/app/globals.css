@@ -53,8 +53,8 @@ a {
   border: 1px solid rgba(255,255,255,0.12);
   border-radius: 999px;
   background: rgba(7,17,15,0.72);
-  backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
+  backdrop-filter: blur(22px);
   box-shadow: 0 24px 80px rgba(0,0,0,0.35);
 }
 
@@ -162,8 +162,8 @@ a {
     border: 1px solid rgba(255,255,255,0.12);
     border-radius: 24px;
     background: rgba(7,17,15,0.95);
-    backdrop-filter: blur(22px);
     -webkit-backdrop-filter: blur(22px);
+    backdrop-filter: blur(22px);
     box-shadow: 0 24px 80px rgba(0,0,0,0.35);
   }
 
@@ -1729,8 +1729,8 @@ a {
   background: linear-gradient(145deg, rgba(255,255,255,0.08), rgba(255,255,255,0.025));
   border-radius: 28px;
   box-shadow: 0 30px 90px rgba(0,0,0,0.35);
-  backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
 }
 
 .tool-panel {
@@ -2410,8 +2410,8 @@ a {
   border-radius: 999px;
   border: 1px solid rgba(255,255,255,0.12);
   background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
 }
 
 .country-toggle button {
@@ -2477,8 +2477,8 @@ a {
       rgba(255,255,255,0.025)
     );
   box-shadow: 0 30px 90px rgba(0,0,0,0.34);
-  backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
 }
 
 .mortgage-inputs {
