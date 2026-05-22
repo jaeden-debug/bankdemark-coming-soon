@@ -8,7 +8,7 @@ export default function Nav() {
 
   const links = [
     { href: "/pillars", label: "Pillars" },
-    { href: "/calculators", label: "Calculators" },
+    { href: "/calculators", label: "Products" },
     { href: "/blog", label: "Blog" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" },
