@@ -70,6 +70,12 @@ export default function MortgageCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>Mortgage Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Estimate your monthly mortgage payment, compare loan scenarios, and understand the real cost of buying a home.
         </p>

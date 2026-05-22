@@ -30,6 +30,12 @@ export default function DebtPayoffCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>Debt Payoff Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>Estimate your debt-free date, total interest cost, and how extra payments can accelerate your payoff plan.</p>
       </div>
 

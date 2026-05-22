@@ -77,6 +77,12 @@ export default function CompoundInterestCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>Compound Interest Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Calculate how your savings, investments, monthly contributions, and
           long-term wealth can grow through the power of compound interest.

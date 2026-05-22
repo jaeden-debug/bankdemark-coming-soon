@@ -77,6 +77,12 @@ export default function NetWorthCalculatorPage() {
       <div className="page-hero networth-page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>Net Worth Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Track your assets, liabilities, wealth stage, liquidity, and financial
           progress with a clean net worth snapshot.

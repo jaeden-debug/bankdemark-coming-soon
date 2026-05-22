@@ -77,6 +77,12 @@ export default function CreditCardPayoffCalculatorPage() {
       <div className="page-hero cc-page-hero">
         <p className="eyebrow">Debt Strategy Tool</p>
         <h1>Credit Card Payoff Optimizer</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Compare avalanche vs snowball across multiple credit cards, estimate
           payoff time, and find the strategy that fits your debt-free plan.

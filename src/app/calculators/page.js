@@ -115,6 +115,12 @@ export default function CalculatorsPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Financial Tools</p>
         <h1>Financial Calculators</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Use BankDeMark’s free calculators to plan investing, debt payoff,
           retirement, budgeting, mortgages, and financial freedom.

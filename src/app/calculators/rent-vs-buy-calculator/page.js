@@ -77,6 +77,12 @@ export default function RentVsBuyCalculatorPage() {
       <div className="page-hero rentbuy-page-hero">
         <p className="eyebrow">Housing Decision Tool</p>
         <h1>Rent vs Buy Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Compare renting versus buying a home and estimate which path may build
           more wealth over time.

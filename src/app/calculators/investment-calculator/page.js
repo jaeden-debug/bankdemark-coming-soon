@@ -78,6 +78,12 @@ export default function InvestmentCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>Investment Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Estimate future portfolio value, compare contribution strategies, and see how fees, taxes, and time affect long-term wealth.
         </p>

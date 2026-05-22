@@ -30,6 +30,12 @@ export default function BudgetCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>Budget Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>Build a clear monthly budget, find your cash flow margin, and organize spending into a stronger personal finance system.</p>
       </div>
 

@@ -64,6 +64,12 @@ export default function EmergencyFundCalculatorPage() {
       <div className="page-hero emergency-page-hero">
         <p className="eyebrow">Safety Fund Tool</p>
         <h1>Emergency Fund Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Estimate how much emergency savings you need, how many months you have covered,
           and how long it may take to reach your safety fund target.

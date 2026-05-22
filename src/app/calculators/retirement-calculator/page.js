@@ -78,6 +78,12 @@ export default function RetirementCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>Retirement Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Estimate your retirement nest egg, savings gap, inflation-adjusted spending, and long-term financial freedom plan.
         </p>

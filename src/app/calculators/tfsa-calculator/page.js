@@ -66,6 +66,12 @@ export default function TFSACalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Canada Finance Calculator</p>
         <h1>TFSA Calculator Canada</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Estimate TFSA contribution room, tax-free growth, and long-term account value for Canadian investors.
         </p>

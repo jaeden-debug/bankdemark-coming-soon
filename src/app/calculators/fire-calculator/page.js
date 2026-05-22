@@ -30,6 +30,12 @@ export default function FireCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Free Finance Calculator</p>
         <h1>FIRE Calculator</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>Estimate your FIRE number, time to financial independence, Coast FIRE age, and long-term financial freedom path.</p>
       </div>
 

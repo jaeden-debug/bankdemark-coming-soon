@@ -6528,3 +6528,56 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* =========================================
+   BRAND ECOSYSTEM
+========================================= */
+
+.footer-powered {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.footer-meta {
+  font-size: 13px;
+  color: rgba(255,255,255,0.6);
+  line-height: 1.5;
+}
+
+.footer-meta a {
+  color: var(--gold);
+  text-decoration: none;
+  transition: opacity 0.2s ease;
+}
+
+.footer-meta a:hover {
+  opacity: 0.8;
+}
+
+/* =========================================
+   ZYLX POWERED BADGE
+========================================= */
+
+.zylx-powered {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: rgba(255,255,255,0.75);
+  font-size: 13px;
+  letter-spacing: 0.02em;
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+}
+
+.zylx-powered strong {
+  color: var(--gold);
+  font-weight: 600;
+}

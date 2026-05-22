@@ -67,6 +67,12 @@ export default function RRSPCalculatorPage() {
       <div className="page-hero">
         <p className="eyebrow">Canada Finance Calculator</p>
         <h1>RRSP Calculator Canada</h1>
+
+<div className="zylx-powered">
+  <span>Powered by</span>
+  <strong>ZYLX.ai</strong>
+</div>
+
         <p>
           Estimate RRSP contribution room, tax refund potential, tax-deferred growth, and long-term retirement value.
         </p>
