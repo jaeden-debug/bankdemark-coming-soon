@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import AutoTOC from "@/components/AutoTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -11,25 +12,6 @@ export const metadata = {
     canonical: "/pillars/investing",
   },
 };
-
-const toc = [
-  ["definition", "What Investing Is"],
-  ["why", "Why Investing Matters"],
-  ["before", "Before You Start Investing"],
-  ["beginner", "Investing for Beginners"],
-  ["stocks", "Stock Market Investing"],
-  ["index-etf", "Index Funds & ETFs"],
-  ["allocation", "Asset Allocation"],
-  ["risk", "Risk Management"],
-  ["accounts", "Canada & USA Investment Accounts"],
-  ["compound", "Compound Growth"],
-  ["dca", "Dollar Cost Averaging"],
-  ["comparisons", "Key Investing Comparisons"],
-  ["mistakes", "Common Investing Mistakes"],
-  ["roadmap", "90-Day Investing Roadmap"],
-  ["faq", "FAQ"],
-];
-
 const faq = [
   {
     q: "What is investing?",
@@ -105,16 +87,7 @@ export default function InvestingPage() {
       </div>
 
       <div className="pillar-page">
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            {toc.map(([id, label]) => (
-              <li key={id}>
-                <a href={`#${id}`}>{label}</a>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <AutoTOC selector=".pillar-section h2" />
 
         <div id="definition" className="pillar-section">
           <h2>What Investing Is</h2>

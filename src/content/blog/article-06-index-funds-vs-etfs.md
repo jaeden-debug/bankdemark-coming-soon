@@ -3,144 +3,12 @@
 ---
 
 ## SEO Metadata
-
 **Slug:** `/blog/index-funds-vs-etfs`
 **Meta Title:** `Index Funds vs ETFs: Which Is Better for Beginners?`
 **Meta Description:** `Index funds vs ETFs: understand the key differences in fees, taxes, liquidity, and structure — with Canada and USA examples to help beginners choose the right option.`
 **Target Keywords:** index funds vs ETFs, index funds, ETF investing, ETFs for beginners, best ETFs, best index funds, low cost index funds, diversified portfolio
 
 ---
-
-## Article Schema JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Index Funds vs ETFs: Which Is Better for Beginners?",
-  "description": "A comprehensive comparison of index funds vs ETFs for beginner investors — covering fees, taxes, liquidity, structure, and examples from Canada and the USA.",
-  "author": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "url": "https://bankdemark.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://bankdemark.com/logo.png"
-    }
-  },
-  "datePublished": "2026-05-21",
-  "dateModified": "2026-05-21",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://bankdemark.com/blog/index-funds-vs-etfs"
-  },
-  "image": "https://bankdemark.com/images/index-funds-vs-etfs.jpg",
-  "keywords": "index funds vs ETFs, index funds, ETF investing, ETFs for beginners, low cost index funds"
-}
-```
-
-## BreadcrumbList Schema JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://bankdemark.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://bankdemark.com/blog"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Index Funds vs ETFs",
-      "item": "https://bankdemark.com/blog/index-funds-vs-etfs"
-    }
-  ]
-}
-```
-
-## FAQ Schema JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the difference between an index fund and an ETF?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both can track the same index, but they differ structurally. ETFs trade on a stock exchange throughout the day like individual stocks. Traditional index mutual funds are priced once per day and traded at NAV. ETFs generally have lower minimums and slightly higher tax efficiency; index mutual funds often support automatic dollar-amount investing more easily."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Which is cheaper — index funds or ETFs?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "ETFs typically have lower expense ratios than actively managed mutual funds. However, low-cost index mutual funds from major providers can match or come close to ETF fees. The key is to compare the specific management expense ratio (MER or expense ratio) of each product."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can an ETF be an index fund?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Most ETFs available to individual investors are index-tracking ETFs. ETF is the structure (how it's traded); 'index fund' describes what it tracks. An ETF that tracks the S&P 500 is both an ETF and an index fund."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Are ETFs good for beginners?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Broad market index ETFs are widely considered among the best beginner investments due to their diversification, low cost, liquidity, and accessibility. A single global equity ETF can provide exposure to thousands of companies worldwide."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is an expense ratio / MER?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The management expense ratio (MER) or expense ratio is the annual fee charged by a fund, expressed as a percentage of assets. A fund with a 0.10% MER charges $1 per year on every $1,000 invested. Lower is better — these fees compound over decades."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best ETF for beginners in Canada?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "While BankDeMark does not recommend specific products, beginners in Canada commonly evaluate all-in-one asset allocation ETFs that hold globally diversified equity and bond ETFs in a single fund. These are self-rebalancing and available from major Canadian ETF providers. Evaluate based on your risk profile, time horizon, and MER."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best ETF for beginners in the USA?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "US beginner investors commonly evaluate low-cost broad market ETFs tracking the total US stock market or the S&P 500, available from major providers with very low expense ratios. Evaluate based on your tax account structure, risk profile, and time horizon."
-      }
-    }
-  ]
-}
-```
-
----
-
 # Index Funds vs ETFs: Which Is Better for Beginners?
 
 **By BankDeMark Editorial Team | Updated May 2026**
@@ -148,30 +16,11 @@
 > **Quick Answer:** Both index funds and ETFs can be excellent choices for beginners. The key insight is that ETF is a *structure* (traded on an exchange) while "index fund" describes what the fund *tracks*. Most ETFs available to retail investors are index-tracking ETFs — meaning the two terms often describe the same thing. The practical differences between them (fees, minimums, trading, tax efficiency) are real but manageable for most beginners.
 
 ---
-
-## Table of Contents
-
-1. [The Terminology Confusion: Clearing It Up](#terminology)
-2. [What Is an Index Fund?](#index-fund)
-3. [What Is an ETF?](#etf)
-4. [How They Are Similar](#similarities)
-5. [Key Differences Between Index Funds and ETFs](#differences)
-6. [Fee Comparison: MER, Expense Ratio, and Trading Costs](#fees)
-7. [Tax Efficiency: ETFs vs. Index Mutual Funds](#taxes)
-8. [Liquidity and Trading Mechanics](#liquidity)
-9. [Automatic Investing and Fractional Shares](#automation)
-10. [How to Choose: ETF vs. Index Mutual Fund](#how-to-choose)
-11. [Canada: Index ETF Examples and Context](#canada)
-12. [USA: Index ETF Examples and Context](#usa)
-13. [Portfolio Examples for Beginners](#portfolio-examples)
-14. [Active vs. Passive: Why Most Beginners Should Choose Passive](#active-vs-passive)
-15. [Common Mistakes When Choosing Funds](#mistakes)
-16. [FAQ](#faq)
-
 ---
 
-## The Terminology Confusion: Clearing It Up {#terminology}
 
+---
+## The Terminology Confusion: Clearing It Up {#terminology}
 The confusion between "index fund" and "ETF" is one of the most common in beginning investing. Here is the precise distinction:
 
 **Index fund** describes what a fund *tracks*: a market index (S&P 500, TSX Composite, MSCI World, etc.).
@@ -192,7 +41,6 @@ Both can track the same underlying index (e.g., both can track the S&P 500). The
 ---
 
 ## What Is an Index Fund? {#index-fund}
-
 In the broadest definition, an index fund is any fund designed to replicate the performance of a specific market index by holding the same securities in the same proportions.
 
 ### How an Index Fund Tracks Its Index
@@ -212,7 +60,6 @@ The practical result: a fund that simply holds the market will, by definition, m
 ---
 
 ## What Is an ETF? {#etf}
-
 An Exchange-Traded Fund (ETF) is a type of investment fund that:
 - Holds a collection of assets (stocks, bonds, commodities, etc.)
 - Is traded on a stock exchange (NYSE, TSX, NASDAQ, etc.) throughout the day
@@ -241,7 +88,6 @@ For beginners: the relevant category is broadly diversified equity index ETFs an
 ---
 
 ## How They Are Similar {#similarities}
-
 When comparing an index-tracking ETF to an index-tracking mutual fund tracking the same index:
 
 | Shared Feature | Detail |
@@ -258,7 +104,6 @@ The differences are largely structural and operational — not in what you own, 
 ---
 
 ## Key Differences Between Index Funds and ETFs {#differences}
-
 | Feature | Index-Tracking ETF | Index-Tracking Mutual Fund |
 |---|---|---|
 | Trading | Traded on exchange; real-time price | Priced once daily at NAV; orders filled at day's end |
@@ -274,7 +119,6 @@ The differences are largely structural and operational — not in what you own, 
 ---
 
 ## Fee Comparison: MER, Expense Ratio, and Trading Costs {#fees}
-
 Fees are the single most controllable determinant of long-term investment returns. Understanding fee structures is essential.
 
 ### Management Expense Ratio (MER) / Expense Ratio
@@ -293,7 +137,6 @@ Assume $10,000 invested, 7% annual return before fees, over 30 years:
 | 2.00% (high-fee active fund) | ~$57,400 |
 
 
-
 The difference between a 0.05% ETF and a 2.00% active fund — $18,000+ over 30 years on a $10,000 investment — is entirely attributable to fees, not investment selection.
 
 ### Trading Commissions
@@ -309,7 +152,6 @@ Less liquid ETFs (small niche funds, thinly traded) may have wider spreads — a
 ---
 
 ## Tax Efficiency: ETFs vs. Index Mutual Funds {#taxes}
-
 ### Why ETFs Are Generally More Tax-Efficient in Taxable Accounts
 
 In a taxable brokerage account (non-registered), fund distributions of capital gains are taxable events. Traditional mutual funds can trigger capital gains distributions when:
@@ -331,7 +173,6 @@ This is a nuanced area. Consult a qualified tax professional or thoroughly resea
 ---
 
 ## Liquidity and Trading Mechanics {#liquidity}
-
 ### ETF Liquidity
 
 ETFs are highly liquid for major, well-established funds with large AUM. You can buy or sell at any time during market hours at the current market price. This liquidity is valuable for large transactions and provides flexibility if circumstances change.
@@ -351,7 +192,6 @@ For long-term buy-and-hold investors (the appropriate approach for most beginner
 ---
 
 ## Automatic Investing and Fractional Shares {#automation}
-
 ### Automatic Dollar-Amount Investing
 
 A key advantage of index mutual funds is the ability to automate contributions of exact dollar amounts. "Invest $250 on the 1st of every month" is straightforward with mutual funds.
@@ -367,7 +207,6 @@ Dividend Reinvestment Plans (DRIPs) allow dividends to be automatically reinvest
 ---
 
 ## How to Choose: ETF vs. Index Mutual Fund {#how-to-choose}
-
 ### Choose an Index ETF If:
 
 - You want the lowest possible fees (ETF fees are often marginally lower than equivalent mutual funds)
@@ -395,7 +234,6 @@ For this majority, **index-tracking ETFs are the recommended starting point** �
 ---
 
 ## Canada: Index ETF Context and Examples {#canada}
-
 ### The Canadian ETF Landscape
 
 Canada has a well-developed ETF market. Several major providers offer broadly diversified, low-cost index ETFs specifically designed for Canadian investors.
@@ -436,7 +274,6 @@ Benefits:
 ---
 
 ## USA: Index ETF Context and Examples {#usa}
-
 ### The US ETF Landscape
 
 The US ETF market is the world's largest, with hundreds of low-cost, highly liquid index ETFs available. Competition among major providers has driven expense ratios to very low levels.
@@ -477,7 +314,6 @@ The allocation between these three determines the risk profile. This framework, 
 ---
 
 ## Portfolio Examples for Beginners {#portfolio-examples}
-
 ### Canada: Conservative All-in-One ETF Portfolio
 
 | Holding | Allocation | Description |
@@ -526,7 +362,6 @@ The allocation between these three determines the risk profile. This framework, 
 ---
 
 ## Active vs. Passive: Why Most Beginners Should Choose Passive {#active-vs-passive}
-
 ### What Is Active Management?
 
 An actively managed fund employs a professional portfolio manager who attempts to outperform a benchmark index by selecting superior securities or timing the market.
@@ -547,7 +382,6 @@ This does not mean all active management lacks value — specific market segment
 ---
 
 ## Common Mistakes When Choosing Funds {#mistakes}
-
 ### Mistake 1: Choosing Funds Based on Recent Performance
 
 Last year's best-performing ETF is often not next year's best performer. Chasing recent performance is a reliable path to buying high. Choose based on underlying strategy, cost, and fit with your portfolio — not recent returns.
@@ -575,7 +409,6 @@ Investing in index ETFs inside a TFSA (Canada) or Roth IRA/401(k) (USA) rather t
 ---
 
 ## FAQ {#faq}
-
 ### What is the difference between an index fund and an ETF?
 
 An index fund describes what a fund tracks (a market index). An ETF describes how a fund is traded (on an exchange). Most ETFs available to retail investors are index-tracking ETFs — so in practice, the term "index fund ETF" describes both simultaneously.
@@ -607,7 +440,6 @@ Either works. Inside registered accounts (TFSA/Roth IRA), the tax efficiency adv
 ---
 
 ## Internal Link Map
-
 - **Investing Pillar:** [/pillars/investing](/pillars/investing)
 - **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
 - **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
@@ -616,7 +448,6 @@ Either works. Inside registered accounts (TFSA/Roth IRA), the tax efficiency adv
 - **How to Save Money:** [/blog/how-to-save-money-emergency-fund](/blog/how-to-save-money-emergency-fund)
 
 ## Suggested Supporting Articles
-
 - Investing for Beginners: Complete Guide to Start Investing
 - Financial Freedom Roadmap: From Paycheck-to-Paycheck to Independent
 - Personal Finance for Beginners: The Complete Money System
@@ -625,7 +456,6 @@ Either works. Inside registered accounts (TFSA/Roth IRA), the tax efficiency adv
 ---
 
 ## Deep Dive: Evaluating Specific ETF Characteristics {#etf-deep-dive}
-
 ### What Is Tracking Error?
 
 Tracking error is the difference between an ETF's actual return and the return of the index it is designed to track. A perfect index fund would have zero tracking error — in practice, small divergences exist due to fees, cash drag, sampling methodology, and dividend reinvestment timing.

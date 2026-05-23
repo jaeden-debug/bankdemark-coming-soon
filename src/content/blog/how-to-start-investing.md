@@ -1,9 +1,12 @@
 # How to Start Investing in 2026
 
+
+---
 ---
 
-## SEO Metadata
 
+---
+## SEO Metadata
 **Slug:** `/blog/how-to-start-investing`
 **Meta Title:** `How to Start Investing in 2026: Step-by-Step Guide`
 **Meta Description:** `A step-by-step guide to start investing in 2026. Choose a brokerage, pick investments, set your risk tolerance, and build long-term wealth from scratch.`
@@ -11,207 +14,7 @@
 **Secondary Keywords:** first investment, beginner portfolio, start investing with no experience
 
 ---
-
-## Schema: Article JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "How to Start Investing in 2026",
-  "description": "A complete step-by-step guide to starting your investing journey in 2026 — covering brokerage selection, investment types, risk tolerance, and building a beginner portfolio.",
-  "author": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "url": "https://bankdemark.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://bankdemark.com/logo.png"
-    }
-  },
-  "datePublished": "2026-05-22",
-  "dateModified": "2026-05-22",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://bankdemark.com/blog/how-to-start-investing"
-  },
-  "image": "https://bankdemark.com/images/how-to-start-investing.jpg",
-  "keywords": "how to start investing, beginner investing, first investment, brokerage, ETFs, index funds, portfolio"
-}
-```
-
-## Schema: BreadcrumbList JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bankdemark.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bankdemark.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "How to Start Investing", "item": "https://bankdemark.com/blog/how-to-start-investing" }
-  ]
-}
-```
-
-## Schema: HowTo JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Start Investing in 2026",
-  "description": "A step-by-step process for beginning your investing journey in 2026.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Build your financial foundation",
-      "text": "Establish an emergency fund of 3–6 months of expenses and pay off high-interest debt before investing."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Define your investment goals",
-      "text": "Clarify what you are investing for — retirement, a home, financial freedom — and your time horizon for each goal."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Assess your risk tolerance",
-      "text": "Determine how much portfolio volatility you can handle psychologically and financially, and choose an appropriate asset allocation."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Choose a tax-advantaged account",
-      "text": "Open a TFSA or RRSP (Canada) or Roth IRA/401(k) (USA) to shelter your investment growth from taxes."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 5,
-      "name": "Select a brokerage platform",
-      "text": "Choose a regulated brokerage with commission-free ETF trading, no account minimums, and access to low-cost index funds."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 6,
-      "name": "Choose your investments",
-      "text": "Select one or two broad market index ETFs appropriate for your risk tolerance and time horizon."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 7,
-      "name": "Automate contributions",
-      "text": "Set up recurring automatic investments from your bank account on payday to enforce consistency."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 8,
-      "name": "Review annually",
-      "text": "Review your portfolio allocation and contribution rate once per year. Avoid checking daily."
-    }
-  ]
-}
-```
-
-## Schema: FAQPage JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the first step to start investing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The first step is to build your financial foundation: establish an emergency fund covering 3–6 months of expenses and eliminate high-interest debt. Then open a tax-advantaged account (TFSA, RRSP, Roth IRA, or 401k) and make your first contribution into a low-cost index ETF."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How do I choose a brokerage to start investing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Look for a brokerage that offers: no account minimums, commission-free ETF trading, access to low-cost index funds, regulatory insurance (CIPF in Canada, SIPC in the USA), and a clear, easy-to-use interface. Compare several platforms before committing."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much should I invest each month as a beginner?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Invest as much as you can afford consistently after covering essential expenses and maintaining your emergency fund. Even $50–$100 per month invested consistently over decades can build meaningful wealth through compound growth. Consistency matters more than the amount."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is risk tolerance in investing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Risk tolerance is your ability and willingness to endure losses or volatility in your portfolio without making panic-driven decisions. It has two components: financial capacity (can you afford to absorb losses?) and psychological capacity (can you stay calm through market downturns?)."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I invest in stocks or ETFs as a beginner?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For most beginners, broad market index ETFs are the recommended starting point over individual stocks. ETFs provide instant diversification across hundreds or thousands of companies, charge very low fees, and require minimal research or ongoing management."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is dollar-cost averaging?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Dollar-cost averaging (DCA) means investing a fixed dollar amount at regular intervals regardless of market conditions. It removes the emotional pressure of timing the market, results in buying more shares when prices are low, and builds consistent investing habits through automation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can I start investing with $100?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. Many modern brokerage platforms have no minimum investment requirements and offer commission-free ETF trades. $100 is enough to buy shares of a broad market ETF and begin your investing journey. The amount matters less than the habit of starting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How often should I check my investment portfolio?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For long-term investors, checking your portfolio monthly at most is sufficient. Checking daily or reacting to short-term market moves is associated with worse investment outcomes due to emotional decision-making. Set your strategy, automate it, and review it quarterly or annually."
-      }
-    }
-  ]
-}
-```
-
----
-
-## Table of Contents
-
-1. [Quick Answer: How to Start Investing](#quick-answer)
-2. [Step-by-Step Investing Setup](#step-by-step-setup)
-3. [Choosing a Brokerage](#choosing-a-brokerage)
-4. [Choosing Your Investments](#choosing-investments)
-5. [Understanding Risk Tolerance](#risk-tolerance)
-6. [Starting with Small Amounts](#starting-small)
-7. [Building a Long-Term Mindset](#long-term-mindset)
-8. [30/60/90-Day Investment Roadmap](#action-plan)
-9. [FAQ: How to Start Investing](#faq)
-
----
-
 ## Quick Answer: How to Start Investing {#quick-answer}
-
 **How to start investing in 2026 in one paragraph:** Build your financial foundation first (emergency fund + no high-interest debt), then open a tax-advantaged account (TFSA or RRSP in Canada; Roth IRA or 401(k) in the USA), choose a brokerage with low fees, buy a broad market index ETF, and automate monthly contributions. The entire process can be completed in a week. What matters most is starting — even small amounts invested consistently over time build meaningful wealth through compound growth.
 
 > **Key insight:** The average investor spends more time researching a phone purchase than setting up a long-term investment account. Simplicity and action beat analysis paralysis every time.
@@ -219,7 +22,6 @@
 ---
 
 ## Step-by-Step Investing Setup {#step-by-step-setup}
-
 Starting to invest does not require financial expertise, a large sum of money, or a financial advisor. The following step-by-step framework walks you through the entire process of going from zero to an active investment account.
 
 ### Step 1: Complete the Pre-Investment Checklist
@@ -303,7 +105,6 @@ Review your portfolio allocation and contribution rate once or twice per year �
 ---
 
 ## Choosing a Brokerage {#choosing-a-brokerage}
-
 Your brokerage is the gateway to financial markets. Choosing the right one matters — but it is not a permanent decision. You can always transfer your account to a different platform if your needs change.
 
 ### Key Criteria for Choosing a Brokerage
@@ -350,7 +151,6 @@ When issues arise, can you reach a human? Check reviews for customer service res
 ---
 
 ## Choosing Your Investments {#choosing-investments}
-
 Once your account is open, you need to decide what to buy. This is where many beginners stall — the options feel overwhelming. The reality: for most beginners, the decision is much simpler than it appears.
 
 ### The Core Decision: Active vs. Passive
@@ -400,7 +200,6 @@ Offers slightly more control over home country weighting and bond composition.
 ---
 
 ## Understanding Risk Tolerance {#risk-tolerance}
-
 Risk tolerance is one of the most important — and most misunderstood — concepts in personal investing. Getting this wrong leads to the single most damaging behavior in investing: selling during market downturns.
 
 ### What Risk Really Means in Investing
@@ -446,7 +245,6 @@ A common rule of thumb: subtract your age from 110 to get your approximate equit
 ---
 
 ## Starting with Small Amounts {#starting-small}
-
 One of the most liberating realizations for new investors is that you do not need significant wealth to begin investing. The barriers to entry have never been lower.
 
 ### Why Small Amounts Still Matter Enormously
@@ -488,7 +286,6 @@ A powerful habit: commit to increasing your monthly investment contribution by a
 ---
 
 ## Building a Long-Term Mindset {#long-term-mindset}
-
 Technical investment knowledge is only part of investing success. The behavioral and psychological dimension — the ability to stay disciplined through market cycles — is where most individual investors fail or succeed.
 
 ### The Behavioral Gap
@@ -532,7 +329,6 @@ Financial media is designed to capture attention, not to make you wealthy. Repla
 ---
 
 ## 30/60/90-Day Investment Roadmap {#action-plan}
-
 ### Days 1–30: Foundation and Readiness
 
 **Week 1:**
@@ -588,7 +384,6 @@ Financial media is designed to capture attention, not to make you wealthy. Repla
 ---
 
 ## FAQ: How to Start Investing {#faq}
-
 **Q: What is the first step to start investing?**
 Build your financial foundation first — emergency fund of 3–6 months in a liquid account, high-interest debt eliminated. Then open a tax-advantaged account, choose a low-cost brokerage, select a broad market index ETF, and make your first contribution.
 
@@ -616,7 +411,6 @@ Monthly at most for new investors; quarterly or annually is sufficient for disci
 ---
 
 ## Internal Links
-
 - [BankDeMark Investing Pillar](/pillars/investing)
 - [Investment Calculator](/calculators/investment-calculator)
 - [Compound Interest Calculator](/calculators/compound-interest-calculator)
@@ -629,7 +423,6 @@ Monthly at most for new investors; quarterly or annually is sufficient for disci
 ---
 
 ## Disclaimer
-
 *This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Investment involves risk including the possible loss of principal. Past performance does not guarantee future results. Consult a qualified financial advisor before making investment decisions. Tax rules and contribution limits referenced in this article reflect information available at time of publication and may change. Always verify current rules with the CRA (Canada) or IRS (USA).*
 
 ---

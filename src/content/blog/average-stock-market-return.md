@@ -1,9 +1,12 @@
 # Average Stock Market Return: Historical Data Explained
 
+
+---
 ---
 
-## SEO Metadata
 
+---
+## SEO Metadata
 **Slug:** `/blog/average-stock-market-return`
 **Meta Title:** `Average Stock Market Return: Historical Data Explained`
 **Meta Description:** `What is the average stock market return? Explore S&P 500 historical data, inflation-adjusted returns, realistic expectations, and why long-term investing wins.`
@@ -11,138 +14,7 @@
 **Secondary Keywords:** historical stock returns, long-term stock market returns, S&P 500 average return, real rate of return
 
 ---
-
-## Schema: Article JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Average Stock Market Return: Historical Data Explained",
-  "description": "A comprehensive analysis of average stock market returns — historical data, inflation-adjusted figures, S&P 500 averages, realistic investor expectations, and the case for long-term investing.",
-  "author": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "url": "https://bankdemark.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://bankdemark.com/logo.png"
-    }
-  },
-  "datePublished": "2026-05-22",
-  "dateModified": "2026-05-22",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://bankdemark.com/blog/average-stock-market-return"
-  },
-  "image": "https://bankdemark.com/images/average-stock-market-return.jpg",
-  "keywords": "average stock market return, S&P 500 returns, historical stock market returns, inflation-adjusted returns, long-term investing"
-}
-```
-
-## Schema: BreadcrumbList JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bankdemark.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bankdemark.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Average Stock Market Return", "item": "https://bankdemark.com/blog/average-stock-market-return" }
-  ]
-}
-```
-
-## Schema: FAQPage JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is the average stock market return per year?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The S&P 500 has historically delivered an average annual return of approximately 10% before inflation, and approximately 7% after adjusting for inflation, over long periods spanning several decades. However, annual returns vary dramatically — from strongly positive years to significant negative years — and no individual year's return reflects the long-term average."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the inflation-adjusted stock market return?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "After adjusting for inflation (historically averaging around 2–3% annually), the real long-term return of the S&P 500 has been approximately 6–7% per year. This is the figure most relevant for measuring actual purchasing power growth over time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is a realistic return to expect from investing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For planning purposes, most financial educators suggest using 6–7% annually as a conservative long-term assumption for a diversified equity portfolio (after inflation), or 8–10% before inflation. These figures are based on historical data but do not guarantee future results. Conservative planning typically uses lower assumptions (5–6%) to account for uncertainty."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Has the stock market ever had a 10-year negative return?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Yes. There have been rolling 10-year periods in US stock market history where nominal returns were flat or negative — notably the period ending around 2008–2009 following the dot-com bust and the Global Financial Crisis. This underscores the importance of diversification across asset classes and the understanding that even long investing horizons do not eliminate all risk."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is 7% return on investment good?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A 7% annual return (before inflation) is generally considered a solid, historically grounded expectation for a diversified equity portfolio over the long term. After inflation (~2–3%), this represents a real return of approximately 4–5%, which meaningfully grows purchasing power over time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What was the S&P 500 return in the last 10 years?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "S&P 500 returns vary significantly by the specific 10-year window examined. As of knowledge available through 2025, the decade ending 2024 delivered strong returns boosted by the post-COVID recovery and technology sector growth. For precise figures by specific period, refer to a current source such as S&P Dow Jones Indices. (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA)"
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Do Canadian stock markets return the same as the US market?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "No. The S&P/TSX Composite (Canadian market) and the S&P 500 (US market) have different sector compositions — the TSX is heavily weighted toward financials, energy, and materials, while the S&P 500 has a larger technology weighting. Their returns have historically diverged in many periods, reinforcing the case for holding both in a globally diversified portfolio."
-      }
-    }
-  ]
-}
-```
-
----
-
-## Table of Contents
-
-1. [Quick Answer: Average Stock Market Return](#quick-answer)
-2. [Historical Stock Market Returns](#historical-returns)
-3. [Inflation-Adjusted Returns: The Real Number](#inflation-adjusted)
-4. [S&P 500 Average Return by Period](#sp500-averages)
-5. [Setting Realistic Return Expectations](#realistic-expectations)
-6. [Why Long-Term Investing Wins](#long-term-wins)
-7. [Canadian vs. US Market Returns](#canada-vs-usa)
-8. [What Returns Mean for Your Portfolio](#returns-in-practice)
-9. [FAQ: Average Stock Market Return](#faq)
-
----
-
 ## Quick Answer: Average Stock Market Return {#quick-answer}
-
 **The average stock market return in one paragraph:** The S&P 500 — the most commonly cited benchmark for the US stock market — has historically delivered an average annual return of approximately 10% before inflation over long periods (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA). After adjusting for inflation (historically around 2–3% annually), the real long-term return is approximately 6–7%. These averages mask significant year-to-year variability: individual years range from strongly positive (30%+) to deeply negative (-30% or more). The averages are only meaningful over decade-plus time horizons.
 
 > **Featured snippet:** The S&P 500 has historically averaged approximately 10% per year before inflation and 6–7% per year after inflation over long time horizons. These are averages across highly variable annual returns — not a guarantee for any specific period.
@@ -150,7 +22,6 @@
 ---
 
 ## Historical Stock Market Returns {#historical-returns}
-
 ### Understanding What "Average Return" Means
 
 When people discuss the "average stock market return," they are typically referring to the compound annual growth rate (CAGR) of a broad market index over an extended period. Two different calculations are commonly cited:
@@ -202,7 +73,6 @@ This distribution reveals that the stock market is positive roughly 70–75% of 
 ---
 
 ## Inflation-Adjusted Returns: The Real Number {#inflation-adjusted}
-
 ### Why Nominal Returns Are Misleading
 
 A 10% return in an environment of 8% inflation is not the same as a 10% return in an environment of 2% inflation. What matters for real wealth building is purchasing power — how much actual goods and services your money can buy after the erosion of inflation.
@@ -242,7 +112,6 @@ Canadian inflation has broadly tracked US inflation over long periods, with some
 ---
 
 ## S&P 500 Average Return by Period {#sp500-averages}
-
 ### Single-Year Extremes
 
 The S&P 500 has experienced both extraordinary gains and devastating losses in single years. Historical highlights include:
@@ -293,7 +162,6 @@ The 2000s "lost decade" stands as a cautionary reminder: someone who invested a 
 ---
 
 ## Setting Realistic Return Expectations {#realistic-expectations}
-
 ### The Planning Return vs. the Hoped-For Return
 
 There is a meaningful difference between the historical average return and what you should use for personal financial planning:
@@ -345,7 +213,6 @@ Why plan more conservatively than history suggests?
 ---
 
 ## Why Long-Term Investing Wins {#long-term-wins}
-
 ### The Mathematics of Time
 
 The single most powerful variable in long-term investing is not the return rate — it is time. Even a modest difference in investment horizon produces dramatically different outcomes due to compound growth.
@@ -383,7 +250,6 @@ This dynamic — often misunderstood by investors who stop contributions during 
 ---
 
 ## Canadian vs. US Market Returns {#canada-vs-usa}
-
 ### Key Structural Differences
 
 The Canadian and US stock markets have meaningfully different sector compositions, which drives divergent performance in different economic environments:
@@ -412,7 +278,6 @@ When a Canadian investor holds US equities, their returns are partially determin
 ---
 
 ## What Returns Mean for Your Portfolio {#returns-in-practice}
-
 ### Translating Return Assumptions into Wealth Projections
 
 Understanding historical return data is only valuable if it helps you set realistic wealth-building targets and contribution plans. Here is how to use return data practically:
@@ -444,7 +309,6 @@ A 1.9% fee difference over 30 years reduces the final portfolio value by approxi
 ---
 
 ## FAQ: Average Stock Market Return {#faq}
-
 **Q: What is the average stock market return per year?**
 The S&P 500 has historically averaged approximately 10% annually in nominal terms and 6–7% after inflation over long periods. Annual returns vary enormously — from +50% to -47% in individual years. The average is only meaningful over decade-plus time horizons.
 
@@ -469,7 +333,6 @@ No. The TSX and S&P 500 have different sector compositions and have delivered di
 ---
 
 ## Internal Links
-
 - [BankDeMark Investing Pillar](/pillars/investing)
 - [Investment Calculator](/calculators/investment-calculator)
 - [Compound Interest Calculator](/calculators/compound-interest-calculator)
@@ -482,7 +345,6 @@ No. The TSX and S&P 500 have different sector compositions and have delivered di
 ---
 
 ## Disclaimer
-
 *This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Historical returns do not guarantee future results. Investment involves risk including the possible loss of principal. The return figures cited in this article are approximations based on historical data and are intended for educational context only. Consult a qualified financial advisor before making investment decisions.*
 
 ---

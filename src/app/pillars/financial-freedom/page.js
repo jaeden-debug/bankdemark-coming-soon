@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import AutoTOC from "@/components/AutoTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -11,24 +12,6 @@ export const metadata = {
     canonical: "/pillars/financial-freedom",
   },
 };
-
-const toc = [
-  ["definition", "What Financial Freedom Means"],
-  ["why", "Why Financial Freedom Matters"],
-  ["stages", "The 7 Stages of Financial Freedom"],
-  ["number", "Your Financial Independence Number"],
-  ["cashflow", "Cash Flow and Saving Rate"],
-  ["debt", "Debt Freedom"],
-  ["investing", "Investing for Financial Freedom"],
-  ["fire", "FIRE Movement"],
-  ["passive-income", "Passive Income"],
-  ["business", "Business, AI & Scalable Income"],
-  ["canada-usa", "Canada vs USA Notes"],
-  ["mistakes", "Common Mistakes"],
-  ["roadmap", "90-Day Financial Freedom Roadmap"],
-  ["faq", "FAQ"],
-];
-
 const faq = [
   {
     q: "What is financial freedom?",
@@ -138,16 +121,7 @@ export default function FinancialFreedomPage() {
       </div>
 
       <div className="pillar-page">
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            {toc.map(([id, label]) => (
-              <li key={id}>
-                <a href={`#${id}`}>{label}</a>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <AutoTOC selector=".pillar-section h2" />
 
         <div id="definition" className="pillar-section">
           <h2>What Financial Freedom Means</h2>

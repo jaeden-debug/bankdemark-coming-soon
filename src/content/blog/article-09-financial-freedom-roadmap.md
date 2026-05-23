@@ -3,144 +3,12 @@
 ---
 
 ## SEO Metadata
-
 **Slug:** `/blog/financial-freedom-roadmap`
 **Meta Title:** `Financial Freedom Roadmap: From Broke to Independent`
 **Meta Description:** `The complete financial freedom roadmap — covering stages of wealth, saving rate, debt payoff, investing, passive income, FIRE basics, and a step-by-step action plan.`
 **Target Keywords:** financial freedom, financial independence, how to build wealth, wealth building, passive income, retire early, financial freedom roadmap
 
 ---
-
-## Article Schema JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Financial Freedom Roadmap: From Paycheck-to-Paycheck to Independent",
-  "description": "A comprehensive guide to achieving financial freedom — covering the stages of financial independence, saving rate, debt elimination, investing, passive income, FIRE basics, and a practical roadmap.",
-  "author": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "url": "https://bankdemark.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://bankdemark.com/logo.png"
-    }
-  },
-  "datePublished": "2026-05-21",
-  "dateModified": "2026-05-21",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://bankdemark.com/blog/financial-freedom-roadmap"
-  },
-  "image": "https://bankdemark.com/images/financial-freedom.jpg",
-  "keywords": "financial freedom, financial independence, wealth building, passive income, FIRE, retire early"
-}
-```
-
-## BreadcrumbList Schema JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "Home",
-      "item": "https://bankdemark.com"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Blog",
-      "item": "https://bankdemark.com/blog"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Financial Freedom Roadmap",
-      "item": "https://bankdemark.com/blog/financial-freedom-roadmap"
-    }
-  ]
-}
-```
-
-## FAQ Schema JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What is financial freedom?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Financial freedom is the state in which your passive income, investments, and accumulated wealth are sufficient to cover your living expenses indefinitely — without needing to work for money. It means having enough that work becomes optional rather than mandatory."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How much money do I need to be financially free?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "A widely used guideline is the 25x rule: you need 25 times your annual expenses invested in assets to sustain withdrawals at a 4% annual rate indefinitely. This is the basis of the FIRE (Financial Independence, Retire Early) movement and the 4% withdrawal rule."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the 4% rule?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The 4% rule is a guideline suggesting that withdrawing 4% of a diversified investment portfolio annually has historically been sustainable over long retirement periods (30+ years). It originated from the Trinity Study. The 4% rate is not a guarantee and involves assumptions about market returns and inflation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is FIRE?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "FIRE stands for Financial Independence, Retire Early. It is a movement focused on achieving financial independence at a younger age than traditional retirement by maximizing saving rates (often 40–70% of income) and investing aggressively in low-cost index funds."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is passive income?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Passive income is income that requires minimal ongoing active work to maintain. Examples include dividends from stocks, rental income from property, royalties from intellectual property, interest from bonds, and income from a business not requiring your active participation."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long does it take to achieve financial freedom?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "The timeline depends primarily on your saving rate. At a 10% saving rate, financial independence may take 40+ years. At a 50% saving rate, it may take approximately 17 years. At a 70% saving rate, the timeline can compress to 8–10 years. The higher the saving rate, the faster the timeline."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What are the stages of financial freedom?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Common stages include: (1) Financial dependency — living paycheck-to-paycheck with no safety net; (2) Financial solvency — income covers all expenses; (3) Financial stability — emergency fund and debt-free; (4) Financial security — investments cover basic expenses; (5) Financial independence — investments cover full lifestyle; (6) Financial freedom — wealth significantly exceeds needs."
-      }
-    }
-  ]
-}
-```
-
----
-
 # Financial Freedom Roadmap: From Paycheck-to-Paycheck to Independent
 
 **By BankDeMark Editorial Team | Updated May 2026**
@@ -148,30 +16,11 @@
 > **Quick Answer:** Financial freedom is the point where your passive income and invested assets can sustain your living expenses without requiring you to work. Getting there requires systematically building income, reducing expenses, eliminating debt, investing consistently, and accumulating income-generating assets over time. The primary lever is your saving rate — the higher the percentage of income you save and invest, the faster the path.
 
 ---
-
-## Table of Contents
-
-1. [What Financial Freedom Actually Means](#what-is-ff)
-2. [The Six Stages of Financial Freedom](#stages)
-3. [The Saving Rate: The Master Variable](#saving-rate)
-4. [Income: The Engine of Financial Freedom](#income)
-5. [Eliminating Debt: Removing the Drag](#debt)
-6. [The Investment Engine: How Wealth Compounds](#investing)
-7. [Asset Classes on the Path to Financial Freedom](#assets)
-8. [Passive Income: Income That Works While You Sleep](#passive-income)
-9. [The FIRE Movement: Financial Independence, Retire Early](#fire)
-10. [The 4% Rule and the 25x Target](#4-percent-rule)
-11. [Financial Freedom in Canada vs. USA](#canada-vs-usa)
-12. [Lifestyle Design and the Wealth Trade-Off](#lifestyle)
-13. [Psychological Aspects of Wealth Building](#psychology)
-14. [Financial Freedom Roadmap: Step-by-Step](#roadmap)
-15. [Common Wealth-Building Mistakes](#mistakes)
-16. [FAQ](#faq)
-
 ---
 
-## What Financial Freedom Actually Means {#what-is-ff}
 
+---
+## What Financial Freedom Actually Means {#what-is-ff}
 Financial freedom is a state — not a moment — in which money no longer constrains your choices about how you spend your time.
 
 At its most basic: your assets generate enough income to cover your expenses. Work becomes optional. You may continue working because you choose to, but you are no longer dependent on a paycheck to survive.
@@ -200,7 +49,6 @@ What financial freedom specifically provides:
 ---
 
 ## The Six Stages of Financial Freedom {#stages}
-
 Progress toward financial freedom can be mapped through identifiable stages. Understanding which stage you are currently in clarifies what the next priority should be.
 
 ### Stage 1: Financial Dependency
@@ -275,7 +123,6 @@ Progress toward financial freedom can be mapped through identifiable stages. Und
 ---
 
 ## The Saving Rate: The Master Variable {#saving-rate}
-
 If there is a single metric that predicts the timeline to financial independence more than any other, it is your **saving rate** — the percentage of your net income that you save and invest.
 
 ### Why the Saving Rate Dominates
@@ -302,7 +149,6 @@ The following is a widely referenced illustrative framework based on assumed inv
 | 70% | 8.5 years |
 
 
-
 These numbers assume starting from zero and a typical long-run equity market return assumption. They are illustrative, not predictive.
 
 ### How to Calculate Your Saving Rate
@@ -326,7 +172,6 @@ The most effective strategy is to avoid lifestyle inflation as income grows — 
 ---
 
 ## Income: The Engine of Financial Freedom {#income}
-
 While frugality and expense reduction have a role, income is the engine of wealth building. There is a limit to how much you can cut; there is no theoretical limit to how much you can earn.
 
 ### The Three Income Sources
@@ -361,7 +206,6 @@ The path to financial freedom involves converting active income → savings → 
 ---
 
 ## Eliminating Debt: Removing the Drag {#debt}
-
 Debt is a wealth-building headwind. Interest paid to lenders is money that does not compound in your own wealth.
 
 ### The Math of Debt and Wealth Building
@@ -383,7 +227,6 @@ Eliminating all debt — particularly the mortgage — dramatically changes the 
 ---
 
 ## The Investment Engine: How Wealth Compounds {#investing}
-
 Investing is the mechanism by which saved capital grows into wealth. Compound growth — interest and returns earned on previous returns — is the primary force that converts modest consistent savings into significant long-term wealth.
 
 ### The Compounding Timeline
@@ -397,7 +240,6 @@ The compounding effect becomes dramatic over long time horizons. The later you s
 | 25 | $500 | 7% | ~$1,312,000 |
 | 35 | $500 | 7% | ~$606,000 |
 | 45 | $500 | 7% | ~$245,000 |
-
 
 
 ### The Investment Strategy for Financial Freedom
@@ -416,7 +258,6 @@ For detailed investment guidance, see: [Investing for Beginners: Complete Guide]
 ---
 
 ## Asset Classes on the Path to Financial Freedom {#assets}
-
 A diversified approach to wealth building may incorporate multiple asset classes:
 
 ### Public Equities (Stocks / Index Funds)
@@ -446,7 +287,6 @@ Courses, books, software, creative work, patents, and licenses can generate roya
 ---
 
 ## Passive Income: Income That Works While You Sleep {#passive-income}
-
 Passive income is the target state of financial freedom — income generated with minimal ongoing active labor.
 
 ### Types of Passive Income
@@ -476,7 +316,6 @@ The path to passive income is not a shortcut — it is a transformation of activ
 ---
 
 ## The FIRE Movement: Financial Independence, Retire Early {#fire}
-
 The FIRE (Financial Independence, Retire Early) movement is a cultural and personal finance philosophy centered on:
 - Dramatically increasing saving rates (often 40–70% of income)
 - Living below one's means intentionally
@@ -504,7 +343,6 @@ The core principles of FIRE (high saving rate, index investing, minimizing unnec
 ---
 
 ## The 4% Rule and the 25x Target {#4-percent-rule}
-
 The 4% rule is the most widely cited guideline for determining the size of the investment portfolio needed to sustain indefinite withdrawals.
 
 ### The Origin of the 4% Rule
@@ -538,7 +376,6 @@ The 4% rule is a useful planning guideline, not a guarantee. Conservative planne
 ---
 
 ## Financial Freedom in Canada vs. USA {#canada-vs-usa}
-
 | Feature | Canada | USA |
 |---|---|---|
 | Primary tax-advantaged accounts | TFSA, RRSP, FHSA, RESP | Roth IRA, 401(k), Traditional IRA, HSA |
@@ -556,7 +393,6 @@ The 4% rule is a useful planning guideline, not a guarantee. Conservative planne
 ---
 
 ## Lifestyle Design and the Wealth Trade-Off {#lifestyle}
-
 Financial freedom exists on a spectrum of lifestyle and expense levels. The target financial independence number is entirely determined by your chosen lifestyle cost.
 
 ### The Lifestyle-FI Number Relationship
@@ -578,7 +414,6 @@ Cost of living varies dramatically by location. A $50,000/year lifestyle in a lo
 ---
 
 ## Psychological Aspects of Wealth Building {#psychology}
-
 ### The Identity Shift Required
 
 Moving from a consumer mindset to an investor mindset is not purely a financial shift — it is an identity shift. It requires:
@@ -600,7 +435,6 @@ Fear of missing out on experiences or social activities can undermine financial 
 ---
 
 ## Financial Freedom Roadmap: Step-by-Step {#roadmap}
-
 ### Phase 1: Stability (Stage 1 → Stage 3)
 **Timeline:** 6–24 months depending on starting point
 
@@ -653,7 +487,6 @@ Fear of missing out on experiences or social activities can undermine financial 
 ---
 
 ## Common Wealth-Building Mistakes {#mistakes}
-
 ### Mistake 1: Waiting to Start Until You Have "Enough Money"
 
 The correct amount of money to start investing is whatever amount you have available today. The cost of waiting is lost compounding time — the most irreplaceable resource in wealth building.
@@ -681,7 +514,6 @@ Many people spend years accumulating without having a clear target. Define your 
 ---
 
 ## FAQ {#faq}
-
 ### What is financial freedom?
 
 Financial freedom is the state where your passive income and accumulated investments are sufficient to cover your living expenses indefinitely, making paid work optional. It means money no longer constrains your choices about how you spend your time.
@@ -709,7 +541,6 @@ Timeline depends primarily on saving rate. At 10% savings rate: ~51 years. At 30
 ---
 
 ## Internal Link Map
-
 - **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
 - **Investing Pillar:** [/pillars/investing](/pillars/investing)
 - **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
@@ -720,7 +551,6 @@ Timeline depends primarily on saving rate. At 10% savings rate: ~51 years. At 30
 - **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
 
 ## Suggested Supporting Articles
-
 - Investing for Beginners: Complete Guide to Start Investing
 - Index Funds vs ETFs: Which Is Better for Beginners?
 - How to Save Money and Build an Emergency Fund
@@ -729,7 +559,6 @@ Timeline depends primarily on saving rate. At 10% savings rate: ~51 years. At 30
 ---
 
 ## Estate Planning and Legacy: Financial Freedom Beyond Your Lifetime {#estate}
-
 Financial freedom is not only about your lifetime — it also involves planning for how your accumulated wealth transitions to your heirs, dependents, or chosen beneficiaries.
 
 ### Why Estate Planning Matters

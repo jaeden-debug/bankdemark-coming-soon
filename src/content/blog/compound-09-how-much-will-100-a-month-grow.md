@@ -21,87 +21,19 @@ author: "BankDeMark Editorial Team"
 category: "Investing & Wealth Building"
 reading_time: "21 min"
 ---
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "How Much Will $100 a Month Grow Over Time?",
-  "description": "Exactly how much $100/month grows at different return rates over 10–40 years — with starting age comparisons and beginner account guidance.",
-  "author": { "@type": "Organization", "name": "BankDeMark", "url": "https://bankdemark.com" },
-  "publisher": { "@type": "Organization", "name": "BankDeMark", "url": "https://bankdemark.com", "logo": { "@type": "ImageObject", "url": "https://bankdemark.com/logo.png" } },
-  "datePublished": "2026-05-22",
-  "dateModified": "2026-05-22",
-  "mainEntityOfPage": { "@type": "WebPage", "@id": "https://bankdemark.com/blog/how-much-will-100-a-month-grow" },
-  "image": "https://bankdemark.com/images/100-a-month-grow.jpg",
-  "keywords": "investing 100 a month, how much will 100 a month grow, beginner investing",
-  "articleSection": "Investing"
-}
-```
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bankdemark.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bankdemark.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "How Much Will $100/Month Grow", "item": "https://bankdemark.com/blog/how-much-will-100-a-month-grow" }
-  ]
-}
-```
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much will $100 a month grow in 10 years?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Investing $100/month at 7% annual returns for 10 years grows to approximately $17,308. You contribute $12,000 — the $5,308 difference is compound interest. At 5%, the balance is $15,528. At 10%, it reaches $20,484." }
-    },
-    {
-      "@type": "Question",
-      "name": "How much will $100 a month grow in 20 years?",
-      "acceptedAnswer": { "@type": "Answer", "text": "At 7%, $100/month for 20 years grows to approximately $52,093. You contribute $24,000 — the interest earned ($28,093) exceeds your total contributions by $4,093. At 5%: $41,103. At 10%: $76,570." }
-    },
-    {
-      "@type": "Question",
-      "name": "How much will $100 a month grow in 30 years?",
-      "acceptedAnswer": { "@type": "Answer", "text": "At 7%, $100/month for 30 years grows to approximately $122,709. You contribute $36,000 — compound interest adds $86,709, which is 2.4× your total contributions. At 5%: $83,226. At 10%: $226,049." }
-    },
-    {
-      "@type": "Question",
-      "name": "How much will $100 a month grow in 40 years?",
-      "acceptedAnswer": { "@type": "Answer", "text": "At 7%, $100/month for 40 years grows to approximately $262,481. You contribute $48,000 — compound interest adds $214,481, which is 4.5× your contributions. At 10%: $637,678 from the same $48,000 contributed." }
-    },
-    {
-      "@type": "Question",
-      "name": "Is it worth investing $100 a month?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Yes — absolutely. $100/month is worth investing because compound interest makes the early years of small contributions worth far more than their face value. $100/month at 7% for 40 years becomes $262,481 — from $48,000 contributed. More importantly, the habit of investing consistently matters as much as the amount. Beginning with $100/month and increasing contributions over time is far better than waiting until you can 'afford to invest more.'" }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the best account to invest $100 a month?",
-      "acceptedAnswer": { "@type": "Answer", "text": "In Canada: a TFSA (Tax-Free Savings Account) is the best starting account for $100/month investing. All growth is tax-free. Invest in a low-cost all-in-one ETF like XGRO or VGRO. In the USA: a Roth IRA is ideal for most beginners — tax-free growth, flexible withdrawal rules, and access to virtually any low-cost index fund. Both platforms like Wealthsimple (Canada) and Fidelity/Vanguard (USA) allow fractional or commission-free ETF purchases with no minimum balance." }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between starting investing at 20 vs. 30 vs. 40 with $100/month?",
-      "acceptedAnswer": { "@type": "Answer", "text": "At 7% annual returns with $100/month invested until age 65: starting at 20 produces approximately $349,000; starting at 30 produces approximately $122,709 (35 years); starting at 40 produces approximately $52,093 (25 years). The investor starting at 20 contributes $54,000 and ends with $349,000. The investor starting at 40 contributes $30,000 and ends with $52,093. Same monthly amount — the 20-year difference in start age produces a $297,000 gap." }
-    }
-  ]
-}
-```
-
----
-
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. All calculations use standard compound interest formulas. Return rate assumptions are illustrative — actual investment returns vary and are not guaranteed.
 
 ---
 
 # How Much Will $100 a Month Grow Over Time?
+
+
+---
+---
+
+
+---
+
 
 **"I don't have enough to invest."** It is the most common reason people delay building wealth — and one of the most expensive misconceptions in personal finance.
 
@@ -125,25 +57,8 @@ This article shows you exactly what $100/month becomes — at every time horizon
 
 ---
 
-## Table of Contents
-
-1. [Why $100 a Month Is Worth Investing](#why-100-matters)
-2. [10-Year Growth: Building the Foundation](#10-year)
-3. [20-Year Growth: The Crossover Point](#20-year)
-4. [30-Year Growth: Serious Compounding](#30-year)
-5. [40-Year Growth: Maximum Compounding Power](#40-year)
-6. [Return Rate Comparison: 5%, 7%, and 10%](#return-rates)
-7. [Starting Age Comparison: 20 vs. 30 vs. 40](#starting-age)
-8. [Best Accounts for $100/Month (Canada and USA)](#best-accounts)
-9. [Common Beginner Mistakes to Avoid](#common-mistakes)
-10. [From $100 to More: Growing Your Contribution](#growing-contribution)
-11. [Key Takeaways](#key-takeaways)
-12. [FAQ](#faq)
-
----
 
 ## 1. Why $100 a Month Is Worth Investing {#why-100-matters}
-
 The argument for investing $100/month is not that $100/month is enough to retire on. It is that:
 
 **1. Compound interest is exponential — small amounts compounded over decades produce disproportionately large results.**
@@ -161,7 +76,6 @@ At 7%, $100 invested today is worth $203 in 10 years, $400 in 20 years, $800 in 
 ---
 
 ## 2. 10-Year Growth: Building the Foundation {#10-year}
-
 The first decade of $100/month investing looks modest. The interest earned is real but small relative to the contribution total. Do not let this discourage you — it is simply the early part of the exponential curve.
 
 ### $100/Month at 7% — Year by Year (First 10 Years)
@@ -196,7 +110,6 @@ The foundation of $17,308 invested is now your compounding base for the second d
 ---
 
 ## 3. 20-Year Growth: The Crossover Point {#20-year}
-
 The 20-year mark is where compound interest begins to overtake contributions in absolute dollar terms. At 7%, the crossover happens around year 18.
 
 ### $100/Month at 7% — Years 10 Through 20
@@ -229,7 +142,6 @@ At 10% over 20 years, compound interest alone is 219% of what you contributed �
 ---
 
 ## 4. 30-Year Growth: Serious Compounding {#30-year}
-
 The third decade is where $100/month investing truly impresses. The interest earned in years 20–30 alone exceeds the entire balance at year 20.
 
 ### $100/Month at 7% — Years 20 Through 30
@@ -260,7 +172,6 @@ The growth from year 20 to 30 ($70,616) exceeds the entire balance at year 20 ($
 ---
 
 ## 5. 40-Year Growth: Maximum Compounding Power {#40-year}
-
 Forty years of $100/month at 7% produces a result that most people doubt until they see the math.
 
 ### $100/Month at 7% — Years 30 Through 40
@@ -295,7 +206,6 @@ At 10%, $100/month for 40 years produces $637,678 — the compound interest comp
 ---
 
 ## 6. Return Rate Comparison: 5%, 7%, and 10% {#return-rates}
-
 ### Summary Table: $100/Month at Different Rates
 
 | Timeframe | 5% Return | 7% Return | 10% Return |
@@ -329,7 +239,6 @@ For investors with a 20+ year horizon and reasonable risk tolerance, an equity-h
 ---
 
 ## 7. Starting Age Comparison: 20 vs. 30 vs. 40 {#starting-age}
-
 ### $100/Month at 7%, Investing Until Age 65
 
 | Start Age | Years Invested | Total Contributed | Balance at 65 |
@@ -360,7 +269,6 @@ The 10-year head start produces $151,953 more — from only $12,000 in additiona
 ---
 
 ## 8. Best Accounts for $100/Month (Canada and USA) {#best-accounts}
-
 ### Canada: Best Account for $100/Month Beginners
 
 **TFSA (Tax-Free Savings Account):**
@@ -399,7 +307,6 @@ The Roth IRA is the best starting account for most US beginner investors:
 ---
 
 ## 9. Common Beginner Mistakes to Avoid {#common-mistakes}
-
 ### Mistake 1: Keeping the Money in Cash in the Account
 
 Opening a TFSA or Roth IRA and leaving the money in cash is one of the most common beginner mistakes. The account earns near-zero (or savings account rate) while doing nothing. You must actively invest the funds — purchase your ETF after each deposit.
@@ -427,7 +334,6 @@ Every month of delay costs compound interest that can never be recovered. Starti
 ---
 
 ## 10. From $100 to More: Growing Your Contribution {#growing-contribution}
-
 ### The Annual Increase Strategy
 
 If you increase your monthly contribution by $25 each year:
@@ -455,7 +361,6 @@ A $100/month investor who grows contributions alongside income can realistically
 ---
 
 ## 11. Key Takeaways {#key-takeaways}
-
 - $100/month at 7% for 10 years: **$17,308** (from $12,000 contributed)
 - $100/month at 7% for 20 years: **$52,093** (from $24,000 contributed)
 - $100/month at 7% for 30 years: **$122,709** (from $36,000 contributed)
@@ -484,7 +389,6 @@ A $100/month investor who grows contributions alongside income can realistically
 ---
 
 ## FAQ {#faq}
-
 **How much will $100 a month grow in 10 years?**
 At 7%: $17,308 (from $12,000 contributed). At 5%: $15,528. At 10%: $20,484.
 

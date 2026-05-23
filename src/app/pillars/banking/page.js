@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import AutoTOC from "@/components/AutoTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -11,24 +12,6 @@ export const metadata = {
     canonical: "/pillars/banking",
   },
 };
-
-const toc = [
-  ["definition", "What Banking Optimization Means"],
-  ["why", "Why Banking Matters"],
-  ["checking", "Checking & Chequing Accounts"],
-  ["savings", "Savings & High-Yield Accounts"],
-  ["fees", "Banking Fees"],
-  ["structure", "Account Structure Strategy"],
-  ["online", "Online Banking"],
-  ["canada-usa", "Canada vs USA Banking"],
-  ["business", "Business Banking"],
-  ["security", "Banking Security"],
-  ["automation", "Automation & Dashboards"],
-  ["mistakes", "Common Banking Mistakes"],
-  ["roadmap", "90-Day Banking Roadmap"],
-  ["faq", "FAQ"],
-];
-
 const faq = [
   {
     q: "What is the best banking setup?",
@@ -138,16 +121,7 @@ export default function BankingPage() {
       </div>
 
       <div className="pillar-page">
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            {toc.map(([id, label]) => (
-              <li key={id}>
-                <a href={`#${id}`}>{label}</a>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <AutoTOC selector=".pillar-section h2" />
 
         <div id="definition" className="pillar-section">
           <h2>What Banking Optimization Means</h2>

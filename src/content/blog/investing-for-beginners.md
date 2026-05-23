@@ -1,9 +1,12 @@
 # Investing for Beginners: How to Start Building Wealth
 
+
+---
 ---
 
-## SEO Metadata
 
+---
+## SEO Metadata
 **Slug:** `/blog/investing-for-beginners`
 **Meta Title:** `Investing for Beginners: How to Start Building Wealth`
 **Meta Description:** `Learn how to start investing as a beginner. Understand stocks, ETFs, index funds, accounts, and a step-by-step wealth-building roadmap for Canada and USA.`
@@ -11,147 +14,7 @@
 **Secondary Keywords:** how to start investing, beginner investing guide, investing basics, how to invest money
 
 ---
-
-## Schema: Article JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "Investing for Beginners: How to Start Building Wealth",
-  "description": "A comprehensive beginner's guide to investing — covering stocks, ETFs, index funds, registered accounts, risk tolerance, and a 90-day roadmap for Canadians and Americans.",
-  "author": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "url": "https://bankdemark.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://bankdemark.com/logo.png"
-    }
-  },
-  "datePublished": "2026-05-22",
-  "dateModified": "2026-05-22",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://bankdemark.com/blog/investing-for-beginners"
-  },
-  "image": "https://bankdemark.com/images/investing-for-beginners.jpg",
-  "keywords": "investing for beginners, how to start investing, index funds, ETFs, beginner investing, stocks, wealth building"
-}
-```
-
-## Schema: BreadcrumbList JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bankdemark.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bankdemark.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Investing for Beginners", "item": "https://bankdemark.com/blog/investing-for-beginners" }
-  ]
-}
-```
-
-## Schema: FAQPage JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "How much money do I need to start investing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "You can start investing with as little as $1 through platforms that offer fractional shares or low-cost ETFs. Most beginner-friendly brokerages have no minimum account balance. Starting with any amount is better than waiting."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What should a beginner invest in first?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Most financial educators recommend broad market index fund ETFs as the ideal first investment. These provide instant diversification, low fees, and historically competitive long-term returns without requiring stock-picking expertise."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Is investing risky for beginners?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "All investing involves risk, including the potential loss of principal. However, broad diversification through index funds, a long time horizon, and consistent contributions significantly reduce the impact of short-term volatility over time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the difference between saving and investing?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Saving means storing money in low-risk, liquid accounts like savings accounts or GICs. Investing means deploying capital into assets like stocks or bonds with the expectation of growth over time — but with more risk and less liquidity."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What accounts should beginners use for investing in Canada?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Canadian beginners should prioritize the TFSA (Tax-Free Savings Account) for tax-free growth, followed by the RRSP (Registered Retirement Savings Plan) for tax-deferred retirement investing. Both are powerful registered accounts for building long-term wealth."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What accounts should beginners use for investing in the USA?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "American beginners should start with a Roth IRA for tax-free growth in retirement, or a 401(k) if their employer offers one, especially if there is an employer match. Both accounts offer significant tax advantages for long-term investors."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How long should I invest before seeing returns?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Investing is a long-term discipline. While returns can appear in the short term, the real power of compound growth emerges over 10, 20, and 30+ year horizons. Most financial educators recommend thinking in decades, not months."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What mistakes do beginner investors make?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Common beginner investing mistakes include trying to time the market, panic-selling during downturns, paying high fees, failing to diversify, investing without an emergency fund, and chasing past performance. Consistency and patience outperform most active strategies."
-      }
-    }
-  ]
-}
-```
-
----
-
-## Table of Contents
-
-1. [Quick Answer: Investing for Beginners](#quick-answer)
-2. [What Investing Actually Is](#what-investing-actually-is)
-3. [Why Investing Matters More Than Ever](#why-investing-matters)
-4. [Stocks vs ETFs vs Index Funds: What Is the Difference?](#stocks-vs-etfs-vs-index-funds)
-5. [How Much Money Do You Need to Start Investing?](#how-much-money-do-you-need)
-6. [The Best Beginner Investing Strategy](#best-beginner-investing-strategy)
-7. [Common Mistakes Beginners Make](#mistakes-beginners-make)
-8. [Best Accounts to Use for Investing](#best-accounts-to-use)
-9. [30/60/90-Day Investing Action Plan](#action-plan)
-10. [FAQ: Investing for Beginners](#faq)
-
----
-
 ## Quick Answer: Investing for Beginners {#quick-answer}
-
 **Investing for beginners in one paragraph:** Investing is the process of putting money into assets — like stocks, bonds, or real estate — with the expectation that those assets will grow in value over time. For beginners, the most recommended starting point is a broad market index fund ETF held inside a tax-advantaged account (TFSA or RRSP in Canada; Roth IRA or 401(k) in the USA). Start with whatever you can afford, contribute consistently, and let compound growth do the heavy lifting over years and decades.
 
 > **The single most important principle:** Time in the market beats timing the market. Starting early with small amounts consistently outperforms starting later with large amounts.
@@ -159,7 +22,6 @@
 ---
 
 ## What Investing Actually Is {#what-investing-actually-is}
-
 Investing is the act of allocating capital — money, time, or resources — into something with the expectation of generating a return or profit in the future. In personal finance, investing typically refers to purchasing financial assets: stocks, bonds, ETFs, mutual funds, real estate investment trusts (REITs), and other instruments traded on financial markets.
 
 The fundamental purpose of investing is to grow wealth over time at a rate that exceeds inflation. Keeping money in a low-interest savings account may feel "safe," but if the interest rate is lower than inflation, you are effectively losing purchasing power every year.
@@ -205,7 +67,6 @@ For beginners, the most accessible and evidence-backed starting point is a diver
 ---
 
 ## Why Investing Matters More Than Ever {#why-investing-matters}
-
 ### The Inflation Problem
 
 Inflation is the slow erosion of your purchasing power over time. Canada and the United States both use 2% inflation targets as central monetary policy anchors (source: Bank of Canada and Federal Reserve). That means money sitting idle in a savings account earning 0.5% annually is effectively losing value every year.
@@ -243,7 +104,6 @@ The early starter contributes only twice as long but ends up with more than twic
 ---
 
 ## Stocks vs ETFs vs Index Funds: What Is the Difference? {#stocks-vs-etfs-vs-index-funds}
-
 One of the most common points of confusion for new investors is understanding the difference between individual stocks, exchange-traded funds (ETFs), and index funds. These terms are related but not interchangeable.
 
 ### Individual Stocks
@@ -309,7 +169,6 @@ Rather than having a fund manager pick and choose investments, an index fund sim
 ---
 
 ## How Much Money Do You Need to Start Investing? {#how-much-money-do-you-need}
-
 ### The Short Answer: Less Than You Think
 
 One of the most persistent myths in personal finance is that you need a significant amount of money to start investing. Modern brokerage platforms have largely eliminated minimum investment requirements, making it possible to begin with as little as $1 in many cases.
@@ -353,7 +212,6 @@ If high-interest debt exists, paying it off first is mathematically superior to 
 ---
 
 ## The Best Beginner Investing Strategy {#best-beginner-investing-strategy}
-
 ### The Core Principle: Simplicity Wins
 
 Retail investor behavior research consistently shows that complexity, timing, and emotional trading can damage realized returns (source: Morningstar Mind the Gap and Vanguard investor behavior research). Sophisticated, complex strategies sound appealing but introduce more opportunities for behavioral errors, higher costs, and poor timing decisions.
@@ -415,7 +273,6 @@ Set up automatic contributions from your bank account to your brokerage on payda
 ---
 
 ## Common Mistakes Beginners Make {#mistakes-beginners-make}
-
 Understanding what not to do is as important as knowing what to do. The following mistakes are the most common — and most costly — errors new investors make.
 
 ### Mistake 1: Trying to Time the Market
@@ -467,7 +324,6 @@ Financial media, social media, and "hot tips" from friends and family are among 
 ---
 
 ## Best Accounts to Use for Investing {#best-accounts-to-use}
-
 The account you hold your investments in matters enormously. Tax-advantaged accounts can significantly accelerate wealth accumulation by sheltering investment growth from annual taxation.
 
 ### Canada: Best Investing Accounts
@@ -534,7 +390,6 @@ The account you hold your investments in matters enormously. Tax-advantaged acco
 ---
 
 ## 30/60/90-Day Investing Action Plan {#action-plan}
-
 This framework is educational and does not constitute personalized financial advice. Individual circumstances vary.
 
 ### Days 1–30: Foundation
@@ -591,7 +446,6 @@ This framework is educational and does not constitute personalized financial adv
 ---
 
 ## FAQ: Investing for Beginners {#faq}
-
 **Q: How much money do I need to start investing?**
 You can start with as little as $1 on many modern brokerage platforms. Practically speaking, $500–$1,000 gives you enough to build a meaningful first position without transaction costs eroding your returns. The most important factor is not the amount — it is starting.
 
@@ -619,7 +473,6 @@ The most common and costly mistakes include: trying to time the market, panic-se
 ---
 
 ## Internal Links
-
 - [BankDeMark Investing Pillar](/pillars/investing)
 - [Investment Calculator](/calculators/investment-calculator)
 - [Compound Interest Calculator](/calculators/compound-interest-calculator)
@@ -632,7 +485,6 @@ The most common and costly mistakes include: trying to time the market, panic-se
 ---
 
 ## Disclaimer
-
 *This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Investment involves risk including the possible loss of principal. Past performance does not guarantee future results. Consult a qualified financial advisor before making investment decisions. Tax rules and contribution limits referenced in this article reflect information available at time of publication and may change. Always verify current rules with the CRA (Canada) or IRS (USA).*
 
 ---

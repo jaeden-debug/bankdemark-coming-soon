@@ -16,8 +16,15 @@ tags:
 
 # Blackwater Aquatics SEO Case Study
 
-## Overview
 
+---
+---
+
+
+---
+
+
+## Overview
 This case study documents the early-stage SEO growth of Blackwater Aquatics Canada — a niche ecommerce store focused on live aquarium foods, scuds, shrimp, bettas, and breeder-focused aquarium products.
 
 The objective was simple:
@@ -74,7 +81,6 @@ Examples:
 # Core SEO Strategy
 
 ## 1. Product-Led SEO
-
 Instead of treating product pages as simple ecommerce listings, each major product became an SEO landing page.
 
 The scud product page became the primary authority target.
@@ -98,7 +104,6 @@ Key optimizations included:
 The scud culture page became the site's top-performing organic asset.
 
 ## Results
-
 - 84 clicks
 - 712 impressions
 - 11.8% CTR
@@ -270,7 +275,6 @@ This demonstrates that small ecommerce stores can compete without massive author
 # Key Lessons
 
 ## 1. Small niches are opportunities
-
 Large competitors often ignore micro-keywords.
 
 This creates openings for smaller brands to dominate specialized searches.
@@ -278,7 +282,6 @@ This creates openings for smaller brands to dominate specialized searches.
 ---
 
 ## 2. Informational + transactional SEO together is powerful
-
 Educational content helped:
 - rank informational searches
 - build trust
@@ -289,7 +292,6 @@ Product pages then captured buying intent.
 ---
 
 ## 3. Internal linking matters far more than most stores realize
-
 Many Shopify stores operate with weak content relationships.
 
 Building strong topical pathways significantly improved crawl efficiency and contextual relevance.
@@ -297,7 +299,6 @@ Building strong topical pathways significantly improved crawl efficiency and con
 ---
 
 ## 4. Topical authority compounds
-
 Once multiple connected pages began ranking, impressions accelerated much faster than isolated content.
 
 This compounding effect is one of the most important concepts in modern SEO.

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import AutoTOC from "@/components/AutoTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -11,25 +12,6 @@ export const metadata = {
     canonical: "/pillars/business-credit",
   },
 };
-
-const toc = [
-  ["definition", "What Business Credit Is"],
-  ["why", "Why Business Credit Matters"],
-  ["foundation", "Business Credit Foundation"],
-  ["structure", "LLC, EIN & Business Identity"],
-  ["banking", "Business Banking Setup"],
-  ["bureaus", "Business Credit Bureaus"],
-  ["score", "Business Credit Score"],
-  ["net30", "Net 30 Vendors & Tradelines"],
-  ["cards", "Business Credit Cards"],
-  ["funding", "Business Funding & Financing"],
-  ["canada-usa", "Canada vs USA Notes"],
-  ["ai", "AI, Automation & Financial Systems"],
-  ["mistakes", "Common Mistakes"],
-  ["roadmap", "90-Day Roadmap"],
-  ["faq", "FAQ"],
-];
-
 const faq = [
   {
     q: "What is business credit?",
@@ -105,16 +87,7 @@ export default function BusinessCreditPage() {
       </div>
 
       <div className="pillar-page">
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            {toc.map(([id, label]) => (
-              <li key={id}>
-                <a href={`#${id}`}>{label}</a>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <AutoTOC selector=".pillar-section h2" />
 
         <div id="definition" className="pillar-section">
           <h2>What Business Credit Is</h2>

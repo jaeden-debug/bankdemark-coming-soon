@@ -1,6 +1,7 @@
 import { getAllPosts, getPostBySlug, renderPostHtml } from "../../../lib/blog";
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import AutoTOC from "@/components/AutoTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -49,6 +50,7 @@ export default async function BlogPostPage({ params }) {
 
         <hr className="divider" />
 
+        <AutoTOC selector="article .post-prose h2" />
         <div
           className="prose post-prose"
           dangerouslySetInnerHTML={{ __html: html }}

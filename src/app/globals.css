@@ -6630,3 +6630,202 @@ a {
     grid-template-columns: 1fr;
   }
 }
+
+.auto-toc {
+  margin: 32px 0;
+  padding: 22px;
+  border: 1px solid rgba(224, 154, 67, 0.22);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.auto-toc-title {
+  margin: 0 0 14px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.auto-toc ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.auto-toc li {
+  margin: 8px 0;
+}
+
+.auto-toc a {
+  text-decoration: none;
+}
+
+.auto-toc a:hover {
+  text-decoration: underline;
+}
+
+article h2 {
+  scroll-margin-top: 120px;
+}
+
+/* Match blog generated TOC spacing to pillar TOCs */
+.post-prose + .auto-toc,
+article > .auto-toc {
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (min-width: 768px) {
+  .post-prose + .auto-toc,
+  article > .auto-toc {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .auto-toc {
+    width: auto;
+    max-width: calc(100% - 32px);
+  }
+}
+
+/* Prevent mobile horizontal drag / white edge */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  background: var(--bg, #050505);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+video,
+iframe,
+table,
+pre,
+code {
+  max-width: 100%;
+}
+
+.prose,
+.post-prose,
+.pillar-section,
+.auto-toc {
+  max-width: 100%;
+  overflow-wrap: break-word;
+}
+
+.prose table,
+.post-prose table {
+  display: block;
+  overflow-x: auto;
+}
+
+/* Lighthouse/mobile stability fixes */
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  background: var(--bg, #080705);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+/* Auto-generated TOC */
+.auto-toc {
+  min-height: 220px;
+  margin: 28px auto;
+  padding: 22px;
+  border-radius: 18px;
+  max-width: min(100%, 920px);
+}
+
+@media (max-width: 700px) {
+  .auto-toc {
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+    padding: 18px;
+    min-height: 260px;
+  }
+}
+
+/* Accessibility: links must not rely only on color */
+.prose a,
+.post-prose a,
+.pillar-section a,
+.calculator-content a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Prevent anchor jumps hiding headings */
+h2,
+h3 {
+  scroll-margin-top: 120px;
+}
+
+.auto-toc {
+  contain: layout paint;
+  min-height: 300px;
+}
+
+.auto-toc-empty {
+  visibility: hidden;
+}
+
+@media (max-width: 700px) {
+  .auto-toc {
+    min-height: 360px;
+  }
+}
+
+.pillar-section,
+.post-prose > h2,
+.post-prose > h3 {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 600px;
+}
+
+
+/* Budget calculator mobile LCP fix */
+@media (max-width: 768px) {
+  .page-hero {
+    padding-top: 42px !important;
+    padding-bottom: 26px !important;
+    min-height: auto !important;
+  }
+
+  .page-hero h1 {
+    font-size: clamp(2.15rem, 10vw, 3.2rem) !important;
+    line-height: 1 !important;
+    margin-bottom: 14px !important;
+    text-wrap: balance;
+  }
+
+  .page-hero p {
+    font-size: 1rem !important;
+    line-height: 1.45 !important;
+    max-width: 34rem !important;
+    margin-bottom: 0 !important;
+  }
+
+  .page-hero + .calculator-shell,
+  .page-hero + .pillar-layout,
+  .page-hero + section {
+    margin-top: 18px !important;
+  }
+}

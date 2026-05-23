@@ -1,9 +1,12 @@
 # How to Use an Investment Calculator Properly
 
+
+---
 ---
 
-## SEO Metadata
 
+---
+## SEO Metadata
 **Slug:** `/blog/investment-calculator-guide`
 **Meta Title:** `How to Use an Investment Calculator Properly`
 **Meta Description:** `Learn how to use an investment calculator the right way. Understand inputs, return assumptions, inflation adjustments, and how to avoid common planning mistakes.`
@@ -11,185 +14,7 @@
 **Secondary Keywords:** investment growth calculator, investment return calculator, compound interest calculator, how to use investment calculator
 
 ---
-
-## Schema: Article JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "Article",
-  "headline": "How to Use an Investment Calculator Properly",
-  "description": "A complete guide to using an investment calculator — understanding all inputs, setting realistic return assumptions, factoring in inflation, and making your projections meaningful for real financial planning.",
-  "author": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "url": "https://bankdemark.com"
-  },
-  "publisher": {
-    "@type": "Organization",
-    "name": "BankDeMark",
-    "logo": {
-      "@type": "ImageObject",
-      "url": "https://bankdemark.com/logo.png"
-    }
-  },
-  "datePublished": "2026-05-22",
-  "dateModified": "2026-05-22",
-  "mainEntityOfPage": {
-    "@type": "WebPage",
-    "@id": "https://bankdemark.com/blog/investment-calculator-guide"
-  },
-  "image": "https://bankdemark.com/images/investment-calculator-guide.jpg",
-  "keywords": "investment calculator, investment growth calculator, compound interest calculator, return assumptions, financial planning"
-}
-```
-
-## Schema: BreadcrumbList JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://bankdemark.com" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://bankdemark.com/blog" },
-    { "@type": "ListItem", "position": 3, "name": "Investment Calculator Guide", "item": "https://bankdemark.com/blog/investment-calculator-guide" }
-  ]
-}
-```
-
-## Schema: HowTo JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "HowTo",
-  "name": "How to Use an Investment Calculator Properly",
-  "description": "A step-by-step guide to entering accurate inputs and interpreting investment calculator results for financial planning.",
-  "step": [
-    {
-      "@type": "HowToStep",
-      "position": 1,
-      "name": "Enter your initial investment amount",
-      "text": "Input the dollar amount you are starting with today. This is your principal — the base on which compound growth begins."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 2,
-      "name": "Set your monthly contribution",
-      "text": "Enter the amount you plan to add to your investment account each month. Consistent monthly contributions are often more impactful than the initial lump sum."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 3,
-      "name": "Enter your time horizon",
-      "text": "Input the number of years you plan to remain invested. Time is the most powerful variable in compound growth."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 4,
-      "name": "Set a realistic annual return assumption",
-      "text": "Use a historically grounded return assumption. For a diversified equity portfolio, 6–8% is commonly used for moderate planning. Avoid using overly optimistic figures."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 5,
-      "name": "Apply an inflation adjustment (if available)",
-      "text": "If the calculator supports it, apply an inflation rate (historically ~2–3%) to see your results in real (today's dollar) purchasing power, not just nominal future dollars."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 6,
-      "name": "Run multiple scenarios",
-      "text": "Calculate results under conservative (5%), moderate (7%), and optimistic (9%) return assumptions to understand your range of possible outcomes."
-    },
-    {
-      "@type": "HowToStep",
-      "position": 7,
-      "name": "Use the result to set contribution targets",
-      "text": "Work backwards from your target amount to determine the required monthly contribution. Adjust your actual contribution to meet or exceed this target."
-    }
-  ]
-}
-```
-
-## Schema: FAQPage JSON-LD
-
-```json
-{
-  "@context": "https://schema.org",
-  "@type": "FAQPage",
-  "mainEntity": [
-    {
-      "@type": "Question",
-      "name": "What does an investment calculator do?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "An investment calculator projects the future value of your investments based on inputs you provide: initial amount, monthly contributions, annual return rate, time horizon, and optionally inflation. It uses the compound interest formula to estimate how your money grows over time."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What return rate should I use in an investment calculator?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "For a diversified equity portfolio, commonly used planning assumptions are 6–8% annually for moderate scenarios and 5–6% for conservative scenarios. The historical S&P 500 average is approximately 10% nominal, but planning conservatively accounts for fees, asset allocation, and sequence-of-returns risk."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Should I use nominal or real returns in an investment calculator?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Both are useful but for different purposes. Nominal return assumptions show your future dollar balance. Real (inflation-adjusted) return assumptions show your future purchasing power. For retirement planning, inflation-adjusted figures are more meaningful since prices will be higher in the future."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "How accurate are investment calculator projections?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Investment calculators are planning tools, not guarantees. They assume a constant return rate applied uniformly each year — an assumption that does not reflect reality. Actual investment returns fluctuate significantly year to year. The projections are useful for goal-setting and contribution planning but should not be treated as precise predictions."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "What is the most important input in an investment calculator?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Time horizon is arguably the most impactful input due to the exponential nature of compound growth. Even small amounts grow substantially over long periods. Monthly contribution amount is the second most impactful variable — it is also the one most directly within your control."
-      }
-    },
-    {
-      "@type": "Question",
-      "name": "Can an investment calculator account for taxes?",
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": "Basic investment calculators typically do not account for taxes. For a more accurate projection of after-tax wealth, use separate tax-sheltered account calculations (TFSA in Canada, Roth IRA in the USA grow tax-free) and consult a tax professional for taxable account projections."
-      }
-    }
-  ]
-}
-```
-
----
-
-## Table of Contents
-
-1. [Quick Answer: Using an Investment Calculator](#quick-answer)
-2. [What an Investment Calculator Does](#what-it-does)
-3. [All Inputs Explained](#inputs-explained)
-4. [Monthly Contributions: The Most Controllable Variable](#monthly-contributions)
-5. [Setting Your Return Assumption](#return-assumptions)
-6. [Inflation Adjustments: Nominal vs. Real](#inflation-assumptions)
-7. [Common Mistakes When Using Investment Calculators](#common-mistakes)
-8. [How to Use Scenarios for Better Planning](#scenario-planning)
-9. [FAQ: Investment Calculator Guide](#faq)
-
----
-
 ## Quick Answer: Using an Investment Calculator {#quick-answer}
-
 **What an investment calculator does in one paragraph:** An investment calculator uses compound interest math to project how your money will grow over time based on your starting amount, monthly contributions, expected return rate, and investment horizon. It is a planning tool — not a guarantee. Use it to set contribution targets, visualize compound growth, and compare scenarios. Always run both conservative and optimistic scenarios to understand your range of outcomes.
 
 > **Try it now:** [BankDeMark Investment Calculator](/calculators/investment-calculator) — model your own compound growth projections with multiple scenarios.
@@ -197,7 +22,6 @@
 ---
 
 ## What an Investment Calculator Does {#what-it-does}
-
 ### The Core Function
 
 An investment calculator is a computational tool that applies the mathematics of compound interest to project the potential future value of an investment. Given a set of inputs, it calculates how much your money could be worth after a specified period.
@@ -239,7 +63,6 @@ Understanding what investment calculators cannot do is as important as knowing w
 ---
 
 ## All Inputs Explained {#inputs-explained}
-
 ### 1. Initial Investment (Starting Balance)
 
 This is the amount you are investing today — your initial principal. It could be $0 (starting from scratch), $500 (first investment), or $50,000 (a lump sum from savings, an inheritance, or a business sale).
@@ -297,7 +120,6 @@ Some calculators include an optional inflation adjustment that converts future n
 ---
 
 ## Monthly Contributions: The Most Controllable Variable {#monthly-contributions}
-
 ### Why Monthly Contributions Are More Important Than You Think
 
 Many people focus on finding higher-return investments as their primary wealth-building strategy. The research suggests this is misguided for two reasons:
@@ -348,7 +170,6 @@ The total accumulated wealth under this strategy far exceeds the outcome of a fl
 ---
 
 ## Setting Your Return Assumption {#return-assumptions}
-
 ### The Most Common Calculator Mistake
 
 Entering an overly optimistic return assumption — often because you recently experienced or heard about strong recent returns — is the most common and consequential mistake people make with investment calculators. It produces projections that look impressive on paper but lead to under-saving relative to what is actually needed.
@@ -386,7 +207,6 @@ The difference: $166,000 — nearly 25% of the lower-fee portfolio balance. Fees
 ---
 
 ## Inflation Adjustments: Nominal vs. Real {#inflation-assumptions}
-
 ### Why This Distinction Matters for Planning
 
 Investment calculators typically show nominal future values — the dollar amount your account could hold in the future without adjusting for what those dollars are worth. Inflation erodes the purchasing power of future dollars.
@@ -421,7 +241,6 @@ For most planning scenarios, 2–2.5% is a reasonable baseline for both Canada a
 ---
 
 ## Common Mistakes When Using Investment Calculators {#common-mistakes}
-
 ### Mistake 1: Using Gross Returns Without Deducting Fees
 
 Enter the net return (gross return minus MER) to get accurate projections. A calculator is only as accurate as the inputs you provide.
@@ -453,7 +272,6 @@ Investment calculators are designed for long-term, diversified investment strate
 ---
 
 ## How to Use Scenarios for Better Planning {#scenario-planning}
-
 ### The Three-Scenario Framework
 
 Professional financial planners typically present clients with three scenarios:
@@ -497,7 +315,6 @@ If $900/month is not feasible, you have several levers:
 ---
 
 ## FAQ: Investment Calculator Guide {#faq}
-
 **Q: What does an investment calculator do?**
 An investment calculator projects the future value of your money based on compound growth. You enter your starting amount, monthly contributions, expected return rate, and time horizon — and it calculates how much your investment could grow to, assuming consistent returns at the rate specified.
 
@@ -519,7 +336,6 @@ Basic calculators typically do not. For tax-advantaged accounts (TFSA, Roth IRA)
 ---
 
 ## Internal Links
-
 - [BankDeMark Investment Calculator](/calculators/investment-calculator)
 - [Compound Interest Calculator](/calculators/compound-interest-calculator)
 - [Retirement Calculator](/calculators/retirement-calculator)
@@ -532,7 +348,6 @@ Basic calculators typically do not. For tax-advantaged accounts (TFSA, Roth IRA)
 ---
 
 ## Disclaimer
-
 *This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Investment projections shown in this article are illustrative examples only. Actual investment returns will differ. Investment involves risk including the possible loss of principal. Past performance does not guarantee future results. Consult a qualified financial advisor before making investment decisions.*
 
 ---

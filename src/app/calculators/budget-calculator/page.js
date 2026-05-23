@@ -41,19 +41,7 @@ export default function BudgetCalculatorPage() {
 
       <div className="pillar-page">
         <BudgetCalculator />
-
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            <li><a href="#what-is-a-budget-calculator">What a budget calculator is</a></li>
-            <li><a href="#how-budgeting-works">How budgeting works</a></li>
-            <li><a href="#budget-categories">Budget categories</a></li>
-            <li><a href="#mistakes">Common mistakes</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ol>
-        </div>
-
-        <div id="what-is-a-budget-calculator" className="pillar-section">
+<div id="what-is-a-budget-calculator" className="pillar-section">
           <h2>What Is a Budget Calculator?</h2>
           <p>A budget calculator helps you compare income against spending, debt, saving, and investing so you can see whether your monthly cash flow is working for or against you.</p>
         </div>

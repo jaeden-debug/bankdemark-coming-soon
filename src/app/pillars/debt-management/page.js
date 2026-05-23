@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import AutoTOC from "@/components/AutoTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -11,24 +12,6 @@ export const metadata = {
     canonical: "/pillars/debt-management",
   },
 };
-
-const toc = [
-  ["definition", "What Debt Management Means"],
-  ["why", "Why Debt Becomes a Trap"],
-  ["audit", "Debt Audit"],
-  ["cashflow", "Cash Flow & Budgeting"],
-  ["avalanche", "Debt Avalanche Method"],
-  ["snowball", "Debt Snowball Method"],
-  ["credit-card-debt", "Credit Card Debt"],
-  ["consolidation", "Debt Consolidation"],
-  ["relief", "Debt Relief & Settlement"],
-  ["credit", "Rebuilding Credit"],
-  ["canada-usa", "Canada vs USA Notes"],
-  ["prevention", "Preventing Future Debt"],
-  ["roadmap", "90-Day Debt Roadmap"],
-  ["faq", "FAQ"],
-];
-
 const faq = [
   {
     q: "What is debt management?",
@@ -138,16 +121,7 @@ export default function DebtManagementPage() {
       </div>
 
       <div className="pillar-page">
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            {toc.map(([id, label]) => (
-              <li key={id}>
-                <a href={`#${id}`}>{label}</a>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <AutoTOC selector=".pillar-section h2" />
 
         <div id="definition" className="pillar-section">
           <h2>What Debt Management Means</h2>

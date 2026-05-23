@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
+import AutoTOC from "@/components/AutoTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -14,23 +15,6 @@ export const metadata = {
 
 const linkClass =
   "font-bold text-[#d6b36a] underline decoration-[#d6b36a]/40 underline-offset-4 transition hover:text-[#f1d48a] hover:decoration-[#f1d48a]";
-
-const toc = [
-  ["definition", "What Personal Finance Is"],
-  ["why", "Why Personal Finance Matters"],
-  ["foundation", "The Money Foundation"],
-  ["budgeting", "Budgeting & Cash Flow"],
-  ["saving", "Saving Money & Emergency Funds"],
-  ["debt", "Debt Payoff & Financial Stress"],
-  ["credit", "Credit Score & Credit Building"],
-  ["banking", "Banking & Financial Accounts"],
-  ["tools", "Apps, Dashboards & AI Finance Tools"],
-  ["canada-usa", "Canada vs USA Notes"],
-  ["roadmap", "90-Day Personal Finance Roadmap"],
-  ["mistakes", "Common Money Mistakes"],
-  ["faq", "FAQ"],
-];
-
 const faq = [
   {
     q: "What is personal finance?",
@@ -106,16 +90,7 @@ export default function PersonalFinancePage() {
       </div>
 
       <div className="pillar-page">
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            {toc.map(([id, label]) => (
-              <li key={id}>
-                <a href={`#${id}`}>{label}</a>
-              </li>
-            ))}
-          </ol>
-        </div>
+        <AutoTOC selector=".pillar-section h2" />
 
         <div id="definition" className="pillar-section">
           <h2>What Personal Finance Is</h2>
