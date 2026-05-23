@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/wpm/i,
+  /^\/wpm%40/i,
+
   /^\/wp-includes\//i,
   /^\/wpm@/i,
 
