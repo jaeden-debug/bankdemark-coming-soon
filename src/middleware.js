@@ -1,6 +1,20 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/components\//i,
+  /^\/images\/stories\//i,
+  /^\/media\//i,
+  /^\/templates\//i,
+  /^\/modules\//i,
+  /^\/favicon\.ico$/i,
+  /\.swf$/i,
+  /\.gif$/i,
+  /\.jpg$/i,
+  /\.png$/i,
+  /\.doc$/i,
+  /\.xls$/i,
+  /\.pdf$/i,
+
   /^\/wp-admin/i,
   /^\/administrator/i,
   /^\/wp-content/i,
@@ -23,6 +37,16 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/component/content/article/1-common-category/361-02102014-l-lr-25-2014.html": "/pillars/banking",
+  "/component/content/article/249.html": "/pillars/banking",
+  "/component/content/article/362-29092014-l-lr-25092014-600-l-.html": "/pillars/banking",
+  "/component/content/article/363-15102014.html": "/pillars/banking",
+  "/component/content/article/365-17102014.html": "/pillars/banking",
+  "/component/content/article/372-30102014.html": "/pillars/banking",
+  "/feed/": "/blog",
+  "/fin-news/fin-gram.html": "/blog",
+  "/fin-news/fin-news.html": "/blog",
+
   "/poslugy-on-line/kalkuljator.html": "/calculators/compound-interest-calculator",
   "/ua/services_on_line/credit_calculator": "/calculators/mortgage-calculator",
   "/ua/services_on_line/depozit_calculator": "/calculators/compound-interest-calculator",
