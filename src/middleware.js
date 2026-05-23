@@ -1,6 +1,17 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/checkouts\//i,
+  /^\/galleries\//i,
+  /^\/image\//i,
+  /^\/page\//i,
+  /^\/products\/sw\.js$/i,
+  /^\/react(-dom)?\.js$/i,
+  /^\/.*\.pdf$/i,
+  /^\/sites\/default\//i,
+  /^\/slot-gacor-online\.jpg$/i,
+  /^\/wp-content\//i,
+
   /^\/ua\/services_on_line\/calculator\.js$/i,
   /^\/\.well-known\//i,
   /^\/2019\//i,
@@ -66,6 +77,8 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/favicon.webp": "/icon.png",
+
   "/ua/services/phisic/vklad": "/calculators/compound-interest-calculator",
   "/ua/services_on_line": "/calculators",
   "/ua/services_on_line/converter": "/calculators",
