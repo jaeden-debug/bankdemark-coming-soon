@@ -57,6 +57,8 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/ua/services/phisic": "/pillars/personal-finance",
+
   "/ua/about/face": "/about",
   "/ua/about/history": "/about",
   "/ua/about/partners": "/about",
@@ -240,11 +242,22 @@ const isOldUaServicesArticle =
   normalizedPath === "/ua/services" &&
   url.searchParams.has("article");
 
+
+const isOldUaServicesPhisicArticle =
+  normalizedPath === "/ua/services/phisic" &&
+  url.searchParams.has("article");
+
+const isOldUaServicesJuristArticle =
+  normalizedPath === "/ua/services/jurist" &&
+  url.searchParams.has("article");
+
 if (
   isOldUaArticle ||
   isOldUaArchiveArticle ||
   isOldUaActivityArticle ||
-  isOldUaServicesArticle
+  isOldUaServicesArticle ||
+  isOldUaServicesPhisicArticle ||
+  isOldUaServicesJuristArticle
 ) {
   return new NextResponse("Gone", {
     status: 410,
