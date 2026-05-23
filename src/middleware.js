@@ -1,6 +1,9 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/wp-includes\//i,
+  /^\/wpm@/i,
+
   /^\/checkouts\//i,
   /^\/galleries\//i,
   /^\/image\//i,
