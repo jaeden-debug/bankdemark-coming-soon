@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/administrator\/?$/i,
+  /^\/enz\/?$/i,
+  /^\/Normal\/?$/i,
+  /^\/sites\/demark\//i,
+
   /^\/components\//i,
   /^\/images\/stories\//i,
   /^\/media\//i,
@@ -37,6 +42,23 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/index.php?format=feed&type=atom": "/blog",
+  "/index.php?format=feed&type=rss": "/blog",
+  "/index.php?start=11": "/blog",
+  "/poslugy.feed?type=atom": "/pillars/banking",
+  "/poslugy.feed?type=rss": "/pillars/banking",
+  "/poslugy/corpor.feed?type=atom": "/pillars/business-credit",
+  "/poslugy/corpor.feed?type=rss": "/pillars/business-credit",
+  "/pro-bank/arhv-novin.feed?type=atom": "/blog",
+  "/pro-bank/arhv-novin.feed?type=rss": "/blog",
+  "/pro-bank/rejting.feed?type=atom": "/pillars/banking",
+  "/pro-bank/rejting.feed?type=rss": "/pillars/banking",
+  "/contacts.html": "/contact",
+  "/fin-news.html": "/blog",
+  "/fin-news/249.html": "/blog",
+  "/fin-news/55-dolg.html": "/pillars/debt-management",
+  "/fin-news/64-minfin.html": "/pillars/personal-finance",
+
   "/component/content/article/1-common-category/361-02102014-l-lr-25-2014.html": "/pillars/banking",
   "/component/content/article/249.html": "/pillars/banking",
   "/component/content/article/362-29092014-l-lr-25092014-600-l-.html": "/pillars/banking",
