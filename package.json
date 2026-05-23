@@ -17,11 +17,20 @@
     "resend": "^6.12.3"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
     "@tailwindcss/postcss": "^4.3.0",
     "autoprefixer": "^10.5.0",
+    "broken-link-checker": "^0.7.8",
+    "crawler": "^2.0.2",
     "eslint": "^9",
     "eslint-config-next": "16.2.6",
+    "html-validator-cli": "^7.0.1",
+    "lighthouse": "^12.8.2",
+    "linkinator": "^7.6.1",
+    "markdownlint-cli": "^0.48.0",
+    "pa11y": "^9.1.1",
     "postcss": "^8.5.15",
+    "sitemap": "^8.0.3",
     "tailwindcss": "^4.3.0"
   }
 }

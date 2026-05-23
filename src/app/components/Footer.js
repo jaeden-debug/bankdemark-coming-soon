@@ -27,7 +27,7 @@ export default function Footer() {
 
         <div className="footer-cols">
           <div className="footer-col">
-            <h4>Explore</h4>
+            <p className="footer-heading">Explore</p>
             <Link href="/pillars">Finance Pillars</Link>
             <Link href="/blog">Blog</Link>
             <Link href="/about">About</Link>
@@ -35,7 +35,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4>Topics</h4>
+            <p className="footer-heading">Topics</p>
             <Link href="/pillars/personal-finance">Personal Finance</Link>
             <Link href="/pillars/investing">Investing</Link>
             <Link href="/pillars/business-credit">Business Credit</Link>
@@ -43,7 +43,7 @@ export default function Footer() {
           </div>
 
           <div className="footer-col">
-            <h4>Legal</h4>
+            <p className="footer-heading">Legal</p>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>
             <Link href="/disclaimer">Disclaimer</Link>

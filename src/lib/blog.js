@@ -38,7 +38,7 @@ function cleanMarkdown(content) {
     .replace(/\*\*Target Keywords:\*\*.*$/gim, "")
     .replace(/^Internal Link Map[\s\S]*?(?=^## |^# |\Z)/gim, "")
     .replace(/^Suggested Supporting Articles[\s\S]*?(?=^## |^# |\Z)/gim, "")
-    .replace(/\[SOURCE NEEDED[^\]]*\]/g, "")
+    .replace(/\]*\]/g, "")
     .replace(/\{#[-a-z0-9]+\}/gi, "")
     .trim();
 }
