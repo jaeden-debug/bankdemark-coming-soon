@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/ua\/maino\/?$/i,
+  /^\/ua\/map\/?$/i,
+  /^\/ua\/search\/?$/i,
+
   /^\/ua\/activity\/?$/i,
   /^\/ua\/services\/?$/i,
   /^\/ua\/about\/archiv_news\/?$/i,
@@ -53,6 +57,24 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/ua/about/face": "/about",
+  "/ua/about/history": "/about",
+  "/ua/about/partners": "/about",
+  "/ua/about/vacancy": "/about",
+  "/ua/about/vacancy/vacancy_donetsk": "/about",
+  "/ua/about/vacancy/vacancy_kharkov": "/about",
+  "/ua/about/vacancy/vacancy_kyiv": "/about",
+  "/ua/about/visitka": "/about",
+  "/ua/activity": "/pillars/banking",
+  "/ua/activity/main_index": "/pillars/banking",
+  "/ua/activity/rating": "/pillars/banking",
+  "/ua/activity/year_report": "/pillars/banking",
+  "/ua/contacts": "/contact",
+  "/ua/finance_news": "/blog",
+  "/ua/On-line": "/calculators",
+  "/ua/services": "/pillars/banking",
+  "/ua/services/jurist": "/pillars/banking",
+
   "/pro-bank/akc.html": "/pillars/banking",
   "/pro-bank/arhv-novin.html": "/blog",
   "/pro-bank/information-for-owner.html": "/about",
