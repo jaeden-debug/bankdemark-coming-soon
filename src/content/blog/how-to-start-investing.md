@@ -299,10 +299,10 @@ The solution is not more market knowledge — it is better behavior.
 Every investor will experience market downturns. They are not anomalies — they are the normal operating condition of financial markets over any multi-year span. Understanding this intellectually before it happens makes it easier to stay disciplined when it does.
 
 Historical perspective:
-- The US stock market has had negative calendar years regularly throughout history (source: S&P Dow Jones Indices and NYU Stern historical return datasets)
-- Corrections of 10%+ are a normal part of equity investing (source: S&P Dow Jones Indices and historical market drawdown research)
-- Bear markets (20%+ declines) occur periodically and should be expected in long-term equity investing (source: S&P Dow Jones Indices and historical market drawdown research)
-- Broad US equity markets have historically recovered from major bear markets over time, although recovery timing varies widely (source: S&P Dow Jones Indices historical data)
+- The US stock market has had negative calendar years regularly throughout history <sup class="citation-ref"><a href="#source-sp-global-spiva-us">[1]</a></sup>
+- Corrections of 10%+ are a normal part of equity investing <sup class="citation-ref"><a href="#source-sp-global-spiva-us">[1]</a></sup>
+- Bear markets (20%+ declines) occur periodically and should be expected in long-term equity investing <sup class="citation-ref"><a href="#source-sp-global-spiva-us">[1]</a></sup>
+- Broad US equity markets have historically recovered from major bear markets over time, although recovery timing varies widely <sup class="citation-ref"><a href="#source-sp-global-spiva-us">[1]</a></sup>
 
 The investors who stay invested through downturns consistently benefit from the subsequent recovery. Those who sell lock in their losses permanently.
 
@@ -429,3 +429,11 @@ Monthly at most for new investors; quarterly or annually is sufficient for disci
 
 *Published by BankDeMark | Finance Intelligence Platform*
 *Pillar: [Investing](/pillars/investing)*
+
+---
+
+## Sources
+
+<ol class="source-bibliography">
+<li id="source-sp-global-spiva-us"><strong>[1]</strong> <a href="https://www.spglobal.com/spdji/en/spiva/article/spiva-us/" target="_blank" rel="noopener noreferrer">S&P Dow Jones Indices: SPIVA U.S. Scorecard</a></li>
+</ol>

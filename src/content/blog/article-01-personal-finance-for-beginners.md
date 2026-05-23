@@ -29,9 +29,9 @@ Most people treat these areas in isolation. The BankDeMark approach treats them 
 
 ### Why Financial Literacy Is the Most Valuable Skill You Can Learn
 
-Global financial literacy surveys regularly show that many adults struggle with basic questions about compound interest, inflation, and diversification (source: OECD/INFE financial literacy research and S&P Global Financial Literacy Survey).
+Global financial literacy surveys regularly show that many adults struggle with basic questions about compound interest, inflation, and diversification <sup class="citation-ref"><a href="#source-oecd-financial-literacy">[1]</a></sup>.
 
-Low financial literacy is associated with weaker savings behavior, poorer debt decisions, and lower long-term financial resilience (source: OECD/INFE and consumer finance research).
+Low financial literacy is associated with weaker savings behavior, poorer debt decisions, and lower long-term financial resilience <sup class="citation-ref"><a href="#source-oecd-financial-literacy">[1]</a></sup>.
 
 The good news: financial literacy is entirely learnable. Unlike many professional skills, the fundamentals of personal finance can be studied, internalized, and applied by any person at any income level.
 
@@ -433,7 +433,7 @@ Saving preserves money. Investing grows it.
 
 Inflation erodes purchasing power over time. Money sitting in a zero-interest account loses real value whenever inflation is positive.
 
-Broad US equity indexes have historically outpaced inflation over long periods, although exact returns depend on the index, timeframe, fees, and inflation assumptions (source: S&P Dow Jones Indices and NYU Stern historical returns). No savings account consistently matches this.
+Broad US equity indexes have historically outpaced inflation over long periods, although exact returns depend on the index, timeframe, fees, and inflation assumptions <sup class="citation-ref"><a href="#source-sp-global-spiva-us">[2]</a></sup>. No savings account consistently matches this.
 
 Note: Past performance does not guarantee future results. All investing involves risk, including potential loss of principal.
 
@@ -790,3 +790,11 @@ Social accountability is a powerful behavioral tool. Sharing your savings goal w
 ---
 
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Financial regulations, product features, and contribution limits vary by jurisdiction and change over time. Always consult with qualified professionals before making financial decisions.
+
+---
+
+## Sources
+
+<ol class="source-bibliography">
+<li id="source-oecd-financial-literacy"><strong>[1]</strong> <a href="https://www.oecd.org/financial/education/" target="_blank" rel="noopener noreferrer">OECD: Financial Literacy and Education</a></li>
+</ol>

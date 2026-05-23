@@ -353,7 +353,7 @@ Start with whatever you can. The formula is unforgiving about time but generous 
 
 **Roth IRA:** Tax-free compound growth on after-tax contributions. 2024 contribution limit: $7,000/year ($583/month). The $500/month examples apply directly .
 
-**401(k):** Pre-tax contributions with employer match. $23,000 annual limit in 2024 (source: IRS retirement plan contribution limits). The $1,000/month and above examples become fully applicable for higher earners maximizing tax-deferred accounts.
+**401(k):** Pre-tax contributions with employer match. $23,000 annual limit in 2024 <sup class="citation-ref"><a href="#source-irs-retirement-limits">[1]</a></sup>. The $1,000/month and above examples become fully applicable for higher earners maximizing tax-deferred accounts.
 
 **HSA:** Triple tax-advantaged account ($4,150 individual / $8,300 family in 2024; source: IRS HSA contribution limits) that functions as a stealth retirement vehicle.
 
@@ -409,3 +409,11 @@ Time matters more than the amount invested. Starting 10 years earlier often prod
 ---
 
 *BankDeMark Editorial Team — Updated May 2026*
+
+---
+
+## Sources
+
+<ol class="source-bibliography">
+<li id="source-irs-retirement-limits"><strong>[1]</strong> <a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions" target="_blank" rel="noopener noreferrer">IRS: Retirement Plan Contribution Limits</a></li>
+</ol>

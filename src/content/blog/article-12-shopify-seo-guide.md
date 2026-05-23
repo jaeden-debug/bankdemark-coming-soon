@@ -268,7 +268,7 @@ This structure improves both readability and Google's ability to understand the 
 
 ### Product Schema Markup
 
-Product schema (structured data) helps eligible ecommerce pages qualify for enhanced Google search appearances such as price, availability, ratings, and review information (source: Google Search Central structured data documentation).
+Product schema (structured data) helps eligible ecommerce pages qualify for enhanced Google search appearances such as price, availability, ratings, and review information <sup class="citation-ref"><a href="#source-google-search-central">[1]</a></sup>.
 
 **Essential product schema fields:**
 - `name` (product name)
@@ -560,7 +560,7 @@ AI-assisted content at scale requires a quality control layer:
 ---
 
 ## 10. Link Building for Ecommerce Stores {#link-building-ecommerce}
-Backlinks remain one of Google's most important authority and discovery signals (source: Google Search Central link best practices and SEO documentation). For ecommerce stores, link building requires a different strategy than content sites — the focus is on earning links to both your content hub and your collection/product pages.
+Backlinks remain one of Google's most important authority and discovery signals <sup class="citation-ref"><a href="#source-google-search-central">[1]</a></sup>. For ecommerce stores, link building requires a different strategy than content sites — the focus is on earning links to both your content hub and your collection/product pages.
 
 ### Ecommerce Link Building Tactics
 
@@ -729,3 +729,11 @@ Most foundational Shopify SEO — product page optimization, meta tags, image co
 ---
 
 *BankDeMark Editorial Team — Updated May 2026*
+
+---
+
+## Sources
+
+<ol class="source-bibliography">
+<li id="source-google-search-central"><strong>[1]</strong> <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central Documentation</a></li>
+</ol>

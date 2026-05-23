@@ -1,0 +1,291 @@
+{
+  "google-search-central": {
+    "title": "Google Search Central Documentation",
+    "url": "https://developers.google.com/search/docs",
+    "aliases": [
+      "google search central",
+      "google seo documentation",
+      "google helpful content",
+      "google search documentation"
+    ]
+  },
+  "google-structured-data": {
+    "title": "Google Search Central: Structured Data",
+    "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+    "aliases": [
+      "structured data",
+      "schema markup",
+      "google structured data",
+      "rich results"
+    ]
+  },
+  "google-core-web-vitals": {
+    "title": "Google Search Central: Core Web Vitals",
+    "url": "https://developers.google.com/search/docs/appearance/core-web-vitals",
+    "aliases": [
+      "core web vitals",
+      "lcp",
+      "inp",
+      "cls",
+      "page experience"
+    ]
+  },
+  "web-dev-vitals": {
+    "title": "web.dev: Core Web Vitals",
+    "url": "https://web.dev/articles/vitals",
+    "aliases": [
+      "web.dev vitals",
+      "lighthouse",
+      "pagespeed",
+      "page speed"
+    ]
+  },
+  "shopify-seo": {
+    "title": "Shopify Help Center: SEO",
+    "url": "https://help.shopify.com/en/manual/promoting-marketing/seo",
+    "aliases": [
+      "shopify seo",
+      "shopify metadata",
+      "shopify sitemap",
+      "shopify product seo"
+    ]
+  },
+  "ahrefs-blog": {
+    "title": "Ahrefs SEO Blog",
+    "url": "https://ahrefs.com/blog/",
+    "aliases": [
+      "ahrefs",
+      "ahrefs research",
+      "backlink research",
+      "keyword research"
+    ]
+  },
+  "ahrefs-long-tail": {
+    "title": "Ahrefs: Long-Tail Keywords",
+    "url": "https://ahrefs.com/blog/long-tail-keywords/",
+    "aliases": [
+      "long-tail keywords",
+      "long tail keywords",
+      "long-tail seo"
+    ]
+  },
+  "ahrefs-internal-links": {
+    "title": "Ahrefs: Internal Links for SEO",
+    "url": "https://ahrefs.com/blog/internal-links-for-seo/",
+    "aliases": [
+      "internal linking",
+      "internal links",
+      "authority distribution"
+    ]
+  },
+  "semrush-keyword-research": {
+    "title": "Semrush: Keyword Research",
+    "url": "https://www.semrush.com/blog/keyword-research/",
+    "aliases": [
+      "semrush keyword research",
+      "keyword clustering",
+      "search intent"
+    ]
+  },
+  "semrush-ecommerce-seo": {
+    "title": "Semrush: Ecommerce SEO",
+    "url": "https://www.semrush.com/blog/ecommerce-seo/",
+    "aliases": [
+      "ecommerce seo",
+      "ecommerce content marketing",
+      "product page seo"
+    ]
+  },
+  "cfpb-credit": {
+    "title": "CFPB: Credit Reports and Scores",
+    "url": "https://www.consumerfinance.gov/consumer-tools/credit-reports-and-scores/",
+    "aliases": [
+      "cfpb credit",
+      "credit scores",
+      "credit reports"
+    ]
+  },
+  "ftc-credit-reports": {
+    "title": "FTC: Free Credit Reports",
+    "url": "https://consumer.ftc.gov/articles/free-credit-reports",
+    "aliases": [
+      "free credit reports",
+      "ftc credit reports",
+      "credit report disputes"
+    ]
+  },
+  "bank-of-canada-inflation": {
+    "title": "Bank of Canada: Inflation Target",
+    "url": "https://www.bankofcanada.ca/core-functions/monetary-policy/",
+    "aliases": [
+      "bank of canada",
+      "inflation target",
+      "canadian inflation"
+    ]
+  },
+  "federal-reserve": {
+    "title": "Federal Reserve",
+    "url": "https://www.federalreserve.gov/",
+    "aliases": [
+      "federal reserve",
+      "fed",
+      "us inflation"
+    ]
+  },
+  "sec-investor": {
+    "title": "Investor.gov by the SEC",
+    "url": "https://www.investor.gov/",
+    "aliases": [
+      "sec investor",
+      "investor.gov",
+      "investing basics"
+    ]
+  },
+  "sec-compound-interest": {
+    "title": "Investor.gov: Compound Interest Calculator",
+    "url": "https://www.investor.gov/financial-tools-calculators/calculators/compound-interest-calculator",
+    "aliases": [
+      "compound interest calculator",
+      "compound interest"
+    ]
+  },
+  "spiva": {
+    "title": "S&P Dow Jones Indices: SPIVA",
+    "url": "https://www.spglobal.com/spdji/en/spiva/",
+    "aliases": [
+      "spiva",
+      "active vs passive",
+      "index investing"
+    ]
+  },
+  "vanguard-education": {
+    "title": "Vanguard Investor Education",
+    "url": "https://investor.vanguard.com/investor-resources-education",
+    "aliases": [
+      "vanguard",
+      "investor behavior",
+      "dollar cost averaging"
+    ]
+  },
+  "morningstar-mind-the-gap": {
+    "title": "Morningstar: Mind the Gap",
+    "url": "https://www.morningstar.com/lp/mind-the-gap",
+    "aliases": [
+      "morningstar",
+      "mind the gap",
+      "behavior gap"
+    ]
+  },
+  "osfi-ai": {
+    "title": "OSFI: Guidance Library",
+    "url": "https://www.osfi-bsif.gc.ca/en/guidance/guidance-library",
+    "aliases": [
+      "osfi",
+      "ai governance",
+      "financial regulation"
+    ]
+  },
+  "sp-global-spiva-us": {
+    "title": "S&P Dow Jones Indices: SPIVA U.S. Scorecard",
+    "url": "https://www.spglobal.com/spdji/en/spiva/article/spiva-us/",
+    "aliases": [
+      "S&P Dow Jones Indices",
+      "SPIVA scorecards",
+      "SPIVA",
+      "active vs passive investing",
+      "fund underperformance"
+    ]
+  },
+  "nyu-stern-historical-returns": {
+    "title": "NYU Stern: Historical Returns on Stocks, Bonds and Bills",
+    "url": "https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html",
+    "aliases": [
+      "NYU Stern historical returns",
+      "historical return datasets",
+      "historical stock market returns",
+      "stocks bonds bills historical returns",
+      "S&P Dow Jones Indices and historical return datasets",
+      "S&P Dow Jones Indices and historical market drawdown datasets",
+      "S&P Dow Jones Indices, NYU Stern historical returns, and Portfolio Visualizer"
+    ]
+  },
+  "portfolio-visualizer": {
+    "title": "Portfolio Visualizer",
+    "url": "https://www.portfoliovisualizer.com/",
+    "aliases": [
+      "Portfolio Visualizer",
+      "portfolio backtesting",
+      "asset class returns",
+      "historical portfolio returns"
+    ]
+  },
+  "cra-tfsa-dollar-limit": {
+    "title": "Canada Revenue Agency: TFSA Dollar Limit",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html",
+    "aliases": [
+      "CRA TFSA dollar limit guidance",
+      "TFSA dollar limit",
+      "TFSA contribution room",
+      "CRA TFSA contribution limit",
+      "tax free savings account contribution limit"
+    ]
+  },
+  "cra-rrsp": {
+    "title": "Canada Revenue Agency: RRSPs and Related Plans",
+    "url": "https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/rrsps-related-plans.html",
+    "aliases": [
+      "CRA RRSP",
+      "RRSP contribution limit",
+      "RRSP deduction limit",
+      "registered retirement savings plan"
+    ]
+  },
+  "canada-fcac": {
+    "title": "Financial Consumer Agency of Canada",
+    "url": "https://www.canada.ca/en/financial-consumer-agency.html",
+    "aliases": [
+      "Financial Consumer Agency of Canada",
+      "FCAC",
+      "Canadian financial literacy",
+      "Canadian credit system",
+      "Canada financial consumer agency"
+    ]
+  },
+  "oecd-financial-literacy": {
+    "title": "OECD: Financial Literacy and Education",
+    "url": "https://www.oecd.org/financial/education/",
+    "aliases": [
+      "OECD financial literacy",
+      "OECD INFE financial literacy research",
+      "OECD/INFE financial literacy research",
+      "financial literacy surveys"
+    ]
+  },
+  "sp-global-finlit": {
+    "title": "S&P Global Financial Literacy Survey",
+    "url": "https://gflec.org/initiatives/sp-global-finlit-survey/",
+    "aliases": [
+      "S&P Global Financial Literacy Survey",
+      "global financial literacy survey"
+    ]
+  },
+  "irs-retirement-limits": {
+    "title": "IRS: Retirement Plan Contribution Limits",
+    "url": "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions",
+    "aliases": [
+      "IRS retirement plan contribution limits",
+      "401(k) contribution limit",
+      "IRA contribution limit",
+      "retirement plan contribution limits"
+    ]
+  },
+  "irs-hsa-limits": {
+    "title": "IRS: Health Savings Accounts and Other Tax-Favored Health Plans",
+    "url": "https://www.irs.gov/publications/p969",
+    "aliases": [
+      "IRS HSA contribution limits",
+      "HSA contribution limits",
+      "health savings account limits"
+    ]
+  }
+}

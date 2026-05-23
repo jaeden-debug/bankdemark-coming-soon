@@ -69,11 +69,11 @@ For beginners, the most accessible and evidence-backed starting point is a diver
 ## Why Investing Matters More Than Ever {#why-investing-matters}
 ### The Inflation Problem
 
-Inflation is the slow erosion of your purchasing power over time. Canada and the United States both use 2% inflation targets as central monetary policy anchors (source: Bank of Canada and Federal Reserve). That means money sitting idle in a savings account earning 0.5% annually is effectively losing value every year.
+Inflation is the slow erosion of your purchasing power over time. Canada and the United States both use 2% inflation targets as central monetary policy anchors <sup class="citation-ref"><a href="#source-bank-of-canada-inflation">[1]</a></sup>. That means money sitting idle in a savings account earning 0.5% annually is effectively losing value every year.
 
 If inflation runs at 3% and your savings account yields 0.5%, your real return is negative 2.5%. After 30 years, the purchasing power of $10,000 left in that account would be significantly diminished.
 
-Diversified equities have historically delivered positive real returns over long periods, though the exact return depends heavily on market, timeframe, fees, and asset allocation (source: S&P Dow Jones Indices, NYU Stern historical returns, and Portfolio Visualizer) — far above inflation — though past performance does not guarantee future results.
+Diversified equities have historically delivered positive real returns over long periods, though the exact return depends heavily on market, timeframe, fees, and asset allocation <sup class="citation-ref"><a href="#source-nyu-stern-historical-returns">[1]</a></sup> — far above inflation — though past performance does not guarantee future results.
 
 ### The Pension Problem
 
@@ -120,7 +120,7 @@ An individual stock represents a fractional ownership share in a single company.
 - Concentrated risk — a single company's failure can wipe out your investment
 - Requires significant research, time, and financial literacy
 - Emotional difficulty of holding through downturns
-- Many individual investors underperform the funds they own because of timing and behavior gaps (source: Morningstar Mind the Gap research)
+- Many individual investors underperform the funds they own because of timing and behavior gaps <sup class="citation-ref"><a href="#source-morningstar-mind-the-gap">[2]</a></sup>
 
 For beginners, individual stock picking is generally not recommended as a primary strategy. The research burden is high, and the evidence suggests most retail investors achieve better outcomes with diversified index strategies.
 
@@ -146,7 +146,7 @@ ETFs can track anything: a specific index, a sector, a country, a commodity, or 
 
 An index fund is any investment fund — mutual fund or ETF — that tracks a market index. The most famous index is the S&P 500, which tracks the 500 largest publicly traded companies in the United States.
 
-Rather than having a fund manager pick and choose investments, an index fund simply mirrors the composition of the index it tracks. This passive management approach results in significantly lower fees and, over the long term, competitive performance versus many actively managed funds over long horizons, largely because lower fees create a structural advantage (source: SPIVA scorecards).
+Rather than having a fund manager pick and choose investments, an index fund simply mirrors the composition of the index it tracks. This passive management approach results in significantly lower fees and, over the long term, competitive performance versus many actively managed funds over long horizons, largely because lower fees create a structural advantage <sup class="citation-ref"><a href="#source-spiva">[3]</a></sup>.
 
 **Key insight:** Most index funds today are structured as ETFs. When people say "invest in an index fund," they usually mean "buy an index-tracking ETF."
 
@@ -214,13 +214,13 @@ If high-interest debt exists, paying it off first is mathematically superior to 
 ## The Best Beginner Investing Strategy {#best-beginner-investing-strategy}
 ### The Core Principle: Simplicity Wins
 
-Retail investor behavior research consistently shows that complexity, timing, and emotional trading can damage realized returns (source: Morningstar Mind the Gap and Vanguard investor behavior research). Sophisticated, complex strategies sound appealing but introduce more opportunities for behavioral errors, higher costs, and poor timing decisions.
+Retail investor behavior research consistently shows that complexity, timing, and emotional trading can damage realized returns <sup class="citation-ref"><a href="#source-vanguard-education">[4]</a></sup>. Sophisticated, complex strategies sound appealing but introduce more opportunities for behavioral errors, higher costs, and poor timing decisions.
 
 The best beginner investing strategy can be described in four steps:
 
 ### Step 1: Open a Tax-Advantaged Account
 
-In Canada: Open a TFSA (Tax-Free Savings Account) first. Contributions are not tax-deductible, but all growth and withdrawals are completely tax-free. Every Canadian resident 18+ has annual contribution room (currently $7,000 per year as of 2026 (source: CRA TFSA dollar limit guidance)). Once you maximize your TFSA, open an RRSP for additional tax-sheltered growth.
+In Canada: Open a TFSA (Tax-Free Savings Account) first. Contributions are not tax-deductible, but all growth and withdrawals are completely tax-free. Every Canadian resident 18+ has annual contribution room (currently $7,000 per year as of 2026 <sup class="citation-ref"><a href="#source-cra-tfsa-dollar-limit">[2]</a></sup>). Once you maximize your TFSA, open an RRSP for additional tax-sheltered growth.
 
 In the USA: Open a Roth IRA first if you are in a lower tax bracket. Contributions are made with after-tax dollars, but all growth and qualified withdrawals are tax-free.. If your employer offers a 401(k) with a match, contribute at least enough to capture the full match first — it is an immediate, guaranteed 50–100% return.
 
@@ -255,7 +255,7 @@ Dollar-cost averaging (DCA) means investing a fixed dollar amount at regular int
 - You buy more shares when prices are low, fewer when prices are high
 - Removes emotional decision-making from the process
 - Builds the investment habit through automation
-- Consistent contributors reduce timing risk and avoid the behavioral trap of waiting for perfect market conditions (source: Vanguard and Morningstar investor behavior research)
+- Consistent contributors reduce timing risk and avoid the behavioral trap of waiting for perfect market conditions <sup class="citation-ref"><a href="#source-vanguard-education">[4]</a></sup>
 
 Set up automatic contributions from your bank account to your brokerage on payday. Automate it and ignore short-term market noise.
 
@@ -277,7 +277,7 @@ Understanding what not to do is as important as knowing what to do. The followin
 
 ### Mistake 1: Trying to Time the Market
 
-Market timing means attempting to buy when prices are low and sell when prices are high. In theory, it sounds rational. In practice, even professional fund managers with armies of analysts often fail to outperform simple benchmark exposure after costs over long periods (source: SPIVA scorecards).
+Market timing means attempting to buy when prices are low and sell when prices are high. In theory, it sounds rational. In practice, even professional fund managers with armies of analysts often fail to outperform simple benchmark exposure after costs over long periods <sup class="citation-ref"><a href="#source-spiva">[3]</a></sup>.
 
 For individual investors without institutional resources, trying to time the market almost always results in buying high (when optimism is peak), selling low (when fear sets in), and earning worse returns than a simple buy-and-hold index strategy.
 
@@ -285,7 +285,7 @@ For individual investors without institutional resources, trying to time the mar
 
 ### Mistake 2: Panic-Selling During Market Downturns
 
-Markets experience significant downturns regularly. Corrections, bear markets, and severe crashes are normal parts of long-term equity investing, although their timing and severity vary widely (source: S&P Dow Jones Indices and historical market drawdown datasets). Every one of these downturns has been followed by a market recovery that reached new all-time highs — eventually.
+Markets experience significant downturns regularly. Corrections, bear markets, and severe crashes are normal parts of long-term equity investing, although their timing and severity vary widely <sup class="citation-ref"><a href="#source-nyu-stern-historical-returns">[1]</a></sup>. Every one of these downturns has been followed by a market recovery that reached new all-time highs — eventually.
 
 Panic-selling turns a paper loss into a permanent, realized loss. The investors who stay invested through downturns consistently outperform those who sell and wait for conditions to "improve."
 
@@ -293,7 +293,7 @@ Panic-selling turns a paper loss into a permanent, realized loss. The investors 
 
 ### Mistake 3: Chasing Past Performance
 
-A fund that returned 35% last year seems more attractive than one that returned 8%. But past performance does not predict future results — performance persistence is weak across many fund categories (source: SPIVA persistence scorecards). Last year's top performer is often next year's underperformer due to mean reversion.
+A fund that returned 35% last year seems more attractive than one that returned 8%. But past performance does not predict future results — performance persistence is weak across many fund categories <sup class="citation-ref"><a href="#source-spiva">[3]</a></sup>. Last year's top performer is often next year's underperformer due to mean reversion.
 
 **The fix:** Choose investments based on their underlying index, fee structure, and diversification — not their recent performance.
 
@@ -453,7 +453,7 @@ You can start with as little as $1 on many modern brokerage platforms. Practical
 Most financial educators recommend a broad market index fund ETF as the first investment. These funds hold hundreds or thousands of companies, charge very low fees, and have delivered competitive long-term returns without requiring stock-picking expertise. All-in-one asset allocation ETFs (available in Canada) simplify this further to a single holding.
 
 **Q: Is investing risky for beginners?**
-All investing involves risk. The stock market has experienced significant downturns throughout history. However, for a long-term investor (10+ year horizon) using diversified index funds and maintaining an emergency fund, historical long-term outcomes have generally improved as holding periods lengthen (source: S&P Dow Jones Indices and historical return datasets). Short-term volatility is the price of long-term returns.
+All investing involves risk. The stock market has experienced significant downturns throughout history. However, for a long-term investor (10+ year horizon) using diversified index funds and maintaining an emergency fund, historical long-term outcomes have generally improved as holding periods lengthen <sup class="citation-ref"><a href="#source-nyu-stern-historical-returns">[1]</a></sup>. Short-term volatility is the price of long-term returns.
 
 **Q: What is the difference between saving and investing?**
 Saving means keeping money in low-risk, highly liquid accounts. The returns are low but capital is preserved. Investing means putting capital into assets expected to grow over time — with more risk and less liquidity. Saving is for short-term needs and emergencies; investing is for long-term wealth building.
@@ -491,3 +491,12 @@ The most common and costly mistakes include: trying to time the market, panic-se
 
 *Published by BankDeMark | Finance Intelligence Platform*
 *Pillar: [Investing](/pillars/investing)*
+
+---
+
+## Sources
+
+<ol class="source-bibliography">
+<li id="source-nyu-stern-historical-returns"><strong>[1]</strong> <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html" target="_blank" rel="noopener noreferrer">NYU Stern: Historical Returns on Stocks, Bonds and Bills</a></li>
+<li id="source-cra-tfsa-dollar-limit"><strong>[2]</strong> <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency: TFSA Dollar Limit</a></li>
+</ol>

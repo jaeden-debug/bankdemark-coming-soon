@@ -75,7 +75,7 @@ Small stores with genuine niche expertise can produce the kind of content that s
 
 ### The Long-Tail Opportunity
 
-Long-tail keywords — specific, lower-volume search queries — represent a major share of total search demand. Google has publicly stated that many searches are new or highly specific, which is why long-tail SEO matters for small sites (source: Google Search Central and Ahrefs long-tail keyword research). Most of these are long-tail queries.
+Long-tail keywords — specific, lower-volume search queries — represent a major share of total search demand. Google has publicly stated that many searches are new or highly specific, which is why long-tail SEO matters for small sites <sup class="citation-ref"><a href="#source-google-search-central">[1]</a></sup>. Most of these are long-tail queries.
 
 For a small ecommerce store, the long-tail represents:
 - **Lower keyword difficulty:** Less established content competing for the query
@@ -458,7 +458,7 @@ Prioritize structured data implementation in this order:
 ---
 
 ## 8. Link Building on a Small Budget {#link-building-small-budget}
-Backlinks remain a foundational authority and discovery signal in SEO (source: Google Search Central link documentation and Ahrefs backlink research). For small stores, link building requires resourcefulness rather than budget.
+Backlinks remain a foundational authority and discovery signal in SEO <sup class="citation-ref"><a href="#source-google-search-central">[1]</a></sup>. For small stores, link building requires resourcefulness rather than budget.
 
 ### High-ROI Link Building Tactics for Small Ecommerce
 
@@ -497,7 +497,7 @@ Google's ranking algorithms incorporate user behavior signals — bounce rate, d
 
 ### UX Factors That Affect Ecommerce SEO
 
-**Page speed (again):** Slow pages increase bounce rates which signals to Google that the page didn't satisfy the query. Slower pages consistently hurt user experience and conversion performance; use Core Web Vitals and PageSpeed Insights to monitor this (source: Google Core Web Vitals and PageSpeed Insights documentation).
+**Page speed (again):** Slow pages increase bounce rates which signals to Google that the page didn't satisfy the query. Slower pages consistently hurt user experience and conversion performance; use Core Web Vitals and PageSpeed Insights to monitor this <sup class="citation-ref"><a href="#source-google-core-web-vitals">[2]</a></sup>.
 
 **Search result click-through rate:** A compelling meta title and description increases CTR. Higher CTR sends a positive quality signal to Google, which can improve rankings independent of other factors.
 
@@ -738,3 +738,12 @@ Product page SEO targets specific transactional keywords and focuses on detailed
 ---
 
 *BankDeMark Editorial Team — Updated May 2026*
+
+---
+
+## Sources
+
+<ol class="source-bibliography">
+<li id="source-google-search-central"><strong>[1]</strong> <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central Documentation</a></li>
+<li id="source-google-core-web-vitals"><strong>[2]</strong> <a href="https://developers.google.com/search/docs/appearance/core-web-vitals" target="_blank" rel="noopener noreferrer">Google Search Central: Core Web Vitals</a></li>
+</ol>

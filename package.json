@@ -6,7 +6,15 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "sources:inject": "node scripts/inject-sources.js",
+    "sources:validate": "node scripts/validate-sources.js",
+    "content:check": "npm run sources:inject && npm run sources:validate && npm run build",
+    "authority:audit": "node scripts/authorityos.js audit",
+    "authority:inject": "node scripts/authorityos.js inject",
+    "authority:validate": "node scripts/authorityos.js validate",
+    "authority:report": "node scripts/authorityos.js report",
+    "authority:check": "npm run authority:inject && npm run authority:validate && npm run build"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.1",

@@ -54,7 +54,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       {/* 1. Added the structural head context wrapper */}
-      <head /> 
+      <head>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="ekcbB/2wnUQrZrguhPkXyw"
+          async
+        />
+      </head>
       <body>
         <Nav />
         <main>{children}</main>
