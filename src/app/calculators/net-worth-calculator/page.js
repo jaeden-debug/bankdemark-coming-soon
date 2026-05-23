@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import NetWorthCalculator from "../../components/NetWorthCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Net Worth Calculator | Free Assets and Liabilities Tracker",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function NetWorthCalculatorPage() {
+export default async function NetWorthCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -64,6 +67,7 @@ export default function NetWorthCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script
         id="net-worth-faq-schema"
         type="application/ld+json"
@@ -176,6 +180,7 @@ export default function NetWorthCalculatorPage() {
         btnText="Explore Calculators"
         btnHref="/calculators"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

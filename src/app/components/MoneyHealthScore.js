@@ -5,17 +5,19 @@ import Link from "next/link";
 
 const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function MoneyHealthScore() {
   const [country, setCountry] = useState("canada");
-  const [monthlyIncome, setMonthlyIncome] = useState(5500);
-  const [monthlyExpenses, setMonthlyExpenses] = useState(4200);
-  const [totalDebt, setTotalDebt] = useState(12000);
-  const [monthlyDebtPayment, setMonthlyDebtPayment] = useState(450);
-  const [emergencyFund, setEmergencyFund] = useState(8000);
-  const [investedAssets, setInvestedAssets] = useState(35000);
-  const [retirementContribution, setRetirementContribution] = useState(650);
-  const [housingCost, setHousingCost] = useState(1600);
-  const [creditRange, setCreditRange] = useState(720);
+  const [monthlyIncome, setMonthlyIncome] = useState("");
+  const [monthlyExpenses, setMonthlyExpenses] = useState("");
+  const [totalDebt, setTotalDebt] = useState("");
+  const [monthlyDebtPayment, setMonthlyDebtPayment] = useState("");
+  const [emergencyFund, setEmergencyFund] = useState("");
+  const [investedAssets, setInvestedAssets] = useState("");
+  const [retirementContribution, setRetirementContribution] = useState("");
+  const [housingCost, setHousingCost] = useState("");
+  const [creditRange, setCreditRange] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -27,20 +29,30 @@ export default function MoneyHealthScore() {
   });
 
   const result = useMemo(() => {
-    const surplus = monthlyIncome - monthlyExpenses;
-    const savingsRate = monthlyIncome > 0 ? surplus / monthlyIncome : 0;
-    const debtRatio = monthlyIncome > 0 ? monthlyDebtPayment / monthlyIncome : 1;
-    const housingRatio = monthlyIncome > 0 ? housingCost / monthlyIncome : 1;
-    const emergencyMonths = monthlyExpenses > 0 ? emergencyFund / monthlyExpenses : 0;
-    const investingRate = monthlyIncome > 0 ? retirementContribution / monthlyIncome : 0;
-    const netWorthEstimate = investedAssets + emergencyFund - totalDebt;
+    const monthlyIncomeValue = toNumber(monthlyIncome);
+    const monthlyExpensesValue = toNumber(monthlyExpenses);
+    const totalDebtValue = toNumber(totalDebt);
+    const monthlyDebtPaymentValue = toNumber(monthlyDebtPayment);
+    const emergencyFundValue = toNumber(emergencyFund);
+    const investedAssetsValue = toNumber(investedAssets);
+    const retirementContributionValue = toNumber(retirementContribution);
+    const housingCostValue = toNumber(housingCost);
+    const creditRangeValue = toNumber(creditRange);
+
+    const surplus = monthlyIncomeValue - monthlyExpensesValue;
+    const savingsRate = monthlyIncomeValue > 0 ? surplus / monthlyIncomeValue : 0;
+    const debtRatio = monthlyIncomeValue > 0 ? monthlyDebtPaymentValue / monthlyIncomeValue : 1;
+    const housingRatio = monthlyIncomeValue > 0 ? housingCostValue / monthlyIncomeValue : 1;
+    const emergencyMonths = monthlyExpensesValue > 0 ? emergencyFundValue / monthlyExpensesValue : 0;
+    const investingRate = monthlyIncomeValue > 0 ? retirementContributionValue / monthlyIncomeValue : 0;
+    const netWorthEstimate = investedAssetsValue + emergencyFundValue - totalDebtValue;
 
     const cashFlowScore = clamp((savingsRate / 0.25) * 20, 0, 20);
     const debtScore = clamp((1 - debtRatio / 0.35) * 18, 0, 18);
     const emergencyScore = clamp((emergencyMonths / 6) * 18, 0, 18);
     const investingScore = clamp((investingRate / 0.15) * 18, 0, 18);
     const housingScore = clamp((1 - housingRatio / 0.35) * 13, 0, 13);
-    const creditScore = clamp(((creditRange - 550) / 250) * 13, 0, 13);
+    const creditScore = clamp(((creditRangeValue - 550) / 250) * 13, 0, 13);
 
     const total = Math.round(
       cashFlowScore +
@@ -173,47 +185,47 @@ export default function MoneyHealthScore() {
           <div className="health-fields">
             <label>
               <span>Monthly Take-Home Income</span>
-              <input type="number" value={monthlyIncome} onChange={(e) => setMonthlyIncome(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyIncome} onChange={(e) => setMonthlyIncome(e.target.value)} />
             </label>
 
             <label>
               <span>Total Monthly Expenses</span>
-              <input type="number" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(e.target.value)} />
             </label>
 
             <label>
               <span>Total Consumer Debt</span>
-              <input type="number" value={totalDebt} onChange={(e) => setTotalDebt(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={totalDebt} onChange={(e) => setTotalDebt(e.target.value)} />
             </label>
 
             <label>
               <span>Monthly Debt Payments</span>
-              <input type="number" value={monthlyDebtPayment} onChange={(e) => setMonthlyDebtPayment(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyDebtPayment} onChange={(e) => setMonthlyDebtPayment(e.target.value)} />
             </label>
 
             <label>
               <span>Emergency Fund</span>
-              <input type="number" value={emergencyFund} onChange={(e) => setEmergencyFund(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={emergencyFund} onChange={(e) => setEmergencyFund(e.target.value)} />
             </label>
 
             <label>
               <span>Invested Assets</span>
-              <input type="number" value={investedAssets} onChange={(e) => setInvestedAssets(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={investedAssets} onChange={(e) => setInvestedAssets(e.target.value)} />
             </label>
 
             <label>
               <span>Monthly Investing / Retirement</span>
-              <input type="number" value={retirementContribution} onChange={(e) => setRetirementContribution(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={retirementContribution} onChange={(e) => setRetirementContribution(e.target.value)} />
             </label>
 
             <label>
               <span>Monthly Housing Cost</span>
-              <input type="number" value={housingCost} onChange={(e) => setHousingCost(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={housingCost} onChange={(e) => setHousingCost(e.target.value)} />
             </label>
 
             <label className="health-wide">
               <span>Credit Score Estimate</span>
-              <select value={creditRange} onChange={(e) => setCreditRange(Number(e.target.value))}>
+              <select value={creditRange} onChange={(e) => setCreditRange(e.target.value)}>
                 <option value={560}>Below 580</option>
                 <option value={620}>580–659</option>
                 <option value={690}>660–719</option>

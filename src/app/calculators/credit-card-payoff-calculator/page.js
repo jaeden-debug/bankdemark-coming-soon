@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import CreditCardPayoffOptimizer from "../../components/CreditCardPayoffOptimizer";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Credit Card Payoff Calculator | Avalanche vs Snowball Optimizer",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function CreditCardPayoffCalculatorPage() {
+export default async function CreditCardPayoffCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -64,6 +67,7 @@ export default function CreditCardPayoffCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script
         id="credit-card-faq-schema"
         type="application/ld+json"
@@ -174,6 +178,7 @@ export default function CreditCardPayoffCalculatorPage() {
         btnText="Explore Calculators"
         btnHref="/calculators"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

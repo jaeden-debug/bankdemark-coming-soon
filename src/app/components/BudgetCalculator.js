@@ -1,16 +1,31 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
+
+const toNumber = (value) => Number(value) || 0;
 
 export default function BudgetCalculator() {
   const [country, setCountry] = useState("canada");
-  const [income, setIncome] = useState(5000);
-  const [housing, setHousing] = useState(1600);
-  const [food, setFood] = useState(650);
-  const [transport, setTransport] = useState(500);
-  const [debt, setDebt] = useState(400);
-  const [savings, setSavings] = useState(750);
-  const [other, setOther] = useState(600);
+  const [income, setIncome] = useState("");
+  const [housing, setHousing] = useState("");
+  const [food, setFood] = useState("");
+  const [transport, setTransport] = useState("");
+  const [debt, setDebt] = useState("");
+  const [savings, setSavings] = useState("");
+  const [other, setOther] = useState("");
+
+  const switchCountry = (nextCountry) => {
+    if (nextCountry === country) return;
+    setIncome((v) => convertCurrencyAmount(v, country, nextCountry));
+    setHousing((v) => convertCurrencyAmount(v, country, nextCountry));
+    setFood((v) => convertCurrencyAmount(v, country, nextCountry));
+    setTransport((v) => convertCurrencyAmount(v, country, nextCountry));
+    setDebt((v) => convertCurrencyAmount(v, country, nextCountry));
+    setSavings((v) => convertCurrencyAmount(v, country, nextCountry));
+    setOther((v) => convertCurrencyAmount(v, country, nextCountry));
+    setCountry(nextCountry);
+  };
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -22,19 +37,19 @@ export default function BudgetCalculator() {
   });
 
   const result = useMemo(() => {
-    const expenses = housing + food + transport + debt + savings + other;
-    const leftover = income - expenses;
-    const needs = housing + food + transport;
-    const wants = other;
-    const future = savings + debt;
+    const expenses = toNumber(housing) + toNumber(food) + toNumber(transport) + toNumber(debt) + toNumber(savings) + toNumber(other);
+    const leftover = toNumber(income) - expenses;
+    const needs = toNumber(housing) + toNumber(food) + toNumber(transport);
+    const wants = toNumber(other);
+    const future = toNumber(savings) + toNumber(debt);
     return { expenses, leftover, needs, wants, future };
   }, [income, housing, food, transport, debt, savings, other]);
 
   return (
     <section className="bdm-tool budget-tool">
       <div className="country-toggle">
-        <button className={isCanada ? "active" : ""} onClick={() => setCountry("canada")} type="button">🇨🇦 Canada</button>
-        <button className={!isCanada ? "active" : ""} onClick={() => setCountry("usa")} type="button">🇺🇸 United States</button>
+        <button className={isCanada ? "active" : ""} onClick={() => switchCountry("canada")} type="button">🇨🇦 Canada</button>
+        <button className={!isCanada ? "active" : ""} onClick={() => switchCountry("usa")} type="button">🇺🇸 United States</button>
       </div>
 
       <div className="bdm-market-badge">
@@ -52,21 +67,21 @@ export default function BudgetCalculator() {
           </div>
 
           <div className="bdm-fields">
-            <label><span>Monthly Take-Home Income</span><input type="number" value={income} onChange={(e) => setIncome(Number(e.target.value))} /></label>
-            <label><span>Housing</span><input type="number" value={housing} onChange={(e) => setHousing(Number(e.target.value))} /></label>
-            <label><span>Food / Groceries</span><input type="number" value={food} onChange={(e) => setFood(Number(e.target.value))} /></label>
-            <label><span>Transportation</span><input type="number" value={transport} onChange={(e) => setTransport(Number(e.target.value))} /></label>
-            <label><span>Debt Payments</span><input type="number" value={debt} onChange={(e) => setDebt(Number(e.target.value))} /></label>
-            <label><span>Savings / Investing</span><input type="number" value={savings} onChange={(e) => setSavings(Number(e.target.value))} /></label>
-            <label className="bdm-wide"><span>Other Spending</span><input type="number" value={other} onChange={(e) => setOther(Number(e.target.value))} /></label>
+            <label><span>Monthly Take-Home Income</span><input type="text" inputMode="decimal" value={income} onChange={(e) => setIncome(e.target.value)} /></label>
+            <label><span>Housing</span><input type="text" inputMode="decimal" value={housing} onChange={(e) => setHousing(e.target.value)} /></label>
+            <label><span>Food / Groceries</span><input type="text" inputMode="decimal" value={food} onChange={(e) => setFood(e.target.value)} /></label>
+            <label><span>Transportation</span><input type="text" inputMode="decimal" value={transport} onChange={(e) => setTransport(e.target.value)} /></label>
+            <label><span>Debt Payments</span><input type="text" inputMode="decimal" value={debt} onChange={(e) => setDebt(e.target.value)} /></label>
+            <label><span>Savings / Investing</span><input type="text" inputMode="decimal" value={savings} onChange={(e) => setSavings(e.target.value)} /></label>
+            <label className="bdm-wide"><span>Other Spending</span><input type="text" inputMode="decimal" value={other} onChange={(e) => setOther(e.target.value)} /></label>
           </div>
         </div>
 
         <div className="bdm-right">
           <div className="bdm-result-hero">
-            <small>Monthly Cash Flow</small>
+            <small>Remaining Monthly Margin</small>
             <strong>{formatter.format(result.leftover)}</strong>
-            <p>{result.leftover >= 0 ? "Positive monthly margin." : "You are spending more than monthly income."}</p>
+            <p>{result.leftover >= 0 ? "Money left after planned monthly expenses." : "You are spending more than monthly income."}</p>
           </div>
 
           <div className="bdm-metrics">

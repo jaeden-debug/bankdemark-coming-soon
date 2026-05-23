@@ -2,14 +2,16 @@
 
 import { useMemo, useState } from "react";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function InvestmentCalculator() {
   const [country, setCountry] = useState("canada");
-  const [startingAmount, setStartingAmount] = useState(10000);
-  const [monthlyContribution, setMonthlyContribution] = useState(500);
-  const [annualReturn, setAnnualReturn] = useState(7);
-  const [years, setYears] = useState(20);
-  const [annualFee, setAnnualFee] = useState(0.25);
-  const [taxDrag, setTaxDrag] = useState(0);
+  const [startingAmount, setStartingAmount] = useState("");
+  const [monthlyContribution, setMonthlyContribution] = useState("");
+  const [annualReturn, setAnnualReturn] = useState("");
+  const [years, setYears] = useState("");
+  const [annualFee, setAnnualFee] = useState("");
+  const [taxDrag, setTaxDrag] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -21,32 +23,39 @@ export default function InvestmentCalculator() {
   });
 
   const result = useMemo(() => {
-    const grossRate = annualReturn / 100;
-    const feeRate = annualFee / 100;
-    const taxRate = taxDrag / 100;
+    const startingAmountValue = toNumber(startingAmount);
+    const monthlyContributionValue = toNumber(monthlyContribution);
+    const annualReturnValue = toNumber(annualReturn);
+    const yearsValue = toNumber(years);
+    const annualFeeValue = toNumber(annualFee);
+    const taxDragValue = toNumber(taxDrag);
+
+    const grossRate = annualReturnValue / 100;
+    const feeRate = annualFeeValue / 100;
+    const taxRate = taxDragValue / 100;
     const netAnnualRate = Math.max(grossRate - feeRate - taxRate, -0.99);
     const monthlyRate = netAnnualRate / 12;
-    const months = years * 12;
+    const months = yearsValue * 12;
 
     const futureStarting =
-      startingAmount * Math.pow(1 + monthlyRate, months);
+      startingAmountValue * Math.pow(1 + monthlyRate, months);
 
     const futureContributions =
       monthlyRate === 0
-        ? monthlyContribution * months
-        : monthlyContribution *
+        ? monthlyContributionValue * months
+        : monthlyContributionValue *
           ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate);
 
     const endingBalance = futureStarting + futureContributions;
-    const totalInvested = startingAmount + monthlyContribution * months;
+    const totalInvested = startingAmountValue + monthlyContributionValue * months;
     const estimatedGain = endingBalance - totalInvested;
     const grossEndingNoFee = (() => {
       const grossMonthlyRate = grossRate / 12;
-      const grossStart = startingAmount * Math.pow(1 + grossMonthlyRate, months);
+      const grossStart = startingAmountValue * Math.pow(1 + grossMonthlyRate, months);
       const grossContrib =
         grossMonthlyRate === 0
-          ? monthlyContribution * months
-          : monthlyContribution *
+          ? monthlyContributionValue * months
+          : monthlyContributionValue *
             ((Math.pow(1 + grossMonthlyRate, months) - 1) / grossMonthlyRate);
       return grossStart + grossContrib;
     })();
@@ -103,32 +112,32 @@ export default function InvestmentCalculator() {
           <div className="investment-fields">
             <label>
               <span>Starting Investment</span>
-              <input type="number" value={startingAmount} onChange={(e) => setStartingAmount(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={startingAmount} onChange={(e) => setStartingAmount(e.target.value)} />
             </label>
 
             <label>
               <span>Monthly Contribution</span>
-              <input type="number" value={monthlyContribution} onChange={(e) => setMonthlyContribution(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyContribution} onChange={(e) => setMonthlyContribution(e.target.value)} />
             </label>
 
             <label>
               <span>Expected Annual Return (%)</span>
-              <input type="number" step="0.1" value={annualReturn} onChange={(e) => setAnnualReturn(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" step="0.1" value={annualReturn} onChange={(e) => setAnnualReturn(e.target.value)} />
             </label>
 
             <label>
               <span>Investment Timeline</span>
-              <input type="number" value={years} onChange={(e) => setYears(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={years} onChange={(e) => setYears(e.target.value)} />
             </label>
 
             <label>
               <span>Annual Fees / MER (%)</span>
-              <input type="number" step="0.01" value={annualFee} onChange={(e) => setAnnualFee(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" step="0.01" value={annualFee} onChange={(e) => setAnnualFee(e.target.value)} />
             </label>
 
             <label>
               <span>Optional Tax Drag (%)</span>
-              <input type="number" step="0.1" value={taxDrag} onChange={(e) => setTaxDrag(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" step="0.1" value={taxDrag} onChange={(e) => setTaxDrag(e.target.value)} />
             </label>
           </div>
         </div>

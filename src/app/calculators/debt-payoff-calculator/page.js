@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import DebtPayoffCalculator from "../../components/DebtPayoffCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Debt Payoff Calculator | Free Debt Repayment Calculator",
@@ -19,12 +20,15 @@ const faq = [
   { q: "What is the debt snowball method?", a: "The debt snowball method focuses extra payments on the smallest balance first to build momentum." },
 ];
 
-export default function DebtPayoffCalculatorPage() {
+export default async function DebtPayoffCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })) };
   const howToSchema = { "@context": "https://schema.org", "@type": "HowTo", name: "How to use a debt payoff calculator", step: [{ "@type": "HowToStep", name: "Enter debt balance" }, { "@type": "HowToStep", name: "Enter interest rate" }, { "@type": "HowToStep", name: "Enter monthly payment" }, { "@type": "HowToStep", name: "Add extra payment" }, { "@type": "HowToStep", name: "Review payoff timeline" }] };
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script id="debt-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="debt-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
@@ -96,6 +100,7 @@ export default function DebtPayoffCalculatorPage() {
       <SEOLinkMap currentPath="/calculators/debt-payoff-calculator" />
 
       <CTABanner title="Turn debt payoff into a financial system." sub="Use BankDeMark calculators and guides to improve cash flow, reduce interest, and build long-term wealth." btnText="Join the Newsletter" btnHref="/contact" />
+          <GlobalCalculatorShare />
     </>
   );
 }

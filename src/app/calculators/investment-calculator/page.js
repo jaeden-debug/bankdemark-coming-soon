@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import InvestmentCalculator from "../../components/InvestmentCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Investment Calculator | Free Portfolio Growth Calculator",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function InvestmentCalculatorPage() {
+export default async function InvestmentCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -65,6 +68,7 @@ export default function InvestmentCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script
         id="investment-faq-schema"
         type="application/ld+json"
@@ -197,6 +201,7 @@ export default function InvestmentCalculatorPage() {
         btnText="Join the Newsletter"
         btnHref="/contact"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

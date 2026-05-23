@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import MortgageCalculator from "../../components/MortgageCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Mortgage Calculator | Free Monthly Mortgage Payment Calculator",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function MortgageCalculatorPage() {
+export default async function MortgageCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -65,6 +68,7 @@ export default function MortgageCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script id="mortgage-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="mortgage-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
@@ -203,6 +207,7 @@ export default function MortgageCalculatorPage() {
         btnText="Join the Newsletter"
         btnHref="/contact"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

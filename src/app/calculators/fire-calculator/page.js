@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import FireCalculator from "../../components/FireCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "FIRE Calculator | Coast FIRE Calculator",
@@ -19,12 +20,15 @@ const faq = [
   { q: "Is the 4% rule guaranteed?", a: "No. The 4% rule is a planning shortcut, not a guarantee. Taxes, inflation, fees, returns, and lifestyle changes all matter." },
 ];
 
-export default function FireCalculatorPage() {
+export default async function FireCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })) };
   const howToSchema = { "@context": "https://schema.org", "@type": "HowTo", name: "How to use a FIRE calculator", step: [{ "@type": "HowToStep", name: "Enter invested assets" }, { "@type": "HowToStep", name: "Enter annual spending" }, { "@type": "HowToStep", name: "Add monthly investing" }, { "@type": "HowToStep", name: "Choose return and withdrawal assumptions" }, { "@type": "HowToStep", name: "Review FIRE and Coast FIRE results" }] };
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script id="fire-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="fire-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
@@ -96,6 +100,7 @@ export default function FireCalculatorPage() {
       <SEOLinkMap currentPath="/calculators/fire-calculator" />
 
       <CTABanner title="Turn FIRE math into a financial freedom system." sub="Use BankDeMark calculators and finance pillars to compare investing, retirement, cash flow, debt, and financial independence." btnText="Join the Newsletter" btnHref="/contact" />
+          <GlobalCalculatorShare />
     </>
   );
 }

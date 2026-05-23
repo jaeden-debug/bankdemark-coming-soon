@@ -6,86 +6,83 @@ import { useState } from "react";
 export default function GlobalCalculatorShare() {
   const pathname = usePathname();
   const [copied, setCopied] = useState(false);
+  const [busy, setBusy] = useState(false);
 
   const isCalculatorPage =
     pathname?.startsWith("/calculators/") && pathname !== "/calculators";
 
-  const isSpecialToolPage =
-    pathname?.startsWith("/money-health-score") ||
-    pathname?.startsWith("/financial-freedom-roadmap");
+  if (!isCalculatorPage) return null;
 
-  const isToolPage = isCalculatorPage || isSpecialToolPage;
+  const calculatorSlug = pathname.split("/").filter(Boolean).pop();
 
-  if (!isToolPage) return null;
+  const extractResults = () => {
+    const results = {};
+    document.querySelectorAll(".bdm-metrics div, .mortgage-breakdown div, .investment-metrics div, .retirement-metrics div").forEach((node) => {
+      const label = node.querySelector("span")?.innerText?.trim();
+      const value = node.querySelector("strong")?.innerText?.trim();
+      if (label && value) results[label] = value;
+    });
+    return results;
+  };
 
-  const buildShareText = () => {
-    const title =
-      document.querySelector("h1")?.innerText?.trim() ||
-      "BankDeMark Financial Tool Results";
+  const extractInputs = () => {
+    const inputs = {};
+    document.querySelectorAll("input").forEach((input) => {
+      const label = input.closest("label")?.querySelector("span")?.innerText?.trim();
+      if (label) inputs[label] = input.value;
+    });
+    return inputs;
+  };
 
-    const resultSelectors = [
-      ".result-card",
-      ".mortgage-main-result",
-      ".mortgage-breakdown",
-      ".investment-result-hero",
-      ".investment-metrics",
-      ".retirement-result-hero",
-      ".retirement-status",
-      ".retirement-metrics",
-      ".registered-result-hero",
-      ".registered-alert",
-      ".registered-metrics",
-      ".bdm-result-hero",
-      ".bdm-metrics",
-      ".score-orb-card",
-      ".health-metrics-grid",
-      ".health-action-card",
-      ".roadmap-hero-card",
-      ".roadmap-metrics",
-      ".roadmap-action-card",
-      ".roadmap-plan-grid",
-      ".roadmap-tools-card"
-    ];
+  const createShareUrl = async () => {
+    const res = await fetch("/api/shares", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({
+        calculator: calculatorSlug,
+        inputs: extractInputs(),
+        results: extractResults(),
+      }),
+    });
 
-    const results = resultSelectors
-      .flatMap((selector) => Array.from(document.querySelectorAll(selector)))
-      .map((node) => node.innerText.trim())
-      .filter(Boolean)
-      .join("\n\n");
+    if (!res.ok) throw new Error("Share failed");
 
-    const url = window.location.href;
-
-    return {
-      title,
-      text: `${title}\n\n${results}\n\nCalculated with BankDeMark:\n${url}`,
-      url,
-    };
+    const data = await res.json();
+    return `${window.location.origin}${data.url}`;
   };
 
   const handleShare = async () => {
-    const payload = buildShareText();
+    setBusy(true);
 
     try {
+      const shareUrl = await createShareUrl();
+
+      console.log("SHARE URL:", shareUrl);
+
       if (navigator.share) {
-        await navigator.share(payload);
+        await navigator.share({
+          title: "BankDeMark Calculator Results",
+          url: shareUrl,
+        });
       } else {
-        await navigator.clipboard.writeText(payload.text);
+        await navigator.clipboard.writeText(shareUrl);
         setCopied(true);
         setTimeout(() => setCopied(false), 1800);
       }
     } catch {
-      try {
-        await navigator.clipboard.writeText(payload.text);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 1800);
-      } catch {}
+      const shareUrl = await createShareUrl();
+      await navigator.clipboard.writeText(shareUrl);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1800);
+    } finally {
+      setBusy(false);
     }
   };
 
   return (
-    <button type="button" className="global-share-results" onClick={handleShare}>
+    <button type="button" className="global-share-results" onClick={handleShare} disabled={busy}>
       <span>{copied ? "✓" : "↗"}</span>
-      {copied ? "Results Copied" : "Share Results"}
+      {busy ? "Creating Link..." : copied ? "Link Copied" : "Share Results"}
     </button>
   );
 }

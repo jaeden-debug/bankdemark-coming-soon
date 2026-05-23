@@ -1,13 +1,24 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
+
+const toNumber = (value) => Number(value) || 0;
 
 export default function DebtPayoffCalculator() {
   const [country, setCountry] = useState("canada");
-  const [balance, setBalance] = useState(12000);
-  const [rate, setRate] = useState(19.99);
-  const [monthlyPayment, setMonthlyPayment] = useState(500);
-  const [extraPayment, setExtraPayment] = useState(100);
+  const [balance, setBalance] = useState("");
+  const [rate, setRate] = useState("");
+  const [monthlyPayment, setMonthlyPayment] = useState("");
+  const [extraPayment, setExtraPayment] = useState("");
+
+  const switchCountry = (nextCountry) => {
+    if (nextCountry === country) return;
+    setBalance((v) => convertCurrencyAmount(v, country, nextCountry));
+    setMonthlyPayment((v) => convertCurrencyAmount(v, country, nextCountry));
+    setExtraPayment((v) => convertCurrencyAmount(v, country, nextCountry));
+    setCountry(nextCountry);
+  };
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -19,20 +30,53 @@ export default function DebtPayoffCalculator() {
   });
 
   const result = useMemo(() => {
-    let remaining = balance;
+    let remaining = toNumber(balance);
     let months = 0;
     let interest = 0;
-    const payment = monthlyPayment + extraPayment;
-    const monthlyRate = rate / 100 / 12;
 
-    if (payment <= remaining * monthlyRate) {
-      return { months: Infinity, years: Infinity, interest: Infinity, totalPaid: Infinity };
+    const payment =
+      toNumber(monthlyPayment) + toNumber(extraPayment);
+
+    const monthlyRate =
+      toNumber(rate) / 100 / 12;
+
+    if (payment <= 0) {
+      return {
+        months: Infinity,
+        years: Infinity,
+        interest: Infinity,
+        totalPaid: Infinity,
+      };
+    }
+
+    if (monthlyRate > 0 && payment <= remaining * monthlyRate) {
+      return {
+        months: Infinity,
+        years: Infinity,
+        interest: Infinity,
+        totalPaid: Infinity,
+      };
+    }
+
+    if (monthlyRate === 0) {
+      months = Math.ceil(remaining / payment);
+
+      return {
+        months,
+        years: months / 12,
+        interest: 0,
+        totalPaid: remaining,
+      };
     }
 
     while (remaining > 0 && months < 1200) {
       const monthlyInterest = remaining * monthlyRate;
+
       interest += monthlyInterest;
-      remaining = remaining + monthlyInterest - payment;
+
+      remaining =
+        remaining + monthlyInterest - payment;
+
       months++;
     }
 
@@ -40,15 +84,15 @@ export default function DebtPayoffCalculator() {
       months,
       years: months / 12,
       interest,
-      totalPaid: balance + interest,
+      totalPaid: toNumber(balance) + interest,
     };
   }, [balance, rate, monthlyPayment, extraPayment]);
 
   return (
     <section className="bdm-tool debt-tool">
       <div className="country-toggle">
-        <button className={isCanada ? "active" : ""} onClick={() => setCountry("canada")} type="button">🇨🇦 Canada</button>
-        <button className={!isCanada ? "active" : ""} onClick={() => setCountry("usa")} type="button">🇺🇸 United States</button>
+        <button className={isCanada ? "active" : ""} onClick={() => switchCountry("canada")} type="button">🇨🇦 Canada</button>
+        <button className={!isCanada ? "active" : ""} onClick={() => switchCountry("usa")} type="button">🇺🇸 United States</button>
       </div>
 
       <div className="bdm-market-badge">
@@ -66,10 +110,10 @@ export default function DebtPayoffCalculator() {
           </div>
 
           <div className="bdm-fields">
-            <label><span>Debt Balance</span><input type="number" value={balance} onChange={(e) => setBalance(Number(e.target.value))} /></label>
-            <label><span>Interest Rate (%)</span><input type="number" step="0.01" value={rate} onChange={(e) => setRate(Number(e.target.value))} /></label>
-            <label><span>Monthly Payment</span><input type="number" value={monthlyPayment} onChange={(e) => setMonthlyPayment(Number(e.target.value))} /></label>
-            <label><span>Extra Monthly Payment</span><input type="number" value={extraPayment} onChange={(e) => setExtraPayment(Number(e.target.value))} /></label>
+            <label><span>Debt Balance</span><input type="text" inputMode="decimal" value={balance} onChange={(e) => setBalance(e.target.value)} /></label>
+            <label><span>Interest Rate (%)</span><input type="text" inputMode="decimal" step="0.01" value={rate} onChange={(e) => setRate(e.target.value)} /></label>
+            <label><span>Monthly Payment</span><input type="text" inputMode="decimal" value={monthlyPayment} onChange={(e) => setMonthlyPayment(e.target.value)} /></label>
+            <label><span>Extra Monthly Payment</span><input type="text" inputMode="decimal" value={extraPayment} onChange={(e) => setExtraPayment(e.target.value)} /></label>
           </div>
         </div>
 
@@ -83,8 +127,8 @@ export default function DebtPayoffCalculator() {
           <div className="bdm-metrics">
             <div><span>Total Interest</span><strong>{result.interest === Infinity ? "—" : formatter.format(result.interest)}</strong></div>
             <div><span>Total Paid</span><strong>{result.totalPaid === Infinity ? "—" : formatter.format(result.totalPaid)}</strong></div>
-            <div><span>Monthly Strategy</span><strong>{formatter.format(monthlyPayment + extraPayment)}</strong></div>
-            <div><span>Extra Payment</span><strong>{formatter.format(extraPayment)}</strong></div>
+            <div><span>Monthly Strategy</span><strong>{formatter.format(toNumber(monthlyPayment) + toNumber(extraPayment))}</strong></div>
+            <div><span>Extra Payment</span><strong>{formatter.format(toNumber(extraPayment))}</strong></div>
           </div>
 
           <div className="bdm-note">

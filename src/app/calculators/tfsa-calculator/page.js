@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import RegisteredAccountCalculator from "../../components/RegisteredAccountCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "TFSA Calculator Canada | Free TFSA Contribution & Growth Calculator",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function TFSACalculatorPage() {
+export default async function TFSACalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -61,6 +64,7 @@ export default function TFSACalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script id="tfsa-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="tfsa-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
@@ -157,6 +161,7 @@ export default function TFSACalculatorPage() {
         btnText="Join the Newsletter"
         btnHref="/contact"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

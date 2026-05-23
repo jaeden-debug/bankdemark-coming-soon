@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import BudgetCalculator from "../../components/BudgetCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Budget Calculator | Free Monthly Budget Planner",
@@ -19,12 +20,15 @@ const faq = [
   { q: "Should savings be in my budget?", a: "Yes. Savings and investing should be treated like planned monthly expenses, not leftovers." },
 ];
 
-export default function BudgetCalculatorPage() {
+export default async function BudgetCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = { "@context": "https://schema.org", "@type": "FAQPage", mainEntity: faq.map((item) => ({ "@type": "Question", name: item.q, acceptedAnswer: { "@type": "Answer", text: item.a } })) };
   const howToSchema = { "@context": "https://schema.org", "@type": "HowTo", name: "How to use a budget calculator", step: [{ "@type": "HowToStep", name: "Enter monthly income" }, { "@type": "HowToStep", name: "Add housing costs" }, { "@type": "HowToStep", name: "Add food and transportation" }, { "@type": "HowToStep", name: "Add debt and savings" }, { "@type": "HowToStep", name: "Review monthly cash flow" }] };
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script id="budget-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="budget-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
@@ -85,6 +89,7 @@ export default function BudgetCalculatorPage() {
       <SEOLinkMap currentPath="/calculators/budget-calculator" />
 
       <CTABanner title="Turn your budget into a wealth-building system." sub="Use BankDeMark calculators and finance pillars to control cash flow, reduce debt, and build financial freedom." btnText="Join the Newsletter" btnHref="/contact" />
+          <GlobalCalculatorShare />
     </>
   );
 }

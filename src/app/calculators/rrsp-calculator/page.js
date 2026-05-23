@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import RegisteredAccountCalculator from "../../components/RegisteredAccountCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "RRSP Calculator Canada | Free RRSP Contribution & Tax Refund Calculator",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function RRSPCalculatorPage() {
+export default async function RRSPCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -62,6 +65,7 @@ export default function RRSPCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script id="rrsp-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="rrsp-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
@@ -158,6 +162,7 @@ export default function RRSPCalculatorPage() {
         btnText="Join the Newsletter"
         btnHref="/contact"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

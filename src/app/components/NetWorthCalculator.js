@@ -2,22 +2,24 @@
 
 import { useMemo, useState } from "react";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function NetWorthCalculator() {
   const [country, setCountry] = useState("canada");
 
-  const [cash, setCash] = useState(12000);
-  const [investments, setInvestments] = useState(45000);
-  const [retirement, setRetirement] = useState(65000);
-  const [realEstate, setRealEstate] = useState(420000);
-  const [vehicles, setVehicles] = useState(18000);
-  const [businessAssets, setBusinessAssets] = useState(10000);
-  const [otherAssets, setOtherAssets] = useState(5000);
+  const [cash, setCash] = useState("");
+  const [investments, setInvestments] = useState("");
+  const [retirement, setRetirement] = useState("");
+  const [realEstate, setRealEstate] = useState("");
+  const [vehicles, setVehicles] = useState("");
+  const [businessAssets, setBusinessAssets] = useState("");
+  const [otherAssets, setOtherAssets] = useState("");
 
-  const [mortgage, setMortgage] = useState(310000);
-  const [creditCards, setCreditCards] = useState(6000);
-  const [loans, setLoans] = useState(14000);
-  const [studentDebt, setStudentDebt] = useState(0);
-  const [otherDebt, setOtherDebt] = useState(0);
+  const [mortgage, setMortgage] = useState("");
+  const [creditCards, setCreditCards] = useState("");
+  const [loans, setLoans] = useState("");
+  const [studentDebt, setStudentDebt] = useState("");
+  const [otherDebt, setOtherDebt] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -36,8 +38,21 @@ export default function NetWorthCalculator() {
       mortgage + creditCards + loans + studentDebt + otherDebt;
 
     const netWorth = totalAssets - totalLiabilities;
-    const liquidAssets = cash + investments;
-    const investableAssets = investments + retirement;
+    const cashValue = toNumber(cash);
+    const investmentsValue = toNumber(investments);
+    const retirementValue = toNumber(retirement);
+    const realEstateValue = toNumber(realEstate);
+    const vehiclesValue = toNumber(vehicles);
+    const businessAssetsValue = toNumber(businessAssets);
+    const otherAssetsValue = toNumber(otherAssets);
+    const mortgageValue = toNumber(mortgage);
+    const creditCardsValue = toNumber(creditCards);
+    const loansValue = toNumber(loans);
+    const studentDebtValue = toNumber(studentDebt);
+    const otherDebtValue = toNumber(otherDebt);
+
+    const liquidAssets = cashValue + investmentsValue;
+    const investableAssets = investmentsValue + retirementValue;
     const debtToAssetRatio = totalAssets > 0 ? totalLiabilities / totalAssets : 0;
     const liquidRatio = totalAssets > 0 ? liquidAssets / totalAssets : 0;
 
@@ -152,23 +167,23 @@ export default function NetWorthCalculator() {
           <div className="networth-section-label">Assets</div>
 
           <div className="networth-fields">
-            <label><span>Cash / Emergency Fund</span><input type="number" value={cash} onChange={(e) => setCash(Number(e.target.value))} /></label>
-            <label><span>Investments</span><input type="number" value={investments} onChange={(e) => setInvestments(Number(e.target.value))} /></label>
-            <label><span>Retirement Accounts</span><input type="number" value={retirement} onChange={(e) => setRetirement(Number(e.target.value))} /></label>
-            <label><span>Real Estate Value</span><input type="number" value={realEstate} onChange={(e) => setRealEstate(Number(e.target.value))} /></label>
-            <label><span>Vehicles</span><input type="number" value={vehicles} onChange={(e) => setVehicles(Number(e.target.value))} /></label>
-            <label><span>Business Assets</span><input type="number" value={businessAssets} onChange={(e) => setBusinessAssets(Number(e.target.value))} /></label>
-            <label className="networth-wide"><span>Other Assets</span><input type="number" value={otherAssets} onChange={(e) => setOtherAssets(Number(e.target.value))} /></label>
+            <label><span>Cash / Emergency Fund</span><input type="text" inputMode="decimal" value={cash} onChange={(e) => setCash(e.target.value)} /></label>
+            <label><span>Investments</span><input type="text" inputMode="decimal" value={investments} onChange={(e) => setInvestments(e.target.value)} /></label>
+            <label><span>Retirement Accounts</span><input type="text" inputMode="decimal" value={retirement} onChange={(e) => setRetirement(e.target.value)} /></label>
+            <label><span>Real Estate Value</span><input type="text" inputMode="decimal" value={realEstate} onChange={(e) => setRealEstate(e.target.value)} /></label>
+            <label><span>Vehicles</span><input type="text" inputMode="decimal" value={vehicles} onChange={(e) => setVehicles(e.target.value)} /></label>
+            <label><span>Business Assets</span><input type="text" inputMode="decimal" value={businessAssets} onChange={(e) => setBusinessAssets(e.target.value)} /></label>
+            <label className="networth-wide"><span>Other Assets</span><input type="text" inputMode="decimal" value={otherAssets} onChange={(e) => setOtherAssets(e.target.value)} /></label>
           </div>
 
           <div className="networth-section-label liabilities">Liabilities</div>
 
           <div className="networth-fields">
-            <label><span>Mortgage Balance</span><input type="number" value={mortgage} onChange={(e) => setMortgage(Number(e.target.value))} /></label>
-            <label><span>Credit Card Debt</span><input type="number" value={creditCards} onChange={(e) => setCreditCards(Number(e.target.value))} /></label>
-            <label><span>Personal / Auto Loans</span><input type="number" value={loans} onChange={(e) => setLoans(Number(e.target.value))} /></label>
-            <label><span>Student Debt</span><input type="number" value={studentDebt} onChange={(e) => setStudentDebt(Number(e.target.value))} /></label>
-            <label className="networth-wide"><span>Other Debt</span><input type="number" value={otherDebt} onChange={(e) => setOtherDebt(Number(e.target.value))} /></label>
+            <label><span>Mortgage Balance</span><input type="text" inputMode="decimal" value={mortgage} onChange={(e) => setMortgage(e.target.value)} /></label>
+            <label><span>Credit Card Debt</span><input type="text" inputMode="decimal" value={creditCards} onChange={(e) => setCreditCards(e.target.value)} /></label>
+            <label><span>Personal / Auto Loans</span><input type="text" inputMode="decimal" value={loans} onChange={(e) => setLoans(e.target.value)} /></label>
+            <label><span>Student Debt</span><input type="text" inputMode="decimal" value={studentDebt} onChange={(e) => setStudentDebt(e.target.value)} /></label>
+            <label className="networth-wide"><span>Other Debt</span><input type="text" inputMode="decimal" value={otherDebt} onChange={(e) => setOtherDebt(e.target.value)} /></label>
           </div>
         </div>
 

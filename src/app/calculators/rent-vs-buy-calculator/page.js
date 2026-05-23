@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import RentVsBuyCalculator from "../../components/RentVsBuyCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Rent vs Buy Calculator | Should You Rent or Buy?",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function RentVsBuyCalculatorPage() {
+export default async function RentVsBuyCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -64,6 +67,7 @@ export default function RentVsBuyCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script
         id="rent-buy-faq-schema"
         type="application/ld+json"
@@ -170,6 +174,7 @@ export default function RentVsBuyCalculatorPage() {
         btnText="Explore Calculators"
         btnHref="/calculators"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

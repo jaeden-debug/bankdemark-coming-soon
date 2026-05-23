@@ -2,20 +2,22 @@
 
 import { useMemo, useState } from "react";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function RentVsBuyCalculator() {
   const [country, setCountry] = useState("canada");
-  const [homePrice, setHomePrice] = useState(500000);
-  const [downPayment, setDownPayment] = useState(50000);
-  const [interestRate, setInterestRate] = useState(5.25);
-  const [mortgageYears, setMortgageYears] = useState(25);
-  const [monthlyRent, setMonthlyRent] = useState(2200);
-  const [rentIncrease, setRentIncrease] = useState(3);
-  const [propertyTax, setPropertyTax] = useState(4500);
-  const [insurance, setInsurance] = useState(1800);
-  const [maintenance, setMaintenance] = useState(1);
-  const [homeGrowth, setHomeGrowth] = useState(3);
-  const [investmentReturn, setInvestmentReturn] = useState(6);
-  const [years, setYears] = useState(10);
+  const [homePrice, setHomePrice] = useState("");
+  const [downPayment, setDownPayment] = useState("");
+  const [interestRate, setInterestRate] = useState("");
+  const [mortgageYears, setMortgageYears] = useState("");
+  const [monthlyRent, setMonthlyRent] = useState("");
+  const [rentIncrease, setRentIncrease] = useState("");
+  const [propertyTax, setPropertyTax] = useState("");
+  const [insurance, setInsurance] = useState("");
+  const [maintenance, setMaintenance] = useState("");
+  const [homeGrowth, setHomeGrowth] = useState("");
+  const [investmentReturn, setInvestmentReturn] = useState("");
+  const [years, setYears] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -27,9 +29,22 @@ export default function RentVsBuyCalculator() {
   });
 
   const result = useMemo(() => {
-    const loan = Math.max(homePrice - downPayment, 0);
-    const monthlyRate = interestRate / 100 / 12;
-    const totalPayments = mortgageYears * 12;
+    const homePriceValue = toNumber(homePrice);
+    const downPaymentValue = toNumber(downPayment);
+    const interestRateValue = toNumber(interestRate);
+    const mortgageYearsValue = toNumber(mortgageYears);
+    const propertyTaxValue = toNumber(propertyTax);
+    const insuranceValue = toNumber(insurance);
+    const maintenanceValue = toNumber(maintenance);
+    const homeGrowthValue = toNumber(homeGrowth);
+    const monthlyRentValue = toNumber(monthlyRent);
+    const rentIncreaseValue = toNumber(rentIncrease);
+    const investmentReturnValue = toNumber(investmentReturn);
+    const yearsValue = toNumber(years);
+
+    const loan = Math.max(homePriceValue - downPaymentValue, 0);
+    const monthlyRate = interestRateValue / 100 / 12;
+    const totalPayments = mortgageYearsValue * 12;
 
     const mortgagePayment =
       monthlyRate === 0
@@ -39,35 +54,35 @@ export default function RentVsBuyCalculator() {
           (Math.pow(1 + monthlyRate, totalPayments) - 1);
 
     let remainingMortgage = loan;
-    let totalBuyingCost = downPayment;
+    let totalBuyingCost = downPaymentValue;
     let totalRentCost = 0;
-    let investedRentScenario = downPayment;
-    let currentRent = monthlyRent;
+    let investedRentScenario = downPaymentValue;
+    let currentRent = monthlyRentValue;
 
-    for (let year = 1; year <= years; year++) {
+    for (let year = 1; year <= yearsValue; year++) {
       const yearlyOwnerCosts =
         mortgagePayment * 12 +
-        propertyTax +
-        insurance +
-        homePrice * (maintenance / 100);
+        propertyTaxValue +
+        insuranceValue +
+        homePriceValue * (maintenanceValue / 100);
 
       totalBuyingCost += yearlyOwnerCosts;
       totalRentCost += currentRent * 12;
 
       const rentSavings = Math.max(yearlyOwnerCosts - currentRent * 12, 0);
       investedRentScenario =
-        investedRentScenario * (1 + investmentReturn / 100) + rentSavings;
+        investedRentScenario * (1 + investmentReturnValue / 100) + rentSavings;
 
-      currentRent *= 1 + rentIncrease / 100;
+      currentRent *= 1 + rentIncreaseValue / 100;
     }
 
-    for (let month = 1; month <= years * 12; month++) {
+    for (let month = 1; month <= yearsValue * 12; month++) {
       const interest = remainingMortgage * monthlyRate;
       const principal = Math.max(mortgagePayment - interest, 0);
       remainingMortgage = Math.max(remainingMortgage - principal, 0);
     }
 
-    const futureHomeValue = homePrice * Math.pow(1 + homeGrowth / 100, years);
+    const futureHomeValue = homePriceValue * Math.pow(1 + homeGrowthValue / 100, yearsValue);
     const ownerEquity = futureHomeValue - remainingMortgage;
     const renterNetWorth = investedRentScenario;
     const advantage = ownerEquity - renterNetWorth;
@@ -140,22 +155,22 @@ export default function RentVsBuyCalculator() {
 
           <div className="rentbuy-section-label">Buying Inputs</div>
           <div className="rentbuy-fields">
-            <label><span>Home Price</span><input type="number" value={homePrice} onChange={(e) => setHomePrice(Number(e.target.value))} /></label>
-            <label><span>Down Payment</span><input type="number" value={downPayment} onChange={(e) => setDownPayment(Number(e.target.value))} /></label>
-            <label><span>Mortgage Rate (%)</span><input type="number" step="0.01" value={interestRate} onChange={(e) => setInterestRate(Number(e.target.value))} /></label>
-            <label><span>Mortgage Term / Amortization</span><input type="number" value={mortgageYears} onChange={(e) => setMortgageYears(Number(e.target.value))} /></label>
-            <label><span>Annual Property Tax</span><input type="number" value={propertyTax} onChange={(e) => setPropertyTax(Number(e.target.value))} /></label>
-            <label><span>Annual Insurance</span><input type="number" value={insurance} onChange={(e) => setInsurance(Number(e.target.value))} /></label>
-            <label><span>Maintenance (% of home)</span><input type="number" step="0.1" value={maintenance} onChange={(e) => setMaintenance(Number(e.target.value))} /></label>
-            <label><span>Home Growth (%)</span><input type="number" step="0.1" value={homeGrowth} onChange={(e) => setHomeGrowth(Number(e.target.value))} /></label>
+            <label><span>Home Price</span><input type="text" inputMode="decimal" value={homePrice} onChange={(e) => setHomePrice(e.target.value)} /></label>
+            <label><span>Down Payment</span><input type="text" inputMode="decimal" value={downPayment} onChange={(e) => setDownPayment(e.target.value)} /></label>
+            <label><span>Mortgage Rate (%)</span><input type="text" inputMode="decimal" step="0.01" value={interestRate} onChange={(e) => setInterestRate(e.target.value)} /></label>
+            <label><span>Mortgage Term / Amortization</span><input type="text" inputMode="decimal" value={mortgageYears} onChange={(e) => setMortgageYears(e.target.value)} /></label>
+            <label><span>Annual Property Tax</span><input type="text" inputMode="decimal" value={propertyTax} onChange={(e) => setPropertyTax(e.target.value)} /></label>
+            <label><span>Annual Insurance</span><input type="text" inputMode="decimal" value={insurance} onChange={(e) => setInsurance(e.target.value)} /></label>
+            <label><span>Maintenance (% of home)</span><input type="text" inputMode="decimal" step="0.1" value={maintenance} onChange={(e) => setMaintenance(e.target.value)} /></label>
+            <label><span>Home Growth (%)</span><input type="text" inputMode="decimal" step="0.1" value={homeGrowth} onChange={(e) => setHomeGrowth(e.target.value)} /></label>
           </div>
 
           <div className="rentbuy-section-label rent">Renting Inputs</div>
           <div className="rentbuy-fields">
-            <label><span>Monthly Rent</span><input type="number" value={monthlyRent} onChange={(e) => setMonthlyRent(Number(e.target.value))} /></label>
-            <label><span>Annual Rent Increase (%)</span><input type="number" step="0.1" value={rentIncrease} onChange={(e) => setRentIncrease(Number(e.target.value))} /></label>
-            <label><span>Investment Return (%)</span><input type="number" step="0.1" value={investmentReturn} onChange={(e) => setInvestmentReturn(Number(e.target.value))} /></label>
-            <label><span>Compare Over Years</span><input type="number" value={years} onChange={(e) => setYears(Number(e.target.value))} /></label>
+            <label><span>Monthly Rent</span><input type="text" inputMode="decimal" value={monthlyRent} onChange={(e) => setMonthlyRent(e.target.value)} /></label>
+            <label><span>Annual Rent Increase (%)</span><input type="text" inputMode="decimal" step="0.1" value={rentIncrease} onChange={(e) => setRentIncrease(e.target.value)} /></label>
+            <label><span>Investment Return (%)</span><input type="text" inputMode="decimal" step="0.1" value={investmentReturn} onChange={(e) => setInvestmentReturn(e.target.value)} /></label>
+            <label><span>Compare Over Years</span><input type="text" inputMode="decimal" value={years} onChange={(e) => setYears(e.target.value)} /></label>
           </div>
         </div>
 

@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import CompoundInterestCalculator from "../../components/CompoundInterestCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Compound Interest Calculator | Free Investment Growth Calculator",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function CompoundInterestCalculatorPage() {
+export default async function CompoundInterestCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -64,6 +67,7 @@ export default function CompoundInterestCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script
         id="compound-interest-faq-schema"
         type="application/ld+json"
@@ -271,6 +275,7 @@ export default function CompoundInterestCalculatorPage() {
         btnText="Join the Newsletter"
         btnHref="/contact"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

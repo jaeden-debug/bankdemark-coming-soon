@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import RetirementCalculator from "../../components/RetirementCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Retirement Calculator | Free Retirement Savings Calculator",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function RetirementCalculatorPage() {
+export default async function RetirementCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -65,6 +68,7 @@ export default function RetirementCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script
         id="retirement-faq-schema"
         type="application/ld+json"
@@ -199,6 +203,7 @@ export default function RetirementCalculatorPage() {
         btnText="Join the Newsletter"
         btnHref="/contact"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

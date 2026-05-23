@@ -2,13 +2,15 @@
 
 import { useMemo, useState } from "react";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function CompoundInterestCalculator() {
   const [country, setCountry] = useState("canada");
-  const [principal, setPrincipal] = useState(5000);
-  const [monthlyContribution, setMonthlyContribution] = useState(250);
-  const [annualReturn, setAnnualReturn] = useState(7);
-  const [years, setYears] = useState(25);
-  const [compoundFrequency, setCompoundFrequency] = useState(12);
+  const [principal, setPrincipal] = useState("");
+  const [monthlyContribution, setMonthlyContribution] = useState("");
+  const [annualReturn, setAnnualReturn] = useState("");
+  const [years, setYears] = useState("");
+  const [compoundFrequency, setCompoundFrequency] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -20,22 +22,28 @@ export default function CompoundInterestCalculator() {
   });
 
   const result = useMemo(() => {
-    const r = annualReturn / 100;
-    const n = compoundFrequency;
-    const t = years;
-    const months = years * 12;
+    const principalValue = toNumber(principal);
+    const monthlyContributionValue = toNumber(monthlyContribution);
+    const annualReturnValue = toNumber(annualReturn);
+    const yearsValue = toNumber(years);
+    const frequencyValue = Math.max(toNumber(compoundFrequency), 1);
 
-    const futurePrincipal = principal * Math.pow(1 + r / n, n * t);
+    const r = annualReturnValue / 100;
+    const n = frequencyValue;
+    const t = yearsValue;
+    const months = yearsValue * 12;
+
+    const futurePrincipal = principalValue * Math.pow(1 + r / n, n * t);
 
     const monthlyRate = r / 12;
     const futureContributions =
       monthlyRate === 0
-        ? monthlyContribution * months
-        : monthlyContribution *
+        ? monthlyContributionValue * months
+        : monthlyContributionValue *
           ((Math.pow(1 + monthlyRate, months) - 1) / monthlyRate);
 
     const futureValue = futurePrincipal + futureContributions;
-    const totalContributions = principal + monthlyContribution * months;
+    const totalContributions = principalValue + monthlyContributionValue * months;
     const estimatedGrowth = futureValue - totalContributions;
 
     return {
@@ -92,9 +100,9 @@ export default function CompoundInterestCalculator() {
                 <small>Your initial savings or investment balance.</small>
               </div>
               <input
-                type="number"
+                type="text" inputMode="decimal"
                 value={principal}
-                onChange={(e) => setPrincipal(Number(e.target.value))}
+                onChange={(e) => setPrincipal(e.target.value)}
               />
             </label>
 
@@ -105,9 +113,9 @@ export default function CompoundInterestCalculator() {
                 <small>How much you plan to add every month.</small>
               </div>
               <input
-                type="number"
+                type="text" inputMode="decimal"
                 value={monthlyContribution}
-                onChange={(e) => setMonthlyContribution(Number(e.target.value))}
+                onChange={(e) => setMonthlyContribution(e.target.value)}
               />
             </label>
 
@@ -118,10 +126,10 @@ export default function CompoundInterestCalculator() {
                 <small>Estimated yearly return or savings interest rate.</small>
               </div>
               <input
-                type="number"
+                type="text" inputMode="decimal"
                 step="0.1"
                 value={annualReturn}
-                onChange={(e) => setAnnualReturn(Number(e.target.value))}
+                onChange={(e) => setAnnualReturn(e.target.value)}
               />
             </label>
 
@@ -132,9 +140,9 @@ export default function CompoundInterestCalculator() {
                 <small>How many years your money stays invested.</small>
               </div>
               <input
-                type="number"
+                type="text" inputMode="decimal"
                 value={years}
-                onChange={(e) => setYears(Number(e.target.value))}
+                onChange={(e) => setYears(e.target.value)}
               />
             </label>
 
@@ -150,7 +158,7 @@ export default function CompoundInterestCalculator() {
               </div>
               <select
                 value={compoundFrequency}
-                onChange={(e) => setCompoundFrequency(Number(e.target.value))}
+                onChange={(e) => setCompoundFrequency(e.target.value)}
               >
                 <option value={1}>Annually</option>
                 <option value={2}>Semi-annually</option>

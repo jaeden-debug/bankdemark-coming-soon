@@ -2,17 +2,19 @@
 
 import { useMemo, useState } from "react";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
   const isRRSP = mode === "rrsp";
 
   const [accountType, setAccountType] = useState(mode);
-  const [annualIncome, setAnnualIncome] = useState(85000);
-  const [currentBalance, setCurrentBalance] = useState(25000);
-  const [contribution, setContribution] = useState(isRRSP ? 10000 : 7000);
-  const [unusedRoom, setUnusedRoom] = useState(0);
-  const [years, setYears] = useState(20);
-  const [annualReturn, setAnnualReturn] = useState(6);
-  const [taxRate, setTaxRate] = useState(30);
+  const [annualIncome, setAnnualIncome] = useState("");
+  const [currentBalance, setCurrentBalance] = useState("");
+  const [contribution, setContribution] = useState("");
+  const [unusedRoom, setUnusedRoom] = useState("");
+  const [years, setYears] = useState("");
+  const [annualReturn, setAnnualReturn] = useState("");
+  const [taxRate, setTaxRate] = useState("");
 
   const activeRRSP = accountType === "rrsp";
 
@@ -26,27 +28,35 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
     const rrspAnnualLimit = 33810;
     const tfsaAnnualLimit = 7000;
 
-    const estimatedRRSPRoom = Math.min(annualIncome * 0.18, rrspAnnualLimit) + unusedRoom;
-    const estimatedTFSARoom = tfsaAnnualLimit + unusedRoom;
+    const incomeValue = toNumber(annualIncome);
+    const balanceValue = toNumber(currentBalance);
+    const contributionValue = toNumber(contribution);
+    const unusedRoomValue = toNumber(unusedRoom);
+    const yearsValue = toNumber(years);
+    const returnValue = toNumber(annualReturn);
+    const taxRateValue = toNumber(taxRate);
+
+    const estimatedRRSPRoom = Math.min(incomeValue * 0.18, rrspAnnualLimit) + unusedRoomValue;
+    const estimatedTFSARoom = tfsaAnnualLimit + unusedRoomValue;
     const estimatedRoom = activeRRSP ? estimatedRRSPRoom : estimatedTFSARoom;
 
-    const allowedContribution = Math.min(contribution, Math.max(estimatedRoom, 0));
-    const overContribution = Math.max(contribution - estimatedRoom, 0);
+    const allowedContribution = Math.min(contributionValue, Math.max(estimatedRoom, 0));
+    const overContribution = Math.max(contributionValue - estimatedRoom, 0);
 
-    const taxRefund = activeRRSP ? allowedContribution * (taxRate / 100) : 0;
+    const taxRefund = activeRRSP ? allowedContribution * (taxRateValue / 100) : 0;
 
-    const monthlyRate = annualReturn / 100 / 12;
-    const months = years * 12;
+    const monthlyRate = returnValue / 100 / 12;
+    const months = yearsValue * 12;
 
     const projectedCurrent =
-      currentBalance * Math.pow(1 + monthlyRate, months);
+      balanceValue * Math.pow(1 + monthlyRate, months);
 
     const projectedContribution =
-      allowedContribution * Math.pow(1 + annualReturn / 100, years);
+      allowedContribution * Math.pow(1 + returnValue / 100, yearsValue);
 
     const projectedValue = projectedCurrent + projectedContribution;
 
-    const taxFreeGrowth = activeRRSP ? 0 : Math.max(projectedValue - currentBalance - allowedContribution, 0);
+    const taxFreeGrowth = activeRRSP ? 0 : Math.max(projectedValue - balanceValue - allowedContribution, 0);
     const taxDeferredValue = activeRRSP ? projectedValue : 0;
 
     return {
@@ -73,7 +83,7 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
 
   const switchType = (type) => {
     setAccountType(type);
-    setContribution(type === "rrsp" ? 10000 : 7000);
+    setContribution("");
   };
 
   return (
@@ -116,38 +126,38 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
           <div className="registered-fields">
             <label>
               <span>Annual Income</span>
-              <input type="number" value={annualIncome} onChange={(e) => setAnnualIncome(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={annualIncome} onChange={(e) => setAnnualIncome(e.target.value)} />
             </label>
 
             <label>
               <span>Current {activeRRSP ? "RRSP" : "TFSA"} Balance</span>
-              <input type="number" value={currentBalance} onChange={(e) => setCurrentBalance(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={currentBalance} onChange={(e) => setCurrentBalance(e.target.value)} />
             </label>
 
             <label>
               <span>Planned Contribution</span>
-              <input type="number" value={contribution} onChange={(e) => setContribution(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={contribution} onChange={(e) => setContribution(e.target.value)} />
             </label>
 
             <label>
               <span>Unused Contribution Room</span>
-              <input type="number" value={unusedRoom} onChange={(e) => setUnusedRoom(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={unusedRoom} onChange={(e) => setUnusedRoom(e.target.value)} />
             </label>
 
             <label>
               <span>Timeline</span>
-              <input type="number" value={years} onChange={(e) => setYears(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={years} onChange={(e) => setYears(e.target.value)} />
             </label>
 
             <label>
               <span>Expected Annual Return (%)</span>
-              <input type="number" step="0.1" value={annualReturn} onChange={(e) => setAnnualReturn(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" step="0.1" value={annualReturn} onChange={(e) => setAnnualReturn(e.target.value)} />
             </label>
 
             {activeRRSP && (
               <label className="registered-wide">
                 <span>Estimated Marginal Tax Rate (%)</span>
-                <input type="number" step="0.1" value={taxRate} onChange={(e) => setTaxRate(Number(e.target.value))} />
+                <input type="text" inputMode="decimal" step="0.1" value={taxRate} onChange={(e) => setTaxRate(e.target.value)} />
               </label>
             )}
           </div>

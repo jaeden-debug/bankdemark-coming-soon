@@ -88,10 +88,12 @@ function simulatePayoff(cards, extraPayment, method) {
   };
 }
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function CreditCardPayoffOptimizer() {
   const [country, setCountry] = useState("canada");
   const [cards, setCards] = useState(starterCards);
-  const [extraPayment, setExtraPayment] = useState(250);
+  const [extraPayment, setExtraPayment] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -172,9 +174,9 @@ export default function CreditCardPayoffOptimizer() {
             <label>
               <span>Extra Monthly Payment</span>
               <input
-                type="number"
+                type="text" inputMode="decimal"
                 value={extraPayment}
-                onChange={(e) => setExtraPayment(Number(e.target.value))}
+                onChange={(e) => setExtraPayment(e.target.value)}
               />
             </label>
             <button type="button" onClick={addCard}>+ Add Card</button>
@@ -198,7 +200,7 @@ export default function CreditCardPayoffOptimizer() {
                   <label>
                     <span>Balance</span>
                     <input
-                      type="number"
+                      type="text" inputMode="decimal"
                       value={card.balance}
                       onChange={(e) => updateCard(card.id, "balance", e.target.value)}
                     />
@@ -207,7 +209,7 @@ export default function CreditCardPayoffOptimizer() {
                   <label>
                     <span>APR (%)</span>
                     <input
-                      type="number"
+                      type="text" inputMode="decimal"
                       step="0.01"
                       value={card.rate}
                       onChange={(e) => updateCard(card.id, "rate", e.target.value)}
@@ -217,7 +219,7 @@ export default function CreditCardPayoffOptimizer() {
                   <label>
                     <span>Minimum Payment</span>
                     <input
-                      type="number"
+                      type="text" inputMode="decimal"
                       value={card.minPayment}
                       onChange={(e) => updateCard(card.id, "minPayment", e.target.value)}
                     />

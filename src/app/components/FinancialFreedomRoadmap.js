@@ -3,14 +3,16 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function FinancialFreedomRoadmap() {
   const [country, setCountry] = useState("canada");
-  const [income, setIncome] = useState(5500);
-  const [expenses, setExpenses] = useState(4200);
-  const [debt, setDebt] = useState(12000);
-  const [emergencyFund, setEmergencyFund] = useState(8000);
-  const [invested, setInvested] = useState(35000);
-  const [monthlyInvesting, setMonthlyInvesting] = useState(650);
+  const [income, setIncome] = useState("");
+  const [expenses, setExpenses] = useState("");
+  const [debt, setDebt] = useState("");
+  const [emergencyFund, setEmergencyFund] = useState("");
+  const [invested, setInvested] = useState("");
+  const [monthlyInvesting, setMonthlyInvesting] = useState("");
   const [goal, setGoal] = useState("financial-freedom");
   const [risk, setRisk] = useState("balanced");
 
@@ -24,12 +26,19 @@ export default function FinancialFreedomRoadmap() {
   });
 
   const roadmap = useMemo(() => {
-    const margin = income - expenses;
-    const savingsRate = income > 0 ? margin / income : 0;
-    const emergencyMonths = expenses > 0 ? emergencyFund / expenses : 0;
-    const debtPressure = income > 0 ? debt / income : 0;
-    const investRate = income > 0 ? monthlyInvesting / income : 0;
-    const netWorth = emergencyFund + invested - debt;
+    const incomeValue = toNumber(income);
+    const expensesValue = toNumber(expenses);
+    const debtValue = toNumber(debt);
+    const emergencyFundValue = toNumber(emergencyFund);
+    const investedValue = toNumber(invested);
+    const monthlyInvestingValue = toNumber(monthlyInvesting);
+
+    const margin = incomeValue - expensesValue;
+    const savingsRate = incomeValue > 0 ? margin / incomeValue : 0;
+    const emergencyMonths = expensesValue > 0 ? emergencyFundValue / expensesValue : 0;
+    const debtPressure = incomeValue > 0 ? debtValue / incomeValue : 0;
+    const investRate = incomeValue > 0 ? monthlyInvestingValue / incomeValue : 0;
+    const netWorth = emergencyFundValue + investedValue - debtValue;
 
     let phase = "Foundation Repair";
     let archetype = "Stabilizer";
@@ -57,7 +66,7 @@ export default function FinancialFreedomRoadmap() {
 
     if (margin <= 0) priorities.push("Fix monthly cash flow immediately");
     if (emergencyMonths < 1) priorities.push("Build a starter emergency fund");
-    if (debt > 0) priorities.push("Create a debt payoff system");
+    if (debtValue > 0) priorities.push("Create a debt payoff system");
     if (emergencyMonths < 3) priorities.push("Build 3 months of emergency reserves");
     if (investRate < 0.1) priorities.push("Increase monthly investing rate");
     priorities.push("Track net worth monthly");
@@ -75,7 +84,7 @@ export default function FinancialFreedomRoadmap() {
       first30.push("Automate the first transfer toward debt, savings, or investing.");
     }
 
-    if (debt > 0) {
+    if (debtValue > 0) {
       first30.push("List every debt by balance, interest rate, and minimum payment.");
       next90.push("Use the Debt Payoff Calculator and choose avalanche or snowball.");
     }
@@ -86,7 +95,7 @@ export default function FinancialFreedomRoadmap() {
       next90.push("Keep emergency savings separate from spending money.");
     }
 
-    if (monthlyInvesting > 0) {
+    if (monthlyInvestingValue > 0) {
       next90.push("Keep monthly investing automatic and raise it by 1–3% if cash flow allows.");
     } else {
       next90.push("Start a small automatic monthly investment after the cash buffer is stable.");
@@ -170,32 +179,32 @@ export default function FinancialFreedomRoadmap() {
           <div className="roadmap-fields">
             <label>
               <span>Monthly Take-Home Income</span>
-              <input type="number" value={income} onChange={(e) => setIncome(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={income} onChange={(e) => setIncome(e.target.value)} />
             </label>
 
             <label>
               <span>Total Monthly Expenses</span>
-              <input type="number" value={expenses} onChange={(e) => setExpenses(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={expenses} onChange={(e) => setExpenses(e.target.value)} />
             </label>
 
             <label>
               <span>Total Consumer Debt</span>
-              <input type="number" value={debt} onChange={(e) => setDebt(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={debt} onChange={(e) => setDebt(e.target.value)} />
             </label>
 
             <label>
               <span>Emergency Fund</span>
-              <input type="number" value={emergencyFund} onChange={(e) => setEmergencyFund(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={emergencyFund} onChange={(e) => setEmergencyFund(e.target.value)} />
             </label>
 
             <label>
               <span>Invested Assets</span>
-              <input type="number" value={invested} onChange={(e) => setInvested(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={invested} onChange={(e) => setInvested(e.target.value)} />
             </label>
 
             <label>
               <span>Monthly Investing</span>
-              <input type="number" value={monthlyInvesting} onChange={(e) => setMonthlyInvesting(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyInvesting} onChange={(e) => setMonthlyInvesting(e.target.value)} />
             </label>
 
             <label>

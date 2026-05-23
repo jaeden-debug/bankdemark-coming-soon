@@ -2,16 +2,18 @@
 
 import { useMemo, useState } from "react";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function RetirementCalculator() {
   const [country, setCountry] = useState("canada");
-  const [currentAge, setCurrentAge] = useState(35);
-  const [retirementAge, setRetirementAge] = useState(65);
-  const [lifeExpectancy, setLifeExpectancy] = useState(90);
-  const [currentSavings, setCurrentSavings] = useState(75000);
-  const [monthlyContribution, setMonthlyContribution] = useState(750);
-  const [annualReturn, setAnnualReturn] = useState(6);
-  const [inflation, setInflation] = useState(2.5);
-  const [retirementSpending, setRetirementSpending] = useState(60000);
+  const [currentAge, setCurrentAge] = useState("");
+  const [retirementAge, setRetirementAge] = useState("");
+  const [lifeExpectancy, setLifeExpectancy] = useState("");
+  const [currentSavings, setCurrentSavings] = useState("");
+  const [monthlyContribution, setMonthlyContribution] = useState("");
+  const [annualReturn, setAnnualReturn] = useState("");
+  const [inflation, setInflation] = useState("");
+  const [retirementSpending, setRetirementSpending] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -23,24 +25,33 @@ export default function RetirementCalculator() {
   });
 
   const result = useMemo(() => {
-    const yearsToRetirement = Math.max(retirementAge - currentAge, 0);
-    const retirementYears = Math.max(lifeExpectancy - retirementAge, 1);
+    const currentAgeValue = toNumber(currentAge);
+    const retirementAgeValue = toNumber(retirementAge);
+    const lifeExpectancyValue = toNumber(lifeExpectancy);
+    const currentSavingsValue = toNumber(currentSavings);
+    const monthlyContributionValue = toNumber(monthlyContribution);
+    const annualReturnValue = toNumber(annualReturn);
+    const inflationValue = toNumber(inflation);
+    const retirementSpendingValue = toNumber(retirementSpending);
+
+    const yearsToRetirement = Math.max(retirementAgeValue - currentAgeValue, 0);
+    const retirementYears = Math.max(lifeExpectancyValue - retirementAgeValue, 1);
     const months = yearsToRetirement * 12;
 
-    const monthlyReturn = annualReturn / 100 / 12;
+    const monthlyReturn = annualReturnValue / 100 / 12;
     const futureSavings =
-      currentSavings * Math.pow(1 + monthlyReturn, months);
+      currentSavingsValue * Math.pow(1 + monthlyReturn, months);
 
     const futureContributions =
       monthlyReturn === 0
-        ? monthlyContribution * months
-        : monthlyContribution *
+        ? monthlyContributionValue * months
+        : monthlyContributionValue *
           ((Math.pow(1 + monthlyReturn, months) - 1) / monthlyReturn);
 
     const projectedNestEgg = futureSavings + futureContributions;
 
     const inflationAdjustedSpending =
-      retirementSpending * Math.pow(1 + inflation / 100, yearsToRetirement);
+      retirementSpendingValue * Math.pow(1 + inflationValue / 100, yearsToRetirement);
 
     const targetNestEgg = inflationAdjustedSpending * 25;
     const gap = projectedNestEgg - targetNestEgg;
@@ -57,7 +68,7 @@ export default function RetirementCalculator() {
       inflationAdjustedSpending,
       safeAnnualWithdrawal,
       safeMonthlyWithdrawal,
-      totalContributions: currentSavings + monthlyContribution * months,
+      totalContributions: currentSavingsValue + monthlyContributionValue * months,
     };
   }, [
     currentAge,
@@ -121,42 +132,42 @@ export default function RetirementCalculator() {
           <div className="retirement-fields">
             <label>
               <span>Current Age</span>
-              <input type="number" value={currentAge} onChange={(e) => setCurrentAge(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={currentAge} onChange={(e) => setCurrentAge(e.target.value)} />
             </label>
 
             <label>
               <span>Retirement Age</span>
-              <input type="number" value={retirementAge} onChange={(e) => setRetirementAge(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={retirementAge} onChange={(e) => setRetirementAge(e.target.value)} />
             </label>
 
             <label>
               <span>Life Expectancy</span>
-              <input type="number" value={lifeExpectancy} onChange={(e) => setLifeExpectancy(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={lifeExpectancy} onChange={(e) => setLifeExpectancy(e.target.value)} />
             </label>
 
             <label>
               <span>Current Retirement Savings</span>
-              <input type="number" value={currentSavings} onChange={(e) => setCurrentSavings(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={currentSavings} onChange={(e) => setCurrentSavings(e.target.value)} />
             </label>
 
             <label>
               <span>Monthly Contribution</span>
-              <input type="number" value={monthlyContribution} onChange={(e) => setMonthlyContribution(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyContribution} onChange={(e) => setMonthlyContribution(e.target.value)} />
             </label>
 
             <label>
               <span>Expected Annual Return (%)</span>
-              <input type="number" step="0.1" value={annualReturn} onChange={(e) => setAnnualReturn(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" step="0.1" value={annualReturn} onChange={(e) => setAnnualReturn(e.target.value)} />
             </label>
 
             <label>
               <span>Inflation Estimate (%)</span>
-              <input type="number" step="0.1" value={inflation} onChange={(e) => setInflation(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" step="0.1" value={inflation} onChange={(e) => setInflation(e.target.value)} />
             </label>
 
             <label>
               <span>Desired Annual Retirement Spending</span>
-              <input type="number" value={retirementSpending} onChange={(e) => setRetirementSpending(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={retirementSpending} onChange={(e) => setRetirementSpending(e.target.value)} />
             </label>
           </div>
         </div>

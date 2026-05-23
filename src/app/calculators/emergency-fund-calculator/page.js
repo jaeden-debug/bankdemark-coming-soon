@@ -4,6 +4,7 @@ import CTABanner from "../../components/CTABanner";
 import EmergencyFundCalculator from "../../components/EmergencyFundCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
 import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
+import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
   title: "Emergency Fund Calculator | Free Safety Savings Calculator",
@@ -33,7 +34,9 @@ const faq = [
   },
 ];
 
-export default function EmergencyFundCalculatorPage() {
+export default async function EmergencyFundCalculatorPage({ searchParams }) {
+  const resolvedSearchParams = await searchParams;
+  const sharedData = resolvedSearchParams?.data || "";
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -59,6 +62,7 @@ export default function EmergencyFundCalculatorPage() {
 
   return (
     <>
+      <CalculatorStateHydrator encodedData={sharedData} />
       <Script id="emergency-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="emergency-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
@@ -151,6 +155,7 @@ export default function EmergencyFundCalculatorPage() {
         btnText="Explore Calculators"
         btnHref="/calculators"
       />
+          <GlobalCalculatorShare />
     </>
   );
 }

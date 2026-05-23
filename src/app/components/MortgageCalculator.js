@@ -8,16 +8,18 @@ const money = new Intl.NumberFormat("en-US", {
   maximumFractionDigits: 0,
 });
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function MortgageCalculator() {
   const [country, setCountry] = useState("canada");
-  const [homePrice, setHomePrice] = useState(450000);
-  const [downPayment, setDownPayment] = useState(90000);
-  const [rate, setRate] = useState(5.25);
-  const [years, setYears] = useState(25);
-  const [termYears, setTermYears] = useState(5);
-  const [taxes, setTaxes] = useState(4200);
-  const [insurance, setInsurance] = useState(1800);
-  const [hoa, setHoa] = useState(0);
+  const [homePrice, setHomePrice] = useState("");
+  const [downPayment, setDownPayment] = useState("");
+  const [rate, setRate] = useState("");
+  const [years, setYears] = useState("");
+  const [termYears, setTermYears] = useState("");
+  const [taxes, setTaxes] = useState("");
+  const [insurance, setInsurance] = useState("");
+  const [hoa, setHoa] = useState("");
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -29,8 +31,8 @@ export default function MortgageCalculator() {
   });
 
   const result = useMemo(() => {
-    const baseLoan = Math.max(homePrice - downPayment, 0);
-    const downPercent = homePrice > 0 ? downPayment / homePrice : 0;
+    const baseLoan = Math.max(homePriceValue - downPaymentValue, 0);
+    const downPercent = homePriceValue > 0 ? downPaymentValue / homePriceValue : 0;
 
     let insurancePremium = 0;
 
@@ -41,8 +43,8 @@ export default function MortgageCalculator() {
     }
 
     const loan = baseLoan + insurancePremium;
-    const months = years * 12;
-    const monthlyRate = rate / 100 / 12;
+    const months = yearsValue * 12;
+    const monthlyRate = rateValue / 100 / 12;
 
     const principalInterest =
       monthlyRate === 0
@@ -51,9 +53,9 @@ export default function MortgageCalculator() {
           (monthlyRate * Math.pow(1 + monthlyRate, months)) /
           (Math.pow(1 + monthlyRate, months) - 1);
 
-    const monthlyTaxes = taxes / 12;
-    const monthlyInsurance = insurance / 12;
-    const monthlyTotal = principalInterest + monthlyTaxes + monthlyInsurance + hoa;
+    const monthlyTaxes = taxesValue / 12;
+    const monthlyInsurance = insuranceValue / 12;
+    const monthlyTotal = principalInterest + monthlyTaxes + monthlyInsurance + hoaValue;
     const totalPaid = monthlyTotal * months;
     const totalInterest = principalInterest * months - loan;
 
@@ -118,23 +120,23 @@ export default function MortgageCalculator() {
           <div className="mortgage-fields">
             <label>
               <span>Home Price</span>
-              <input type="number" value={homePrice} onChange={(e) => setHomePrice(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={homePrice} onChange={(e) => setHomePrice(e.target.value)} />
             </label>
 
             <label>
               <span>Down Payment</span>
-              <input type="number" value={downPayment} onChange={(e) => setDownPayment(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={downPayment} onChange={(e) => setDownPayment(e.target.value)} />
             </label>
 
             <label>
               <span>Interest Rate (%)</span>
-              <input type="number" step="0.01" value={rate} onChange={(e) => setRate(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" step="0.01" value={rate} onChange={(e) => setRate(e.target.value)} />
             </label>
 
             {isCanada && (
               <label>
                 <span>Mortgage Term</span>
-                <select value={termYears} onChange={(e) => setTermYears(Number(e.target.value))}>
+                <select value={termYears} onChange={(e) => setTermYears(e.target.value)}>
                   <option value={1}>1 year</option>
                   <option value={2}>2 years</option>
                   <option value={3}>3 years</option>
@@ -146,7 +148,7 @@ export default function MortgageCalculator() {
 
             <label>
               <span>{isCanada ? "Amortization Period" : "Loan Term"}</span>
-              <select value={years} onChange={(e) => setYears(Number(e.target.value))}>
+              <select value={years} onChange={(e) => setYears(e.target.value)}>
                 {isCanada ? (
                   <>
                     <option value={20}>20 years</option>
@@ -165,17 +167,17 @@ export default function MortgageCalculator() {
 
             <label>
               <span>Annual Property Tax</span>
-              <input type="number" value={taxes} onChange={(e) => setTaxes(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={taxes} onChange={(e) => setTaxes(e.target.value)} />
             </label>
 
             <label>
               <span>Annual Home Insurance</span>
-              <input type="number" value={insurance} onChange={(e) => setInsurance(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={insurance} onChange={(e) => setInsurance(e.target.value)} />
             </label>
 
             <label>
               <span>{isCanada ? "Monthly Condo Fees" : "Monthly HOA Fees"}</span>
-              <input type="number" value={hoa} onChange={(e) => setHoa(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={hoa} onChange={(e) => setHoa(e.target.value)} />
             </label>
           </div>
         </div>

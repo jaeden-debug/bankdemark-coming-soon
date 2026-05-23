@@ -2,12 +2,14 @@
 
 import { useMemo, useState } from "react";
 
+const toNumber = (value) => Number(value) || 0;
+
 export default function EmergencyFundCalculator() {
   const [country, setCountry] = useState("canada");
-  const [monthlyExpenses, setMonthlyExpenses] = useState(4200);
-  const [currentSavings, setCurrentSavings] = useState(8000);
-  const [targetMonths, setTargetMonths] = useState(6);
-  const [monthlyContribution, setMonthlyContribution] = useState(500);
+  const [monthlyExpenses, setMonthlyExpenses] = useState("");
+  const [currentSavings, setCurrentSavings] = useState("");
+  const [targetMonths, setTargetMonths] = useState("");
+  const [monthlyContribution, setMonthlyContribution] = useState("");
   const [jobStability, setJobStability] = useState("medium");
 
   const isCanada = country === "canada";
@@ -23,20 +25,25 @@ export default function EmergencyFundCalculator() {
     const recommendedMonths =
       jobStability === "low" ? 9 : jobStability === "high" ? 3 : 6;
 
-    const target = monthlyExpenses * targetMonths;
-    const recommendedTarget = monthlyExpenses * recommendedMonths;
-    const gap = Math.max(target - currentSavings, 0);
+    const monthlyExpensesValue = toNumber(monthlyExpenses);
+    const currentSavingsValue = toNumber(currentSavings);
+    const targetMonthsValue = toNumber(targetMonths);
+    const monthlyContributionValue = toNumber(monthlyContribution);
+
+    const target = monthlyExpensesValue * targetMonthsValue;
+    const recommendedTarget = monthlyExpensesValue * recommendedMonths;
+    const gap = Math.max(target - currentSavingsValue, 0);
     const monthsToGoal =
-      monthlyContribution > 0 ? Math.ceil(gap / monthlyContribution) : Infinity;
-    const currentCoverage = monthlyExpenses > 0 ? currentSavings / monthlyExpenses : 0;
+      monthlyContributionValue > 0 ? Math.ceil(gap / monthlyContributionValue) : Infinity;
+    const currentCoverage = monthlyExpensesValue > 0 ? currentSavingsValue / monthlyExpensesValue : 0;
 
     let status = "Needs Work";
     let note = "Build your emergency fund before taking bigger financial risks.";
 
-    if (currentCoverage >= targetMonths) {
+    if (currentCoverage >= targetMonthsValue) {
       status = "Fully Funded";
       note = "Your emergency fund meets your selected target.";
-    } else if (currentCoverage >= targetMonths / 2) {
+    } else if (currentCoverage >= targetMonthsValue / 2) {
       status = "Building";
       note = "You have a partial safety buffer and should keep funding it.";
     }
@@ -81,22 +88,22 @@ export default function EmergencyFundCalculator() {
           <div className="emergency-fields">
             <label>
               <span>Monthly Essential Expenses</span>
-              <input type="number" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(e.target.value)} />
             </label>
 
             <label>
               <span>Current Emergency Savings</span>
-              <input type="number" value={currentSavings} onChange={(e) => setCurrentSavings(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={currentSavings} onChange={(e) => setCurrentSavings(e.target.value)} />
             </label>
 
             <label>
               <span>Target Months</span>
-              <input type="number" value={targetMonths} onChange={(e) => setTargetMonths(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={targetMonths} onChange={(e) => setTargetMonths(e.target.value)} />
             </label>
 
             <label>
               <span>Monthly Contribution</span>
-              <input type="number" value={monthlyContribution} onChange={(e) => setMonthlyContribution(Number(e.target.value))} />
+              <input type="text" inputMode="decimal" value={monthlyContribution} onChange={(e) => setMonthlyContribution(e.target.value)} />
             </label>
 
             <label className="emergency-wide">
