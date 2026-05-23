@@ -1,6 +1,11 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/forum\/?$/i,
+  /^\/maino\//i,
+  /^\/news\.feed/i,
+  /^\/news\/(237|244|245|259|263|265|277|293|295|347|367|368|370|371|373|374|375|376|395|396|398|399|400)-/i,
+
   /^\/administrator\/?$/i,
   /^\/enz\/?$/i,
   /^\/Normal\/?$/i,
@@ -42,6 +47,69 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/fin-news/67-pravah.html": "/blog",
+  "/fin-news/68-kiev.html": "/blog",
+  "/fin-news/69-nalogovyj-kodeks.html": "/pillars/personal-finance",
+  "/fin-news/71-es.html": "/blog",
+  "/fin-news/73-mvf.html": "/blog",
+  "/fin-news/74-koalicija.html": "/blog",
+  "/fin-news/75-minfin.html": "/pillars/personal-finance",
+  "/fin-news/76-blagoprijatnosti.html": "/blog",
+  "/fin-news/77-vlasti-japonii.html": "/blog",
+  "/fin-news/78-zhkh.html": "/blog",
+  "/fin-news/79-kipr.html": "/blog",
+  "/fondi.html": "/pillars/investing",
+  "/home.feed?type=atom": "/blog",
+  "/home.feed?type=rss": "/blog",
+  "/home.html": "/",
+  "/home/1-common-category/361-02102014-l-lr-25-2014.html": "/pillars/banking",
+  "/home/249.html": "/pillars/banking",
+  "/home/362-29092014-l-lr-25092014-600-l-.html": "/pillars/banking",
+  "/home/363-15102014.html": "/pillars/banking",
+  "/home/365-17102014.html": "/pillars/banking",
+  "/index.php": "/",
+  "/index.php?start=22": "/blog",
+  "/instructions.html": "/pillars/banking",
+  "/instructions/bankomat.html": "/pillars/banking",
+  "/instructions/nsmep.html": "/pillars/banking",
+  "/instructions/oplata-vartost-tovarv.html": "/pillars/banking",
+  "/instructions/termnal.html": "/pillars/banking",
+  "/instructions/torgovij-termnal.html": "/pillars/banking",
+  "/instructions/zavantazhennja.html": "/pillars/banking",
+  "/instructions/zmna-pin.html": "/pillars/banking",
+  "/news/243-demark-naysilnishiy.html": "/about",
+  "/news/270-kapital.html": "/pillars/investing",
+  "/news/349-2014-09-02-14-25-01.html": "/blog",
+  "/news/350--02-2014-.html": "/blog",
+  "/news/351-2014-09-03-08-29-52.html": "/blog",
+  "/news/352----qq--------.html": "/blog",
+  "/news/353-2014-09-24-08-41-24.html": "/blog",
+  "/news/354----------lr--r--------------.html": "/blog",
+  "/news/355--l-lr-.html": "/blog",
+  "/news/356--qq.html": "/blog",
+  "/news/357--01102014-------qq.html": "/blog",
+  "/news/358-2014-10-02-08-13-00.html": "/blog",
+  "/pokaznyky.html": "/pillars/banking",
+  "/pokaznyky/zvitnist.html": "/pillars/banking",
+  "/pokaznyky/rejting.html": "/pillars/banking",
+  "/poslugy-on-line/nternet-perekazi.html": "/pillars/banking",
+  "/poslugy-on-line/oplata.html": "/pillars/banking",
+  "/poslugy-on-line/popovnennja-rahunkv.html": "/pillars/banking",
+  "/poslugy-on-line/zamovlennja-platzhnih-kartok.html": "/pillars/banking",
+  "/poslugy/239-invest.html": "/pillars/investing",
+  "/poslugy/82-kredit-.html": "/calculators/mortgage-calculator",
+  "/poslugy/89-cnn-paperi.html": "/pillars/investing",
+  "/poslugy/91-groshov-perekazi-.html": "/pillars/banking",
+  "/poslugy/93-vkladi-na-vimogu-.html": "/calculators/compound-interest-calculator",
+  "/poslugy/94-platzhn-kartki.html": "/pillars/banking",
+  "/poslugy/95-kredituvannja.html": "/calculators/mortgage-calculator",
+  "/poslugy/corpor.html": "/pillars/business-credit",
+  "/poslugy/corpor/163-kredituvannja.html": "/pillars/business-credit",
+  "/poslugy/corpor/292-tarify-fop-yur.html": "/pillars/business-credit",
+  "/poslugy/privat.html": "/pillars/personal-finance",
+  "/pro-bank.html": "/about",
+  "/pro-bank/1.html": "/about",
+
   "/index.php?format=feed&type=atom": "/blog",
   "/index.php?format=feed&type=rss": "/blog",
   "/index.php?start=11": "/blog",
@@ -85,9 +153,10 @@ const legacyRedirects = {
 export function middleware(request) {
   const url = request.nextUrl;
   const pathname = url.pathname;
+  const lookupKey = `${pathname}${url.search}`;
 
-  if (legacyRedirects[pathname]) {
-    return NextResponse.redirect(new URL(legacyRedirects[pathname], request.url), 308);
+  if (legacyRedirects[lookupKey] || legacyRedirects[pathname]) {
+    return NextResponse.redirect(new URL(legacyRedirects[lookupKey] || legacyRedirects[pathname], request.url), 308);
   }
 
   if (gonePatterns.some((pattern) => pattern.test(pathname))) {
