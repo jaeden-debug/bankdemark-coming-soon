@@ -195,23 +195,39 @@ export function middleware(request) {
   const lookupKey = `${pathname}${url.search}`;
 
   
-  const isOldUaArticle =
-    (pathname === "/ua" || pathname === "/ua/") &&
-    url.searchParams.has("article");
+  
+const normalizedPath = pathname.replace(/\/$/, "") || "/";
 
-  const isOldUaArchiveArticle =
-    pathname === "/ua/about/archiv_news" &&
-    url.searchParams.has("article");
+const isOldUaArticle =
+  normalizedPath === "/ua" &&
+  url.searchParams.has("article");
 
-  if (isOldUaArticle || isOldUaArchiveArticle) {
-    return new NextResponse("Gone", {
-      status: 410,
-      headers: {
-        "Content-Type": "text/plain",
-        "X-Robots-Tag": "noindex, nofollow",
-      },
-    });
-  }
+const isOldUaArchiveArticle =
+  normalizedPath === "/ua/about/archiv_news" &&
+  url.searchParams.has("article");
+
+const isOldUaActivityArticle =
+  normalizedPath === "/ua/activity" &&
+  url.searchParams.has("article");
+
+const isOldUaServicesArticle =
+  normalizedPath === "/ua/services" &&
+  url.searchParams.has("article");
+
+if (
+  isOldUaArticle ||
+  isOldUaArchiveArticle ||
+  isOldUaActivityArticle ||
+  isOldUaServicesArticle
+) {
+  return new NextResponse("Gone", {
+    status: 410,
+    headers: {
+      "Content-Type": "text/plain",
+      "X-Robots-Tag": "noindex, nofollow",
+    },
+  });
+}
 
   if (legacyRedirects[lookupKey] || legacyRedirects[pathname]) {
     return NextResponse.redirect(new URL(legacyRedirects[lookupKey] || legacyRedirects[pathname], request.url), 308);
