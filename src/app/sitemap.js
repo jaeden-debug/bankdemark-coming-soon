@@ -2,6 +2,11 @@ import { getAllPosts } from "@/lib/blog";
 
 const siteUrl = "https://bankdemark.com";
 
+const safeDate = (value) => {
+  const date = value ? new Date(value) : new Date();
+  return Number.isNaN(date.getTime()) ? new Date() : date;
+};
+
 const staticRoutes = [
   "",
   "/about",
@@ -15,14 +20,12 @@ const staticRoutes = [
   "/financial-freedom-quiz",
   "/financial-freedom-roadmap",
   "/money-health-score",
-
   "/pillars/personal-finance",
   "/pillars/investing",
   "/pillars/business-credit",
   "/pillars/debt-management",
   "/pillars/financial-freedom",
   "/pillars/banking",
-
   "/calculators/budget-calculator",
   "/calculators/compound-interest-calculator",
   "/calculators/credit-card-payoff-calculator",
@@ -50,7 +53,7 @@ export default function sitemap() {
     })),
     ...posts.map((post) => ({
       url: `${siteUrl}/blog/${post.slug}`,
-      lastModified: post.date ? new Date(post.date) : new Date(),
+      lastModified: safeDate(post.date),
       changeFrequency: "monthly",
       priority: 0.75,
     })),
