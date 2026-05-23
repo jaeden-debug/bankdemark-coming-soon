@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/ua\/?$/i,
+
   /^\/forum\/?$/i,
   /^\/maino\//i,
   /^\/news\.feed/i,
@@ -47,6 +49,43 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/pro-bank/akc.html": "/pillars/banking",
+  "/pro-bank/arhv-novin.html": "/blog",
+  "/pro-bank/information-for-owner.html": "/about",
+  "/pro-bank/information-for-owner/249.html": "/about",
+  "/pro-bank/korespondentsk-rahunki.html": "/pillars/banking",
+  "/pro-bank/oblichchja-banku.html": "/about",
+  "/pro-bank/partneri-.html": "/about",
+  "/pro-bank/povidomlennya-pro-dani.html": "/privacy",
+  "/pro-bank/rejting.html": "/pillars/banking",
+  "/pro-bank/storja.html": "/about",
+  "/pro-bank/storja/249.html": "/about",
+  "/pro-bank/vakans.html": "/about",
+  "/pro-bank/vzitna-kartka.html": "/about",
+  "/realzacja.html": "/pillars/banking",
+  "/ru": "/about",
+  "/strokov-vkladi.feed?type=atom": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi.feed?type=rss": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/173-fond.html": "/pillars/investing",
+  "/strokov-vkladi/204-mukacheve.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/205-rvne.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/206-odesa.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/207-mikolav.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/208-cherkasi.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/209-herson.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/210-vnnicja.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/211-lvv.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/212-krivij-rg.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/213-smferopol.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/214-poltava.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/215-brovari.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/216-zaporzhzhja.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/217-dnpropetrovsk.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/218-harkv.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/219-cherngv.html": "/calculators/compound-interest-calculator",
+  "/strokov-vkladi/249.html": "/calculators/compound-interest-calculator",
+
   "/fin-news/67-pravah.html": "/blog",
   "/fin-news/68-kiev.html": "/blog",
   "/fin-news/69-nalogovyj-kodeks.html": "/pillars/personal-finance",
