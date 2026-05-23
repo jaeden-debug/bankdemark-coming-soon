@@ -3,6 +3,7 @@ import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import InvestmentCalculator from "../../components/InvestmentCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
+import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
 
 export const metadata = {
   title: "Investment Calculator | Free Portfolio Growth Calculator",

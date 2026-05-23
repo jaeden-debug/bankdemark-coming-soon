@@ -3,6 +3,7 @@ import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import RetirementCalculator from "../../components/RetirementCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
+import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
 
 export const metadata = {
   title: "Retirement Calculator | Free Retirement Savings Calculator",

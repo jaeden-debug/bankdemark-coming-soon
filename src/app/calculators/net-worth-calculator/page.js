@@ -3,6 +3,7 @@ import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import NetWorthCalculator from "../../components/NetWorthCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
+import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
 
 export const metadata = {
   title: "Net Worth Calculator | Free Assets and Liabilities Tracker",

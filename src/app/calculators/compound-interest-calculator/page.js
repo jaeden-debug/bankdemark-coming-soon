@@ -3,6 +3,7 @@ import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import CompoundInterestCalculator from "../../components/CompoundInterestCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
+import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
 
 export const metadata = {
   title: "Compound Interest Calculator | Free Investment Growth Calculator",

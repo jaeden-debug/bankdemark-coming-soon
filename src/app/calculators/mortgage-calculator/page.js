@@ -3,6 +3,7 @@ import Script from "next/script";
 import CTABanner from "../../components/CTABanner";
 import MortgageCalculator from "../../components/MortgageCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
+import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
 
 export const metadata = {
   title: "Mortgage Calculator | Free Monthly Mortgage Payment Calculator",

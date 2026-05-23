@@ -39,24 +39,59 @@ a {
   text-decoration: none;
 }
 
-/* ── EXACT CODEPEN NAV SELECTORS ── */
 .site-nav {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 100;
-  width: min(1180px, calc(100% - 32px));
-  margin: 18px auto;
-  padding: 14px 16px;
+  left: 0;
+  right: 0;
+
+  width: min(1180px, calc(100% - 24px));
+  height: 78px;
+
+  z-index: 9999;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid rgba(255,255,255,0.12);
+
+  margin: 14px auto;
+  padding: 0 1.2rem;
+
   border-radius: 999px;
-  background: rgba(7,17,15,0.72);
-  -webkit-backdrop-filter: blur(22px);
-  backdrop-filter: blur(22px);
-  box-shadow: 0 24px 80px rgba(0,0,0,0.35);
+
+  background: rgba(7, 7, 7, 0.82);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+
+  box-shadow:
+    0 18px 60px rgba(0,0,0,0.35);
+
+  transition:
+    transform 0.32s ease,
+    opacity 0.25s ease,
+    background 0.25s ease;
 }
+
+.nav-visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.nav-hidden {
+  transform: translateY(-140%);
+  opacity: 0.98;
+}
+
+body {
+  padding-top: 96px;
+}
+
+
+
+/* ── EXACT CODEPEN NAV SELECTORS ── */
 
 .brand {
   font-weight: 900;

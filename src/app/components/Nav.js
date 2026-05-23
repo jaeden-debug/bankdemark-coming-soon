@@ -1,10 +1,11 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function Nav() {
   const [open, setOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   const links = [
     { href: "/pillars", label: "Pillars" },
@@ -14,9 +15,37 @@ export default function Nav() {
     { href: "/contact", label: "Contact" },
   ];
 
+  useEffect(() => {
+    let lastScroll = 0;
+
+    const handleScroll = () => {
+      const currentScroll = window.scrollY;
+
+      if (currentScroll <= 20) {
+        setVisible(true);
+      } else if (currentScroll > lastScroll) {
+        // scrolling down
+        setVisible(false);
+      } else {
+        // scrolling up
+        setVisible(true);
+      }
+
+      lastScroll = currentScroll;
+    };
+
+    window.addEventListener("scroll", handleScroll, {
+      passive: true,
+    });
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <header className="site-nav">
+      <header className={`site-nav ${visible ? "nav-visible" : "nav-hidden"}`}>
         <Link href="/" className="brand" onClick={() => setOpen(false)}>
           Bank<span>DeMark</span>
         </Link>
@@ -46,14 +75,25 @@ export default function Nav() {
         </button>
       </header>
 
-      <nav className={`mobile-menu ${open ? "open" : ""}`} aria-label="Mobile navigation">
+      <nav
+        className={`mobile-menu ${open ? "open" : ""}`}
+        aria-label="Mobile navigation"
+      >
         {links.map((link) => (
-          <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
+          <Link
+            key={link.href}
+            href={link.href}
+            onClick={() => setOpen(false)}
+          >
             {link.label}
           </Link>
         ))}
 
-        <Link href="/contact" className="mobile-cta" onClick={() => setOpen(false)}>
+        <Link
+          href="/contact"
+          className="mobile-cta"
+          onClick={() => setOpen(false)}
+        >
           Join Newsletter
         </Link>
       </nav>
