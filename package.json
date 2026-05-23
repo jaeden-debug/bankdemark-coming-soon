@@ -14,7 +14,9 @@
     "authority:inject": "node scripts/authorityos.js inject",
     "authority:validate": "node scripts/authorityos.js validate",
     "authority:report": "node scripts/authorityos.js report",
-    "authority:check": "npm run authority:inject && npm run authority:validate && npm run build"
+    "authority:check": "npm run authority:inject && npm run authority:validate && npm run build",
+    "authority:suggest": "node scripts/authorityos.js suggest",
+    "authority:health": "node scripts/authorityos.js health"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.106.1",

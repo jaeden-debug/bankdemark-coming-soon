@@ -790,11 +790,3 @@ Social accountability is a powerful behavioral tool. Sharing your savings goal w
 ---
 
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Financial regulations, product features, and contribution limits vary by jurisdiction and change over time. Always consult with qualified professionals before making financial decisions.
-
----
-
-## Sources
-
-<ol class="source-bibliography">
-<li id="source-oecd-financial-literacy"><strong>[1]</strong> <a href="https://www.oecd.org/financial/education/" target="_blank" rel="noopener noreferrer">OECD: Financial Literacy and Education</a></li>
-</ol>

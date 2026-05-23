@@ -7951,3 +7951,47 @@ label,
   color: var(--gold);
   font-weight: 700;
 }
+
+/* AuthorityOS citations */
+.citation-ref {
+  font-size: 0.72em;
+  margin-left: 2px;
+  vertical-align: super;
+}
+
+.citation-ref a {
+  color: var(--gold);
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.citation-ref a:hover {
+  text-decoration: underline;
+}
+
+.source-bibliography {
+  margin-top: 18px;
+  padding-left: 22px;
+  color: var(--muted);
+}
+
+.source-bibliography li {
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.source-bibliography a {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+.source-category,
+.source-confidence {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 7px;
+  border: 1px solid rgba(214, 179, 106, 0.25);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  color: var(--muted);
+}

@@ -738,12 +738,3 @@ Product page SEO targets specific transactional keywords and focuses on detailed
 ---
 
 *BankDeMark Editorial Team — Updated May 2026*
-
----
-
-## Sources
-
-<ol class="source-bibliography">
-<li id="source-google-search-central"><strong>[1]</strong> <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central Documentation</a></li>
-<li id="source-google-core-web-vitals"><strong>[2]</strong> <a href="https://developers.google.com/search/docs/appearance/core-web-vitals" target="_blank" rel="noopener noreferrer">Google Search Central: Core Web Vitals</a></li>
-</ol>

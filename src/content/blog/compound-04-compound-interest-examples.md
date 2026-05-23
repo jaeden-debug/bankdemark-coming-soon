@@ -409,11 +409,3 @@ Time matters more than the amount invested. Starting 10 years earlier often prod
 ---
 
 *BankDeMark Editorial Team — Updated May 2026*
-
----
-
-## Sources
-
-<ol class="source-bibliography">
-<li id="source-irs-retirement-limits"><strong>[1]</strong> <a href="https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-contributions" target="_blank" rel="noopener noreferrer">IRS: Retirement Plan Contribution Limits</a></li>
-</ol>

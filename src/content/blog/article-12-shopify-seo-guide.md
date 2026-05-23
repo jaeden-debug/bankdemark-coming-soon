@@ -729,11 +729,3 @@ Most foundational Shopify SEO — product page optimization, meta tags, image co
 ---
 
 *BankDeMark Editorial Team — Updated May 2026*
-
----
-
-## Sources
-
-<ol class="source-bibliography">
-<li id="source-google-search-central"><strong>[1]</strong> <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener noreferrer">Google Search Central Documentation</a></li>
-</ol>

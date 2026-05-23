@@ -351,11 +351,3 @@ No. The TSX and S&P 500 have different sector compositions and have delivered di
 
 *Published by BankDeMark | Finance Intelligence Platform*
 *Pillar: [Investing](/pillars/investing)*
-
----
-
-## Sources
-
-<ol class="source-bibliography">
-<li id="source-spiva"><strong>[1]</strong> <a href="https://www.spglobal.com/spdji/en/spiva/" target="_blank" rel="noopener noreferrer">S&P Dow Jones Indices: SPIVA</a></li>
-</ol>

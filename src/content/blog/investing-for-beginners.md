@@ -491,12 +491,3 @@ The most common and costly mistakes include: trying to time the market, panic-se
 
 *Published by BankDeMark | Finance Intelligence Platform*
 *Pillar: [Investing](/pillars/investing)*
-
----
-
-## Sources
-
-<ol class="source-bibliography">
-<li id="source-nyu-stern-historical-returns"><strong>[1]</strong> <a href="https://pages.stern.nyu.edu/~adamodar/New_Home_Page/datafile/histretSP.html" target="_blank" rel="noopener noreferrer">NYU Stern: Historical Returns on Stocks, Bonds and Bills</a></li>
-<li id="source-cra-tfsa-dollar-limit"><strong>[2]</strong> <a href="https://www.canada.ca/en/revenue-agency/services/tax/individuals/topics/tax-free-savings-account/contributions.html" target="_blank" rel="noopener noreferrer">Canada Revenue Agency: TFSA Dollar Limit</a></li>
-</ol>

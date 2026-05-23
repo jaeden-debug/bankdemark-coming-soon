@@ -429,11 +429,3 @@ Monthly at most for new investors; quarterly or annually is sufficient for disci
 
 *Published by BankDeMark | Finance Intelligence Platform*
 *Pillar: [Investing](/pillars/investing)*
-
----
-
-## Sources
-
-<ol class="source-bibliography">
-<li id="source-sp-global-spiva-us"><strong>[1]</strong> <a href="https://www.spglobal.com/spdji/en/spiva/article/spiva-us/" target="_blank" rel="noopener noreferrer">S&P Dow Jones Indices: SPIVA U.S. Scorecard</a></li>
-</ol>

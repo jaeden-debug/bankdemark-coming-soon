@@ -1,0 +1,7 @@
+{
+  "contentRoots": ["src/content/blog"],
+  "draftRoots": ["blog"],
+  "sourceRegistry": "content/sources/source-registry.json",
+  "reportPath": "authorityos-report.json",
+  "validateDrafts": false
+}
