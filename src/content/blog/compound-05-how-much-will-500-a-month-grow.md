@@ -45,7 +45,7 @@ reading_time: "22 min"
   "name": "How to Calculate What $500/Month Will Grow To",
   "description": "Step-by-step process for calculating what $500/month becomes using compound interest.",
   "step": [
-    { "@type": "HowToStep", "name": "Determine your expected return rate", "text": "Choose a realistic annual return rate. Historically, diversified stock market index funds have averaged approximately 7–10% annually before inflation [SOURCE NEEDED]. Use 7% as a conservative base case." },
+    { "@type": "HowToStep", "name": "Determine your expected return rate", "text": "Choose a realistic annual return rate. Diversified stock market index funds have historically produced strong long-term returns, but future returns are not guaranteed. Use 7% as a conservative base case." },
     { "@type": "HowToStep", "name": "Determine your time horizon", "text": "How many years will you invest? Count from today to the target date — retirement age, financial independence goal, or a specific milestone." },
     { "@type": "HowToStep", "name": "Use the future value of annuity formula", "text": "FV = 500 × [((1 + r/12)^(12t) − 1) / (r/12)], where r is annual rate and t is years. Or use the BankDeMark Compound Interest Calculator." },
     { "@type": "HowToStep", "name": "Add any starting balance", "text": "If you already have savings, add the future value of that lump sum: FV_lump = P × (1 + r/12)^(12t)." },
@@ -374,7 +374,7 @@ Use the [BankDeMark Retirement Calculator](/calculators/retirement-calculator) t
 ### Canada
 
 **TFSA (Tax-Free Savings Account):**
-The highest priority for most Canadian investors. All compound growth is tax-free — no annual tax drag on dividends or capital gains, and withdrawals are completely tax-free. The 2024 annual contribution limit was $7,000 ($583/month) [SOURCE NEEDED — verify current limit].
+The highest priority for most Canadian investors. All compound growth is tax-free — no annual tax drag on dividends or capital gains, and withdrawals are completely tax-free. The 2024 annual contribution limit was $7,000 ($583/month) .
 
 A $500/month TFSA investment maxes out most of the annual room and allows fully tax-free compounding. Invest in a low-cost all-in-one index ETF (XBAL, XGRO, VGRO, or VCNS depending on risk tolerance) and the compound growth runs on 100% of your returns.
 
@@ -388,7 +388,7 @@ See: [TFSA Calculator](/calculators/tfsa-calculator) | [RRSP Calculator](/calcul
 ### USA
 
 **Roth IRA:**
-The 2024 Roth IRA contribution limit is $7,000/year ($583/month) [SOURCE NEEDED — verify current limit]. For $500/month investors, a Roth IRA covers the full contribution and provides tax-free compound growth for life. Low-cost index funds (VTSAX, FXAIX, or equivalent total market/S&P 500 fund) are the standard vehicle.
+The 2024 Roth IRA contribution limit is $7,000/year ($583/month) . For $500/month investors, a Roth IRA covers the full contribution and provides tax-free compound growth for life. Low-cost index funds (VTSAX, FXAIX, or equivalent total market/S&P 500 fund) are the standard vehicle.
 
 **401(k) with employer match:**
 Before directing $500/month to a Roth IRA, contribute to your 401(k) at minimum up to the employer match — this is an immediate 50–100% return on those dollars. After the match, weigh Roth IRA vs. additional 401(k) contributions based on your current vs. expected future tax rate.

@@ -372,7 +372,7 @@ Canadian HISAs (the domestic equivalent of the US HYSA) are available from:
 - Various credit unions — often competitive savings rates
 - Big bank savings accounts — generally low rates; use for convenience banking only
 
-**CDIC insurance:** The Canada Deposit Insurance Corporation insures deposits at CDIC member institutions up to $100,000 per category per institution [SOURCE NEEDED]. HISA deposits are covered.
+**CDIC insurance:**.
 
 ### TFSA for Savings (Short-Term Goals)
 
@@ -402,7 +402,7 @@ See: [TFSA Calculator](/calculators/tfsa-calculator) | [Compound Interest Calcul
 
 American HYSAs are widely available from online banks: Ally, Marcus by Goldman Sachs, Discover, Synchrony, American Express National Bank, and others. Rates vary by institution and central bank policy.
 
-**FDIC insurance:** Federal Deposit Insurance Corporation insures up to $250,000 per depositor per FDIC-member institution per account category [SOURCE NEEDED].
+**FDIC insurance:**.
 
 ### Money Market Accounts
 

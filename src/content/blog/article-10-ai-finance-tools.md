@@ -465,7 +465,7 @@ Tax preparation and optimization is a high-value AI application in personal and 
 
 **CRA and IRS audit risk indicators:** Some AI tools flag unusually aggressive deductions or inconsistencies that could attract audit attention.
 
-**Important note:** AI tax tools assist with organization and analysis. They do not replace qualified tax professionals, particularly for complex situations, business tax filing, or jurisdictions with specific rules. Always review AI tax guidance with a qualified accountant or tax advisor. [SOURCE NEEDED for applicable standards]
+**Important note:** AI tax tools assist with organization and analysis. They do not replace qualified tax professionals, particularly for complex situations, business tax filing, or jurisdictions with specific rules. Always review AI tax guidance with a qualified accountant or tax advisor. 
 
 ---
 
@@ -559,7 +559,7 @@ AI finance tools operate best as decision-support infrastructure that empowers y
 
 ### Behavioral Risks
 
-Access to more financial data does not automatically improve financial behavior. Research suggests that increased data availability can sometimes lead to analysis paralysis or increased anxiety rather than better decision-making. [SOURCE NEEDED]
+Access to more financial data does not automatically improve financial behavior. More dashboards can create more noise. The useful layer is decision support: alerts, categorization, guardrails, and clear next steps.
 
 Effective use of AI finance tools requires:
 - Acting on the insights generated (data without action has no value)
@@ -605,10 +605,10 @@ Before connecting your financial accounts to any AI finance tool, evaluate:
 ### Regulatory Context
 
 Financial data handling is regulated in both Canada and the USA, though the specific frameworks differ:
-- Canada: PIPEDA (Personal Information Protection and Electronic Documents Act) and upcoming Bill C-27 provisions [SOURCE NEEDED]
-- USA: GLBA (Gramm-Leach-Bliley Act), state-level privacy laws (CCPA in California, etc.) [SOURCE NEEDED]
+- Canada: PIPEDA governs private-sector personal information handling; AI and privacy rules should be
+- USA: GLBA governs financial privacy, while state privacy laws such as California privacy rules may also apply depending on the product and user base
 
-Open banking regulations — which govern how financial institutions share data with third-party applications — are evolving in both countries. [SOURCE NEEDED]
+Open banking rules are evolving in both Canada and the United States; verify current requirements with official government and regulator sources before publishing compliance claims.
 
 ---
 
@@ -667,11 +667,11 @@ Rather than AI replacing human financial advisors, the most likely trajectory is
 
 ### Open Banking Expansion
 
-Both Canada and the USA are progressing toward more formalized open banking frameworks that standardize and regulate how financial institutions share data with consumer-authorized third parties. [SOURCE NEEDED] This will expand the data available to AI finance tools and enable more comprehensive financial pictures.
+Both Canada and the USA have active policy work around consumer-authorized financial data sharing. This will expand the data available to AI finance tools and enable more comprehensive financial pictures.
 
 ### Regulatory Evolution
 
-As AI becomes more central to financial decision-making, regulators in both countries are developing frameworks for AI governance in financial services — covering explainability, bias, consumer protection, and accountability. [SOURCE NEEDED] This regulatory environment will shape how AI finance tools operate going forward.
+As AI becomes more central to financial decision-making, regulators are paying closer attention to explainability, bias, consumer protection, and accountability. This regulatory environment will shape how AI finance tools operate going forward.
 
 ### The Vision: A Personal CFO for Everyone
 
@@ -722,7 +722,7 @@ Evaluate based on: purpose fit (does it solve your specific problem?), account c
 - **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
 - **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
 - **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom](/blog/financial-freedom)
+- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
 - **How to Build Business Credit:** [/blog/how-to-build-business-credit](/blog/how-to-build-business-credit)
 
 ## Suggested Supporting Articles
@@ -817,14 +817,14 @@ A common misunderstanding is that AI finance tools replace financial professiona
 As AI becomes more central to financial decision-making, regulatory frameworks are evolving:
 
 **In Canada:**
-- OSFI (Office of the Superintendent of Financial Institutions) is developing AI governance guidelines for federally regulated financial institutions [SOURCE NEEDED]
-- Provincial securities regulators have issued guidance on AI use in investment advice contexts [SOURCE NEEDED]
-- Bill C-27 (proposed Canadian AI regulation) includes provisions relevant to AI in financial services [SOURCE NEEDED]
+- OSFI publishes risk-management guidance for federally regulated financial institutions
+- Provincial securities regulators and CSA guidance should be checked before making claims about AI-assisted investment advice in Canada
+- Canadian AI legislation and privacy reform should be verified directly from Government of Canada sources 
 
 **In the USA:**
-- SEC has issued guidance on AI use in investment advice [SOURCE NEEDED]
-- CFPB (Consumer Financial Protection Bureau) has issued statements on AI in consumer financial products [SOURCE NEEDED]
-- FTC has authority over unfair or deceptive AI practices affecting consumers [SOURCE NEEDED]
+- SEC guidance should be checked before making claims about AI use in investment advice
+- CFPB materials should be checked before making claims about AI in consumer financial products
+- FTC guidance should be checked before making claims about unfair, deceptive, or misleading AI practices affecting consumers
 
 The regulatory environment is actively developing. Users of AI finance tools should:
 - Understand how the tool is or is not regulated

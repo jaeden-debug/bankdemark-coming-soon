@@ -324,7 +324,7 @@ A 5 percentage point rate difference on just $100/month produces a $485,804 gap 
 | 7–9% | Growth-oriented portfolio (80–100% equity index funds) |
 | 9–10%+ | Historical all-equity market returns (higher short-term volatility) |
 
-For investors with a 20+ year horizon and reasonable risk tolerance, an equity-heavy index portfolio in tax-advantaged accounts is the structure most likely to produce returns in the 7–9% range over the long term [SOURCE NEEDED]. This is not a guarantee — it is an expectation based on historical equity market performance.
+For investors with a 20+ year horizon and reasonable risk tolerance, an equity-heavy index portfolio in tax-advantaged accounts is a structure commonly used for long-term growth, though future returns are never guaranteed. This is not a guarantee — it is an expectation based on historical equity market performance.
 
 ---
 
@@ -386,7 +386,7 @@ See: [TFSA Calculator](/calculators/tfsa-calculator)
 The Roth IRA is the best starting account for most US beginner investors:
 - Contributions are after-tax; all growth and qualified withdrawals are tax-free
 - Can withdraw contributions (not earnings) without penalty — provides some flexibility
-- $7,000 annual limit (2024) [SOURCE NEEDED] — $100/month is well within this limit
+- — /month is usually far below annual contribution limits
 - Available at Fidelity, Vanguard, Schwab — all offer no-minimum Roth IRAs and commission-free index fund purchases
 
 **Investment inside the Roth IRA:**

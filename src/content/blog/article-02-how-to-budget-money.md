@@ -184,7 +184,7 @@ Without a budget, spending is reactive. Money flows to whatever is most immediat
 - Surprise shortfalls that become debt
 - No progress toward financial independence
 
-Studies consistently show that people who budget accumulate more savings and carry less consumer debt than those who do not, controlling for income. [SOURCE NEEDED]
+Budgeting is most useful when it changes behavior: tracking cash flow, assigning jobs to dollars, and catching leaks before they become debt.
 
 The goal is not to create a perfect budget on the first try. The goal is to have a budget — any budget — and to refine it with real data over time.
 
@@ -218,7 +218,7 @@ Sources of income to include:
 - Rental income
 - Government transfers (EI, disability, child benefits)
 
-**Do not budget based on gross income.** The gap between gross and net pay for employees can be 20–35% depending on your income level and jurisdiction. [SOURCE NEEDED]
+**Do not budget based on gross income.** The gap between gross and net pay can be large once taxes, payroll deductions, benefits, and retirement contributions are included.
 
 **For variable income earners:** Use the average of your lowest three income months as your baseline budget number. In higher-earning months, direct the surplus to savings or debt payoff.
 
@@ -260,7 +260,7 @@ Monthly Net Income – Total Monthly Expenses = Monthly Gap
 
 ## The 50/30/20 Budget Rule Explained {#50-30-20}
 
-The 50/30/20 rule, popularized by Senator Elizabeth Warren and her daughter Amelia Warren Tyagi in their book *All Your Worth* [SOURCE NEEDED], divides net income into three categories:
+The 50/30/20 rule, popularized by Elizabeth Warren and Amelia Warren Tyagi in *All Your Worth*, divides net income into three categories:
 
 ### The Three Categories
 
@@ -465,7 +465,7 @@ Overspending is rarely a math problem. It is almost always a behavioral one. Und
 **For retail therapy:**
 - Identify the emotional triggers that precede shopping sessions
 - Develop alternative emotional regulation strategies (exercise, social connection, creative outlets)
-- Not a reason for self-criticism — this is a widely documented human behavioral pattern [SOURCE NEEDED]
+- Not a reason for self-criticism — this is normal human behavior, especially when spending is invisible or automated
 
 ### The 10-3-1 Decision Framework
 
@@ -504,7 +504,7 @@ When money is scarce, spending on things that have outsized positive impact on h
 Even $10/month saved consistently builds habit and small reserves. The amount is less important than the pattern. As income grows, increasing the percentage is easier when the habit already exists.
 
 **6. Leverage Available Programs and Resources**
-Both Canada and the USA have income-support programs, tax credits, subsidized services, and financial assistance that low-income households may qualify for. Identifying and capturing all eligible benefits is itself a meaningful financial action. [SOURCE NEEDED for current program availability by region]
+Both Canada and the USA have income-support programs, tax credits, subsidized services, and financial assistance that low-income households may qualify for. Identifying and capturing all eligible benefits is itself a meaningful financial action. 
 
 ### The Priority Stack for Low-Income Budgeting
 
@@ -716,7 +716,7 @@ By building sinking funds into your monthly budget, these annual expenses stop b
 | Major tax credits for budgeters | GST/HST credit, CCB (Canada Child Benefit), Basic Personal Amount | EITC, Child Tax Credit, various deductions |
 | Primary savings vehicle | TFSA (tax-free growth) for most goals; RRSP for retirement | Roth IRA (tax-free growth) for retirement; HSA for healthcare |
 | Housing cost pressure | Extreme in Toronto, Vancouver; more moderate in other cities | Extreme in major metros; highly variable by region |
-| Childcare costs | Varies dramatically by province; federal $10/day childcare program being expanded [SOURCE NEEDED] | Highly variable by state; no universal federal program |
+| Childcare costs | Varies dramatically by province | Highly variable by state; no universal federal program |
 
 ---
 
@@ -774,7 +774,7 @@ Review your bank and credit card statements monthly. Export them, print them, or
 
 ### What percentage of income should go to housing?
 
-A widely cited guideline is to spend no more than 30% of gross income on housing. In many major Canadian and American cities, this is not achievable, and many households allocate 35–45% to housing. [SOURCE NEEDED] Where housing consumes more, other categories must be reduced proportionally.
+A widely cited guideline is to spend no more than 30% of gross income on housing. In many major Canadian and American cities, this is not achievable, and many households allocate a much higher share to housing. Where housing consumes more, other categories must be reduced proportionally.
 
 ### Can I budget on a low income?
 
@@ -792,9 +792,9 @@ The best budgeting tool is the one you use consistently. Google Sheets is free a
 - **Debt Management Pillar:** [/pillars/debt-management](/pillars/debt-management)
 - **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
 - **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **How to Save Money:** [/blog/how-to-save-money](/blog/how-to-save-money)
+- **How to Save Money:** [/blog/how-to-save-money-emergency-fund](/blog/how-to-save-money-emergency-fund)
 - **AI Finance Tools:** [/blog/ai-finance-tools](/blog/ai-finance-tools)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom](/blog/financial-freedom)
+- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
 
 ## Suggested Supporting Articles
 

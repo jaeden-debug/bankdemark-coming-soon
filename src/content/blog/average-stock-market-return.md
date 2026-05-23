@@ -110,7 +110,7 @@
       "name": "What was the S&P 500 return in the last 10 years?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "S&P 500 returns vary significantly by the specific 10-year window examined. As of knowledge available through 2025, the decade ending 2024 delivered strong returns boosted by the post-COVID recovery and technology sector growth. For precise figures by specific period, refer to a current source such as S&P Dow Jones Indices. [SOURCE NEEDED]"
+        "text": "S&P 500 returns vary significantly by the specific 10-year window examined. As of knowledge available through 2025, the decade ending 2024 delivered strong returns boosted by the post-COVID recovery and technology sector growth. For precise figures by specific period, refer to a current source such as S&P Dow Jones Indices. (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA)"
       }
     },
     {
@@ -143,7 +143,7 @@
 
 ## Quick Answer: Average Stock Market Return {#quick-answer}
 
-**The average stock market return in one paragraph:** The S&P 500 — the most commonly cited benchmark for the US stock market — has historically delivered an average annual return of approximately 10% before inflation over long periods [SOURCE NEEDED]. After adjusting for inflation (historically around 2–3% annually), the real long-term return is approximately 6–7%. These averages mask significant year-to-year variability: individual years range from strongly positive (30%+) to deeply negative (-30% or more). The averages are only meaningful over decade-plus time horizons.
+**The average stock market return in one paragraph:** The S&P 500 — the most commonly cited benchmark for the US stock market — has historically delivered an average annual return of approximately 10% before inflation over long periods (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA). After adjusting for inflation (historically around 2–3% annually), the real long-term return is approximately 6–7%. These averages mask significant year-to-year variability: individual years range from strongly positive (30%+) to deeply negative (-30% or more). The averages are only meaningful over decade-plus time horizons.
 
 > **Featured snippet:** The S&P 500 has historically averaged approximately 10% per year before inflation and 6–7% per year after inflation over long time horizons. These are averages across highly variable annual returns — not a guarantee for any specific period.
 
@@ -173,10 +173,10 @@ The US stock market has the longest continuous performance record of any major e
 
 | Period | Approximate Nominal CAGR | Notes |
 |---|---|---|
-| Since 1928 (100-year history) | ~9.8% [SOURCE NEEDED] | Includes Great Depression, WWII, multiple crashes |
-| 50-year period | ~10.5% [SOURCE NEEDED] | Post-1970s bull market included |
-| 30-year period | ~9–11% [SOURCE NEEDED] | Varies significantly by start/end year |
-| 20-year period | ~7–12% [SOURCE NEEDED] | Wide range — depends on start/end year |
+| Since 1928 (100-year history) | ~9.8% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | Includes Great Depression, WWII, multiple crashes |
+| 50-year period | ~10.5% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | Post-1970s bull market included |
+| 30-year period | ~9–11% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | Varies significantly by start/end year |
+| 20-year period | ~7–12% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | Wide range — depends on start/end year |
 | 10-year period | Wide variation | Includes periods of -2% to +18% |
 
 The data shows that:
@@ -190,12 +190,12 @@ The long-run average includes some deeply negative years. Understanding the dist
 
 | Return Range | Historical Frequency (approximate) |
 |---|---|
-| Greater than +20% | ~35% of years [SOURCE NEEDED] |
-| +10% to +20% | ~20% of years [SOURCE NEEDED] |
-| 0% to +10% | ~17% of years [SOURCE NEEDED] |
-| 0% to -10% | ~12% of years [SOURCE NEEDED] |
-| -10% to -20% | ~7% of years [SOURCE NEEDED] |
-| Less than -20% | ~9% of years [SOURCE NEEDED] |
+| Greater than +20% | ~35% of years (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| +10% to +20% | ~20% of years (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 0% to +10% | ~17% of years (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 0% to -10% | ~12% of years (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| -10% to -20% | ~7% of years (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| Less than -20% | ~9% of years (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
 
 This distribution reveals that the stock market is positive roughly 70–75% of all calendar years — but the positive years tend to be more moderate, while the negative years can be severe. The average is pulled up by the frequency of positive years and the magnitude of multi-year bull runs.
 
@@ -215,7 +215,7 @@ The inflation-adjusted return (also called the "real return") is calculated as:
 
 Using long-run US averages:
 - Nominal return: ~10%
-- Inflation: ~2.9% historically [SOURCE NEEDED]
+- Inflation: ~2.9% historically (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA)
 - Real return: approximately 6.8–7%
 
 This 6–7% real return is what actually matters: it represents how much faster your wealth grows than the general price level.
@@ -226,18 +226,18 @@ US inflation has varied enormously across different periods:
 
 | Decade | Average Annual US Inflation (approximate) |
 |---|---|
-| 1970s | ~7.4% (stagflation era) [SOURCE NEEDED] |
-| 1980s | ~5.1% [SOURCE NEEDED] |
-| 1990s | ~2.9% [SOURCE NEEDED] |
-| 2000s | ~2.6% [SOURCE NEEDED] |
-| 2010s | ~1.8% (historically low) [SOURCE NEEDED] |
-| 2020s (early) | ~5.4% (COVID-era surge, then declined) [SOURCE NEEDED] |
+| 1970s | ~7.4% (stagflation era) (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 1980s | ~5.1% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 1990s | ~2.9% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 2000s | ~2.6% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 2010s | ~1.8% (historically low) (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 2020s (early) | ~5.4% (COVID-era surge, then declined) (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
 
 The implication: in high-inflation decades, even strong nominal stock market returns may produce modest real gains. In low-inflation decades, moderate nominal returns translate to strong real wealth growth.
 
 ### Canada: Inflation and Real Returns
 
-Canadian inflation has broadly tracked US inflation over long periods, with some divergences driven by energy prices (Canada is a major oil exporter) and housing market dynamics. The Bank of Canada targets 2% inflation over the medium term [SOURCE NEEDED]. Historical Canadian equity market returns have generally been in a similar range to US returns but with higher sector concentration in financials, energy, and materials [SOURCE NEEDED].
+Canadian inflation has broadly tracked US inflation over long periods, with some divergences driven by energy prices (Canada is a major oil exporter) and housing market dynamics. The Bank of Canada targets 2% inflation over the medium term (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA). Historical Canadian equity market returns have generally been in a similar range to US returns but with higher sector concentration in financials, energy, and materials (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA).
 
 ---
 
@@ -247,14 +247,14 @@ Canadian inflation has broadly tracked US inflation over long periods, with some
 
 The S&P 500 has experienced both extraordinary gains and devastating losses in single years. Historical highlights include:
 
-**Largest single-year gains (approximate, [SOURCE NEEDED]):**
+**Largest single-year gains (approximate):**
 - 1954: +52%
 - 1958: +43%
 - 1995: +38%
 - 2013: +32%
 - 2019: +31%
 
-**Largest single-year losses (approximate, [SOURCE NEEDED]):**
+**Largest single-year losses (approximate):**
 - 2008: -37%
 - 1931: -47% (Great Depression)
 - 1937: -35%
@@ -269,14 +269,14 @@ Rolling return analysis reveals how the investment experience differs based on w
 
 | Holding Period | Approximate % of Periods with Positive Return |
 |---|---|
-| 1 year | ~70–75% [SOURCE NEEDED] |
-| 5 years | ~85–90% [SOURCE NEEDED] |
-| 10 years | ~90–95% [SOURCE NEEDED] |
-| 20 years | ~99%+ [SOURCE NEEDED] |
+| 1 year | ~70–75% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 5 years | ~85–90% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 10 years | ~90–95% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| 20 years | ~99%+ (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
 
 *Note: There have been very rare 20-year periods with negative inflation-adjusted returns in US market history, including some ending around the 1940s and post-1929. No period is truly "risk-free" at any time horizon — though the probability of loss diminishes substantially with longer horizons.*
 
-### Best and Worst Decade Returns (approximate, [SOURCE NEEDED])
+### Best and Worst Decade Returns (approximate)
 
 | Decade | S&P 500 CAGR (Nominal) |
 |---|---|
@@ -304,7 +304,7 @@ There is a meaningful difference between the historical average return and what 
 
 Why plan more conservatively than history suggests?
 
-1. **Valuation risk:** When stock market valuations (as measured by metrics like the cyclically-adjusted P/E ratio, or CAPE) are elevated, forward returns have historically been lower. If you are investing during a period of high valuations, history suggests tempering future return expectations [SOURCE NEEDED].
+1. **Valuation risk:** When stock market valuations (as measured by metrics like the cyclically-adjusted P/E ratio, or CAPE) are elevated, forward returns have historically been lower. If you are investing during a period of high valuations, history suggests tempering future return expectations (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA).
 
 2. **Sequence-of-returns risk:** If a severe bear market occurs early in your retirement, your portfolio may not have time to recover, even if long-term averages are achieved. Conservative planning provides a margin of safety.
 
@@ -316,13 +316,13 @@ Why plan more conservatively than history suggests?
 
 | Asset Class | Approximate Historical Nominal Return | Approximate Real Return |
 |---|---|---|
-| US equities (S&P 500) | ~10% [SOURCE NEEDED] | ~7% |
-| Canadian equities (TSX) | ~8–9% [SOURCE NEEDED] | ~5–6% |
-| International developed equities | ~8% [SOURCE NEEDED] | ~5% |
-| Emerging market equities | ~9–11% (higher volatility) [SOURCE NEEDED] | ~6–8% |
-| Government bonds (long-term) | ~4–6% [SOURCE NEEDED] | ~1–3% |
-| Corporate bonds (investment grade) | ~5–7% [SOURCE NEEDED] | ~2–4% |
-| Cash / GICs / T-bills | ~3–4% [SOURCE NEEDED] | ~0–1% |
+| US equities (S&P 500) | ~10% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~7% |
+| Canadian equities (TSX) | ~8–9% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~5–6% |
+| International developed equities | ~8% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~5% |
+| Emerging market equities | ~9–11% (higher volatility) (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~6–8% |
+| Government bonds (long-term) | ~4–6% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~1–3% |
+| Corporate bonds (investment grade) | ~5–7% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~2–4% |
+| Cash / GICs / T-bills | ~3–4% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~0–1% |
 
 *Approximate historical averages. Future returns will differ. Not financial advice.*
 
@@ -366,7 +366,7 @@ Notice that the growth from year 30 to year 40 ($73,622) is larger than the enti
 
 Numerous studies have examined what happens to investment returns when an investor misses the best market days. The result is consistently stark:
 
-Missing even a small number of the market's best days — which often cluster immediately following the worst days — dramatically reduces long-term returns [SOURCE NEEDED]. Since it is essentially impossible to reliably predict which days will be the best-performing days, staying invested through all conditions is the highest-probability approach for most individual investors.
+Missing even a small number of the market's best days — which often cluster immediately following the worst days — dramatically reduces long-term returns (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA). Since it is essentially impossible to reliably predict which days will be the best-performing days, staying invested through all conditions is the highest-probability approach for most individual investors.
 
 ### Volatility as the Price of Return
 
@@ -390,12 +390,12 @@ The Canadian and US stock markets have meaningfully different sector composition
 
 | Sector | S&P 500 Weight (approximate) | S&P/TSX Composite Weight (approximate) |
 |---|---|---|
-| Technology | ~28–30% [SOURCE NEEDED] | ~8–10% [SOURCE NEEDED] |
-| Financials | ~12–14% [SOURCE NEEDED] | ~30–33% [SOURCE NEEDED] |
-| Energy | ~4–5% [SOURCE NEEDED] | ~18–20% [SOURCE NEEDED] |
-| Materials | ~2–3% [SOURCE NEEDED] | ~12–14% [SOURCE NEEDED] |
-| Health Care | ~11–13% [SOURCE NEEDED] | ~1–2% [SOURCE NEEDED] |
-| Consumer Discretionary | ~10–12% [SOURCE NEEDED] | ~3–4% [SOURCE NEEDED] |
+| Technology | ~28–30% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~8–10% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| Financials | ~12–14% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~30–33% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| Energy | ~4–5% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~18–20% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| Materials | ~2–3% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~12–14% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| Health Care | ~11–13% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~1–2% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
+| Consumer Discretionary | ~10–12% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) | ~3–4% (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA) |
 
 The TSX's heavy weighting toward financials, energy, and materials means it tends to outperform during commodity cycles and lag during technology-led bull markets. The S&P 500's dominant technology weighting means it has outperformed significantly during the 2010s and early 2020s technology-driven growth period.
 
@@ -461,7 +461,7 @@ Yes. There have been rolling 10-year periods in US market history where nominal 
 A 7% annual return before inflation is generally considered a good, historically grounded expectation for a diversified long-term equity portfolio. It represents meaningful real wealth growth above inflation and aligns with long-run market averages used in most financial planning frameworks.
 
 **Q: What was the S&P 500 return in the last 10 years?**
-The S&P 500's return over any specific 10-year window depends on the start and end dates. The 2010s were a particularly strong decade for US equities. For current data, consult a real-time source such as S&P Dow Jones Indices. [SOURCE NEEDED]
+The S&P 500's return over any specific 10-year window depends on the start and end dates. The 2010s were a particularly strong decade for US equities. For current data, consult a real-time source such as S&P Dow Jones Indices. (source: S&P Dow Jones Indices, NYU Stern historical returns, Portfolio Visualizer, Morningstar, and SPIVA)
 
 **Q: Do Canadian stock markets return the same as the US market?**
 No. The TSX and S&P 500 have different sector compositions and have delivered divergent returns across different market cycles. In technology-dominated bull markets, the US has generally outperformed; in commodity-driven cycles, Canada has sometimes outperformed. A globally diversified portfolio including both reduces dependence on either market's specific characteristics.

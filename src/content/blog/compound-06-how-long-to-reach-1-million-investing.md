@@ -166,7 +166,7 @@ Every $1 million investing timeline is determined by the same four inputs:
 
 **Monthly contribution (PMT):** The most controllable variable. Every additional dollar per month shortens the timeline.
 
-**Annual return rate (r):** The most uncertain variable. Long-run historical returns for diversified equity markets have averaged approximately 7–10% nominally [SOURCE NEEDED], but individual portfolio returns vary based on asset allocation, costs, and market timing.
+**Annual return rate (r):** The most uncertain variable. Long-run historical returns for diversified equity markets have often been discussed in the mid-to-high single digits or higher, depending on market, period, inflation, and fees, but individual portfolio returns vary based on asset allocation, costs, and market timing.
 
 **Starting balance (P):** Any amount already invested compounds alongside new contributions, dramatically accelerating timelines.
 
@@ -354,7 +354,7 @@ Every dollar withdrawn from an investment portfolio resets the compounding clock
 
 ### The 4% Withdrawal Rate Framework
 
-The 4% rule — originating from the Trinity Study [SOURCE NEEDED] — suggests that a retirement portfolio can sustain annual withdrawals of 4% of the starting balance for 30 years with high historical probability of not running out.
+The 4% rule — originating from the Trinity Study — suggests that a retirement portfolio can sustain annual withdrawals of 4% of the starting balance for 30 years with high historical probability of not running out.
 
 **$1 million portfolio → $40,000/year in withdrawals**
 
@@ -403,7 +403,7 @@ Running the $1 million calculation at a 4.5% real return tells you when you reac
 Most investors do not separate nominal from real calculations in their day-to-day planning — they simply account for inflation by:
 1. Targeting a larger nominal portfolio value to account for inflation erosion
 2. Planning for income growth (contributions increase alongside wages)
-3. Using the 4% withdrawal rule, which is already calibrated to historical inflation-adjusted returns [SOURCE NEEDED]
+3. Using the 4% withdrawal rule, which is based on historical stock/bond withdrawal research
 
 ---
 
@@ -412,7 +412,7 @@ Most investors do not separate nominal from real calculations in their day-to-da
 ### Canada: TFSA + RRSP Compounding Path
 
 **TFSA Maximization:**
-Annual TFSA contribution room is $7,000 in 2024 ($583/month) [SOURCE NEEDED]. At 7% in a TFSA for 30 years, $583/month reaches approximately $717,000 — close to but not quite $1 million on TFSA alone.
+Verify current annual TFSA contribution room directly with the CRA. At 7% in a TFSA for 30 years, $583/month reaches approximately $717,000 — close to but not quite $1 million on TFSA alone.
 
 **TFSA + RRSP Combined:**
 With $500/month in TFSA and $250/month in RRSP ($750/month total), the 7% timeline to $1 million is approximately 32 years — and the tax efficiency of both accounts means the effective return is higher than a nominal 7% would suggest.
@@ -425,7 +425,7 @@ At 7%, $583/month for 36 years reaches $1 million — 100% tax-free.
 **401(k) Employer Match + Roth IRA:**
 If your employer matches 50% on up to 6% of salary and you earn $80,000, the match adds approximately $200/month in free contributions. Combined with Roth IRA maximization, total monthly tax-advantaged investing reaches $780/month — shortening the timeline to approximately 32 years.
 
-**401(k) Maximization ($23,000/year in 2024 = ~$1,917/month [SOURCE NEEDED]):**
+**401(k) Maximization:**
 At $1,917/month at 7%, the timeline to $1 million is approximately 25 years — with full tax-deferral on all growth.
 
 ---

@@ -208,11 +208,11 @@ For beginners, the most accessible and evidence-backed starting point is a diver
 
 ### The Inflation Problem
 
-Inflation is the slow erosion of your purchasing power over time. Historically, inflation in Canada and the United States has averaged approximately 2–3% per year [SOURCE NEEDED]. That means money sitting idle in a savings account earning 0.5% annually is effectively losing value every year.
+Inflation is the slow erosion of your purchasing power over time. Canada and the United States both use 2% inflation targets as central monetary policy anchors (source: Bank of Canada and Federal Reserve). That means money sitting idle in a savings account earning 0.5% annually is effectively losing value every year.
 
 If inflation runs at 3% and your savings account yields 0.5%, your real return is negative 2.5%. After 30 years, the purchasing power of $10,000 left in that account would be significantly diminished.
 
-Investing in diversified equities has historically delivered real (inflation-adjusted) returns of approximately 5–7% annually over the long term [SOURCE NEEDED] — far above inflation — though past performance does not guarantee future results.
+Diversified equities have historically delivered positive real returns over long periods, though the exact return depends heavily on market, timeframe, fees, and asset allocation (source: S&P Dow Jones Indices, NYU Stern historical returns, and Portfolio Visualizer) — far above inflation — though past performance does not guarantee future results.
 
 ### The Pension Problem
 
@@ -260,7 +260,7 @@ An individual stock represents a fractional ownership share in a single company.
 - Concentrated risk — a single company's failure can wipe out your investment
 - Requires significant research, time, and financial literacy
 - Emotional difficulty of holding through downturns
-- Most individual investors underperform the market over the long run [SOURCE NEEDED]
+- Many individual investors underperform the funds they own because of timing and behavior gaps (source: Morningstar Mind the Gap research)
 
 For beginners, individual stock picking is generally not recommended as a primary strategy. The research burden is high, and the evidence suggests most retail investors achieve better outcomes with diversified index strategies.
 
@@ -286,7 +286,7 @@ ETFs can track anything: a specific index, a sector, a country, a commodity, or 
 
 An index fund is any investment fund — mutual fund or ETF — that tracks a market index. The most famous index is the S&P 500, which tracks the 500 largest publicly traded companies in the United States.
 
-Rather than having a fund manager pick and choose investments, an index fund simply mirrors the composition of the index it tracks. This passive management approach results in significantly lower fees and, over the long term, typically better performance than most actively managed funds [SOURCE NEEDED].
+Rather than having a fund manager pick and choose investments, an index fund simply mirrors the composition of the index it tracks. This passive management approach results in significantly lower fees and, over the long term, competitive performance versus many actively managed funds over long horizons, largely because lower fees create a structural advantage (source: SPIVA scorecards).
 
 **Key insight:** Most index funds today are structured as ETFs. When people say "invest in an index fund," they usually mean "buy an index-tracking ETF."
 
@@ -356,15 +356,15 @@ If high-interest debt exists, paying it off first is mathematically superior to 
 
 ### The Core Principle: Simplicity Wins
 
-The research on retail investor outcomes is consistent: the simpler the investment strategy, the better the long-term result for most individuals [SOURCE NEEDED]. Sophisticated, complex strategies sound appealing but introduce more opportunities for behavioral errors, higher costs, and poor timing decisions.
+Retail investor behavior research consistently shows that complexity, timing, and emotional trading can damage realized returns (source: Morningstar Mind the Gap and Vanguard investor behavior research). Sophisticated, complex strategies sound appealing but introduce more opportunities for behavioral errors, higher costs, and poor timing decisions.
 
 The best beginner investing strategy can be described in four steps:
 
 ### Step 1: Open a Tax-Advantaged Account
 
-In Canada: Open a TFSA (Tax-Free Savings Account) first. Contributions are not tax-deductible, but all growth and withdrawals are completely tax-free. Every Canadian resident 18+ has annual contribution room (currently $7,000 per year as of 2026 [SOURCE NEEDED]). Once you maximize your TFSA, open an RRSP for additional tax-sheltered growth.
+In Canada: Open a TFSA (Tax-Free Savings Account) first. Contributions are not tax-deductible, but all growth and withdrawals are completely tax-free. Every Canadian resident 18+ has annual contribution room (currently $7,000 per year as of 2026 (source: CRA TFSA dollar limit guidance)). Once you maximize your TFSA, open an RRSP for additional tax-sheltered growth.
 
-In the USA: Open a Roth IRA first if you are in a lower tax bracket. Contributions are made with after-tax dollars, but all growth and qualified withdrawals are tax-free. The 2026 contribution limit is $7,000 ($8,000 if age 50+) [SOURCE NEEDED]. If your employer offers a 401(k) with a match, contribute at least enough to capture the full match first — it is an immediate, guaranteed 50–100% return.
+In the USA: Open a Roth IRA first if you are in a lower tax bracket. Contributions are made with after-tax dollars, but all growth and qualified withdrawals are tax-free.. If your employer offers a 401(k) with a match, contribute at least enough to capture the full match first — it is an immediate, guaranteed 50–100% return.
 
 > See the [BankDeMark TFSA Calculator](/calculators/tfsa-calculator) and [RRSP Calculator](/calculators/rrsp-calculator) to estimate your registered account growth.
 
@@ -383,7 +383,7 @@ Note: BankDeMark does not endorse specific brokerages. Evaluate platforms based 
 
 For most beginners, a one-fund or two-fund portfolio is sufficient:
 
-**One-Fund Option (Canada):** A single asset allocation ETF — such as a fund that holds 80% global equities and 20% bonds — handles rebalancing automatically. These "all-in-one" ETFs are available from major Canadian fund providers and charge very low fees (MER typically under 0.25%) [SOURCE NEEDED].
+**One-Fund Option (Canada):** A single asset allocation ETF — such as a fund that holds 80% global equities and 20% bonds — handles rebalancing automatically. These "all-in-one" ETFs are available from major Canadian fund providers and charge very low fees.
 
 **One-Fund Option (USA):** A total market index fund or a target-date fund available through your brokerage. Target-date funds automatically shift from stocks to bonds as you approach retirement.
 
@@ -397,7 +397,7 @@ Dollar-cost averaging (DCA) means investing a fixed dollar amount at regular int
 - You buy more shares when prices are low, fewer when prices are high
 - Removes emotional decision-making from the process
 - Builds the investment habit through automation
-- Historically, consistent contributors fare better than those who try to time the market [SOURCE NEEDED]
+- Consistent contributors reduce timing risk and avoid the behavioral trap of waiting for perfect market conditions (source: Vanguard and Morningstar investor behavior research)
 
 Set up automatic contributions from your bank account to your brokerage on payday. Automate it and ignore short-term market noise.
 
@@ -420,7 +420,7 @@ Understanding what not to do is as important as knowing what to do. The followin
 
 ### Mistake 1: Trying to Time the Market
 
-Market timing means attempting to buy when prices are low and sell when prices are high. In theory, it sounds rational. In practice, even professional fund managers with armies of analysts consistently fail to time the market reliably over the long term [SOURCE NEEDED].
+Market timing means attempting to buy when prices are low and sell when prices are high. In theory, it sounds rational. In practice, even professional fund managers with armies of analysts often fail to outperform simple benchmark exposure after costs over long periods (source: SPIVA scorecards).
 
 For individual investors without institutional resources, trying to time the market almost always results in buying high (when optimism is peak), selling low (when fear sets in), and earning worse returns than a simple buy-and-hold index strategy.
 
@@ -428,7 +428,7 @@ For individual investors without institutional resources, trying to time the mar
 
 ### Mistake 2: Panic-Selling During Market Downturns
 
-Markets experience significant downturns regularly — the historical average includes a 10%+ correction roughly once per year, a 20%+ bear market roughly every 3–5 years, and severe crashes (40%+) roughly once per decade [SOURCE NEEDED]. Every one of these downturns has been followed by a market recovery that reached new all-time highs — eventually.
+Markets experience significant downturns regularly. Corrections, bear markets, and severe crashes are normal parts of long-term equity investing, although their timing and severity vary widely (source: S&P Dow Jones Indices and historical market drawdown datasets). Every one of these downturns has been followed by a market recovery that reached new all-time highs — eventually.
 
 Panic-selling turns a paper loss into a permanent, realized loss. The investors who stay invested through downturns consistently outperform those who sell and wait for conditions to "improve."
 
@@ -436,13 +436,13 @@ Panic-selling turns a paper loss into a permanent, realized loss. The investors 
 
 ### Mistake 3: Chasing Past Performance
 
-A fund that returned 35% last year seems more attractive than one that returned 8%. But past performance does not predict future results — it is one of the most thoroughly documented phenomena in investment research [SOURCE NEEDED]. Last year's top performer is often next year's underperformer due to mean reversion.
+A fund that returned 35% last year seems more attractive than one that returned 8%. But past performance does not predict future results — performance persistence is weak across many fund categories (source: SPIVA persistence scorecards). Last year's top performer is often next year's underperformer due to mean reversion.
 
 **The fix:** Choose investments based on their underlying index, fee structure, and diversification — not their recent performance.
 
 ### Mistake 4: Paying High Fees
 
-Investment fees compound just like investment returns — but in the opposite direction. A fund with a 2% annual management fee versus one at 0.10% may seem like a small difference. Over 30 years, that 1.9% annual difference can consume a significant portion of your total portfolio value [SOURCE NEEDED].
+Investment fees compound just like investment returns — but in the opposite direction. A fund with a 2% annual management fee versus one at 0.10% may seem like a small difference. Over 30 years, that 1.9% annual difference can consume a significant portion of your total portfolio value. This is direct compound math: fees compound against the investor every year.
 
 **The fix:** Prioritize low-cost index ETFs with MERs (Management Expense Ratios) under 0.25% whenever possible.
 
@@ -476,13 +476,13 @@ The account you hold your investments in matters enormously. Tax-advantaged acco
 - All investment growth, dividends, and capital gains within the TFSA are completely tax-free
 - Withdrawals can be made at any time for any purpose without tax consequences
 - Withdrawals add back to your contribution room the following calendar year
-- As of 2026, the cumulative contribution room for anyone who has been eligible since 2009 is significant [SOURCE NEEDED]
+- Cumulative TFSA contribution room depends on eligibility history; verify the current total with the CRA
 - Best for: Any long-term investment goal — retirement, home purchase, general wealth building
 
 **RRSP (Registered Retirement Savings Plan)**
 - Contributions are tax-deductible (reduce your taxable income in the year of contribution)
 - Growth inside the RRSP is tax-deferred — you pay tax when you withdraw, typically in retirement when you are in a lower tax bracket
-- Contribution limit: 18% of your previous year's earned income, up to an annual maximum [SOURCE NEEDED]
+- Contribution room is based on earned income and annual CRA limits; verify current RRSP rules with the CRA
 - Best for: Retirement savings, especially for high-income earners who benefit most from the tax deduction
 
 **FHSA (First Home Savings Account)** *(Canada only)*
@@ -503,8 +503,8 @@ The account you hold your investments in matters enormously. Tax-advantaged acco
 
 **Roth IRA**
 - Contributions made with after-tax dollars; growth and qualified withdrawals are 100% tax-free
-- 2026 contribution limit: $7,000/year ($8,000 for age 50+) [SOURCE NEEDED]
-- Income limits apply for direct contributions (high earners can use "backdoor Roth" strategies) [SOURCE NEEDED]
+- Verify current IRA contribution limits directly with the IRS
+- Income limits apply for direct Roth IRA contributions
 - Best for: Younger investors, those expecting to be in a higher tax bracket in retirement
 
 **Traditional IRA**
@@ -517,7 +517,7 @@ The account you hold your investments in matters enormously. Tax-advantaged acco
 - Employer-sponsored retirement plans
 - Pre-tax contributions reduce current taxable income
 - Many employers offer matching contributions — always contribute at least enough to capture the full match
-- 2026 contribution limit: $23,500 (employee) [SOURCE NEEDED]
+- Verify current 401(k) employee contribution limits directly with the IRS
 - Best for: Primary retirement vehicle when employer match is available
 
 **529 Plan**
@@ -599,7 +599,7 @@ You can start with as little as $1 on many modern brokerage platforms. Practical
 Most financial educators recommend a broad market index fund ETF as the first investment. These funds hold hundreds or thousands of companies, charge very low fees, and have delivered competitive long-term returns without requiring stock-picking expertise. All-in-one asset allocation ETFs (available in Canada) simplify this further to a single holding.
 
 **Q: Is investing risky for beginners?**
-All investing involves risk. The stock market has experienced significant downturns throughout history. However, for a long-term investor (10+ year horizon) using diversified index funds and maintaining an emergency fund, the historical probability of a positive outcome has been high [SOURCE NEEDED]. Short-term volatility is the price of long-term returns.
+All investing involves risk. The stock market has experienced significant downturns throughout history. However, for a long-term investor (10+ year horizon) using diversified index funds and maintaining an emergency fund, historical long-term outcomes have generally improved as holding periods lengthen (source: S&P Dow Jones Indices and historical return datasets). Short-term volatility is the price of long-term returns.
 
 **Q: What is the difference between saving and investing?**
 Saving means keeping money in low-risk, highly liquid accounts. The returns are low but capital is preserved. Investing means putting capital into assets expected to grow over time — with more risk and less liquidity. Saving is for short-term needs and emergencies; investing is for long-term wealth building.

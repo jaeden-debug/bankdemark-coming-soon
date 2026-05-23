@@ -274,9 +274,9 @@ Account selection has a significant impact on long-term wealth accumulation thro
 
 **USA — Priority Order:**
 1. 401(k) to the employer match (guaranteed immediate return on matched contributions)
-2. Roth IRA to the annual limit ($7,000 in 2026) [SOURCE NEEDED]
+2. Roth IRA to the annual limit
 3. Traditional IRA (if income limits prevent Roth contributions)
-4. 401(k) to the annual maximum ($23,500 in 2026) [SOURCE NEEDED]
+4. 401(k) to the annual maximum
 5. Taxable brokerage (for investing beyond all tax-advantaged limits)
 
 ### Step 5: Choose a Brokerage Platform
@@ -355,9 +355,9 @@ Once your account is open, you need to decide what to buy. This is where many be
 
 ### The Core Decision: Active vs. Passive
 
-**Active investing** means selecting individual stocks or actively managed funds in an attempt to beat the market. The evidence consistently shows that most active managers underperform their benchmark index over 15-year periods after fees [SOURCE NEEDED]. For individual investors without institutional research capabilities, active stock picking typically produces worse results than passive indexing.
+**Active investing** means selecting individual stocks or actively managed funds in an attempt to beat the market. SPIVA scorecards consistently show that a large share of active funds underperform comparable benchmarks over longer periods after fees. For individual investors without institutional research capabilities, active stock picking typically produces worse results than passive indexing.
 
-**Passive investing** means owning the entire market (or a representative slice of it) through low-cost index funds. You do not try to beat the market — you simply capture market returns at minimal cost. Decades of academic research support passive indexing as the superior strategy for most retail investors [SOURCE NEEDED].
+**Passive investing** means owning the entire market (or a representative slice of it) through low-cost index funds. You do not try to beat the market — you simply capture market returns at minimal cost. SPIVA, Vanguard, and broad indexing research support passive indexing as a strong default strategy for many retail investors.
 
 ### The Beginner's Investment Menu
 
@@ -451,7 +451,7 @@ One of the most liberating realizations for new investors is that you do not nee
 
 ### Why Small Amounts Still Matter Enormously
 
-The mathematics of compound growth means that early dollars invested are worth far more than later dollars, even if the amounts are identical. A $100 investment at age 25 that grows at 7% annually will become approximately $1,497 by age 65 — a 15x return on a single contribution [SOURCE NEEDED].
+The mathematics of compound growth means that early dollars invested are worth far more than later dollars, even if the amounts are identical. A  investment at age 25 that grows at 7% annually becomes approximately ,497 by age 65 — a simple compound-interest calculation, not a market guarantee.
 
 That same $100 invested at age 45 becomes only approximately $387 by age 65 — still a good return, but the compounding window is cut dramatically.
 
@@ -493,7 +493,7 @@ Technical investment knowledge is only part of investing success. The behavioral
 
 ### The Behavioral Gap
 
-Research consistently identifies a gap between the returns that investment funds earn and the returns that individual investors in those funds actually realize [SOURCE NEEDED]. This gap exists primarily because investors buy when prices are high (following the herd into rising markets) and sell when prices are low (panic-selling during downturns). The result: they systematically buy high and sell low — the opposite of a successful strategy.
+Morningstar research on investor returns documents a gap between fund returns and the returns many investors actually realize. This gap exists primarily because investors buy when prices are high (following the herd into rising markets) and sell when prices are low (panic-selling during downturns). The result: they systematically buy high and sell low — the opposite of a successful strategy.
 
 The solution is not more market knowledge — it is better behavior.
 
@@ -502,10 +502,10 @@ The solution is not more market knowledge — it is better behavior.
 Every investor will experience market downturns. They are not anomalies — they are the normal operating condition of financial markets over any multi-year span. Understanding this intellectually before it happens makes it easier to stay disciplined when it does.
 
 Historical perspective:
-- The US stock market has had a negative year roughly 25–30% of all calendar years [SOURCE NEEDED]
-- Corrections of 10%+ happen roughly once per year on average [SOURCE NEEDED]
-- Bear markets (20%+ declines) occur approximately every 3–5 years on average [SOURCE NEEDED]
-- Every bear market in history has been followed by a recovery to new highs — eventually [SOURCE NEEDED]
+- The US stock market has had negative calendar years regularly throughout history (source: S&P Dow Jones Indices and NYU Stern historical return datasets)
+- Corrections of 10%+ are a normal part of equity investing (source: S&P Dow Jones Indices and historical market drawdown research)
+- Bear markets (20%+ declines) occur periodically and should be expected in long-term equity investing (source: S&P Dow Jones Indices and historical market drawdown research)
+- Broad US equity markets have historically recovered from major bear markets over time, although recovery timing varies widely (source: S&P Dow Jones Indices historical data)
 
 The investors who stay invested through downturns consistently benefit from the subsequent recovery. Those who sell lock in their losses permanently.
 

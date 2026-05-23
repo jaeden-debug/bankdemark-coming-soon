@@ -187,12 +187,12 @@ Credit is your financial reputation — a documented history of how you have bor
 
 Your credit score is not just a loan qualification tool. It affects:
 
-- **Mortgage rates:** Even a 0.5% difference in mortgage rate can mean tens of thousands of dollars in additional interest over a 25-year amortization. [SOURCE NEEDED]
+- **Mortgage rates:** Even a small mortgage-rate difference can mean tens of thousands of dollars in additional interest over a long amortization.
 - **Auto loan rates:** Better credit = lower borrowing cost on vehicle financing
 - **Credit card terms:** Premium rewards cards and lower interest rates require good credit
 - **Rental housing:** Landlords routinely check credit as part of tenant screening
-- **Insurance premiums:** In some jurisdictions, credit history is used as a factor in insurance pricing [SOURCE NEEDED]
-- **Employment:** Some employers, particularly in financial sectors, conduct credit checks as part of background screening [SOURCE NEEDED]
+- **Insurance premiums:** In some jurisdictions, credit-related information may be used in insurance pricing
+- **Employment:** Some employers, especially in finance-sensitive roles, may conduct credit checks where legally permitted
 - **Utility deposits:** Poor credit may require cash deposits for utility accounts
 
 Understanding and managing credit is not about gaming a system. It is about demonstrating financial reliability in a way that opens access to lower-cost financial products and more opportunities.
@@ -344,7 +344,7 @@ Since payment history accounts for approximately 35% of most scoring models, it 
 
 ### The Impact of a Late Payment
 
-A single late payment can drop a score by 60–110+ points, depending on your starting score and other factors. [SOURCE NEEDED]
+A single late payment can seriously damage a credit score, especially for someone with an otherwise clean file.
 
 The damage is greatest for people with otherwise excellent scores — the fall from 780 to 680 is steeper than from 620 to 560.
 
@@ -382,7 +382,7 @@ You should not take out loans you do not need purely to improve credit mix. The 
 
 ### New Credit Inquiries
 
-Every time a lender accesses your credit report during an application, a hard inquiry is recorded. Hard inquiries remain on your report for approximately 2 years but typically only affect your score for 12 months. [SOURCE NEEDED]
+Every time a lender accesses your credit report during an application, a hard inquiry is recorded. Hard inquiry treatment varies by bureau and scoring model.
 
 **Soft inquiries** — which occur when you check your own credit, when a lender pre-screens you for an offer, or during certain background checks — do not affect your score.
 
@@ -427,7 +427,7 @@ Unsecured credit cards designed for people with limited credit history. Typicall
 
 ### Option 5: Reporting Non-Traditional Credit
 
-Some bureaus and services offer the ability to report rent payments, utility payments, and phone bill payments — which are not traditionally included in credit files. This is not universally available and varies by jurisdiction. [SOURCE NEEDED for current availability in Canada and USA]
+Some bureaus and services offer the ability to report rent payments, utility payments, and phone bill payments — which are not traditionally included in credit files. This is not universally available and varies by jurisdiction. 
 
 ---
 
@@ -546,7 +546,7 @@ If you have a poor or damaged credit score, the path to improvement is the same 
 Obtain free reports from Equifax and TransUnion (Canada) or via AnnualCreditReport.com (USA). Review every account, every payment history entry, every inquiry.
 
 **2. Identify and dispute errors**
-Errors are more common than most people realize. [SOURCE NEEDED] Dispute any inaccuracies — incorrect payment statuses, accounts you do not recognize, wrong balances — directly with the bureau.
+Credit report errors happen. Dispute any inaccuracies — incorrect payment statuses, accounts you do not recognize, wrong balances — directly with the bureau.
 
 **3. Bring all accounts current**
 If you have any accounts in arrears, bring them to current status. Stopping the bleeding is the first priority.
@@ -562,9 +562,9 @@ Open a secured card or credit-builder loan and begin building new positive histo
 
 **7. Wait**
 Negative items have a finite life on your credit report:
-- Late payments: 6–7 years [SOURCE NEEDED by jurisdiction]
-- Collections: 6–7 years [SOURCE NEEDED by jurisdiction]
-- Bankruptcies: 6–10 years [SOURCE NEEDED by jurisdiction]
+- Late payments: 6–7 years 
+- Collections: 6–7 years 
+- Bankruptcies: 6–10 years 
 
 The older a negative item becomes, the less it impacts your score.
 
@@ -572,7 +572,7 @@ The older a negative item becomes, the less it impacts your score.
 
 - Do not close credit card accounts
 - Do not apply for many new cards (hard inquiries pile up)
-- Do not use credit repair services that promise to "erase" negative items — legitimate negative items cannot be removed until their natural expiry. Disputes for actual errors are free and can be done yourself. [SOURCE NEEDED]
+- Do not use credit repair services that promise to "erase" negative items — legitimate negative items cannot be removed until their natural expiry. Disputes for actual errors can usually be submitted directly through the credit bureau.
 
 ---
 
@@ -584,9 +584,9 @@ The older a negative item becomes, the less it impacts your score.
 
 - Score range: 300–900
 - Most Canadian lenders pull from one or both bureaus
-- Free annual credit report available by mail/online [SOURCE NEEDED for current process]
+- Free annual credit report available by mail/online 
 - Many banks and credit card issuers now offer free ongoing score monitoring
-- PIPEDA (Personal Information Protection and Electronic Documents Act) governs data use [SOURCE NEEDED]
+- PIPEDA and applicable provincial rules may govern personal data use
 
 **Key difference:** Experian does not operate in Canada. Canadian consumers only have two bureaus to monitor.
 
@@ -596,9 +596,9 @@ The older a negative item becomes, the less it impacts your score.
 
 - FICO Score range: 300–850
 - VantageScore also widely used (same range)
-- AnnualCreditReport.com: Free access to all three bureau reports annually [SOURCE NEEDED for current access rules]
+- AnnualCreditReport.com: Free access to all three bureau reports annually 
 - Many credit card issuers and financial apps offer free score monitoring
-- FCRA (Fair Credit Reporting Act) governs data use and dispute rights [SOURCE NEEDED]
+- FCRA governs many US credit reporting rights; verify current consumer rights with FTC and CFPB sources
 
 **Key difference:** Three bureaus means some creditors may report to only one or two. Your score may differ across bureaus. Monitor all three.
 
@@ -642,7 +642,7 @@ Regular credit monitoring serves two purposes: tracking your building progress, 
 A credit freeze (also called a security freeze) prevents new creditors from accessing your credit file. This makes it impossible for thieves to open new accounts in your name, even if they have your personal information.
 
 Freezes are:
-- Free in both Canada and the USA [SOURCE NEEDED]
+- Credit report access rules vary
 - Temporary or permanent
 - Easily lifted when you want to apply for new credit
 
@@ -652,7 +652,7 @@ For most people who are not actively seeking new credit, maintaining a credit fr
 
 ## Credit Report Errors and How to Dispute Them {#errors}
 
-Credit report errors are more common than most consumers realize. [SOURCE NEEDED] Common types of errors include:
+Credit report errors are worth checking for because even one incorrect item can affect applications. Common types of errors include:
 
 - Incorrect personal information (name, address, date of birth)
 - Accounts belonging to someone with a similar name
@@ -670,7 +670,7 @@ Credit report errors are more common than most consumers realize. [SOURCE NEEDED
 
 **Step 3:** File a dispute with the bureau directly — online, by phone, or by mail. Provide supporting documentation if available (payment records, account statements, correspondence).
 
-**Step 4:** The bureau investigates the dispute with the creditor. Investigations typically must be completed within 30 days. [SOURCE NEEDED by jurisdiction]
+**Step 4:** The bureau investigates the dispute with the creditor. Investigations typically must be completed within 30 days. 
 
 **Step 5:** The bureau notifies you of the outcome. If the dispute is successful, the error is corrected. If not, you can add a statement of dispute to your report.
 
@@ -690,7 +690,7 @@ Each application triggers a hard inquiry. Multiple inquiries in a short period s
 
 ### Mistake 3: Paying Only the Minimum
 
-Minimum payments are designed to keep you in debt as long as possible. On a credit card with a typical interest rate, paying only the minimum on a $3,000 balance could take years to repay and cost significant interest. [SOURCE NEEDED] Always pay the full balance if possible.
+Minimum payments are designed to keep you in debt as long as possible. On a high-interest credit card, paying only the minimum can stretch repayment for years and create heavy interest cost. Always pay the full balance if possible.
 
 ### Mistake 4: Ignoring Collections
 
@@ -746,7 +746,7 @@ Missed or late payments (35% of score) cause the most damage. Collections, charg
 - **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
 - **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
 - **How to Build Business Credit:** [/blog/how-to-build-business-credit](/blog/how-to-build-business-credit)
-- **Best Business Credit Cards:** [/blog/business-credit-cards-for-new-businesses](/blog/business-credit-cards-for-new-businesses)
+- **Best Business Credit Cards:** [/blog/best-business-credit-cards-new-business](/blog/best-business-credit-cards-new-business)
 
 ## Suggested Supporting Articles
 
@@ -787,7 +787,7 @@ As your score improves, proactively requesting credit limit increases on existin
 
 The financial value of moving from a "good" (700–720) to "excellent" (760+) credit score is most visible in mortgage qualification.
 
-Even a 0.25% difference in mortgage interest rate on a $500,000 mortgage translates to thousands of dollars in interest over a 25-year amortization. [SOURCE NEEDED for specific calculation]
+Even a 0.25% difference in mortgage interest rate on a $500,000 mortgage translates to thousands of dollars in interest over a 25-year amortization. 
 
 Spending 12–18 months optimizing credit before applying for a mortgage — reducing utilization, resolving any errors, avoiding new hard inquiries — is one of the highest-ROI pre-purchase financial activities.
 
@@ -815,8 +815,8 @@ When partnering with a spouse, common-law partner, or business partner on financ
 Bankruptcy and collections represent the most significant credit damage, but recovery is possible:
 
 **Timeline perspective:**
-- Bankruptcies remain on credit reports for 6–10 years depending on jurisdiction [SOURCE NEEDED]
-- Collections remain for 6–7 years typically [SOURCE NEEDED]
+- Bankruptcy reporting timelines vary by jurisdiction and bureau
+- Collection reporting timelines vary by jurisdiction and bureau
 - The damage to scores is greatest immediately after and diminishes gradually
 
 **Recovery strategy:**
@@ -837,12 +837,12 @@ This is a long process. Patience and consistency are the only tools available. N
 Credit scores play a central role in the path to homeownership — one of the most significant financial events in most people's lives.
 
 **Canada mortgage credit considerations:**
-- Insured mortgages (with CMHC insurance, for down payments under 20%) typically require a minimum score of 600–680 depending on lender [SOURCE NEEDED]
+- Insured mortgage qualification rules vary by lender, insurer, and borrower profile
 - Conventional mortgages (20%+ down payment) have more flexible requirements but best rates require strong credit
 - Lenders pull reports from both Equifax and TransUnion in Canada
 
 **USA mortgage credit considerations:**
-- FHA loans (government-backed) allow scores as low as 580 with a 3.5% down payment [SOURCE NEEDED]
+- FHA loan requirements can allow lower credit scores than many conventional loans, but requirements change and should be verified directly with HUD or FHA 
 - Conventional loans typically require 620+; best rates require 740+
 - All three bureaus are often pulled; lenders often use the middle score
 

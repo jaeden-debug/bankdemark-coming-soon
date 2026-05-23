@@ -69,7 +69,7 @@ reading_time: "26 min"
     {
       "@type": "Question",
       "name": "What is dividend reinvestment and how does it compound?",
-      "acceptedAnswer": { "@type": "Answer", "text": "Dividend reinvestment (DRIP) automatically uses dividends paid by a stock, ETF, or mutual fund to purchase additional shares. More shares generate more dividends in future periods, which buy more shares — creating a compounding loop. Over 20–30 years, reinvested dividends can account for a substantial portion of total investment returns [SOURCE NEEDED]." }
+      "acceptedAnswer": { "@type": "Answer", "text": "Dividend reinvestment (DRIP) automatically uses dividends paid by a stock, ETF, or mutual fund to purchase additional shares. More shares generate more dividends in future periods, which buy more shares — creating a compounding loop. Over long periods, reinvested dividends can become a meaningful part of total return." }
     },
     {
       "@type": "Question",
@@ -208,10 +208,10 @@ The compound interest that goes into management fees is compound interest that n
 
 ### Historical Index Returns
 
-For context only — past returns do not guarantee future results [SOURCE NEEDED]:
-- S&P 500 (USA): Historical nominal annual return approximately 10% [SOURCE NEEDED]
-- TSX Composite (Canada): Historical nominal annual return approximately 8–9% [SOURCE NEEDED]
-- Global diversified equity portfolios: Approximately 7–9% [SOURCE NEEDED]
+For context only — past returns do not guarantee future results:
+- S&P 500 (USA): long-term nominal return often cited around 10%, depending on period and methodology
+- TSX Composite (Canada):
+- Global diversified equity portfolios: use conservative planning assumptions and
 
 These are gross returns before fees and inflation. After a 0.20% MER and 2.5% inflation, real returns are typically closer to 5–7%.
 
@@ -321,12 +321,12 @@ See: [TFSA Calculator](/calculators/tfsa-calculator) | [RRSP Calculator](/calcul
 
 **Roth IRA:**
 - After-tax contributions; all growth and qualified withdrawals tax-free
-- $7,000 annual limit (2024) [SOURCE NEEDED]
+-
 - Best for: younger investors, those in lower current tax brackets, those expecting higher future income
 
 **Traditional 401(k) / Traditional IRA:**
 - Pre-tax contributions (reduces current income); growth tax-deferred; withdrawals taxed
-- 401(k) limit: $23,000 (2024) [SOURCE NEEDED]
+-
 - Best for: higher current income earners; those expecting lower tax rates in retirement
 
 **HSA (Health Savings Account):**
@@ -343,8 +343,8 @@ High-yield savings accounts (HYSAs) are the best vehicle for cash you need to ke
 
 HYSAs pay compound interest daily or monthly (compare using APY). The interest compounds on the full balance, building slowly but safely. All principal and interest are government-insured:
 
-- **Canada:** CDIC (Canada Deposit Insurance Corporation) insures up to $100,000 per category per CDIC member institution [SOURCE NEEDED]
-- **USA:** FDIC insures up to $250,000 per depositor per FDIC-member institution [SOURCE NEEDED]
+- **Canada:** CDIC deposit insurance limits should be verified directly with CDIC 
+- **USA:** FDIC deposit insurance limits should be verified directly with FDIC 
 
 ### HYSA Rates and Compound Returns
 
@@ -394,7 +394,7 @@ Bond ETFs and funds reinvest coupon payments automatically (when DRIP is enabled
 
 ### Bonds in the Context of Long-Term Compound Growth
 
-Historically, bonds produce lower long-term returns than equities [SOURCE NEEDED]. For investors with 20+ year horizons, a heavy bond allocation significantly reduces compound growth potential.
+Historically, bonds have usually produced lower long-term returns than equities. For investors with 20+ year horizons, a heavy bond allocation significantly reduces compound growth potential.
 
 The standard approach for younger long-term investors: minimal bond allocation (0–20%) to maintain some portfolio stability, with the majority in equity index funds for maximum long-term compound growth. As investors approach retirement, gradually shifting toward bonds reduces volatility risk.
 
@@ -446,7 +446,7 @@ Real estate can produce significant compound growth — particularly with levera
 
 ### High-Fee Actively Managed Funds
 
-Actively managed mutual funds charge 1–2.5%+ MER annually. The compounding cost of these fees over 30 years is enormous — consistently producing portfolios worth hundreds of thousands of dollars less than equivalent low-cost index alternatives. The majority of actively managed funds underperform their benchmark index over 15+ year periods [SOURCE NEEDED].
+Actively managed mutual funds charge 1–2.5%+ MER annually. The compounding cost of these fees over 30 years is enormous — consistently producing portfolios worth hundreds of thousands of dollars less than equivalent low-cost index alternatives. SPIVA scorecards show many actively managed funds underperform benchmarks over long periods after fees.
 
 ### Savings Accounts for Long-Term Investing
 

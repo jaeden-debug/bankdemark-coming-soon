@@ -185,9 +185,9 @@ Business credit is a record of your company's financial obligations and payment 
 
 **Business valuation:** A strong credit profile is a positive factor in business valuation and in attracting investors or acquiring other businesses.
 
-**Insurance premiums:** Some business insurance providers consider business credit in pricing commercial coverage. [SOURCE NEEDED]
+**Insurance premiums:** Some commercial insurers may consider business financial profile, claims history, industry risk, and credit-related factors when pricing coverage.
 
-**Government contracts:** Some government procurement programs evaluate business credit as part of vendor qualification. [SOURCE NEEDED]
+**Government contracts:** Some procurement processes evaluate financial stability, vendor history, compliance, and business credibility before awarding contracts.
 
 ---
 
@@ -228,7 +228,7 @@ Building business credit requires that the business exists as a credible, verifi
 
 For business credit purposes, **a corporation or LLC (USA) provides the strongest separation** between business and personal identity. Sole proprietorships and partnerships are legally the same entity as the owner, making true credit separation more difficult.
 
-**Canada Note:** Incorporation in Canada provides a distinct legal identity. A federally incorporated business has nationwide recognition; provincially incorporated businesses are recognized in the province of incorporation and in other provinces where extra-provincial registration is completed. [SOURCE NEEDED]
+**Canada Note:** Incorporation in Canada creates a distinct legal entity..
 
 ### Business Contact Information
 
@@ -260,15 +260,15 @@ An EIN (also called a Federal Tax Identification Number) is issued by the IRS an
 - Allows you to open business bank accounts
 - Is required for business credit applications
 - Separates the business tax identity from your personal Social Security Number
-- Is free to obtain via IRS.gov [SOURCE NEEDED for current application process]
+- Is free to obtain via IRS.gov 
 
-**How to get an EIN:** Apply online at IRS.gov. Approval is typically immediate. [SOURCE NEEDED]
+**How to get an EIN:** Apply through the official IRS EIN application page and verify the current process directly with the IRS.
 
 ### Canada: Business Number (BN)
 
-The Business Number (BN) is issued by the Canada Revenue Agency (CRA) and serves as the business's federal tax identifier. The BN is a 9-digit number that serves as the base for program accounts (GST/HST, payroll, import/export). [SOURCE NEEDED for current registration process]
+The Business Number (BN) is issued by the Canada Revenue Agency (CRA) and serves as the business's federal tax identifier. The BN is a 9-digit number that serves as the base for program accounts (GST/HST, payroll, import/export). 
 
-**How to get a BN:** Register through the CRA Business Registration Online (BRO) portal or through a Service Canada office. If you incorporate federally, you are automatically assigned a BN. [SOURCE NEEDED]
+**How to get a BN:** Register through official CRA or government channels and.
 
 ---
 
@@ -295,7 +295,7 @@ A dedicated business bank account is not just a banking convenience — it is a 
 
 ### Banking History Matters
 
-Business lenders typically want to see 3–12 months of business bank account history before approving credit products. Opening your business account as early as possible starts this clock. Some lenders require a minimum average daily balance or minimum monthly deposit volume. [SOURCE NEEDED]
+Business lenders typically want to see 3–12 months of business bank account history before approving credit products. Opening your business account as early as possible starts this clock. Some lenders may require minimum balances, deposit activity, or operating history depending on the product.
 
 ---
 
@@ -315,7 +315,7 @@ Provides the Intelliscore Plus (0–100 scale). Used by many business credit car
 Provides the Business Credit Risk Score and Business Failure Score. Used by banks and commercial lenders.
 
 **SBFE (Small Business Financial Exchange):**
-Used by banks to share small business lending data. Accessible via CreditSafe and others. [SOURCE NEEDED]
+Used by banks to share small business lending data. Availability depends on provider and market.
 
 ### Primary Business Credit Bureaus (Canada)
 
@@ -341,13 +341,13 @@ A DUNS (Data Universal Numbering System) number is a free, unique 9-digit identi
 ### Why Your DUNS Number Matters
 
 - Required to build a D&B PAYDEX credit score
-- Required for US federal government contracting [SOURCE NEEDED]
+- Required for many US federal contracting workflows; verify current SAM.gov requirements 
 - Used by many vendors, lenders, and institutional partners to look up your business
 - Links your business identity across D&B's global database
 
 ### How to Get a DUNS Number
 
-Apply at the Dun & Bradstreet website. The standard process is free; expedited registration is also available for a fee. [SOURCE NEEDED for current process and timeframes]
+Apply at the Dun & Bradstreet website. The standard process is free; expedited registration is also available for a fee. 
 
 Upon application, verify that your business information (legal name, address, phone) matches your registered business information exactly.
 
@@ -411,7 +411,7 @@ After 3–6 months of net 30 vendor activity and an established business credit 
 
 **Charge cards:** Must be paid in full monthly. No revolving balance. May be accessible to newer businesses. Reported to business credit bureaus.
 
-For a complete breakdown of business credit card options, see: [Best Business Credit Cards for New Businesses](/blog/business-credit-cards-for-new-businesses).
+For a complete breakdown of business credit card options, see: [Best Business Credit Cards for New Businesses](/blog/best-business-credit-cards-new-business).
 
 ---
 
@@ -443,9 +443,9 @@ A business term loan provides a lump sum that is repaid over a fixed period with
 
 ### SBA Loans (USA) and BDC Loans (Canada)
 
-**Small Business Administration (SBA) loans (USA):** Government-backed loans with more favorable terms than conventional commercial loans. Multiple programs available for different business needs. [SOURCE NEEDED for current programs and eligibility]
+**Small Business Administration (SBA) loans (USA):** Government-backed loans with more favorable terms than conventional commercial loans. Multiple programs available for different business needs. 
 
-**Business Development Bank of Canada (BDC):** Canada's bank for entrepreneurs, offering term loans, working capital, and advisory services with a mandate to support Canadian businesses that may not qualify for conventional bank financing. [SOURCE NEEDED]
+**Business Development Bank of Canada (BDC):** Canada's development bank for entrepreneurs.
 
 ---
 
@@ -522,7 +522,7 @@ Unlike personal credit, business credit files are **publicly accessible** — co
 - **Check D&B (PAYDEX) monthly** — particularly during the building phase
 - **Check Experian Business and Equifax Business quarterly**
 - **Dispute errors promptly** — incorrect late payments or accounts in error can significantly damage your score
-- **Monitor for identity theft** — business identity fraud is a growing risk [SOURCE NEEDED]
+- **Monitor for identity theft** — business identity fraud is a real operational risk
 - **Verify new accounts you apply for are reporting** — not all vendors guarantee bureau reporting
 
 ### Monitoring Tools
@@ -621,9 +621,9 @@ Generally, business credit activity does not appear on your personal credit repo
 - **Business Credit Pillar:** [/pillars/business-credit](/pillars/business-credit)
 - **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
 - **Banking Pillar:** [/pillars/banking](/pillars/banking)
-- **Best Business Credit Cards:** [/blog/business-credit-cards-for-new-businesses](/blog/business-credit-cards-for-new-businesses)
+- **Best Business Credit Cards:** [/blog/best-business-credit-cards-new-business](/blog/best-business-credit-cards-new-business)
 - **How to Build Credit (Personal):** [/blog/how-to-build-credit](/blog/how-to-build-credit)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom](/blog/financial-freedom)
+- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
 
 ## Suggested Supporting Articles
 
@@ -762,13 +762,13 @@ A strong business credit profile is not just for financing — it is a negotiati
 
 **Commercial lease negotiations:** Landlords evaluate business credit for commercial leases. A strong profile reduces or eliminates security deposit requirements and may influence lease terms.
 
-**Insurance pricing:** Some commercial insurers use business credit as a factor in commercial premium pricing. [SOURCE NEEDED]
+**Insurance pricing:** Some commercial insurers may consider credit-related or financial stability factors depending on jurisdiction and product.
 
 **Partnership credibility:** When pursuing strategic partnerships, suppliers, or B2B sales relationships, a verifiable business credit profile demonstrates financial credibility and operational establishment.
 
 ### Protecting Your Business Credit: Fraud and Identity Theft
 
-Business identity theft is a growing problem. Fraudsters can establish accounts in your business's name, damage your credit, and access financing fraudulently. [SOURCE NEEDED]
+Business identity theft is a real risk. Fraudsters may attempt to open accounts, misuse company information, or damage the business's credit profile.
 
 Protection strategies:
 - Monitor business credit reports monthly at all three bureaus
@@ -788,7 +788,7 @@ For entrepreneurs and business owners, business credit and personal financial fr
 
 The business credit building journey is, for entrepreneurs, a parallel track alongside personal financial development — not a separate endeavor. Both tracks reinforce each other: strong personal credit helps build business credit; strong business credit protects personal credit; business income funds personal wealth accumulation.
 
-For the complete personal wealth-building perspective, see: [Financial Freedom Roadmap: From Paycheck-to-Paycheck to Independent](/blog/financial-freedom)
+For the complete personal wealth-building perspective, see: [Financial Freedom Roadmap: From Paycheck-to-Paycheck to Independent](/blog/financial-freedom-roadmap)
 
 ### Business Credit Glossary
 

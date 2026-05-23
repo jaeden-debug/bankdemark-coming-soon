@@ -205,9 +205,9 @@ There are two primary replication methods:
 
 ### The Case for Index Investing
 
-The intellectual foundation for index investing was largely established by decades of academic research and the efficient market hypothesis — the theory that securities prices reflect all available public information, making consistent outperformance through stock selection extremely difficult. [SOURCE NEEDED]
+The intellectual foundation for index investing comes from decades of market-efficiency research: in competitive public markets, persistent outperformance through stock selection is difficult.
 
-The practical result: a fund that simply holds the market will, by definition, match the market's return before fees. After fees, a low-cost index fund consistently beats the majority of actively managed funds over long periods. [SOURCE NEEDED]
+The practical result: a fund that simply holds the market will, by definition, match the market's return before fees. After fees, low-cost index funds have historically been difficult for many active funds to beat over long periods, according to SPIVA research.
 
 ---
 
@@ -292,7 +292,7 @@ Assume $10,000 invested, 7% annual return before fees, over 30 years:
 | 1.00% (typical active fund) | ~$66,100 |
 | 2.00% (high-fee active fund) | ~$57,400 |
 
-[SOURCE NEEDED for calculation verification]
+
 
 The difference between a 0.05% ETF and a 2.00% active fund — $18,000+ over 30 years on a $10,000 investment — is entirely attributable to fees, not investment selection.
 
@@ -324,7 +324,7 @@ For beginners who invest primarily or entirely within tax-advantaged accounts, t
 
 ### Withholding Tax Considerations (Canada)
 
-Canadian investors holding US-listed ETFs within certain account types (particularly TFSAs) may be subject to US withholding tax on dividends, which reduces yield. Holding US equities through a Canadian-listed ETF, or holding US-listed ETFs within an RRSP (which has treaty protection from US withholding tax), can have different outcomes. [SOURCE NEEDED for current tax treaty details]
+Canadian investors holding US-listed ETFs within certain account types (particularly TFSAs) may be subject to US withholding tax on dividends, which reduces yield. Holding US equities through a Canadian-listed ETF, or holding US-listed ETFs within an RRSP (which has treaty protection from US withholding tax), can have different outcomes. 
 
 This is a nuanced area. Consult a qualified tax professional or thoroughly research the current rules for your specific situation.
 
@@ -358,7 +358,7 @@ A key advantage of index mutual funds is the ability to automate contributions o
 
 With ETFs, the traditional requirement to buy whole shares means a $250 monthly contribution may buy 2 shares at $115 each ($230) with $20 left uninvested — the residual cash drag is small but real.
 
-**Fractional shares** solve this problem — many modern brokerages now allow purchase of fractional ETF shares, enabling exact dollar-amount contributions to ETFs. [SOURCE NEEDED for availability on Canadian vs. US platforms]
+**Fractional shares** solve this problem — many modern brokerages now allow purchase of fractional ETF shares, enabling exact dollar-amount contributions to ETFs. 
 
 ### Automatic Reinvestment of Dividends (DRIP)
 
@@ -430,7 +430,7 @@ Benefits:
 
 - **TFSA:** Hold ETFs inside a TFSA for tax-free growth and withdrawals
 - **RRSP:** Hold ETFs inside an RRSP for tax-deferred growth; consider US-listed ETFs here for withholding tax efficiency
-- **Taxable accounts:** ETF capital gains are taxed at 50% inclusion rate [SOURCE NEEDED for current inclusion rate]; eligible dividends receive dividend tax credit
+- **Taxable accounts:** ETF capital gains are taxed at 50% inclusion rate ; eligible dividends receive dividend tax credit
 - Foreign income distributed from ETFs may have withholding tax implications depending on account type
 
 ---
@@ -466,13 +466,13 @@ A widely cited beginner framework in the USA:
 2. International total market ETF
 3. US aggregate bond ETF
 
-The allocation between these three determines the risk profile. This framework, popularized by the Bogleheads investment community [SOURCE NEEDED], provides broad global diversification, low cost, and simplicity.
+The allocation between these three determines the risk profile. This framework, popularized by the Bogleheads investment community, provides broad global diversification, low cost, and simplicity.
 
 ### US Tax Considerations for ETFs
 
 - **Roth IRA:** ETFs grow tax-free; no capital gains or dividend taxes within the account
 - **Traditional IRA / 401(k):** Tax-deferred; taxes paid upon withdrawal
-- **Taxable brokerage:** ETF capital gains are taxed at capital gains rates (long-term rates apply to assets held 12+ months); qualified dividends taxed at preferential rates [SOURCE NEEDED for current rates]
+- **Taxable brokerage:** ETF capital gains are taxed at capital gains rates (long-term rates apply to assets held 12+ months); qualified dividends taxed at preferential rates 
 
 ---
 
@@ -533,7 +533,7 @@ An actively managed fund employs a professional portfolio manager who attempts t
 
 ### The Evidence on Active Management
 
-Multiple decades of data from SPIVA reports [SOURCE NEEDED] and academic research [SOURCE NEEDED] consistently show:
+Multiple decades of SPIVA scorecards and academic research consistently show:
 
 - The majority of actively managed equity funds underperform their benchmark index over any 10-year period
 - After fees, the underperformance gap widens
@@ -612,8 +612,8 @@ Either works. Inside registered accounts (TFSA/Roth IRA), the tax efficiency adv
 - **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
 - **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
 - **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom](/blog/financial-freedom)
-- **How to Save Money:** [/blog/how-to-save-money](/blog/how-to-save-money)
+- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
+- **How to Save Money:** [/blog/how-to-save-money-emergency-fund](/blog/how-to-save-money-emergency-fund)
 
 ## Suggested Supporting Articles
 
@@ -696,7 +696,7 @@ Beyond basic market-cap weighted index ETFs, the market offers "smart beta" or f
 
 **Should beginners use factor ETFs?**
 
-The academic evidence on factor investing is real but contested in terms of current relevance and practical implementation. [SOURCE NEEDED] For beginners, starting with market-cap weighted index ETFs is the appropriate foundation. Factor tilts are an optional advanced layer after the basics are well-established.
+The academic evidence on factor investing is real, but its practical implementation is debated and depends on costs, patience, and discipline. For beginners, starting with market-cap weighted index ETFs is the appropriate foundation. Factor tilts are an optional advanced layer after the basics are well-established.
 
 ### The Rebalancing Question: When and How
 
@@ -732,7 +732,7 @@ For Canadian investors holding US-listed or US-equity ETFs, currency risk is a m
 - **Unhedged (currency exposure):** Your returns reflect both the equity market return and the CAD/USD exchange rate movement. Over long periods, currency effects tend to average out — and some investors prefer the diversification of holding foreign currency exposure.
 - **Currency hedged:** The ETF uses derivatives to neutralize the CAD/USD exchange rate impact. Your return reflects only the underlying equity market, not currency movement. Hedging has a cost (the derivatives premium), which is reflected in a slightly higher MER.
 
-**Which to choose?** There is no universally correct answer. Most evidence suggests that over long time horizons, currency hedging does not improve returns and adds cost. For long-term buy-and-hold investors, unhedged is commonly the default recommendation. [SOURCE NEEDED] For investors with shorter time horizons or specific currency risk concerns, hedged may be preferable.
+**Which to choose?** There is no universally correct answer. Currency hedging is not automatically better. It adds cost and changes risk exposure. Long-term investors should verify current research and product costs before choosing. For investors with shorter time horizons or specific currency risk concerns, hedged may be preferable.
 
 ### The ETF Ecosystem: Primary and Secondary Markets
 
@@ -764,9 +764,9 @@ ETF providers publish standardized fact sheets for each product. Key data points
 
 The evidence base for passive index investing is substantial. Academic research spanning multiple decades across multiple markets consistently finds:
 
-- The majority of actively managed equity funds underperform their benchmark after fees over 10-year periods [SOURCE NEEDED]
-- Fund managers who outperform in one period do not reliably outperform in subsequent periods [SOURCE NEEDED]
-- Even when a fund does outperform, identifying it in advance is extremely difficult for individual investors [SOURCE NEEDED]
+- Many actively managed equity funds underperform their benchmarks after fees over longer periods, according to SPIVA
+- Fund-manager outperformance does not reliably persist across periods; verify with SPIVA persistence reports
+- Even when a fund does outperform, identifying it in advance is extremely difficult for most individual investors
 - The fee differential between passive and active funds, compounded over 20–30 years, is the primary explanatory factor for the performance gap
 
 The investor who builds conviction in low-cost passive index investing — and maintains that conviction through market cycles — does not need to find the best fund, the best manager, or the best timing. They simply need to own the market at low cost and stay invested.

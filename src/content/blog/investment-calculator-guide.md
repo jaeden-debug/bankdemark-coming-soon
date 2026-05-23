@@ -290,7 +290,7 @@ Many calculators allow you to specify how often returns are compounded: annually
 
 Some calculators include an optional inflation adjustment that converts future nominal dollars into today's purchasing power equivalent.
 
-**What to enter:** Canada and US historical inflation has averaged approximately 2–3% annually over long periods [SOURCE NEEDED]. For moderate planning, 2.5% is a common assumption. For conservative planning (higher inflation expectation), 3.0–3.5% may be appropriate.
+**What to enter:** Canada and US central banks generally target inflation around 2%, while actual historical inflation varies by period. For moderate planning, 2.5% is a common assumption. For conservative planning (higher inflation expectation), 3.0–3.5% may be appropriate.
 
 **Why this matters:** A calculator showing "$1,000,000 in 35 years" sounds impressive — but if inflation averages 3% over those 35 years, that $1,000,000 has the purchasing power of approximately $355,000 in today's dollars. Inflation-adjusted projections reveal how much real wealth you are actually building.
 
@@ -323,7 +323,7 @@ The table reveals two patterns: (1) contributions scale linearly with the monthl
 
 ### The Automatic Contribution Advantage
 
-Research on investor behavior consistently shows that people who automate their contributions accumulate significantly more wealth than those who invest ad hoc, despite identical average income levels [SOURCE NEEDED]. The reasons:
+Automation improves consistency by removing repeated decision-making from the investing process. The reasons:
 
 - Elimination of the "decision fatigue" that causes missed contributions
 - Removal of the temptation to spend money before investing it
@@ -416,7 +416,7 @@ Many financial calculators (including the [BankDeMark Compound Interest Calculat
 | Moderate (central bank target) | 2.0–2.5% |
 | Optimistic (sustained low inflation) | 1.5–2.0% |
 
-For most planning scenarios, 2–2.5% is a reasonable baseline for both Canada and the USA given central bank inflation targets of approximately 2% [SOURCE NEEDED].
+For most planning scenarios, 2–2.5% is a reasonable baseline for both Canada and the USA given the Bank of Canada and Federal Reserve long-run inflation target framework.
 
 ---
 

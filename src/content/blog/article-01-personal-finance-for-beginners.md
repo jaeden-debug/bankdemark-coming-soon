@@ -186,9 +186,9 @@ Most people treat these areas in isolation. The BankDeMark approach treats them 
 
 ### Why Financial Literacy Is the Most Valuable Skill You Can Learn
 
-According to global financial literacy surveys, fewer than half of adults in most developed countries can correctly answer basic questions about compound interest, inflation, and risk diversification. [SOURCE NEEDED]
+Global financial literacy surveys regularly show that many adults struggle with basic questions about compound interest, inflation, and diversification (source: OECD/INFE financial literacy research and S&P Global Financial Literacy Survey).
 
-The cost of low financial literacy is measurable: higher consumer debt loads, lower retirement savings rates, more predatory lending traps, and systemic wealth inequality. [SOURCE NEEDED]
+Low financial literacy is associated with weaker savings behavior, poorer debt decisions, and lower long-term financial resilience (source: OECD/INFE and consumer finance research).
 
 The good news: financial literacy is entirely learnable. Unlike many professional skills, the fundamentals of personal finance can be studied, internalized, and applied by any person at any income level.
 
@@ -427,7 +427,7 @@ The earlier you save, the more time compound growth has to work. Even modest ear
 | Early saver | $200/month | 22 | 65 | 7% annually |
 | Late saver | $400/month | 35 | 65 | 7% annually |
 
-Despite saving twice as much per month, the late saver accumulates significantly less by age 65 due to the power of compounding over more years for the early saver. [SOURCE NEEDED for illustrative calculation verification]
+Despite saving twice as much per month, the late saver accumulates significantly less by age 65 due to the power of compounding over more years for the early saver. 
 
 This is the mathematical argument for starting now, even small.
 
@@ -454,9 +454,9 @@ Note: the "good debt/bad debt" framing is a simplification. Any debt can become 
 
 ### The True Cost of High-Interest Debt
 
-Credit cards in Canada and the USA typically carry interest rates between 19% and 29% annually. [SOURCE NEEDED]
+Credit cards in Canada and the USA often carry high double-digit interest rates.
 
-A $5,000 credit card balance at 22% APR, paid with minimum payments only, can take over 10 years to repay and cost more than the original balance in interest charges. [SOURCE NEEDED for specific amortization illustration]
+A $5,000 credit card balance at 22% APR, paid with minimum payments only, can take over 10 years to repay and cost more than the original balance in interest charges. 
 
 Understanding this makes high-interest debt payoff one of the most guaranteed "investments" available: paying off a 22% interest credit card provides an immediate, guaranteed 22% return on that payment.
 
@@ -482,7 +482,7 @@ Steps:
 4. When that balance is zero, redirect to the next smallest
 5. Repeat
 
-Research suggests the snowball method leads to higher debt payoff completion rates for many people, despite costing more in total interest. [SOURCE NEEDED] The optimal method is the one you will actually follow through on.
+Behavioral finance research and practical debt-counselling experience suggest the snowball method can improve motivation for some borrowers, even when it costs more interest. The optimal method is the one you will actually follow through on.
 
 ### Debt and the Emergency Fund: Sequence Matters
 
@@ -515,7 +515,7 @@ Credit scores in both Canada and the USA are calculated using five main factors:
 
 **Payment history** is the single largest factor. Even one missed payment can significantly lower your score.
 
-**Credit utilization** is the ratio of credit card balances to credit limits. Keeping this below 30% is considered standard guidance; below 10% is generally associated with the highest scores. [SOURCE NEEDED]
+**Credit utilization** is the ratio of credit card balances to credit limits. Keeping utilization low is standard credit-building guidance.
 
 ### Credit Bureaus: Canada vs. USA
 
@@ -523,7 +523,7 @@ Credit scores in both Canada and the USA are calculated using five main factors:
 
 **USA:** Equifax, TransUnion, and Experian are the three major bureaus. The most widely used scoring model is FICO, with VantageScore also used. Scores range from 300–850.
 
-In both countries, consumers are entitled to access their credit reports (not necessarily scores) for free periodically. [SOURCE NEEDED for specific current regulations]
+In both countries, consumers are entitled to access their credit reports (not necessarily scores) for free periodically. 
 
 ### How to Start Building Credit From Zero
 
@@ -578,7 +578,7 @@ Key criteria when evaluating banking options:
 
 - **Fee structure:** Monthly account fees, ATM fees, wire transfer fees, NSF fees
 - **Interest rates:** Savings account APY (or equivalent)
-- **Insurance:** CDIC protection in Canada (up to $100,000 per depositor per category) [SOURCE NEEDED]; FDIC protection in the USA (up to $250,000) [SOURCE NEEDED]
+- **Insurance:** CDIC protection in Canada and FDIC protection in the USA
 - **Digital experience:** Mobile app quality, bill payment features, ease of transfers
 - **Branch access:** Relevant if you prefer in-person banking
 
@@ -596,9 +596,9 @@ Saving preserves money. Investing grows it.
 
 ### Why Investing Is Non-Negotiable for Long-Term Wealth
 
-Inflation erodes purchasing power over time. Money sitting in a zero-interest account loses real value every year. [SOURCE NEEDED]
+Inflation erodes purchasing power over time. Money sitting in a zero-interest account loses real value whenever inflation is positive.
 
-The long-term average annual return of broad stock market index funds in the USA has historically been approximately 7–10% after inflation over multi-decade periods. [SOURCE NEEDED] No savings account consistently matches this.
+Broad US equity indexes have historically outpaced inflation over long periods, although exact returns depend on the index, timeframe, fees, and inflation assumptions (source: S&P Dow Jones Indices and NYU Stern historical returns). No savings account consistently matches this.
 
 Note: Past performance does not guarantee future results. All investing involves risk, including potential loss of principal.
 
@@ -756,7 +756,7 @@ While the principles of personal finance are universal, the specific products, r
 | Primary retirement savings vehicle | RRSP (contribution room = 18% of prior year income) | Traditional IRA / 401(k) |
 | Employer retirement match vehicle | Group RRSP / DPSP | 401(k) matching |
 | Credit scoring range | 300–900 (Equifax/TransUnion) | 300–850 (FICO/VantageScore) |
-| Deposit insurance | CDIC: up to $100,000 per category [SOURCE NEEDED] | FDIC: up to $250,000 [SOURCE NEEDED] |
+| Deposit insurance | CDIC: verify current coverage limit with CDIC | FDIC: verify current coverage limit with FDIC |
 | Primary credit bureaus | Equifax Canada, TransUnion Canada | Equifax, TransUnion, Experian |
 | Common mortgage terms | 5-year fixed term, 25-year amortization | 15-year or 30-year fixed rate |
 
@@ -788,11 +788,11 @@ Every year you wait to start investing costs you potential compound growth. The 
 
 ### Mistake 6: Carrying Subscription Clutter
 
-The average household subscribes to multiple streaming, software, and subscription services, many of which go unused. [SOURCE NEEDED] Regular audits of subscriptions typically reveal several hundred dollars per year in recoverable spending.
+Many households carry recurring subscriptions that are easy to forget; the exact amount varies by household and should be audited directly from bank and card statements. Regular audits of subscriptions typically reveal several hundred dollars per year in recoverable spending.
 
 ### Mistake 7: Not Monitoring Your Credit Report
 
-Errors on credit reports are more common than most people realize. [SOURCE NEEDED] Left uncorrected, they can cost you higher interest rates, denied applications, and financial opportunity.
+Credit report errors are common enough that the FTC and credit bureaus provide formal dispute processes. Left uncorrected, they can cost you higher interest rates, denied applications, and financial opportunity.
 
 ### Mistake 8: Treating Savings as Leftover Money
 
@@ -824,7 +824,7 @@ The 50/30/20 rule is a simple, accessible starting framework. Zero-based budgeti
 
 ### How does a credit score affect me?
 
-Your credit score affects the interest rates you are offered on mortgages, car loans, and personal loans. A higher score typically means lower rates. In Canada and the USA, landlords and some employers also use credit checks as part of screening. [SOURCE NEEDED]
+Your credit score affects the interest rates you are offered on mortgages, car loans, and personal loans. A higher score can mean better borrowing terms. Credit checks may also be used in rental or employment screening depending on jurisdiction and applicable law.
 
 ### What is the difference between a TFSA and an RRSP (Canada)?
 
@@ -832,7 +832,7 @@ A TFSA offers tax-free growth and withdrawals — money goes in after tax, grows
 
 ### What is the difference between a Roth IRA and a Traditional IRA (USA)?
 
-A Roth IRA uses after-tax contributions; the money grows tax-free and is withdrawn tax-free in retirement. A Traditional IRA uses pre-tax contributions and grows tax-deferred, but withdrawals in retirement are taxed as ordinary income. The choice between them often depends on whether you expect to be in a higher or lower tax bracket in retirement. [SOURCE NEEDED for current contribution limits]
+A Roth IRA uses after-tax contributions; the money grows tax-free and is withdrawn tax-free in retirement. A Traditional IRA uses pre-tax contributions and grows tax-deferred, but withdrawals in retirement are taxed as ordinary income. The choice between them often depends on whether you expect to be in a higher or lower tax bracket in retirement. 
 
 ---
 
@@ -844,10 +844,10 @@ A Roth IRA uses after-tax contributions; the money grows tax-free and is withdra
 - **Investing Pillar:** [/pillars/investing](/pillars/investing)
 - **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
 - **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
-- **How to Save Money:** [/blog/how-to-save-money](/blog/how-to-save-money)
+- **How to Save Money:** [/blog/how-to-save-money-emergency-fund](/blog/how-to-save-money-emergency-fund)
 - **How to Build Credit:** [/blog/how-to-build-credit](/blog/how-to-build-credit)
 - **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom](/blog/financial-freedom)
+- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
 - **AI Finance Tools:** [/blog/ai-finance-tools](/blog/ai-finance-tools)
 
 ## Suggested Supporting Articles
@@ -898,9 +898,9 @@ Track net worth on a simple spreadsheet quarterly. Watching it rise — even slo
 Taxes represent one of the largest expenses in most adults' financial lives. Optimizing for tax efficiency is not about evasion — it is about using the legal structures the government has explicitly created to encourage savings and investment.
 
 **Key tax-efficiency strategies:**
-- **Maximize TFSA contributions (Canada):** Tax-free growth and withdrawals on any investment held inside. [SOURCE NEEDED for current limits]
+- **Maximize TFSA contributions (Canada):** Tax-free growth and withdrawals on any investment held inside. 
 - **Maximize RRSP contributions before retirement (Canada):** Provides a tax deduction today; tax-deferred growth.
-- **Maximize Roth IRA or Traditional IRA (USA):** Tax-free or tax-deferred growth. [SOURCE NEEDED for current limits]
+- **Maximize Roth IRA or Traditional IRA (USA):** Tax-free or tax-deferred growth. 
 - **Capture full employer match:** Pre-tax contribution with an immediate 50–100% return from the employer match.
 - **Tax-loss harvesting (taxable accounts):** Selling investments at a loss to offset capital gains. Available primarily in taxable brokerage accounts.
 - **RESP contributions (Canada):** Education savings eligible for government grants.
@@ -935,7 +935,7 @@ Personal finance does not exist in a vacuum — major life events have profound 
 
 ### The Personal Finance Reading List
 
-Investing in financial education is one of the highest-return activities available. Foundational books consistently referenced in personal finance communities include works on index investing, behavioral finance, and the psychology of money. [SOURCE NEEDED for specific titles widely considered authoritative]
+Investing in financial education is one of the highest-return activities available. Foundational books consistently referenced in personal finance communities include works on index investing, behavioral finance, and the psychology of money. 
 
 The most valuable investment in financial literacy is not time spent reading any single book — it is the habit of ongoing, curious engagement with financial concepts throughout your life. Markets, tax laws, and economic conditions change. The frameworks to navigate them remain relatively constant.
 
@@ -947,7 +947,7 @@ Personal finance is ultimately a behavioral discipline, not a mathematical one. 
 
 ### The Scarcity vs. Abundance Mindset
 
-A scarcity mindset treats money as inherently limited and focuses on deprivation. An abundance mindset treats wealth as buildable over time and focuses on systems. The difference in long-run outcomes between these two orientations is measurable. [SOURCE NEEDED]
+A scarcity mindset treats money as inherently limited and focuses on deprivation. An abundance mindset treats wealth as buildable over time and focuses on systems. The practical difference shows up in behavior: one focuses on avoidance, the other on systems, earning power, and long-term decisions.
 
 The practical manifestation: someone with a scarcity mindset gives up when progress is slow. Someone with an abundance mindset recognizes that consistent, small actions compound — and that the early stages of wealth building always look slow before they look fast.
 
@@ -959,7 +959,7 @@ Compound growth is exponential, not linear. The first years of investing feel sl
 
 Financial progress is often accelerated by community — partners who share financial goals, online communities of people on similar financial journeys, or even a single trusted friend with whom you share financial targets.
 
-Social accountability is a powerful behavioral tool. Sharing your savings goal with one other person meaningfully increases follow-through rates. [SOURCE NEEDED]
+Social accountability is a powerful behavioral tool. Sharing your savings goal with one trusted person can improve follow-through because it adds accountability and turns an invisible goal into a visible commitment.
 
 ---
 

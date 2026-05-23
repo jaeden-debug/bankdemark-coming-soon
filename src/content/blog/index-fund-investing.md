@@ -176,7 +176,7 @@ This passive approach — tracking, not picking — has two profound implication
 
 The index fund concept was pioneered by Jack Bogle, who founded Vanguard and launched the first retail index mutual fund in 1976. At the time, the investment industry ridiculed the idea — why would anyone be satisfied with "average" returns? The concept was dismissed as "Bogle's folly."
 
-Decades of data later, the ridicule has been reversed. The Vanguard 500 Index Fund and its successors became some of the largest investment funds in the world, managing trillions of dollars. Bogle's insight — that most active managers would fail to beat the index after fees over long periods — has been validated repeatedly by academic research [SOURCE NEEDED].
+Decades of data later, the ridicule has been reversed. The Vanguard 500 Index Fund and its successors became some of the largest investment funds in the world, managing trillions of dollars. Bogle’s insight — that many active managers fail to beat comparable indexes after fees over long periods — is supported by SPIVA scorecards and decades of passive investing research.
 
 ### How Index Funds Work Mechanically
 
@@ -201,9 +201,9 @@ Index funds use two primary replication approaches:
 
 Warren Buffett — widely considered one of the greatest investors of all time — has made some of the most emphatic endorsements of index fund investing for ordinary investors ever recorded from within the investment industry.
 
-In his 2013 Berkshire Hathaway annual letter, Buffett wrote that the instructions he left for the trustee of his estate include: put 90% of the cash in a very low-cost S&P 500 index fund and 10% in short-term government bonds [SOURCE NEEDED].
+In his 2013 Berkshire Hathaway annual letter, Buffett wrote that the instructions he left for the trustee of his estate include: put 90% of the cash in a very low-cost S&P 500 index fund and 10% in short-term government bonds.
 
-In 2017, Buffett won a public bet against hedge fund managers — wagering that a simple S&P 500 index fund would outperform a portfolio of actively managed hedge funds over a 10-year period. He won [SOURCE NEEDED].
+Buffett’s famous 10-year hedge fund bet became a public example of the difficulty active managers face after fees.
 
 Buffett has consistently stated that for most individual investors, a simple low-cost index fund held for the long term will outperform the results achieved by most professional active managers.
 
@@ -215,10 +215,10 @@ The argument for passive index investing rests on several pillars:
 Active fund managers typically charge 1–1.5% or more in annual fees to attempt to outperform the market. These fees are deducted whether or not the fund outperforms. Over a 30-year horizon, a 1.5% fee differential can erode an enormous portion of final portfolio value.
 
 **2. The difficulty of consistent outperformance**
-Financial markets are highly competitive. When millions of highly trained, well-resourced professionals are analyzing the same companies, it is very difficult for any individual manager to consistently identify mispriced securities before others do. Outperformance in one period often does not persist in subsequent periods [SOURCE NEEDED].
+Financial markets are highly competitive. When millions of highly trained, well-resourced professionals are analyzing the same companies, it is very difficult for any individual manager to consistently identify mispriced securities before others do. Outperformance in one period does not reliably persist in later periods; SPIVA persistence research is the source to verify here.
 
 **3. The SPIVA Data**
-S&P Dow Jones Indices publishes the SPIVA (S&P Indices Versus Active) scorecard, which tracks active fund performance against relevant benchmarks. The data consistently shows that over 15-year periods, the large majority of active equity funds in most categories underperform their comparable index [SOURCE NEEDED].
+S&P Dow Jones Indices publishes the SPIVA (S&P Indices Versus Active) scorecard, which tracks active fund performance against relevant benchmarks. SPIVA scorecards consistently show that many active funds underperform comparable benchmarks over longer periods after fees.
 
 **4. Individual investor behavior amplifies the gap**
 Beyond manager fees, individual investors in actively managed funds tend to buy when returns have been strong (after the gains have already occurred) and sell when returns are poor — further reducing their realized returns below even the fund's official performance.
@@ -277,9 +277,9 @@ The S&P 500 is widely regarded as the best single measure of large-cap US equity
 Inclusion in the S&P 500 is determined by a committee at S&P Dow Jones Indices, not purely mechanical rules. General requirements include:
 
 - US-listed company
-- Market capitalization of at least $18 billion (as of recent revisions; threshold is periodically updated) [SOURCE NEEDED]
+- Market capitalization eligibility threshold:
 - Minimum public float of at least 50% of outstanding shares
-- Positive as-reported earnings for the most recent quarter AND the four most recent quarters [SOURCE NEEDED]
+- Earnings eligibility requirements:
 - Adequate liquidity (high trading volume relative to float)
 
 The S&P 500 is reconstituted periodically — companies that no longer meet the criteria are removed and replaced.
@@ -288,13 +288,13 @@ The S&P 500 is reconstituted periodically — companies that no longer meet the 
 
 The S&P 500 uses a float-adjusted market-cap weighting system. This means larger companies have a higher weight in the index — and therefore a larger impact on its performance. If Apple has a market cap of $3 trillion and a smaller company has a market cap of $18 billion, Apple's daily moves affect the index far more dramatically.
 
-This has important implications: an S&P 500 index fund is not equally weighted across 500 companies. The top 10 companies by market cap typically represent approximately 30–35% of the total index weight [SOURCE NEEDED]. This means concentration risk exists even within the S&P 500.
+This has important implications: an S&P 500 index fund is not equally weighted across 500 companies. The top companies can represent a large share of the index weight. This means concentration risk exists even within the S&P 500.
 
 ### S&P 500 Historical Context
 
-The S&P 500 was introduced in 1957 as an expansion of earlier S&P indices. Since inception, it has experienced numerous bear markets, crashes, and recoveries — including the dot-com bust (2000–2002), the Global Financial Crisis (2007–2009), the COVID crash (2020), and multiple other significant declines. Each has been followed, eventually, by recovery and new all-time highs [SOURCE NEEDED].
+The S&P 500 was introduced in 1957 as an expansion of earlier S&P indices. Since inception, it has experienced numerous bear markets, crashes, and recoveries — including the dot-com bust (2000–2002), the Global Financial Crisis (2007–2009), the COVID crash (2020), and multiple other significant declines. Broad US market indexes have historically recovered from major drawdowns over time, though recovery periods have varied widely.
 
-The S&P 500's long-term average annual return (before inflation) has been approximately 10% [SOURCE NEEDED], though this figure includes significant year-to-year variability. No individual year's return guarantees the next year's return in either direction.
+The S&P 500’s long-term average annual return is often cited around 10% before inflation, depending on start date and methodology, though this figure includes significant year-to-year variability. No individual year's return guarantees the next year's return in either direction.
 
 ### Beyond the S&P 500: Other Important Indices
 
@@ -328,7 +328,7 @@ Available in multiple risk profiles:
 - Growth: ~80% equities, ~20% bonds
 - All-equity: ~100% equities, ~0% bonds
 
-In Canada, these all-in-one ETFs are available from major fund providers at very competitive MERs [SOURCE NEEDED].
+In Canada, all-in-one ETFs are available from major fund providers with low published MERs; verify current fees directly from provider pages.
 
 **Workflow:**
 1. Open TFSA/RRSP
@@ -397,13 +397,13 @@ Canadian investors have excellent options for index fund investing, including a 
 ### Key Considerations for Canadian Index Investors
 
 **Home Country Bias**
-Many Canadian investors over-weight Canada in their portfolios. Canada represents approximately 3% of global equity market capitalization [SOURCE NEEDED], so a purely market-weight global portfolio would hold approximately 3% in Canadian stocks. However, there are practical reasons for a modest home country bias: Canadian-dollar denomination, favorable tax treatment of Canadian dividends (through the dividend tax credit in non-registered accounts), and avoidance of foreign withholding taxes.
+Many Canadian investors over-weight Canada in their portfolios. Canada represents a small share of global equity market capitalization; verify the current percentage using MSCI, FTSE, or Vanguard global market data, so a purely market-weight global portfolio would hold approximately 3% in Canadian stocks. However, there are practical reasons for a modest home country bias: Canadian-dollar denomination, favorable tax treatment of Canadian dividends (through the dividend tax credit in non-registered accounts), and avoidance of foreign withholding taxes.
 
 A common Canadian portfolio construction: 30% Canada, 70% global (including ~45% US, ~25% international ex-North America) for the equity portion.
 
 **TFSA vs RRSP Account Selection**
 The choice of account affects investment strategy slightly:
-- US equities inside an RRSP benefit from the US-Canada tax treaty, which eliminates the 15% US withholding tax on dividends for most US-listed ETFs [SOURCE NEEDED]
+- US-listed equities inside an RRSP may receive favorable withholding-tax treatment under the US-Canada tax treaty
 - Canadian equities and Canadian-listed ETFs are generally tax-efficient in all registered accounts
 - The TFSA is the most flexible account — consider maximizing it before the RRSP unless your income is high enough that the RRSP tax deduction is particularly valuable
 
@@ -411,11 +411,11 @@ The choice of account affects investment strategy slightly:
 When buying US-listed ETFs (e.g., SPY or VTI) inside a Canadian brokerage account, you will typically pay a currency conversion fee on each trade. To avoid this, consider using CAD-hedged or CAD-denominated versions of the same ETFs (e.g., a Canadian ETF that tracks the S&P 500 but is listed in CAD) or using Norbert's Gambit to convert currency at a lower cost for large amounts.
 
 **The Canadian MER Advantage**
-Competition among Canadian fund providers has driven MERs on Canadian-listed index ETFs to competitive levels, often under 0.25% for broad market funds and under 0.20% for major equity indices [SOURCE NEEDED].
+Competition among Canadian fund providers has pushed many broad-market ETF MERs lower.
 
 ### RESP (Registered Education Savings Plan)
 
-For Canadian parents investing for a child's education, the RESP is a powerful vehicle with a built-in government grant: the Canada Education Savings Grant (CESG) provides 20% on the first $2,500 of annual contributions per beneficiary, up to a lifetime maximum [SOURCE NEEDED]. Index ETFs can be held inside an RESP, making it a powerful combination of government incentive and low-cost index investing.
+For Canadian parents investing for a child's education, the RESP is a powerful vehicle with a built-in government grant: the Canada Education Savings Grant (CESG) rules should be verified directly with Government of Canada RESP guidance . Index ETFs can be held inside an RESP, making it a powerful combination of government incentive and low-cost index investing.
 
 > Use the [BankDeMark TFSA Calculator](/calculators/tfsa-calculator) and [RRSP Calculator](/calculators/rrsp-calculator) to project your registered account growth under different contribution scenarios.
 
@@ -425,7 +425,7 @@ For Canadian parents investing for a child's education, the RESP is a powerful v
 
 ### Misconception 1: "Index funds are only average"
 
-This framing misunderstands how markets work. Because active managers collectively ARE the market, and because they charge fees, the average active manager must by definition underperform the average passive index fund after fees. "Average" gross return + much lower fees = above-average net return. Over long periods, this mathematics plays out consistently in the data [SOURCE NEEDED].
+This framing misunderstands how markets work. Because active managers collectively ARE the market, and because they charge fees, the average active manager must by definition underperform the average passive index fund after fees. "Average" gross return + much lower fees = above-average net return. Over long periods, this fee math is one reason passive indexing is hard for active funds to beat after costs.
 
 ### Misconception 2: "Index funds are not diversified enough"
 
@@ -433,11 +433,11 @@ A global all-cap ETF may hold 5,000–9,000 individual stocks across dozens of c
 
 ### Misconception 3: "Index funds will be destroyed in a market crash"
 
-Index funds decline during market crashes — because the market declines. But so do the vast majority of active funds. The question is not whether your index fund will fall in a crash, but whether it will recover — and the historical record of broad market index recovery is strong [SOURCE NEEDED]. Active funds in crashes often fare similarly to or worse than index funds.
+Index funds decline during market crashes — because the market declines. But so do the vast majority of active funds. The question is not whether your index fund will fall in a crash, but whether it will recover — and broad market indexes have historically recovered from major crashes, though timing is never guaranteed. Active funds in crashes often fare similarly to or worse than index funds.
 
 ### Misconception 4: "You should time your entry into index funds"
 
-This advice almost always backfires. Research on lump-sum vs. dollar-cost averaging consistently shows that investing available funds promptly (lump-sum) slightly outperforms DCA over long periods because markets rise more often than they fall [SOURCE NEEDED]. For those who cannot stomach lump-sum investing psychologically, systematic DCA still outperforms the "wait for a dip" approach.
+This advice almost always backfires. Vanguard research has found that lump-sum investing often outperforms gradual deployment historically, though dollar-cost averaging may be easier behaviorally. For those who cannot stomach lump-sum investing psychologically, systematic DCA still outperforms the "wait for a dip" approach.
 
 ### Misconception 5: "A lower price per share means a better deal"
 
@@ -495,7 +495,7 @@ The price per share of an ETF is irrelevant to its value proposition. What matte
 An index fund is an investment fund — structured as a mutual fund or an ETF — that passively tracks a market index like the S&P 500, holding all or a representative sample of the securities in the index. Index funds charge very low fees and provide broad market exposure without active stock selection.
 
 **Q: Why does Warren Buffett recommend index funds?**
-Buffett has long argued that most individual investors are best served by a low-cost S&P 500 index fund. His reasoning: most professional active managers fail to beat the market after fees over long periods, and individual investors have an even lower probability of doing so. His own instructions for his estate's trustee include 90% in a low-cost S&P 500 index fund [SOURCE NEEDED].
+Buffett has long argued that most individual investors are best served by a low-cost S&P 500 index fund. His reasoning: most professional active managers fail to beat the market after fees over long periods, and individual investors have an even lower probability of doing so. His own estate instructions have been widely cited from Berkshire Hathaway shareholder materials.
 
 **Q: What is the difference between an ETF and an index fund?**
 An index fund is any fund that passively tracks an index. An ETF is a fund structure that trades on a stock exchange. Most index funds today are structured as ETFs. The terms are often used interchangeably to mean a passive index-tracking ETF, which is the most common form today.

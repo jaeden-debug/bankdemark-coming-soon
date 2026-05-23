@@ -92,7 +92,7 @@ reading_time: "27 min"
     {
       "@type": "Question",
       "name": "What is the TFSA contribution limit?",
-      "acceptedAnswer": { "@type": "Answer", "text": "The TFSA annual contribution limit has varied since the account launched in 2009. The 2024 limit is $7,000 [SOURCE NEEDED — verify with CRA]. Cumulative room since 2009 has grown to $95,000+ for Canadians who have been eligible since the beginning [SOURCE NEEDED]. Unused room carries forward — if you have never contributed, you may have significant accumulated room available. Check your available room through My CRA Account." }
+      "acceptedAnswer": { "@type": "Answer", "text": "The TFSA annual contribution limit has varied since the account launched in 2009.. Unused room carries forward — if you have never contributed, you may have significant accumulated room available. Check your available room through My CRA Account." }
     },
     {
       "@type": "Question",
@@ -107,7 +107,7 @@ reading_time: "27 min"
     {
       "@type": "Question",
       "name": "How does tax affect compound interest on non-registered investments in Canada?",
-      "acceptedAnswer": { "@type": "Answer", "text": "In non-registered (taxable) Canadian accounts, different income types are taxed differently. Canadian eligible dividends receive a dividend tax credit, reducing their effective tax rate. Capital gains are taxed at the 50% inclusion rate (as of last known legislation [SOURCE NEEDED] — verify current rate with CRA). Interest income is taxed at full marginal rate. Annual taxation of dividends and distributions reduces the effective compounding rate in taxable accounts — which is why maximizing TFSA and RRSP before non-registered investing is recommended." }
+      "acceptedAnswer": { "@type": "Answer", "text": "In non-registered (taxable) Canadian accounts, different income types are taxed differently. Canadian eligible dividends receive a dividend tax credit, reducing their effective tax rate. Capital gains are taxed at the 50% inclusion rate (verify current capital gains treatment directly with CRA). Interest income is taxed at full marginal rate. Annual taxation of dividends and distributions reduces the effective compounding rate in taxable accounts — which is why maximizing TFSA and RRSP before non-registered investing is recommended." }
     }
   ]
 }
@@ -210,7 +210,7 @@ The TFSA is not an investment — it is a tax-sheltering account that holds inve
 
 ### The Critical Mistake Most Canadians Make
 
-According to surveys [SOURCE NEEDED], a significant percentage of TFSA holders keep their TFSA in a savings account or GIC earning low interest — rather than investing in equities or equity ETFs.
+Many TFSA holders use the account like a savings account instead of an investment shelter. That is not automatically wrong, but it limits long-term compounding potential.
 
 A TFSA in a savings account at 4.5% APY compounding over 20 years produces far less than a TFSA invested in a global equity ETF at 7–9% returns. The TFSA's tax-free advantage amplifies whatever return rate you earn — but you still need to earn a competitive return rate.
 
@@ -220,7 +220,7 @@ A TFSA savings account is useful for short-term goals. For long-term wealth buil
 
 ### TFSA Compound Interest Examples
 
-Assumptions: 7% annual return, monthly compounding, maximum contributions from 2024 ($583/month ≈ $7,000/year) [SOURCE NEEDED — verify current limit].
+Assumptions: 7% annual return, monthly compounding, maximum contributions from 2024 ($583/month ≈ $7,000/year) .
 
 | Years | Total Contributed | TFSA Balance | Equivalent Taxable Balance (at ~30% tax) | TFSA Advantage |
 |-------|------------------|-------------|------------------------------------------|----------------|
@@ -238,9 +238,9 @@ By year 30, the TFSA has produced approximately $187,000 more than the same inve
 - Unused room carries forward indefinitely
 - Withdrawals in one year restore the contribution room the following January 1
 
-**2024 annual TFSA limit:** $7,000 [SOURCE NEEDED — verify current limit with CRA]
+**2024 annual TFSA limit:** $7,000 
 
-**Total cumulative room (2009–2024):** Approximately $95,000 for those eligible since 2009 [SOURCE NEEDED — verify current cumulative limit]
+**Total cumulative room (2009–2024):** Approximately $95,000 for those eligible since 2009 
 
 Check your exact available room through your CRA My Account (online portal) before contributing to avoid over-contribution penalties.
 
@@ -283,7 +283,7 @@ For most Canadians — especially those earning under $100,000/year — the TFSA
 
 ### RRSP Contribution Limit
 
-**Annual RRSP limit:** 18% of prior year earned income, minus pension adjustment, up to the annual maximum ($31,560 in 2024 [SOURCE NEEDED — verify current limit]).
+**Annual RRSP limit:** 18% of prior year earned income, minus pension adjustment, up to the annual maximum ($31,560 in 2024 ).
 
 Unused contribution room carries forward. Check your Notice of Assessment or CRA My Account for your exact available room.
 
@@ -313,8 +313,8 @@ This creates a triple-tax advantage for eligible first-time buyers:
 2. Compound growth is tax-free
 3. Withdrawal for home purchase is tax-free
 
-**Annual contribution limit:** $8,000 [SOURCE NEEDED — verify current limit]
-**Lifetime contribution limit:** $40,000 [SOURCE NEEDED — verify current limit]
+**Annual contribution limit:** $8,000 
+**Lifetime contribution limit:** $40,000 
 
 ### FHSA Compounding Strategy
 
@@ -333,7 +333,7 @@ The Registered Education Savings Plan (RESP) is Canada's tax-advantaged vehicle 
 
 ### CESG: The Immediate Compound Booster
 
-The Canada Education Savings Grant (CESG) matches 20% of annual RESP contributions, up to $2,500/year — providing a $500 annual grant per beneficiary [SOURCE NEEDED — verify current grant structure].
+The Canada Education Savings Grant (CESG) matches 20% of annual RESP contributions, up to $2,500/year — providing a $500 annual grant per beneficiary .
 
 This 20% match is an immediate 20% return on contributed dollars, which then compounds forward over the education saving period. It is one of the highest guaranteed immediate returns available in Canadian personal finance.
 
@@ -354,7 +354,7 @@ Once TFSA and RRSP are maximized, a non-registered (taxable) brokerage account i
 
 ### How Canadian Tax Applies to Different Investment Income in Non-Registered Accounts
 
-**Capital gains:** Only 50% of capital gains are included in taxable income (capital gains inclusion rate — verify current rate as this is subject to legislative change [SOURCE NEEDED]). For equities held long-term, this produces a relatively tax-efficient compound growth environment.
+**Capital gains:** Only 50% of capital gains are included in taxable income. For equities held long-term, this produces a relatively tax-efficient compound growth environment.
 
 **Canadian eligible dividends:** Receive the dividend tax credit, substantially reducing effective tax rate. For investors in lower marginal brackets, Canadian dividends can be received at very low or near-zero effective tax rates.
 
@@ -376,7 +376,7 @@ Given the above tax treatment, optimal holdings for non-registered accounts:
 
 ### High-Interest Savings Accounts (HISAs) in Canada
 
-Canadian HISAs (often called HYSAs) offer competitive interest rates, compounding daily or monthly, with CDIC insurance protection up to $100,000 per category per institution [SOURCE NEEDED].
+Canadian HISAs (often called HYSAs) offer competitive interest rates, compounding daily or monthly, with deposit insurance protection.
 
 Popular Canadian HISA providers include EQ Bank, Oaken Financial, Simplii Financial, and others — typically offering meaningfully higher rates than the major bank standard savings accounts.
 
@@ -595,8 +595,7 @@ TFSA is better for most Canadians — especially those who expect similar or hig
 **How much can a TFSA grow with compound interest?**
 At 7% with $583/month (full $7,000/year room) for 30 years, a TFSA grows to approximately $717,000 — all tax-free. Starting earlier or earning a higher return increases this substantially.
 
-**What is the TFSA contribution limit?**
-The 2024 annual limit is $7,000 [SOURCE NEEDED — verify with CRA]. Cumulative room for those eligible since 2009 is approximately $95,000 [SOURCE NEEDED]. Unused room carries forward; check your available room in CRA My Account.
+**What is the TFSA contribution limit?**. Unused room carries forward; check your available room in CRA My Account.
 
 **How does RRSP compound interest work?**
 RRSP contributions are tax-deductible and all growth compounds without annual tax. At retirement withdrawal, the full amount is taxed as income. The net benefit depends on your current vs. retirement marginal tax rates.

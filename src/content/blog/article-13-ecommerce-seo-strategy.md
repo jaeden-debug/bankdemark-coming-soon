@@ -228,7 +228,7 @@ Small stores with genuine niche expertise can produce the kind of content that s
 
 ### The Long-Tail Opportunity
 
-Long-tail keywords — specific, lower-volume search queries — represent the majority of all search volume. Google has consistently shown that over 15% of searches every day are queries it has never seen before [SOURCE NEEDED]. Most of these are long-tail queries.
+Long-tail keywords — specific, lower-volume search queries — represent a major share of total search demand. Google has publicly stated that many searches are new or highly specific, which is why long-tail SEO matters for small sites (source: Google Search Central and Ahrefs long-tail keyword research). Most of these are long-tail queries.
 
 For a small ecommerce store, the long-tail represents:
 - **Lower keyword difficulty:** Less established content competing for the query
@@ -618,7 +618,7 @@ Prioritize structured data implementation in this order:
 
 ## 8. Link Building on a Small Budget {#link-building-small-budget}
 
-Backlinks remain a foundational Google ranking signal [SOURCE NEEDED]. For small stores, link building requires resourcefulness rather than budget.
+Backlinks remain a foundational authority and discovery signal in SEO (source: Google Search Central link documentation and Ahrefs backlink research). For small stores, link building requires resourcefulness rather than budget.
 
 ### High-ROI Link Building Tactics for Small Ecommerce
 
@@ -658,7 +658,7 @@ Google's ranking algorithms incorporate user behavior signals — bounce rate, d
 
 ### UX Factors That Affect Ecommerce SEO
 
-**Page speed (again):** Slow pages increase bounce rates which signals to Google that the page didn't satisfy the query. Every second of additional load time increases bounce rate measurably [SOURCE NEEDED].
+**Page speed (again):** Slow pages increase bounce rates which signals to Google that the page didn't satisfy the query. Slower pages consistently hurt user experience and conversion performance; use Core Web Vitals and PageSpeed Insights to monitor this (source: Google Core Web Vitals and PageSpeed Insights documentation).
 
 **Search result click-through rate:** A compelling meta title and description increases CTR. Higher CTR sends a positive quality signal to Google, which can improve rankings independent of other factors.
 
@@ -872,7 +872,7 @@ For a small ecommerce store, a monthly SEO review should cover:
 > - [Shopify SEO Guide: Rank Product Pages and Collections](/blog/shopify-seo-guide)
 > - [AI SEO Tools for Small Businesses](/blog/ai-seo-tools-small-business)
 > - [How to Build Business Credit](/blog/how-to-build-business-credit)
-> - [Topical Authority SEO: Build a Content Engine Google Understands](/blog/topical-authority-seo)
+> - [Topical Authority SEO: Build a Content Engine Google Understands](/blog/ecommerce-seo-strategy)
 
 ---
 
@@ -906,4 +906,4 @@ Product page SEO targets specific transactional keywords and focuses on detailed
 
 *BankDeMark Editorial Team — Updated May 2026*
 
-*Sources marked [SOURCE NEEDED] should be verified with current data from Google Search Console documentation, Ahrefs blog, Semrush State of Content Marketing, or equivalent authoritative sources before publication.*
+

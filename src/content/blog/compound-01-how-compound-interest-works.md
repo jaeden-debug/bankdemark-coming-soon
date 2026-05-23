@@ -414,7 +414,7 @@ The same mathematical force that builds wealth in investments destroys it in hig
 
 ### How Compound Interest Grows Debt
 
-If you carry a $5,000 credit card balance at 22% annual interest (a typical North American credit card rate [SOURCE NEEDED]) and make no payments:
+If you carry a $5,000 credit card balance at 22% annual interest (a common high-interest credit card scenario) and make no payments:
 
 | Year | Balance     |
 |------|-------------|
@@ -431,7 +431,7 @@ In 10 years of no payments, your $5,000 balance becomes over $36,000. The Rule o
 
 Making minimum payments on credit card debt is the most common way compound interest works against ordinary people. Minimum payments are typically 1–2% of the balance or a small fixed dollar amount — designed by card issuers to maximize interest revenue over many years.
 
-On a $5,000 balance at 22% APR with 2% minimum payments, it takes roughly 25+ years to pay off, and total interest paid often exceeds the original principal [SOURCE NEEDED].
+On a $5,000 balance at 22% APR with 2% minimum payments, it takes roughly 25+ years to pay off, and total interest paid can exceed the original principal depending on rate and payment structure.
 
 **The prescription:** High-interest consumer debt should be treated as a financial emergency and eliminated as aggressively as possible — using either the avalanche method (highest interest first) or the snowball method (smallest balance first for psychological momentum). See the [BankDeMark Debt Management pillar](/pillars/debt-management) for frameworks on debt elimination.
 
@@ -464,7 +464,7 @@ Low-cost index funds and exchange-traded funds are the most practical vehicles f
 - Provide broad market diversification (reducing the risk of individual stock failure)
 - Have extremely low fees (MERs often below 0.25%), leaving more money to compound
 - Automatically reinvest dividends when using dividend reinvestment plans (DRIPs)
-- Historically return approximately 7–10% annually over long periods [SOURCE NEEDED]
+- have historically delivered strong long-term returns, though future returns are not guaranteed
 
 Compound interest in equity investments works through a combination of dividend reinvestment and price appreciation. Even without distributions, a portfolio growing at 7% annually doubles roughly every decade.
 
@@ -482,7 +482,7 @@ Compound interest on savings accounts is less dramatic than on investments — b
 
 One of the simplest, most impactful compound interest strategies for equity investors is enabling automatic dividend reinvestment.
 
-When dividends are reinvested rather than taken as cash, they buy additional shares — which then generate their own dividends — which buy more shares. This DRIP (Dividend Reinvestment Plan) effect compounds not just the value of each share but the number of shares you own. Over 20–30 years, reinvested dividends can account for a substantial portion of total portfolio returns [SOURCE NEEDED].
+When dividends are reinvested rather than taken as cash, they buy additional shares — which then generate their own dividends — which buy more shares. This DRIP (Dividend Reinvestment Plan) effect compounds not just the value of each share but the number of shares you own. Over long periods, reinvested dividends can become a meaningful part of total portfolio return.
 
 ---
 
@@ -503,7 +503,7 @@ None of these strategies work as well as simply continuing. The compounding curv
 
 ### Automation as a Behavioral Solution
 
-The most reliable way to stay consistent through the uninspiring early years is automation. Setting up automatic contributions to investment accounts removes the active decision-making every month — and active decision-making is where behavioral finance research shows most investors make costly mistakes [SOURCE NEEDED].
+The most reliable way to stay consistent through the uninspiring early years is automation. Setting up automatic contributions to investment accounts removes the active decision-making every month — and active decision-making is where many investor mistakes happen during emotional decision points.
 
 **Automate:**
 - Monthly contributions to TFSA, RRSP, Roth IRA, or 401(k)
@@ -524,7 +524,7 @@ The vehicles available for tax-sheltered compounding differ between Canada and t
 1. **TFSA first** — Tax-free growth, no tax on withdrawal, no impact on government benefits. Use for long-term investing and emergency fund.
 2. **RRSP second** — Tax-deferred growth with an immediate tax refund on contributions. Particularly valuable for high-income earners.
 3. **FHSA** — If purchasing a first home within 15 years, contribute to the FHSA for deductible contributions and tax-free withdrawals.
-4. **Non-registered account** — After maximizing TFSA and RRSP, invest in a non-registered brokerage account. Capital gains are taxed at 50% inclusion rate (as of last known rate [SOURCE NEEDED]).
+4. **Non-registered account** — After maximizing TFSA and RRSP, invest in a non-registered brokerage account. Capital gains tax treatment must be verified with CRA .
 
 ### USA: Optimal Compounding Order
 

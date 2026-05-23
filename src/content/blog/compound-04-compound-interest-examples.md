@@ -391,7 +391,7 @@ Investment fees are the silent compound interest killer. They reduce your effect
 
 A 2% fee on $500/month investing at 7% over 30 years costs $197,415 compared to a zero-fee equivalent. That is the cost of choosing a high-MER mutual fund over a low-cost index ETF.
 
-**The practical implication:** For long-term investors, every basis point of fee reduction compounds over decades. The standard BankDeMark recommendation is to minimize fees by default — not because high-fee funds never outperform, but because most of them do not outperform enough to justify the fee drag over 20+ year periods [SOURCE NEEDED].
+**The practical implication:** For long-term investors, every basis point of fee reduction compounds over decades. The standard BankDeMark recommendation is to minimize fees by default — not because high-fee funds never outperform, but because SPIVA data shows many active funds fail to outperform comparable benchmarks over long horizons after fees.
 
 ---
 
@@ -424,7 +424,7 @@ $10,000 invested at 22 is worth far more than $10,000 invested at 42 — the amo
 It is the missed compounding on those contributions for all subsequent years.
 
 **9. Monthly automation eliminates the behavioral risk.**
-Automatic investing removes the temptation to time the market or skip contributions — behaviors that cost investors significant returns over time [SOURCE NEEDED].
+Automatic investing reduces the number of emotional decisions an investor has to make; Morningstar and Vanguard behavioral research both support the importance of discipline and consistency.
 
 **10. There is no single right amount to invest.**
 Start with whatever you can. The formula is unforgiving about time but generous with small amounts — because every dollar has the full remaining time horizon to compound.
@@ -441,15 +441,15 @@ Start with whatever you can. The formula is unforgiving about time but generous 
 
 **FHSA:** For first-home savings, shorter time horizons apply but the same compounding math holds.
 
-**Contribution note:** In 2024, the TFSA contribution limit was $7,000/year (approximately $583/month). Maximizing a TFSA annually and investing in a low-cost index ETF positions Canadian investors for the same outcomes shown in the $500/month examples above [SOURCE NEEDED — verify current annual limit].
+**Contribution note:** In 2024, the TFSA contribution limit was $7,000/year (approximately $583/month). Maximizing a TFSA annually and investing in a low-cost index ETF positions Canadian investors for the same outcomes shown in the $500/month examples above .
 
 ### USA: Where to Direct These Contributions
 
-**Roth IRA:** Tax-free compound growth on after-tax contributions. 2024 contribution limit: $7,000/year ($583/month). The $500/month examples apply directly [SOURCE NEEDED — verify current annual limit].
+**Roth IRA:** Tax-free compound growth on after-tax contributions. 2024 contribution limit: $7,000/year ($583/month). The $500/month examples apply directly .
 
-**401(k):** Pre-tax contributions with employer match. $23,000 annual limit in 2024 [SOURCE NEEDED]. The $1,000/month and above examples become fully applicable for higher earners maximizing tax-deferred accounts.
+**401(k):** Pre-tax contributions with employer match. $23,000 annual limit in 2024 (source: IRS retirement plan contribution limits). The $1,000/month and above examples become fully applicable for higher earners maximizing tax-deferred accounts.
 
-**HSA:** Triple tax-advantaged account ($4,150 individual / $8,300 family in 2024 [SOURCE NEEDED]) that functions as a stealth retirement vehicle.
+**HSA:** Triple tax-advantaged account ($4,150 individual / $8,300 family in 2024; source: IRS HSA contribution limits) that functions as a stealth retirement vehicle.
 
 ---
 

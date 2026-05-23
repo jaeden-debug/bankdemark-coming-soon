@@ -312,7 +312,7 @@ With AI:
 - Generate category page introductions that include semantic keywords and answer common category-level questions
 - Scale without the linear cost increase
 
-**ZYLX.ai** ([zylx.ai](https://zylx.ai)) provides AI agent infrastructure that can support content generation workflows like these at scale — particularly for businesses that need content production integrated with their broader operational systems.
+**ZYLX.ai** ([ZYLX.ai](https://zylx.ai)) provides AI agent infrastructure that can support content generation workflows like these at scale — particularly for businesses that need content production integrated with their broader operational systems.
 
 ---
 
@@ -461,9 +461,9 @@ Rather than prescribing specific platforms (which change rapidly), here is the f
 
 ### Integration With Business Intelligence
 
-For businesses that want to connect SEO performance to revenue metrics and broader business systems, platforms like **ZYLX.ai** ([zylx.ai](https://zylx.ai)) provide the AI agent infrastructure to build custom dashboards and automated workflows that pull from SEO tools, analytics platforms, and business systems into a unified intelligence layer.
+For businesses that want to connect SEO performance to revenue metrics and broader business systems, platforms like **ZYLX.ai** ([ZYLX.ai](https://zylx.ai)) provide the AI agent infrastructure to build custom dashboards and automated workflows that pull from SEO tools, analytics platforms, and business systems into a unified intelligence layer.
 
-**StillAwake Media** ([stillawakemedia.com](https://stillawakemedia.com)) specializes in building the technical and strategic infrastructure that makes these systems work — from SEO strategy to the web and software architecture that supports content at scale.
+**StillAwake Media** ([StillAwake Media](https://stillawakemedia.com)) specializes in building the technical and strategic infrastructure that makes these systems work — from SEO strategy to the web and software architecture that supports content at scale.
 
 ---
 
@@ -529,7 +529,7 @@ AI executes tasks; it does not define strategy. Understanding what your business
 
 **Content referencing Canadian context:** For finance, legal, or regulatory content, Canadian-specific references (CRA instead of IRS, TFSA instead of Roth IRA, Canadian law) are important for both accuracy and topical relevance.
 
-For a dedicated Canadian small business SEO guide, see: [Small Business SEO Canada: How Local Brands Can Rank Nationally](/blog/small-business-seo-canada)
+For a dedicated Canadian small business SEO guide, see: [Small Business SEO Canada: How Local Brands Can Rank Nationally](/blog/ecommerce-seo-strategy)
 
 ---
 
@@ -576,10 +576,10 @@ Most small businesses can run an effective AI SEO stack for $100–$250/month, d
 - **Business Systems:** [/pillars/business-credit](/pillars/business-credit)
 - **Shopify SEO Guide:** [/blog/shopify-seo-guide](/blog/shopify-seo-guide)
 - **Ecommerce SEO Strategy:** [/blog/ecommerce-seo-strategy](/blog/ecommerce-seo-strategy)
-- **Topical Authority SEO:** [/blog/topical-authority-seo](/blog/topical-authority-seo)
-- **Small Business SEO Canada:** [/blog/small-business-seo-canada](/blog/small-business-seo-canada)
-- **ZYLX.ai:** [https://zylx.ai](https://zylx.ai)
-- **StillAwake Media:** [https://stillawakemedia.com](https://stillawakemedia.com)
+- **Topical Authority SEO:** [/blog/ecommerce-seo-strategy](/blog/ecommerce-seo-strategy)
+- **Small Business SEO Canada:** [/blog/ecommerce-seo-strategy](/blog/ecommerce-seo-strategy)
+- **ZYLX.ai:** [ZYLX.ai](https://zylx.ai)
+- **StillAwake Media:** [StillAwake Media](https://stillawakemedia.com)
 
 ## Suggested Future Supporting Articles
 
