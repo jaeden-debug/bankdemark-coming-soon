@@ -6829,3 +6829,164 @@ h3 {
     margin-top: 18px !important;
   }
 }
+
+/* =========================================
+   PREMIUM MOBILE CLEANUP — BANKDEMARK
+========================================= */
+
+@media (max-width: 768px) {
+
+  body {
+    background:
+      radial-gradient(
+        circle at top,
+        rgba(224,154,67,0.14),
+        transparent 32%
+      ),
+      linear-gradient(
+        180deg,
+        #050505 0%,
+        #0a0a0a 45%,
+        #050505 100%
+      ) !important;
+  }
+
+  main {
+    overflow-x: hidden;
+  }
+
+  .hero,
+  .page-hero {
+    padding:
+      5.5rem 1.4rem 3.5rem !important;
+    text-align: left !important;
+  }
+
+  .hero h1,
+  .page-hero h1 {
+    font-size: clamp(2.7rem, 10vw, 4rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.05em !important;
+    max-width: 100% !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .hero p,
+  .page-hero p {
+    font-size: 1.02rem !important;
+    line-height: 1.8 !important;
+    color: rgba(255,255,255,0.72) !important;
+    max-width: 100% !important;
+    margin-bottom: 2.4rem !important;
+  }
+
+  /* BUTTON STACK */
+
+  .hero-buttons,
+  .hero-actions,
+  .cta-row {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.9rem !important;
+    width: 100% !important;
+    margin-top: 2rem !important;
+  }
+
+  .hero-buttons a,
+  .hero-actions a,
+  .cta-row a,
+  .btn-primary,
+  .btn-secondary {
+    width: 100% !important;
+    justify-content: center !important;
+    min-height: 54px !important;
+    border-radius: 18px !important;
+  }
+
+  /* PREMIUM CARD FEEL */
+
+  .card,
+  .pillar-card,
+  .market-card,
+  .insight-card,
+  .calculator-card,
+  .blog-card {
+    padding: 1.4rem !important;
+    border-radius: 24px !important;
+    margin-bottom: 1.2rem !important;
+
+    background:
+      linear-gradient(
+        180deg,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.02)
+      ) !important;
+
+    border: 1px solid rgba(255,255,255,0.06) !important;
+
+    box-shadow:
+      0 10px 40px rgba(0,0,0,0.28) !important;
+  }
+
+  /* STATS SECTION */
+
+  .stats-grid,
+  .hero-stats,
+  .metrics-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    margin-top: 2rem !important;
+  }
+
+  .stat-card,
+  .metric-card {
+    padding: 1.2rem 1.2rem !important;
+    border-radius: 22px !important;
+  }
+
+  .stat-card h3,
+  .metric-card h3 {
+    font-size: 2rem !important;
+    margin-bottom: 0.35rem !important;
+  }
+
+  /* SECTION BREATHING */
+
+  section {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+
+  section h2 {
+    font-size: 2rem !important;
+    line-height: 1.05 !important;
+    margin-bottom: 1.2rem !important;
+    letter-spacing: -0.04em !important;
+  }
+
+  section p {
+    line-height: 1.8 !important;
+  }
+
+  /* REMOVE CLUTTER */
+
+  .floating-orb,
+  .noise-overlay,
+  .hero-grid-lines,
+  .background-pattern {
+    display: none !important;
+  }
+
+  /* NAV CLEANUP */
+
+  header {
+    padding: 0.9rem 1rem !important;
+  }
+
+  nav {
+    backdrop-filter: none !important;
+    -webkit-backdrop-filter: none !important;
+  }
+
+}
+
