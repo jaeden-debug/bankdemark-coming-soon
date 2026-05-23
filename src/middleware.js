@@ -1,6 +1,15 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/ua\/services_on_line\/calculator\.js$/i,
+  /^\/\.well-known\//i,
+  /^\/2019\//i,
+  /^\/2020\//i,
+  /^\/ads\.txt$/i,
+  /^\/app-ads\.txt$/i,
+  /^\/author\//i,
+  /^\/category\//i,
+
   /^\/ua\/maino\/?$/i,
   /^\/ua\/map\/?$/i,
   /^\/ua\/search\/?$/i,
@@ -57,6 +66,21 @@ const gonePatterns = [
 ];
 
 const legacyRedirects = {
+  "/ua/services/phisic/vklad": "/calculators/compound-interest-calculator",
+  "/ua/services_on_line": "/calculators",
+  "/ua/services_on_line/converter": "/calculators",
+  "/ua/services_on_line/credit_calculator": "/calculators/debt-payoff-calculator",
+  "/ua/services_on_line/depozit_calculator": "/calculators/compound-interest-calculator",
+  "/ua/services_on_line/komunal": "/calculators/budget-calculator",
+  "/ua/services_on_line/mail_perekaz": "/calculators/budget-calculator",
+  "/ua/services_on_line/mobil": "/calculators/budget-calculator",
+  "/ua/services_on_line/zakaz": "/contact",
+  "/ua/useful_instructions": "/blog",
+  "/ua/useful_instructions/bankomat": "/blog",
+  "/ua/useful_instructions/changing_pin_code": "/blog",
+  "/ua/useful_instructions/dowloading_money": "/blog",
+  "/ua/useful_instructions/rulers": "/blog",
+
   "/ua/services/phisic": "/pillars/personal-finance",
 
   "/ua/about/face": "/about",
