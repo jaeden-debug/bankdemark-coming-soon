@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^\/ua\/activity\/?$/i,
+  /^\/ua\/services\/?$/i,
+  /^\/ua\/about\/archiv_news\/?$/i,
+
   /^\/ua\/?$/i,
 
   /^\/forum\/?$/i,
