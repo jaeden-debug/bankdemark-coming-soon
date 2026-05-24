@@ -5,7 +5,7 @@ import GlobalCalculatorShare from "./components/GlobalCalculatorShare";
 
 export const metadata = {
   title: {
-    default: "BankDeMark — Modern Finance Intelligence, Investing & Wealth Building",
+    default: "BankDeMark",
     template: "%s | BankDeMark",
   },
 
@@ -21,12 +21,6 @@ export const metadata = {
   robots: {
     index: true,
     follow: true,
-  },
-
-  icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
   },
 
   openGraph: {
