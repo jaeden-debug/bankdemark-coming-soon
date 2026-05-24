@@ -1,72 +1,53 @@
 import "./globals.css";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
-import GlobalCalculatorShare from "./components/GlobalCalculatorShare";
 
-// Social preview image located in /public/bankdemark-finance-intelligence-banner.png
 export const metadata = {
+  metadataBase: new URL("https://bankdemark.com"),
+
   title: {
-    default: "BankDeMark — Modern Finance Intelligence, Investing & Wealth Building",
+    default: "BankDeMark | Modern Finance Intelligence",
     template: "%s | BankDeMark",
   },
+
   description:
-    "Expert-level finance intelligence covering investing, personal finance, business credit, wealth building, calculators, and modern money strategy without the jargon.",
-  metadataBase: new URL("https://bankdemark.com"),
-  alternates: {
-    canonical: "/",
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
+    "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
+
   icons: {
-    icon: "/icon.png",
-    shortcut: "/icon.png",
-    apple: "/icon.png",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
+
   openGraph: {
-    title: "BankDeMark — Finance Intelligence for the Modern Era",
+    title: "BankDeMark | Modern Finance Intelligence",
     description:
-      "Modern finance insights, investing tools, business credit education, calculators, and wealth-building frameworks built for entrepreneurs and ambitious individuals.",
+      "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
     url: "https://bankdemark.com",
     siteName: "BankDeMark",
     images: [
       {
-        url: "/bankdemark-finance-intelligence-banner.png",
+        url: "/branding/og-image.png",
         width: 1200,
         height: 630,
-        alt: "BankDeMark Finance Intelligence Banner",
+        alt: "BankDeMark",
       },
     ],
-    locale: "en_US",
+    locale: "en_CA",
     type: "website",
   },
+
   twitter: {
     card: "summary_large_image",
-    title: "BankDeMark — Finance Intelligence for the Modern Era",
+    title: "BankDeMark | Modern Finance Intelligence",
     description:
-      "Modern finance insights, investing tools, business credit education, calculators, and wealth-building frameworks built for entrepreneurs and ambitious individuals.",
-    images: ["/bankdemark-finance-intelligence-banner.png"],
+      "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
+    images: ["/branding/og-image.png"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      {/* 1. Added the structural head context wrapper */}
-      <head>
-        <script
-          src="https://analytics.ahrefs.com/analytics.js"
-          data-key="ekcbB/2wnUQrZrguhPkXyw"
-          async
-        />
-      </head>
-      <body>
-        <Nav />
-        <main>{children}</main>
-        <Footer />
-              <GlobalCalculatorShare />
-      </body>
+    <html lang="en" data-scroll-behavior="smooth">
+      <body>{children}</body>
     </html>
   );
 }
