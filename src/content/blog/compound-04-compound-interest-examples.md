@@ -1,11 +1,17 @@
 ---
-title: "Compound Interest Examples: Real Numbers Every Investor Should See"
-meta_title: "Compound Interest Examples: Real Numbers"
-meta_description: "Real compound interest examples with actual numbers — $1K, $100/month, $500/month, $1K/month across 5%, 7%, and 10% returns. See exactly how money grows."
+title: 'Compound Interest Examples: Real Numbers Every Investor Should See'
+meta_title: 'Compound Interest Examples: Real Numbers'
+meta_description: >-
+  Real compound interest examples with actual numbers — $1K, $100/month,
+  $500/month, $1K/month across 5%, 7%, and 10% returns. See exactly how money
+  grows.
 slug: /blog/compound-interest-examples
-og_title: "Compound Interest Examples: Real Numbers Every Investor Needs to See"
-og_description: "Stop guessing what your money could become. These compound interest examples show real numbers across every common investment scenario — lump sums, monthly contributions, and different return rates."
-primary_keyword: "compound interest examples"
+og_title: 'Compound Interest Examples: Real Numbers Every Investor Needs to See'
+og_description: >-
+  Stop guessing what your money could become. These compound interest examples
+  show real numbers across every common investment scenario — lump sums, monthly
+  contributions, and different return rates.
+primary_keyword: compound interest examples
 secondary_keywords:
   - compound interest for beginners
   - investment examples
@@ -13,13 +19,19 @@ secondary_keywords:
   - compound interest calculator examples
   - investing examples real numbers
   - compound interest 7 percent
-search_intent: "Informational"
-target_audience: "Beginner investors and savers who want to see real numbers rather than abstract explanations — people deciding whether and how much to start investing."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Investing & Wealth Building"
-reading_time: "25 min"
+search_intent: Informational
+target_audience: >-
+  Beginner investors and savers who want to see real numbers rather than
+  abstract explanations — people deciding whether and how much to start
+  investing.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Investing & Wealth Building
+reading_time: 25 min
+excerpt: >-
+  Real compound interest examples with actual numbers — $1K, $100/month,
+  $500/month, $1K/month across 5%, 7%, and 10% returns. See exactly how money...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. All numbers shown are calculated using standard compound interest formulas and are for illustrative purposes only. Past market returns do not guarantee future results.
 

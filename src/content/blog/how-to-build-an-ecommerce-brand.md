@@ -1,12 +1,17 @@
 ---
-title: "How to Build an Ecommerce Brand From Scratch (Complete 2026 Guide)"
-meta_title: "How to Build an Ecommerce Brand From Scratch (2026)"
-meta_description: "Learn how to build an ecommerce brand from scratch — from niche selection and brand identity to Shopify setup, SEO, and scaling. A complete 2026 guide."
+title: How to Build an Ecommerce Brand From Scratch (Complete 2026 Guide)
+meta_title: How to Build an Ecommerce Brand From Scratch (2026)
+meta_description: >-
+  Learn how to build an ecommerce brand from scratch — from niche selection and
+  brand identity to Shopify setup, SEO, and scaling. A complete 2026 guide.
 slug: /blog/how-to-build-an-ecommerce-brand
-date: "2026-05-23"
-category: "Business Strategy"
-readTime: "43 min read"
+date: '2026-05-23'
+category: Business Strategy
+readTime: 43 min read
 featured: false
+excerpt: >-
+  Learn how to build an ecommerce brand from scratch — from niche selection and
+  brand identity to Shopify setup, SEO, and scaling. A complete 2026...
 ---
 
 # How to Build an Ecommerce Brand From Scratch (Complete 2026 Guide)

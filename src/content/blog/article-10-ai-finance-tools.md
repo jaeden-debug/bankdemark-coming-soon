@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  AI finance tools are transforming money management by automating routine tasks
+  (expense categorization, bill payment, savings transfers), providing
+  predictive insights...
+---
 # Article 10: AI Finance Tools — How Automation Is Changing Money Management
 
 ---

@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Financial freedom is the point where your passive income and invested assets
+  can sustain your living expenses without requiring you to work. Getting there
+  requires...
+---
 # Article 9: Financial Freedom Roadmap — From Paycheck-to-Paycheck to Independent
 
 ---

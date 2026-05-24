@@ -1,11 +1,17 @@
 ---
-title: "How Much Will $100 a Month Grow Over Time?"
-meta_title: "How Much Will $100/Month Grow Investing?"
-meta_description: "Exactly how much $100/month grows over 10, 20, 30, and 40 years. Why small amounts matter, starting age comparisons, best accounts, and beginner investing guide."
+title: How Much Will $100 a Month Grow Over Time?
+meta_title: How Much Will $100/Month Grow Investing?
+meta_description: >-
+  Exactly how much $100/month grows over 10, 20, 30, and 40 years. Why small
+  amounts matter, starting age comparisons, best accounts, and beginner
+  investing guide.
 slug: /blog/how-much-will-100-a-month-grow
-og_title: "How Much Will $100 a Month Grow Over Time?"
-og_description: "Think $100/month isn't worth investing? See the actual numbers across every time horizon and return rate — and why starting small and early beats waiting for 'the right amount'."
-primary_keyword: "investing 100 a month"
+og_title: How Much Will $100 a Month Grow Over Time?
+og_description: >-
+  Think $100/month isn't worth investing? See the actual numbers across every
+  time horizon and return rate — and why starting small and early beats waiting
+  for 'the right amount'.
+primary_keyword: investing 100 a month
 secondary_keywords:
   - how much will 100 a month grow
   - investing 100 dollars a month
@@ -13,13 +19,20 @@ secondary_keywords:
   - beginner investing 100 dollars
   - compound interest 100 per month
   - small amount investing
-search_intent: "Informational / Calculator"
-target_audience: "Beginners, young investors, low-income savers, and anyone who thinks they cannot afford to invest — people who need to see that $100/month produces meaningful wealth over time."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Investing & Wealth Building"
-reading_time: "21 min"
+search_intent: Informational / Calculator
+target_audience: >-
+  Beginners, young investors, low-income savers, and anyone who thinks they
+  cannot afford to invest — people who need to see that $100/month produces
+  meaningful wealth over time.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Investing & Wealth Building
+reading_time: 21 min
+excerpt: >-
+  Exactly how much $100/month grows over 10, 20, 30, and 40 years. Why small
+  amounts matter, starting age comparisons, best accounts, and beginner
+  investing...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. All calculations use standard compound interest formulas. Return rate assumptions are illustrative — actual investment returns vary and are not guaranteed.
 

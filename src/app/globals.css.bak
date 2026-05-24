@@ -8126,30 +8126,3 @@ label,
   visibility: visible !important;
   transform: none !important;
 }
-
-/* ===== Blog hub card excerpt cleanup ===== */
-.blog-card p {
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  min-height: 6.4em;
-  max-height: 6.4em;
-}
-
-/* ===== Stable blog hub cards ===== */
-.blog-card h3 {
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
-}
-
-.blog-card p {
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
-  display: -webkit-box;
-  -webkit-line-clamp: 4;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-}

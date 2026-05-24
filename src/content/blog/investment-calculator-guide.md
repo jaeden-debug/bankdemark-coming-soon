@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Using an Investment Calculator What an investment calculator does in one
+  paragraph: An investment calculator uses compound interest math to project how
+  your money will...
+---
 # How to Use an Investment Calculator Properly
 
 

@@ -1,11 +1,17 @@
 ---
-title: "Compound Interest Savings Accounts: How They Work"
-meta_title: "Compound Interest Savings Accounts Explained"
-meta_description: "How compound interest works in savings accounts — daily vs monthly compounding, APY vs APR, high-yield savings, emergency funds, and when to invest instead."
+title: 'Compound Interest Savings Accounts: How They Work'
+meta_title: Compound Interest Savings Accounts Explained
+meta_description: >-
+  How compound interest works in savings accounts — daily vs monthly
+  compounding, APY vs APR, high-yield savings, emergency funds, and when to
+  invest instead.
 slug: /blog/compound-interest-savings-account
-og_title: "Compound Interest Savings Accounts: How They Work"
-og_description: "Understand how compound interest works in savings accounts — APY vs APR, daily vs monthly compounding, high-yield vs standard accounts, and when your savings should become investments."
-primary_keyword: "compound interest savings account"
+og_title: 'Compound Interest Savings Accounts: How They Work'
+og_description: >-
+  Understand how compound interest works in savings accounts — APY vs APR, daily
+  vs monthly compounding, high-yield vs standard accounts, and when your savings
+  should become investments.
+primary_keyword: compound interest savings account
 secondary_keywords:
   - compound interest account
   - highest compound interest savings account
@@ -13,13 +19,20 @@ secondary_keywords:
   - savings account compound daily
   - best savings account compound interest
   - APY savings account
-search_intent: "Informational / Commercial Investigation"
-target_audience: "People building emergency funds, evaluating savings accounts, or trying to understand why their savings isn't growing as fast as they expected — and what to do about it."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Banking & Saving"
-reading_time: "22 min"
+search_intent: Informational / Commercial Investigation
+target_audience: >-
+  People building emergency funds, evaluating savings accounts, or trying to
+  understand why their savings isn't growing as fast as they expected — and what
+  to do about it.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Banking & Saving
+reading_time: 22 min
+excerpt: >-
+  How compound interest works in savings accounts — daily vs monthly
+  compounding, APY vs APR, high-yield savings, emergency funds, and when to
+  invest...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Deposit insurance limits and coverage categories should be verified with CDIC (Canada) or FDIC (USA) directly. Interest rates fluctuate and are not guaranteed.
 

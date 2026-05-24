@@ -41,28 +41,9 @@ function cleanMarkdown(content) {
     .trim();
 }
 
-
-function removeQuickAnswerBlocks(value = "") {
-  return String(value || "")
-    .replace(/<section[^>]*id=["']quick-answer["'][\s\S]*?<\/section>/gi, " ")
-    .replace(/<div[^>]*class=["'][^"']*quick-answer[^"']*["'][\s\S]*?<\/div>/gi, " ")
-    .replace(/^>\s*\*\*Quick Answer:\*\*.*$/gim, " ")
-    .replace(/^Quick Answer[:\s][\s\S]*?(?=^##\s+|^#\s+|$)/gim, " ");
-}
-
 function plainText(markdown) {
-  return removeQuickAnswerBlocks(markdown)
+  return markdown
     .replace(/```[\s\S]*?```/g, " ")
-    .replace(/<script[\s\S]*?<\/script>/gi, " ")
-    .replace(/<style[\s\S]*?<\/style>/gi, " ")
-    .replace(/<[^>]+>/g, " ")
-    .replace(/&bull;/g, " ")
-    .replace(/&nbsp;/g, " ")
-    .replace(/&amp;/g, "&")
-    .replace(/&mdash;/g, "—")
-    .replace(/&ndash;/g, "–")
-    .replace(/&#39;/g, "'")
-    .replace(/&quot;/g, '"')
     .replace(/[#>*_`[\]()|~-]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
@@ -70,58 +51,26 @@ function plainText(markdown) {
 
 
 function stripHtmlForExcerpt(value = "") {
-  return String(value || "")
-    .replace(/^---[\s\S]*?---/m, " ")
-    .replace(/```[\s\S]*?```/g, " ")
+  return String(value)
+    .replace(/---[\s\S]*?---/, " ")
     .replace(/<script[\s\S]*?<\/script>/gi, " ")
     .replace(/<style[\s\S]*?<\/style>/gi, " ")
     .replace(/<[^>]+>/g, " ")
-    .replace(/&bull;/g, " ")
+    .replace(/&bull;/g, "•")
     .replace(/&nbsp;/g, " ")
     .replace(/&amp;/g, "&")
     .replace(/&mdash;/g, "—")
     .replace(/&ndash;/g, "–")
     .replace(/&#39;/g, "'")
     .replace(/&quot;/g, '"')
-    .replace(/^\s*#{1,6}\s+/gm, " ")
-    .replace(/^\s*>+\s?/gm, " ")
-    .replace(/\*\*/g, "")
-    .replace(/[*_`#<>]/g, "")
-    .replace(/-{3,}/g, " ")
-    .replace(/[|~]/g, " ")
     .replace(/\s+/g, " ")
     .trim();
-}
-
-function extractInlineMetaDescription(markdown = "") {
-  const match = String(markdown || "").match(/\*\*Meta Description:\*\*\s*`?([^`\n]+)`?/i);
-  return match?.[1]?.trim() || "";
-}
-
-function cleanExcerptSource(markdown = "", title = "") {
-  let value = String(markdown || "");
-
-  value = value
-    .replace(/^#\s+.*$/m, " ")
-    .replace(/^##\s*SEO Metadata[\s\S]*?(?=^##\s|^#\s|$)/im, " ")
-    .replace(/^SEO Metadata[\s\S]*?(?=^##\s|^#\s|$)/im, " ")
-    .replace(/^##\s*Quick Answer[\s\S]*?(?=^##\s|^#\s|$)/im, " ")
-    .replace(/^>\s*\*\*Quick Answer:\*\*.*$/gim, " ")
-    .replace(/<section[^>]*(quick-answer|table-of-contents)[\s\S]*?<\/section>/gi, " ")
-    .replace(/<nav[^>]*(table-of-contents|toc)[\s\S]*?<\/nav>/gi, " ")
-    .replace(/<div[^>]*class=["']quick-answer["'][\s\S]*?<\/div>/gi, " ");
-
-  const cleanTitle = String(title || "").trim();
-  if (cleanTitle) value = value.replace(cleanTitle, " ");
-
-  return stripHtmlForExcerpt(value);
 }
 
 function makeExcerpt(value = "", max = 165) {
   const clean = stripHtmlForExcerpt(value);
   return clean.length > max ? clean.slice(0, max).replace(/\s+\S*$/, "") + "…" : clean;
 }
-
 
 export function getAllPosts() {
   if (!fs.existsSync(BLOG_DIR)) return [];
@@ -145,13 +94,9 @@ export function getAllPosts() {
         slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase());
 
       const excerpt =
-        makeExcerpt(
-          data.excerpt ||
-            data.meta_description ||
-            extractInlineMetaDescription(cleanContent) ||
-            cleanExcerptSource(cleanContent, title),
-          155
-        ) || "A practical BankDeMark guide for smarter money decisions.";
+        data.excerpt ||
+        plainText(cleanContent).slice(0, 180) ||
+        "A practical BankDeMark guide for smarter money decisions.";
 
       const words = plainText(cleanContent).split(" ").filter(Boolean).length;
 

@@ -1,12 +1,21 @@
 ---
-title: "ZYLX.ai Case Study: AI Workflow Automation for Modern Business (Complete 2026 Guide)"
-meta_title: "ZYLX.ai Case Study: AI Workflow Automation for Modern Business (2026)"
-meta_description: "How ZYLX.ai delivers AI workflow automation for entrepreneurs — a deep-dive case study on implementing AI agents, orchestrating business workflows, and scaling operations without scaling headcount."
+title: >-
+  ZYLX.ai Case Study: AI Workflow Automation for Modern Business (Complete 2026
+  Guide)
+meta_title: 'ZYLX.ai Case Study: AI Workflow Automation for Modern Business (2026)'
+meta_description: >-
+  How ZYLX.ai delivers AI workflow automation for entrepreneurs — a deep-dive
+  case study on implementing AI agents, orchestrating business workflows, and
+  scaling operations without scaling headcount.
 slug: /blog/zylx-ai-workflow-automation-case-study
-date: "2026-05-23"
-category: "Business Technology"
-readTime: "25 min read"
+date: '2026-05-23'
+category: Business Technology
+readTime: 25 min read
 featured: false
+excerpt: >-
+  How ZYLX.ai delivers AI workflow automation for entrepreneurs — a deep-dive
+  case study on implementing AI agents, orchestrating business workflows, and
+  scaling...
 ---
 
 # ZYLX.ai Case Study: AI Workflow Automation for Modern Business (Complete 2026 Guide)

@@ -1,12 +1,19 @@
 ---
-title: "Shopify SEO Strategy for Small Ecommerce Stores (Complete 2026 Guide)"
-meta_title: "Shopify SEO Strategy for Small Ecommerce Stores (2026)"
-meta_description: "Master Shopify SEO in 2026. Technical setup, collection page optimization, product schema, content strategy, Core Web Vitals, and link building for small ecommerce brands."
+title: Shopify SEO Strategy for Small Ecommerce Stores (Complete 2026 Guide)
+meta_title: Shopify SEO Strategy for Small Ecommerce Stores (2026)
+meta_description: >-
+  Master Shopify SEO in 2026. Technical setup, collection page optimization,
+  product schema, content strategy, Core Web Vitals, and link building for small
+  ecommerce brands.
 slug: /blog/shopify-seo-strategy
-date: "2026-05-23"
-category: "Ecommerce Strategy"
-readTime: "42 min read"
+date: '2026-05-23'
+category: Ecommerce Strategy
+readTime: 42 min read
 featured: false
+excerpt: >-
+  Master Shopify SEO in 2026. Technical setup, collection page optimization,
+  product schema, content strategy, Core Web Vitals, and link building for small
+  ecommerce...
 ---
 
 # Shopify SEO Strategy for Small Ecommerce Stores (Complete 2026 Guide)

@@ -1,11 +1,15 @@
 ---
-title: "How Long Does It Take to Reach $1 Million by Investing?"
-meta_title: "How Long to Reach $1 Million Investing?"
-meta_description: "Exactly how long it takes to reach $1 million investing — by monthly contribution, return rate, and starting age. Real numbers, every scenario."
+title: How Long Does It Take to Reach $1 Million by Investing?
+meta_title: How Long to Reach $1 Million Investing?
+meta_description: >-
+  Exactly how long it takes to reach $1 million investing — by monthly
+  contribution, return rate, and starting age. Real numbers, every scenario.
 slug: /blog/how-long-to-reach-1-million-investing
-og_title: "How Long Does It Take to Reach $1 Million by Investing?"
-og_description: "How long to reach $1 million depends on what you invest monthly, your return rate, and when you start. Here's every scenario laid out with exact timelines."
-primary_keyword: "how long to reach 1 million investing"
+og_title: How Long Does It Take to Reach $1 Million by Investing?
+og_description: >-
+  How long to reach $1 million depends on what you invest monthly, your return
+  rate, and when you start. Here's every scenario laid out with exact timelines.
+primary_keyword: how long to reach 1 million investing
 secondary_keywords:
   - how to become a millionaire investing
   - millionaire calculator
@@ -13,13 +17,19 @@ secondary_keywords:
   - how long to save 1 million dollars
   - 1 million investment timeline
   - reach 1 million investing
-search_intent: "Informational / Calculator"
-target_audience: "Aspiring millionaires, young investors, and financial independence seekers who want to understand exactly what it takes — and how long it takes — to build $1 million through investing."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Investing & Wealth Building"
-reading_time: "23 min"
+search_intent: Informational / Calculator
+target_audience: >-
+  Aspiring millionaires, young investors, and financial independence seekers who
+  want to understand exactly what it takes — and how long it takes — to build $1
+  million through investing.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Investing & Wealth Building
+reading_time: 23 min
+excerpt: >-
+  Exactly how long it takes to reach $1 million investing — by monthly
+  contribution, return rate, and starting age. Real numbers, every...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. All calculations use standard compound interest formulas with assumed return rates that do not represent guaranteed investment results.
 

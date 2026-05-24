@@ -1,11 +1,17 @@
 ---
-title: "Compound Interest Formula Explained: A Complete Breakdown"
-meta_title: "Compound Interest Formula Explained"
-meta_description: "The complete breakdown of the compound interest formula. Understand every variable, see annual vs monthly vs daily examples, and learn when to use a calculator."
+title: 'Compound Interest Formula Explained: A Complete Breakdown'
+meta_title: Compound Interest Formula Explained
+meta_description: >-
+  The complete breakdown of the compound interest formula. Understand every
+  variable, see annual vs monthly vs daily examples, and learn when to use a
+  calculator.
 slug: /blog/compound-interest-formula
-og_title: "Compound Interest Formula Explained: Every Variable, Every Scenario"
-og_description: "Break down the compound interest formula step by step. Understand P, r, n, and t, see how annual, monthly, and daily compounding differ, and calculate real returns."
-primary_keyword: "compound interest formula"
+og_title: 'Compound Interest Formula Explained: Every Variable, Every Scenario'
+og_description: >-
+  Break down the compound interest formula step by step. Understand P, r, n, and
+  t, see how annual, monthly, and daily compounding differ, and calculate real
+  returns.
+primary_keyword: compound interest formula
 secondary_keywords:
   - compound interest equation
   - monthly compound interest formula
@@ -13,13 +19,18 @@ secondary_keywords:
   - compound interest formula with deposits
   - how to calculate compound interest
   - compound interest calculation
-search_intent: "Informational / How-To"
-target_audience: "Students, beginners learning finance, and anyone who wants to understand the math behind compound interest before using a calculator."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Investing & Wealth Building"
-reading_time: "22 min"
+search_intent: Informational / How-To
+target_audience: >-
+  Students, beginners learning finance, and anyone who wants to understand the
+  math behind compound interest before using a calculator.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Investing & Wealth Building
+reading_time: 22 min
+excerpt: >-
+  The complete breakdown of the compound interest formula. Understand every
+  variable, see annual vs monthly vs daily examples, and learn when to use a...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice.
 

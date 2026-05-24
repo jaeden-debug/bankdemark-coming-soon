@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Personal finance for beginners starts with understanding your cash flow,
+  building a budget, saving an emergency fund, eliminating high-interest debt,
+  building credit,...
+---
 # Article 1: Personal Finance for Beginners — The Complete Money System
 
 ---

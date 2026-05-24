@@ -1,12 +1,18 @@
 ---
-title: "How to Build a Modern Online Business Ecosystem"
-meta_title: "How to Build a Modern Online Business Ecosystem"
-meta_description: "Learn how founders use AI, SEO, and online business systems to build connected digital ecosystems. A complete guide to cross-brand strategy and digital assets."
+title: How to Build a Modern Online Business Ecosystem
+meta_title: How to Build a Modern Online Business Ecosystem
+meta_description: >-
+  Learn how founders use AI, SEO, and online business systems to build connected
+  digital ecosystems. A complete guide to cross-brand strategy and digital
+  assets.
 slug: /blog/how-to-build-online-business-ecosystem
-date: "2026-05-23"
-category: "Business Strategy"
-readTime: "29 min read"
+date: '2026-05-23'
+category: Business Strategy
+readTime: 29 min read
 featured: false
+excerpt: >-
+  Learn how founders use AI, SEO, and online business systems to build connected
+  digital ecosystems. A complete guide to cross-brand strategy and digital...
 ---
 
 # How to Build a Modern Online Business Ecosystem

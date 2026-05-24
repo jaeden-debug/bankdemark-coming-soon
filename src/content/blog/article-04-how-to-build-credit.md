@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  To build credit from scratch, open a secured credit card or credit-builder
+  loan, make all payments on time, keep your credit utilization below 30%, and
+  let time work in...
+---
 # Article 4: How to Build Credit — Complete Credit Score Guide
 
 ---

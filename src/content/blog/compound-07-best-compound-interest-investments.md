@@ -1,11 +1,17 @@
 ---
-title: "Best Compound Interest Investments for Long-Term Growth"
-meta_title: "Best Compound Interest Investments (2026)"
-meta_description: "The best compound interest investments for long-term wealth building — index funds, ETFs, dividend reinvestment, retirement accounts, HYSAs, and what to avoid."
+title: Best Compound Interest Investments for Long-Term Growth
+meta_title: Best Compound Interest Investments (2026)
+meta_description: >-
+  The best compound interest investments for long-term wealth building — index
+  funds, ETFs, dividend reinvestment, retirement accounts, HYSAs, and what to
+  avoid.
 slug: /blog/best-compound-interest-investments
-og_title: "Best Compound Interest Investments for Long-Term Growth"
-og_description: "Discover the best investments to harness compound interest over time — from index funds and ETFs to retirement accounts and high-yield savings, with Canada and USA account options."
-primary_keyword: "best compound interest investments"
+og_title: Best Compound Interest Investments for Long-Term Growth
+og_description: >-
+  Discover the best investments to harness compound interest over time — from
+  index funds and ETFs to retirement accounts and high-yield savings, with
+  Canada and USA account options.
+primary_keyword: best compound interest investments
 secondary_keywords:
   - compound interest investments
   - compound interest investing
@@ -13,13 +19,19 @@ secondary_keywords:
   - where to invest for compound interest
   - investments that compound
   - long term compound interest
-search_intent: "Commercial Investigation / Informational"
-target_audience: "Beginner and intermediate investors looking to understand which investment vehicles produce the best compound interest results over 10–40 year time horizons."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Investing & Wealth Building"
-reading_time: "26 min"
+search_intent: Commercial Investigation / Informational
+target_audience: >-
+  Beginner and intermediate investors looking to understand which investment
+  vehicles produce the best compound interest results over 10–40 year time
+  horizons.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Investing & Wealth Building
+reading_time: 26 min
+excerpt: >-
+  The best compound interest investments for long-term wealth building — index
+  funds, ETFs, dividend reinvestment, retirement accounts, HYSAs, and what to...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Investment returns are not guaranteed. All projections use illustrative return rates based on historical context.
 

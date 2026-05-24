@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Investing for Beginners Investing for beginners in one paragraph: Investing is
+  the process of putting money into assets — like stocks, bonds, or real estate
+  — with the...
+---
 # Investing for Beginners: How to Start Building Wealth
 
 

@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  New businesses can qualify for business credit cards — but most will require a
+  personal guarantee and evaluate the owner's personal credit score during the
+  approval...
+---
 # Article 8: Best Business Credit Cards for New Businesses
 
 ---

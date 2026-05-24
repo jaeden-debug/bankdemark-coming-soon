@@ -1,11 +1,17 @@
 ---
-title: "Compound Interest Canada: TFSA, RRSP & Investment Growth Guide"
-meta_title: "Compound Interest Canada: TFSA, RRSP Guide"
-meta_description: "How compound interest works in Canada — TFSA and RRSP compounding explained, real growth examples, tax impact, and the best accounts for Canadian investors."
+title: 'Compound Interest Canada: TFSA, RRSP & Investment Growth Guide'
+meta_title: 'Compound Interest Canada: TFSA, RRSP Guide'
+meta_description: >-
+  How compound interest works in Canada — TFSA and RRSP compounding explained,
+  real growth examples, tax impact, and the best accounts for Canadian
+  investors.
 slug: /blog/compound-interest-calculator-canada
-og_title: "Compound Interest Canada: TFSA, RRSP & Investment Growth"
-og_description: "How compound interest works inside Canadian tax-advantaged accounts — TFSA, RRSP, FHSA, and non-registered investing. Real numbers, tax implications, and how to maximize your compound growth."
-primary_keyword: "compound interest calculator Canada"
+og_title: 'Compound Interest Canada: TFSA, RRSP & Investment Growth'
+og_description: >-
+  How compound interest works inside Canadian tax-advantaged accounts — TFSA,
+  RRSP, FHSA, and non-registered investing. Real numbers, tax implications, and
+  how to maximize your compound growth.
+primary_keyword: compound interest calculator Canada
 secondary_keywords:
   - TFSA growth calculator
   - RRSP growth calculator
@@ -14,13 +20,19 @@ secondary_keywords:
   - RRSP compound interest
   - Canadian investment accounts compound interest
   - how does compound interest work in Canada
-search_intent: "Informational / Calculator"
-target_audience: "Canadian investors at any stage who want to understand how compound interest works specifically within Canadian tax-advantaged accounts — TFSA, RRSP, FHSA — and how to maximize long-term compound growth."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Investing & Wealth Building"
-reading_time: "27 min"
+search_intent: Informational / Calculator
+target_audience: >-
+  Canadian investors at any stage who want to understand how compound interest
+  works specifically within Canadian tax-advantaged accounts — TFSA, RRSP, FHSA
+  — and how to maximize long-term compound growth.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Investing & Wealth Building
+reading_time: 27 min
+excerpt: >-
+  How compound interest works in Canada — TFSA and RRSP compounding explained,
+  real growth examples, tax impact, and the best accounts for Canadian...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Tax rules, contribution limits, and government programs referenced are based on available information and may change. Always verify current limits and rules with the CRA (Canada Revenue Agency) or a qualified tax professional.
 

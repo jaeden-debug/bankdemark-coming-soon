@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  How to Start Investing How to start investing in 2026 in one paragraph: Build
+  your financial foundation first (emergency fund + no high-interest debt), then
+  open a...
+---
 # How to Start Investing in 2026
 
 

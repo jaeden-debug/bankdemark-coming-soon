@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  AI SEO tools automate the most time-intensive parts of search engine
+  optimization — keyword research, content briefs, on-page optimization, and
+  technical auditing —...
+---
 # Article 11: AI SEO Tools for Small Businesses
 
 ---

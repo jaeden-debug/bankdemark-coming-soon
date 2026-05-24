@@ -1,12 +1,17 @@
 ---
-title: "Why Modern Businesses Need SEO-Driven Web Design"
-meta_title: "Why Modern Businesses Need SEO-Driven Web Design"
-meta_description: "Discover why SEO-driven web design is essential for business growth. Learn how a web design agency combines technical SEO, UX, and conversion strategy."
+title: Why Modern Businesses Need SEO-Driven Web Design
+meta_title: Why Modern Businesses Need SEO-Driven Web Design
+meta_description: >-
+  Discover why SEO-driven web design is essential for business growth. Learn how
+  a web design agency combines technical SEO, UX, and conversion strategy.
 slug: /blog/seo-driven-web-design-for-business
-date: "2026-05-23"
-category: "Business Strategy"
-readTime: "29 min read"
+date: '2026-05-23'
+category: Business Strategy
+readTime: 29 min read
 featured: false
+excerpt: >-
+  Discover why SEO-driven web design is essential for business growth. Learn how
+  a web design agency combines technical SEO, UX, and conversion...
 ---
 
 # Why Modern Businesses Need SEO-Driven Web Design

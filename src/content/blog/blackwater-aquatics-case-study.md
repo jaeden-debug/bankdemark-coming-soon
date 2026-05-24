@@ -1,12 +1,17 @@
 ---
-title: "Blackwater Aquatics Canada: Niche Ecommerce SEO Case Study (2026)"
-meta_title: "Blackwater Aquatics Canada: Niche Ecommerce SEO Case Study (2026)"
-meta_description: "Inside Blackwater Aquatics Canada — how a live fish food brand built niche ecommerce authority, dominated "
+title: 'Blackwater Aquatics Canada: Niche Ecommerce SEO Case Study (2026)'
+meta_title: 'Blackwater Aquatics Canada: Niche Ecommerce SEO Case Study (2026)'
+meta_description: >-
+  Inside Blackwater Aquatics Canada — how a live fish food brand built niche
+  ecommerce authority, dominated 
 slug: /blog/blackwater-aquatics-case-study
-date: "2026-05-23"
-category: "Ecommerce Case Studies"
-readTime: "37 min read"
+date: '2026-05-23'
+category: Ecommerce Case Studies
+readTime: 37 min read
 featured: false
+excerpt: >-
+  Inside Blackwater Aquatics Canada — how a live fish food brand built niche
+  ecommerce authority,...
 ---
 
 # Blackwater Aquatics Canada: Niche Ecommerce SEO Case Study (2026)

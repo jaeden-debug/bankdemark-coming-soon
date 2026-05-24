@@ -1,12 +1,18 @@
 ---
-title: "How AI Automation Is Changing Small Business Operations (Complete 2026 Guide)"
-meta_title: "How AI Automation Is Changing Small Business Operations (2026)"
-meta_description: "How AI automation is transforming small business operations in 2026 — from customer service and marketing to operations, finance, and workflow orchestration."
+title: How AI Automation Is Changing Small Business Operations (Complete 2026 Guide)
+meta_title: How AI Automation Is Changing Small Business Operations (2026)
+meta_description: >-
+  How AI automation is transforming small business operations in 2026 — from
+  customer service and marketing to operations, finance, and workflow
+  orchestration.
 slug: /blog/ai-automation-small-business
-date: "2026-05-23"
-category: "Business Strategy"
-readTime: "34 min read"
+date: '2026-05-23'
+category: Business Strategy
+readTime: 34 min read
 featured: false
+excerpt: >-
+  How AI automation is transforming small business operations in 2026 — from
+  customer service and marketing to operations, finance, and workflow...
 ---
 
 # How AI Automation Is Changing Small Business Operations (Complete 2026 Guide)

@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Index Fund Investing Index fund investing in one paragraph: An index fund is a
+  fund that tracks a market index — like the S&P 500 — by owning all (or a
+  representative...
+---
 # Index Fund Investing Explained for Beginners
 
 

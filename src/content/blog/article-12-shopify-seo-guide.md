@@ -1,11 +1,17 @@
 ---
-title: "Shopify SEO Guide: How to Rank Product Pages and Collections in Google"
-meta_title: "Shopify SEO Guide: Rank Products & Collections"
-meta_description: "Learn how to optimize your Shopify store for Google. This guide covers product page SEO, collection SEO, technical fixes, and AI tools to scale your rankings."
+title: 'Shopify SEO Guide: How to Rank Product Pages and Collections in Google'
+meta_title: 'Shopify SEO Guide: Rank Products & Collections'
+meta_description: >-
+  Learn how to optimize your Shopify store for Google. This guide covers product
+  page SEO, collection SEO, technical fixes, and AI tools to scale your
+  rankings.
 slug: /blog/shopify-seo-guide
-og_title: "Shopify SEO Guide: How to Rank Product Pages and Collections in Google"
-og_description: "A complete Shopify SEO playbook for store owners — from product page optimization and collection structure to technical fixes, schema markup, and AI-powered content scaling."
-primary_keyword: "shopify seo"
+og_title: 'Shopify SEO Guide: How to Rank Product Pages and Collections in Google'
+og_description: >-
+  A complete Shopify SEO playbook for store owners — from product page
+  optimization and collection structure to technical fixes, schema markup, and
+  AI-powered content scaling.
+primary_keyword: shopify seo
 secondary_keywords:
   - shopify seo optimization
   - shopify product page seo
@@ -14,13 +20,21 @@ secondary_keywords:
   - ecommerce seo shopify
   - shopify meta tags
   - shopify structured data
-search_intent: "Informational / Commercial Investigation"
-target_audience: "Shopify store owners, ecommerce entrepreneurs, DTC brand founders, and digital marketers managing Shopify stores who want to improve organic search rankings without relying entirely on paid ads."
-featured_snippet_answer: "Shopify SEO involves optimizing your store's product pages, collection pages, meta tags, site structure, and content so Google can crawl, understand, and rank your store in search results. Key priorities include unique product descriptions, proper heading hierarchy, clean URL structures, schema markup, fast page speed, and a content strategy built around buyer intent keywords."
-date_published: "2026-05-21"
-date_modified: "2026-05-21"
-author: "BankDeMark Editorial Team"
-category: "Business & SEO"
+search_intent: Informational / Commercial Investigation
+target_audience: >-
+  Shopify store owners, ecommerce entrepreneurs, DTC brand founders, and digital
+  marketers managing Shopify stores who want to improve organic search rankings
+  without relying entirely on paid ads.
+featured_snippet_answer: >-
+  Shopify SEO involves optimizing your store's product pages, collection pages,
+  meta tags, site structure, and content so Google can crawl, understand, and
+  rank your store in search results. Key priorities include unique product
+  descriptions, proper heading hierarchy, clean URL structures, schema markup,
+  fast page speed, and a content strategy built around buyer intent keywords.
+date_published: '2026-05-21'
+date_modified: '2026-05-21'
+author: BankDeMark Editorial Team
+category: Business & SEO
 tags:
   - shopify
   - ecommerce seo
@@ -28,8 +42,11 @@ tags:
   - digital marketing
   - small business
   - product page optimization
-reading_time: "28 min"
+reading_time: 28 min
 word_count: 6200
+excerpt: >-
+  Learn how to optimize your Shopify store for Google. This guide covers product
+  page SEO, collection SEO, technical fixes, and AI tools to scale your...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Always consult qualified professionals before making business or financial decisions.
 

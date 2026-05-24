@@ -1,12 +1,18 @@
 ---
-title: "StillAwake Media Case Study: Building SEO-First Digital Infrastructure for Modern Brands"
-meta_title: "StillAwake Media: SEO-First Digital Infrastructure"
-meta_description: "Inside StillAwake Media"
+title: >-
+  StillAwake Media Case Study: Building SEO-First Digital Infrastructure for
+  Modern Brands
+meta_title: 'StillAwake Media: SEO-First Digital Infrastructure'
+meta_description: Inside StillAwake Media
 slug: /blog/stillawake-media-custom-website-development
-date: "2026-05-23"
-category: "Business Strategy"
-readTime: "29 min read"
+date: '2026-05-23'
+category: Business Strategy
+readTime: 29 min read
 featured: false
+excerpt: >-
+  StillAwake Media is a creative development studio that builds SEO-first
+  websites, brand systems, and digital infrastructure for entrepreneurs,
+  ecommerce brands, and...
 ---
 
 # StillAwake Media Case Study: Building SEO-First Digital Infrastructure for Modern Brands

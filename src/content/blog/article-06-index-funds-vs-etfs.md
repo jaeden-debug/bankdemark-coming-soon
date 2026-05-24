@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Both index funds and ETFs can be excellent choices for beginners. The key
+  insight is that ETF is a *structure* (traded on an exchange) while "index
+  fund" describes what...
+---
 # Article 6: Index Funds vs ETFs — Which Is Better for Beginners?
 
 ---

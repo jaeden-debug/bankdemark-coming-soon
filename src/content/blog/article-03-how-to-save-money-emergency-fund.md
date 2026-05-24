@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  To save money and build an emergency fund: calculate your target (3–6 months
+  of essential expenses), open a dedicated high-yield savings account, automate
+  a fixed...
+---
 # Article 3: How to Save Money and Build an Emergency Fund
 
 ---

@@ -1,11 +1,16 @@
 ---
-title: "How Compound Interest Works: The Beginner's Complete Guide"
-meta_title: "How Compound Interest Works: Beginner Guide"
-meta_description: "Learn how compound interest works with real examples, formulas, and strategies. The most important money concept beginners need to understand."
+title: 'How Compound Interest Works: The Beginner''s Complete Guide'
+meta_title: 'How Compound Interest Works: Beginner Guide'
+meta_description: >-
+  Learn how compound interest works with real examples, formulas, and
+  strategies. The most important money concept beginners need to understand.
 slug: /blog/how-compound-interest-works
-og_title: "How Compound Interest Works: Beginner's Complete Guide"
-og_description: "Compound interest is the most powerful force in personal finance. Here's exactly how it works, why time matters more than anything, and how to use it to build wealth."
-primary_keyword: "how compound interest works"
+og_title: 'How Compound Interest Works: Beginner''s Complete Guide'
+og_description: >-
+  Compound interest is the most powerful force in personal finance. Here's
+  exactly how it works, why time matters more than anything, and how to use it
+  to build wealth.
+primary_keyword: how compound interest works
 secondary_keywords:
   - compound interest for beginners
   - power of compound interest
@@ -13,13 +18,18 @@ secondary_keywords:
   - what is compound interest
   - compound interest explained
   - compound interest vs simple interest
-search_intent: "Informational"
-target_audience: "Beginners learning personal finance, young investors, and anyone who wants to understand why starting early matters."
-date_published: "2026-05-22"
-date_modified: "2026-05-22"
-author: "BankDeMark Editorial Team"
-category: "Investing & Wealth Building"
-reading_time: "24 min"
+search_intent: Informational
+target_audience: >-
+  Beginners learning personal finance, young investors, and anyone who wants to
+  understand why starting early matters.
+date_published: '2026-05-22'
+date_modified: '2026-05-22'
+author: BankDeMark Editorial Team
+category: Investing & Wealth Building
+reading_time: 24 min
+excerpt: >-
+  Learn how compound interest works with real examples, formulas, and
+  strategies. The most important money concept beginners need to...
 ---
 > **Disclaimer:** This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. Consult a qualified professional before making investment decisions.
 

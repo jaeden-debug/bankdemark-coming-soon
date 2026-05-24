@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Building business credit starts with establishing your business as a legal
+  entity separate from you personally, obtaining an EIN (USA) or Business Number
+  (Canada),...
+---
 # Article 7: Business Credit Guide — How to Build Business Credit From Scratch
 
 ---

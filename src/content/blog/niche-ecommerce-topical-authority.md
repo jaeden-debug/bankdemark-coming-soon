@@ -1,12 +1,19 @@
 ---
-title: "How Niche Ecommerce Brands Build Topical Authority (Complete 2026 Guide)"
-meta_title: "How Niche Ecommerce Brands Build Topical Authority (2026)"
-meta_description: "How niche ecommerce brands build topical authority to dominate search rankings, outrank Amazon, and grow organic revenue. A complete 2026 strategy guide."
+title: How Niche Ecommerce Brands Build Topical Authority (Complete 2026 Guide)
+meta_title: How Niche Ecommerce Brands Build Topical Authority (2026)
+meta_description: >-
+  How niche ecommerce brands build topical authority to dominate search
+  rankings, outrank Amazon, and grow organic revenue. A complete 2026 strategy
+  guide.
 slug: /blog/niche-ecommerce-topical-authority
-date: "2026-05-23"
-category: "Ecommerce Strategy"
-readTime: "37 min read"
+date: '2026-05-23'
+category: Ecommerce Strategy
+readTime: 37 min read
 featured: false
+excerpt: >-
+  How niche ecommerce brands build topical authority to dominate search
+  rankings, outrank Amazon, and grow organic revenue. A complete 2026
+  strategy...
 ---
 
 # How Niche Ecommerce Brands Build Topical Authority (Complete 2026 Guide)

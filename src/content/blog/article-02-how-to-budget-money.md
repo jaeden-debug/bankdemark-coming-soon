@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  To budget money, track your income and expenses, assign spending categories,
+  use a framework like 50/30/20 or zero-based budgeting, automate savings
+  contributions, and...
+---
 # Article 2: How to Budget Money — The Complete Beginner Budgeting Guide
 
 ---

@@ -1,3 +1,9 @@
+---
+excerpt: >-
+  Average Stock Market Return The average stock market return in one paragraph:
+  The S&P 500 — the most commonly cited benchmark for the US stock market — has
+  historically...
+---
 # Average Stock Market Return: Historical Data Explained
 
 
