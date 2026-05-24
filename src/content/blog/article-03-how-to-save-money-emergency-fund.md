@@ -520,14 +520,13 @@ Build a $1,000 starter emergency fund first. Then pay off high-interest debt (cr
 ---
 
 ## Internal Link Map
-- **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
-- **Banking Pillar:** [/pillars/banking](/pillars/banking)
-- **Investing Pillar:** [/pillars/investing](/pillars/investing)
-- **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
-- **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
-
+- [Personal Finance Pillar](/pillars/personal-finance)
+- [Banking Pillar](/pillars/banking)
+- [Investing Pillar](/pillars/investing)
+- [Personal Finance for Beginners](/blog/personal-finance-for-beginners)
+- [How to Budget Money](/blog/how-to-budget-money)
+- [Investing for Beginners](/blog/investing-for-beginners)
+- [Financial Freedom Roadmap](/blog/financial-freedom-roadmap)
 ## Suggested Supporting Articles
 - How to Budget Money: The Complete Beginner Budgeting Guide
 - Investing for Beginners: Complete Guide to Start Investing

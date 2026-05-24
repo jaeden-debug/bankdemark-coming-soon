@@ -559,14 +559,13 @@ Missed or late payments (35% of score) cause the most damage. Collections, charg
 ---
 
 ## Internal Link Map
-- **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
-- **Debt Management Pillar:** [/pillars/debt-management](/pillars/debt-management)
-- **Banking Pillar:** [/pillars/banking](/pillars/banking)
-- **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
-- **How to Build Business Credit:** [/blog/how-to-build-business-credit](/blog/how-to-build-business-credit)
-- **Best Business Credit Cards:** [/blog/best-business-credit-cards-new-business](/blog/best-business-credit-cards-new-business)
-
+- [Personal Finance Pillar](/pillars/personal-finance)
+- [Debt Management Pillar](/pillars/debt-management)
+- [Banking Pillar](/pillars/banking)
+- [Personal Finance for Beginners](/blog/personal-finance-for-beginners)
+- [How to Budget Money](/blog/how-to-budget-money)
+- [How to Build Business Credit](/blog/how-to-build-business-credit)
+- [Best Business Credit Cards](/blog/best-business-credit-cards-new-business)
 ## Suggested Supporting Articles
 - Personal Finance for Beginners: The Complete Money System
 - How to Budget Money: The Complete Beginner Budgeting Guide

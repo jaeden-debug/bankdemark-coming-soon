@@ -440,13 +440,12 @@ Either works. Inside registered accounts (TFSA/Roth IRA), the tax efficiency adv
 ---
 
 ## Internal Link Map
-- **Investing Pillar:** [/pillars/investing](/pillars/investing)
-- **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
-- **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
-- **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
-- **How to Save Money:** [/blog/how-to-save-money-emergency-fund](/blog/how-to-save-money-emergency-fund)
-
+- [Investing Pillar](/pillars/investing)
+- [Financial Freedom Pillar](/pillars/financial-freedom)
+- [Investing for Beginners](/blog/investing-for-beginners)
+- [Personal Finance for Beginners](/blog/personal-finance-for-beginners)
+- [Financial Freedom Roadmap](/blog/financial-freedom-roadmap)
+- [How to Save Money](/blog/how-to-save-money-emergency-fund)
 ## Suggested Supporting Articles
 - Investing for Beginners: Complete Guide to Start Investing
 - Financial Freedom Roadmap: From Paycheck-to-Paycheck to Independent

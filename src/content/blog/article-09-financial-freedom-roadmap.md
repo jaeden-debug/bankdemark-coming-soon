@@ -541,15 +541,14 @@ Timeline depends primarily on saving rate. At 10% savings rate: ~51 years. At 30
 ---
 
 ## Internal Link Map
-- **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
-- **Investing Pillar:** [/pillars/investing](/pillars/investing)
-- **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
-- **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
-- **Index Funds vs ETFs:** [/blog/index-funds-vs-etfs](/blog/index-funds-vs-etfs)
-- **How to Save Money:** [/blog/how-to-save-money-emergency-fund](/blog/how-to-save-money-emergency-fund)
-- **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
-
+- [Financial Freedom Pillar](/pillars/financial-freedom)
+- [Investing Pillar](/pillars/investing)
+- [Personal Finance Pillar](/pillars/personal-finance)
+- [Personal Finance for Beginners](/blog/personal-finance-for-beginners)
+- [Investing for Beginners](/blog/investing-for-beginners)
+- [Index Funds vs ETFs](/blog/index-funds-vs-etfs)
+- [How to Save Money](/blog/how-to-save-money-emergency-fund)
+- [How to Budget Money](/blog/how-to-budget-money)
 ## Suggested Supporting Articles
 - Investing for Beginners: Complete Guide to Start Investing
 - Index Funds vs ETFs: Which Is Better for Beginners?

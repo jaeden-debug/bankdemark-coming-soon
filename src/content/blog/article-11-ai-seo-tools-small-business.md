@@ -445,16 +445,15 @@ Most small businesses can run an effective AI SEO stack for $100–$250/month, d
 ---
 
 ## Internal Link Map
-- **BankDeMark Home:** [/](/)
-- **Pillars Overview:** [/pillars](/pillars)
-- **Business Systems:** [/pillars/business-credit](/pillars/business-credit)
-- **Shopify SEO Guide:** [/blog/shopify-seo-guide](/blog/shopify-seo-guide)
-- **Ecommerce SEO Strategy:** [/blog/ecommerce-seo-strategy](/blog/ecommerce-seo-strategy)
-- **Topical Authority SEO:** [/blog/ecommerce-seo-strategy](/blog/ecommerce-seo-strategy)
-- **Small Business SEO Canada:** [/blog/ecommerce-seo-strategy](/blog/ecommerce-seo-strategy)
-- **ZYLX.ai:** [ZYLX.ai](https://zylx.ai)
-- **StillAwake Media:** [StillAwake Media](https://stillawakemedia.com)
-
+- [BankDeMark Home](/)
+- [Pillars Overview](/pillars)
+- [Business Systems](/pillars/business-credit)
+- [Shopify SEO Guide](/blog/shopify-seo-guide)
+- [Ecommerce SEO Strategy](/blog/ecommerce-seo-strategy)
+- [Topical Authority SEO](/blog/ecommerce-seo-strategy)
+- [Small Business SEO Canada](/blog/ecommerce-seo-strategy)
+- [ZYLX.ai](https://zylx.ai)
+- [StillAwake Media](https://stillawakemedia.com)
 ## Suggested Future Supporting Articles
 - Google Search Console Guide for Small Businesses
 - How to Build Topical Authority in a Niche Market

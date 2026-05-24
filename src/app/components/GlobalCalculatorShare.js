@@ -17,11 +17,13 @@ export default function GlobalCalculatorShare() {
 
   const extractResults = () => {
     const results = {};
-    document.querySelectorAll(".bdm-metrics div, .mortgage-breakdown div, .investment-metrics div, .retirement-metrics div").forEach((node) => {
-      const label = node.querySelector("span")?.innerText?.trim();
-      const value = node.querySelector("strong")?.innerText?.trim();
-      if (label && value) results[label] = value;
-    });
+    document
+      .querySelectorAll(".bdm-metrics div, .mortgage-breakdown div, .investment-metrics div, .retirement-metrics div")
+      .forEach((node) => {
+        const label = node.querySelector("span")?.innerText?.trim();
+        const value = node.querySelector("strong")?.innerText?.trim();
+        if (label && value) results[label] = value;
+      });
     return results;
   };
 
@@ -51,29 +53,39 @@ export default function GlobalCalculatorShare() {
     return `${window.location.origin}${data.url}`;
   };
 
+  const copyShareUrl = async (shareUrl) => {
+    try {
+      if (document.hasFocus() && navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+        setCopied(true);
+        setTimeout(() => setCopied(false), 1800);
+        return;
+      }
+    } catch {}
+
+    window.prompt("Copy this share link:", shareUrl);
+  };
+
   const handleShare = async () => {
     setBusy(true);
 
     try {
       const shareUrl = await createShareUrl();
 
-      console.log("SHARE URL:", shareUrl);
-
-      if (navigator.share) {
-        await navigator.share({
-          title: "BankDeMark Calculator Results",
-          url: shareUrl,
-        });
-      } else {
-        await navigator.clipboard.writeText(shareUrl);
-        setCopied(true);
-        setTimeout(() => setCopied(false), 1800);
+      if (navigator.share && document.hasFocus()) {
+        try {
+          await navigator.share({
+            title: "BankDeMark Calculator Results",
+            url: shareUrl,
+          });
+          return;
+        } catch {}
       }
-    } catch {
-      const shareUrl = await createShareUrl();
-      await navigator.clipboard.writeText(shareUrl);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1800);
+
+      await copyShareUrl(shareUrl);
+    } catch (error) {
+      console.error("Share failed:", error);
+      alert("Could not create a share link. Please try again.");
     } finally {
       setBusy(false);
     }

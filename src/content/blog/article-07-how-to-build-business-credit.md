@@ -449,13 +449,12 @@ Generally, business credit activity does not appear on your personal credit repo
 ---
 
 ## Internal Link Map
-- **Business Credit Pillar:** [/pillars/business-credit](/pillars/business-credit)
-- **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
-- **Banking Pillar:** [/pillars/banking](/pillars/banking)
-- **Best Business Credit Cards:** [/blog/best-business-credit-cards-new-business](/blog/best-business-credit-cards-new-business)
-- **How to Build Credit (Personal):** [/blog/how-to-build-credit](/blog/how-to-build-credit)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
-
+- [Business Credit Pillar](/pillars/business-credit)
+- [Personal Finance Pillar](/pillars/personal-finance)
+- [Banking Pillar](/pillars/banking)
+- [Best Business Credit Cards](/blog/best-business-credit-cards-new-business)
+- [How to Build Credit (Personal)](/blog/how-to-build-credit)
+- [Financial Freedom Roadmap](/blog/financial-freedom-roadmap)
 ## Suggested Supporting Articles
 - Best Business Credit Cards for New Businesses
 - How to Build Credit: Complete Credit Score Guide

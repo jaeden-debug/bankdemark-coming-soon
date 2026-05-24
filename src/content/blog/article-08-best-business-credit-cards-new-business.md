@@ -490,13 +490,12 @@ Use the card for routine business purchases each month, pay the full statement b
 ---
 
 ## Internal Link Map
-- **Business Credit Pillar:** [/pillars/business-credit](/pillars/business-credit)
-- **Banking Pillar:** [/pillars/banking](/pillars/banking)
-- **How to Build Business Credit:** [/blog/how-to-build-business-credit](/blog/how-to-build-business-credit)
-- **How to Build Credit (Personal):** [/blog/how-to-build-credit](/blog/how-to-build-credit)
-- **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
-
+- [Business Credit Pillar](/pillars/business-credit)
+- [Banking Pillar](/pillars/banking)
+- [How to Build Business Credit](/blog/how-to-build-business-credit)
+- [How to Build Credit (Personal)](/blog/how-to-build-credit)
+- [Personal Finance for Beginners](/blog/personal-finance-for-beginners)
+- [Financial Freedom Roadmap](/blog/financial-freedom-roadmap)
 ## Suggested Supporting Articles
 - Business Credit Guide: How to Build Business Credit From Scratch
 - How to Build Credit: Complete Credit Score Guide

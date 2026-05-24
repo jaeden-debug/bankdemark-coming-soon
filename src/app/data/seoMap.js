@@ -302,6 +302,75 @@ export const seoNodes = {
   },
 };
 
+
+Object.assign(seoNodes, {
+  "/blog/personal-finance-for-beginners": {
+    label: "Personal Finance for Beginners",
+    cluster: "personal-finance",
+    links: ["/pillars/personal-finance", "/calculators/budget-calculator", "/calculators/emergency-fund-calculator", "/money-health-score", "/blog/how-to-budget-money", "/blog/how-to-save-money-emergency-fund"],
+  },
+  "/blog/how-to-budget-money": {
+    label: "How to Budget Money",
+    cluster: "personal-finance",
+    links: ["/calculators/budget-calculator", "/pillars/personal-finance", "/money-health-score", "/blog/personal-finance-for-beginners", "/blog/how-to-save-money-emergency-fund"],
+  },
+  "/blog/how-to-save-money-emergency-fund": {
+    label: "Emergency Fund Guide",
+    cluster: "personal-finance",
+    links: ["/calculators/emergency-fund-calculator", "/pillars/personal-finance", "/pillars/banking", "/blog/how-to-budget-money", "/money-health-score"],
+  },
+  "/blog/how-to-build-credit": {
+    label: "How to Build Credit",
+    cluster: "debt",
+    links: ["/pillars/debt-management", "/calculators/credit-card-payoff-calculator", "/calculators/debt-payoff-calculator", "/blog/how-to-build-business-credit", "/money-health-score"],
+  },
+  "/blog/investing-for-beginners": {
+    label: "Investing for Beginners",
+    cluster: "investing",
+    links: ["/pillars/investing", "/calculators/investment-calculator", "/calculators/compound-interest-calculator", "/calculators/tfsa-calculator", "/blog/index-funds-vs-etfs"],
+  },
+  "/blog/index-funds-vs-etfs": {
+    label: "Index Funds vs ETFs",
+    cluster: "investing",
+    links: ["/pillars/investing", "/calculators/investment-calculator", "/blog/investing-for-beginners", "/calculators/retirement-calculator"],
+  },
+  "/blog/how-to-build-business-credit": {
+    label: "How to Build Business Credit",
+    cluster: "business-credit",
+    links: ["/pillars/business-credit", "/blog/best-business-credit-cards-new-business", "/blog/how-to-build-credit", "/blog/ai-finance-tools"],
+  },
+  "/blog/best-business-credit-cards-new-business": {
+    label: "Best Business Credit Cards for New Businesses",
+    cluster: "business-credit",
+    links: ["/pillars/business-credit", "/blog/how-to-build-business-credit", "/pillars/banking", "/blog/ai-finance-tools"],
+  },
+  "/blog/financial-freedom-roadmap": {
+    label: "Financial Freedom Roadmap",
+    cluster: "freedom",
+    links: ["/pillars/financial-freedom", "/financial-freedom-roadmap", "/financial-freedom-quiz", "/calculators/fire-calculator", "/calculators/retirement-calculator"],
+  },
+  "/blog/ai-finance-tools": {
+    label: "AI Finance Tools",
+    cluster: "business-credit",
+    links: ["/blog/ai-seo-tools-small-business", "/pillars/business-credit", "/calculators", "/blog/how-to-build-business-credit"],
+  },
+  "/blog/ai-seo-tools-small-business": {
+    label: "AI SEO Tools for Small Businesses",
+    cluster: "business-credit",
+    links: ["/blog/shopify-seo-guide", "/blog/ecommerce-seo-strategy", "/blog/ai-finance-tools", "/pillars/business-credit"],
+  },
+  "/blog/shopify-seo-guide": {
+    label: "Shopify SEO Guide",
+    cluster: "business-credit",
+    links: ["/blog/ecommerce-seo-strategy", "/blog/ai-seo-tools-small-business", "/pillars/business-credit", "/blog/how-to-build-business-credit"],
+  },
+  "/blog/ecommerce-seo-strategy": {
+    label: "Ecommerce SEO Strategy",
+    cluster: "business-credit",
+    links: ["/blog/shopify-seo-guide", "/blog/ai-seo-tools-small-business", "/pillars/business-credit", "/blog/how-to-build-business-credit"],
+  },
+});
+
 export function getRelatedLinks(currentPath, limit = 6) {
   const current = seoNodes[currentPath];
 

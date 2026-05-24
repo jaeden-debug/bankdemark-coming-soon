@@ -7995,3 +7995,134 @@ label,
   font-size: 0.72rem;
   color: var(--muted);
 }
+
+/* ===== Surgical blog overflow / clipped box fix ===== */
+
+.post-prose,
+.prose {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.post-prose * ,
+.prose * {
+  min-width: 0;
+}
+
+.post-prose a,
+.prose a {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
+.post-prose pre,
+.prose pre {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+  white-space: pre;
+}
+
+.post-prose code,
+.prose code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+
+.post-prose pre code,
+.prose pre code {
+  white-space: pre;
+  overflow-wrap: normal;
+}
+
+.post-prose table,
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+}
+
+.post-prose th,
+.post-prose td,
+.prose th,
+.prose td {
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+}
+
+.post-prose hr,
+.prose hr {
+  width: 100%;
+  max-width: 100%;
+  margin: 2rem 0;
+  opacity: 0.14;
+  border-color: rgba(255,255,255,0.15);
+}
+
+/* ===== Final blog table clipping fix ===== */
+.post-table-scroll {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 28px 0;
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 18px;
+  background: rgba(0,0,0,0.22);
+  -webkit-overflow-scrolling: touch;
+}
+
+.post-table-scroll table {
+  width: max-content;
+  min-width: 100%;
+  border-collapse: collapse;
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+}
+
+.post-table-scroll th,
+.post-table-scroll td {
+  white-space: normal;
+  min-width: 120px;
+  padding: 12px 14px;
+}
+
+.post-table-scroll th {
+  background: rgba(214,179,106,0.1);
+}
+
+/* ===== Surgical nav dropdown visibility fix ===== */
+.site-nav {
+  overflow: visible !important;
+  z-index: 99999 !important;
+}
+
+.site-nav,
+.site-nav * {
+  transform-style: flat;
+}
+
+.mobile-menu {
+  position: fixed !important;
+  top: 78px !important;
+  left: 16px !important;
+  right: 16px !important;
+  z-index: 99998 !important;
+  max-height: calc(100vh - 96px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+
+.mobile-menu.open {
+  display: flex !important;
+  opacity: 1 !important;
+  pointer-events: auto !important;
+  visibility: visible !important;
+  transform: none !important;
+}

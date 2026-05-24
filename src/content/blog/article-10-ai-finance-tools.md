@@ -548,16 +548,15 @@ Evaluate based on: purpose fit (does it solve your specific problem?), account c
 ---
 
 ## Internal Link Map
-- **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
-- **Banking Pillar:** [/pillars/banking](/pillars/banking)
-- **Business Credit Pillar:** [/pillars/business-credit](/pillars/business-credit)
-- **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
-- **Personal Finance for Beginners:** [/blog/personal-finance-for-beginners](/blog/personal-finance-for-beginners)
-- **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
-- **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
-- **How to Build Business Credit:** [/blog/how-to-build-business-credit](/blog/how-to-build-business-credit)
-
+- [Personal Finance Pillar](/pillars/personal-finance)
+- [Banking Pillar](/pillars/banking)
+- [Business Credit Pillar](/pillars/business-credit)
+- [Financial Freedom Pillar](/pillars/financial-freedom)
+- [Personal Finance for Beginners](/blog/personal-finance-for-beginners)
+- [How to Budget Money](/blog/how-to-budget-money)
+- [Investing for Beginners](/blog/investing-for-beginners)
+- [Financial Freedom Roadmap](/blog/financial-freedom-roadmap)
+- [How to Build Business Credit](/blog/how-to-build-business-credit)
 ## Suggested Supporting Articles
 - How to Budget Money: The Complete Beginner Budgeting Guide
 - Personal Finance for Beginners: The Complete Money System

@@ -667,18 +667,17 @@ A Roth IRA uses after-tax contributions; the money grows tax-free and is withdra
 ---
 
 ## Internal Link Map
-- **Personal Finance Pillar:** [/pillars/personal-finance](/pillars/personal-finance)
-- **Banking Pillar:** [/pillars/banking](/pillars/banking)
-- **Debt Management Pillar:** [/pillars/debt-management](/pillars/debt-management)
-- **Investing Pillar:** [/pillars/investing](/pillars/investing)
-- **Financial Freedom Pillar:** [/pillars/financial-freedom](/pillars/financial-freedom)
-- **How to Budget Money:** [/blog/how-to-budget-money](/blog/how-to-budget-money)
-- **How to Save Money:** [/blog/how-to-save-money-emergency-fund](/blog/how-to-save-money-emergency-fund)
-- **How to Build Credit:** [/blog/how-to-build-credit](/blog/how-to-build-credit)
-- **Investing for Beginners:** [/blog/investing-for-beginners](/blog/investing-for-beginners)
-- **Financial Freedom Roadmap:** [/blog/financial-freedom-roadmap](/blog/financial-freedom-roadmap)
-- **AI Finance Tools:** [/blog/ai-finance-tools](/blog/ai-finance-tools)
-
+- [Personal Finance Pillar](/pillars/personal-finance)
+- [Banking Pillar](/pillars/banking)
+- [Debt Management Pillar](/pillars/debt-management)
+- [Investing Pillar](/pillars/investing)
+- [Financial Freedom Pillar](/pillars/financial-freedom)
+- [How to Budget Money](/blog/how-to-budget-money)
+- [How to Save Money](/blog/how-to-save-money-emergency-fund)
+- [How to Build Credit](/blog/how-to-build-credit)
+- [Investing for Beginners](/blog/investing-for-beginners)
+- [Financial Freedom Roadmap](/blog/financial-freedom-roadmap)
+- [AI Finance Tools](/blog/ai-finance-tools)
 ## Suggested Supporting Articles
 - How to Budget Money: The Complete Beginner Budgeting Guide
 - How to Save Money and Build an Emergency Fund

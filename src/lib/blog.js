@@ -36,9 +36,7 @@ function cleanMarkdown(content) {
     .replace(/\*\*Meta Title:\*\*.*$/gim, "")
     .replace(/\*\*Meta Description:\*\*.*$/gim, "")
     .replace(/\*\*Target Keywords:\*\*.*$/gim, "")
-    .replace(/^Internal Link Map[\s\S]*?(?=^## |^# |\Z)/gim, "")
-    .replace(/^Suggested Supporting Articles[\s\S]*?(?=^## |^# |\Z)/gim, "")
-    .replace(/\]*\]/g, "")
+    .replace(/^##?\s*Suggested Supporting Articles[\s\S]*?(?=^## |^# |\Z)/gim, "")
     .replace(/\{#[-a-z0-9]+\}/gi, "")
     .trim();
 }
@@ -64,6 +62,7 @@ export function getAllPosts() {
       const slug = String(data.slug || cleanSlug(file))
         .replace(/^\/blog\//, "")
         .replace(/^\//, "");
+
       const cleanContent = cleanMarkdown(content || raw);
 
       const title =
@@ -96,11 +95,34 @@ export function getPostBySlug(slug) {
   return getAllPosts().find((post) => post.slug === slug);
 }
 
+function slugifyHeading(text) {
+  return String(text)
+    .toLowerCase()
+    .replace(/<[^>]+>/g, "")
+    .replace(/&[^;]+;/g, "")
+    .replace(/[^a-z0-9\s-]/g, "")
+    .trim()
+    .replace(/\s+/g, "-")
+    .replace(/-+/g, "-");
+}
+
 export function renderPostHtml(markdown) {
   marked.setOptions({
     gfm: true,
     breaks: false,
   });
 
-  return marked.parse(markdown);
+  let html = marked.parse(markdown);
+
+  html = html.replace(/<h([2-3])>(.*?)<\/h\1>/g, (match, level, inner) => {
+    const id = slugifyHeading(inner);
+    if (!id) return match;
+    return `<h${level} id="${id}">${inner}</h${level}>`;
+  });
+
+  html = html.replace(/<table>([\s\S]*?)<\/table>/g, (match) => {
+    return `<div class="post-table-scroll">${match}</div>`;
+  });
+
+  return html;
 }
