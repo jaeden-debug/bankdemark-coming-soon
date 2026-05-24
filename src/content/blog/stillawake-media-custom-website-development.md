@@ -1,221 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>StillAwake Media: SEO-First Digital Infrastructure</title>
-  <meta name="description" content="Inside StillAwake Media's approach to custom website development, SEO architecture, and digital infrastructure for modern online businesses." />
-  <link rel="canonical" href="https://bankdemark.com/blog/stillawake-media-custom-website-development" />
+---
+title: "StillAwake Media Case Study: Building SEO-First Digital Infrastructure for Modern Brands"
+meta_title: "StillAwake Media: SEO-First Digital Infrastructure"
+meta_description: "Inside StillAwake Media"
+slug: /blog/stillawake-media-custom-website-development
+date: "2026-05-23"
+category: "Business Strategy"
+readTime: "29 min read"
+featured: false
+---
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "StillAwake Media Case Study: Building SEO-First Digital Infrastructure",
-    "description": "A deep dive into how StillAwake Media builds SEO-first websites, custom development infrastructure, and digital brand systems for modern online businesses and entrepreneurs.",
-    "author": {
-      "@type": "Organization",
-      "name": "BankDeMark",
-      "url": "https://bankdemark.com"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "BankDeMark",
-      "url": "https://bankdemark.com",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://bankdemark.com/logo.png"
-      }
-    },
-    "datePublished": "2026-05-21",
-    "dateModified": "2026-05-21",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://bankdemark.com/blog/stillawake-media-custom-website-development"
-    },
-    "keywords": "custom website development, creative agency, seo architecture, digital infrastructure, brand development agency, framer website development"
-  }
-  </script>
+# StillAwake Media Case Study: Building SEO-First Digital Infrastructure for Modern Brands
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "StillAwake Media Case Study: Building SEO-First Digital Infrastructure",
-    "url": "https://bankdemark.com/blog/stillawake-media-custom-website-development",
-    "description": "How StillAwake Media approaches SEO-first web design, custom development, and digital infrastructure for entrepreneurs and growing brands.",
-    "publisher": {
-      "@type": "Organization",
-      "name": "BankDeMark",
-      "url": "https://bankdemark.com"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://bankdemark.com"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Blog",
-        "item": "https://bankdemark.com/blog"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "StillAwake Media: SEO-First Digital Infrastructure",
-        "item": "https://bankdemark.com/blog/stillawake-media-custom-website-development"
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What does SEO-first web development mean?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "SEO-first web development means that technical SEO architecture — URL structure, site hierarchy, structured data, page speed, crawlability, semantic HTML, and internal linking — is designed and built into a website from the beginning of the project, not applied as an afterthought after the visual design is complete."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is digital infrastructure for a business?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Digital infrastructure refers to the technical systems that underpin how a business operates and grows online: the website, CMS, hosting environment, automation tools, analytics systems, CRM integrations, and content delivery networks. Strong digital infrastructure enables a business to scale its digital presence without rebuilding from scratch at every growth stage."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does a creative development studio differ from a traditional web design agency?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A creative development studio combines brand strategy, visual design, and technical development under one roof, with a stronger emphasis on both the aesthetic quality of the output and its underlying technical performance. Traditional web design agencies often specialize in one area — design or development — and outsource the other. Studios like StillAwake Media treat both as inseparable."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is Framer and why do agencies use it?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Framer is a modern web design and development platform that generates clean HTML from visual design workflows. Agencies use it because it enables fast, high-quality website creation that performs well on Core Web Vitals, supports custom meta tags and structured data, and allows designers and developers to collaborate without the overhead of traditional code-first development."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Why does site architecture matter for SEO?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Site architecture determines how search engines crawl, discover, and evaluate the relationship between pages on a website. A well-planned architecture channels crawl authority to important pages, creates logical content silos that build topical authority, and makes it easy for Google to understand what a site is about and which pages should rank for which queries."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Can a small business afford custom website development?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Custom website development costs vary by scope and agency. For small businesses, modern tools like Framer, Next.js, and Webflow have reduced the cost of building a high-quality, custom-designed website significantly compared to fully hand-coded builds. Boutique agencies using these tools can deliver custom-feeling results at mid-market price points rather than enterprise-level costs."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What is a digital brand system?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "A digital brand system is the comprehensive set of visual and technical standards that govern how a brand appears and behaves across all digital touchpoints: typography, color, spacing, component libraries, icon systems, interaction patterns, and voice guidelines. A well-built brand system makes it possible to scale content production and design work without inconsistency or rework."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How important are templates and code products for an agency's revenue model?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Template and code products allow agencies to productize their expertise, generating recurring or passive revenue beyond client project work. For agencies with a strong design and development brand, templates represent a scalable product line that reinforces their authority while generating income independent of project-based capacity constraints."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <style>
-    body { font-family: Georgia, 'Times New Roman', serif; color: #1a1a2e; background: #fff; margin: 0; padding: 0; line-height: 1.8; }
-    .article-wrapper { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
-    h1 { font-size: 2.4rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.5rem; color: #0d0d1a; }
-    h2 { font-size: 1.65rem; font-weight: 700; margin-top: 3rem; margin-bottom: 1rem; color: #0d0d1a; border-bottom: 2px solid #e8e8f0; padding-bottom: 0.4rem; }
-    h3 { font-size: 1.25rem; font-weight: 700; margin-top: 2rem; margin-bottom: 0.75rem; color: #1a1a2e; }
-    p { margin-bottom: 1.4rem; font-size: 1.05rem; }
-    a { color: #2563eb; text-decoration: underline; }
-    a:hover { color: #1d4ed8; }
-    ul, ol { padding-left: 1.5rem; margin-bottom: 1.4rem; }
-    li { margin-bottom: 0.5rem; font-size: 1.05rem; }
-    .meta-block { font-size: 0.88rem; color: #6b7280; margin-bottom: 2rem; }
-    .quick-answer { background: #f0f4ff; border-left: 4px solid #2563eb; padding: 20px 24px; border-radius: 6px; margin: 2rem 0; }
-    .quick-answer strong { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #2563eb; margin-bottom: 8px; }
-    .toc { background: #f8f8fc; border: 1px solid #e0e0ef; border-radius: 8px; padding: 24px 28px; margin: 2.5rem 0; }
-    .toc h2 { font-size: 1.1rem; margin-top: 0; margin-bottom: 1rem; border: none; padding: 0; color: #0d0d1a; }
-    .toc ol { margin: 0; padding-left: 1.4rem; }
-    .toc li { margin-bottom: 0.4rem; font-size: 0.97rem; }
-    table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.97rem; }
-    th { background: #1a1a2e; color: #fff; padding: 12px 14px; text-align: left; font-weight: 600; }
-    td { padding: 11px 14px; border-bottom: 1px solid #e8e8f0; vertical-align: top; }
-    tr:nth-child(even) td { background: #f8f8fc; }
-    .cta-block { background: #0d0d1a; color: #fff; border-radius: 10px; padding: 36px 40px; margin: 3.5rem 0; text-align: center; }
-    .cta-block h3 { color: #fff; margin-top: 0; font-size: 1.4rem; }
-    .cta-block p { color: #c8c8e0; font-size: 1rem; margin-bottom: 1.2rem; }
-    .cta-block a { background: #2563eb; color: #fff; padding: 14px 28px; border-radius: 6px; text-decoration: none; font-weight: 700; font-size: 1rem; display: inline-block; margin: 4px 8px; }
-    .cta-block a:hover { background: #1d4ed8; }
-    .cta-block a.secondary { background: transparent; border: 2px solid #c8c8e0; color: #c8c8e0; }
-    .checklist { background: #f8f8fc; border: 1px solid #e0e0ef; border-radius: 8px; padding: 20px 24px; margin: 2rem 0; }
-    .checklist h3 { margin-top: 0; font-size: 1.1rem; }
-    .checklist ul { margin-bottom: 0; }
-    .disclaimer { background: #fafafa; border: 1px solid #e8e8f0; border-radius: 6px; padding: 16px 20px; font-size: 0.9rem; color: #6b7280; margin: 3rem 0; }
-    .faq-section h2 { color: #0d0d1a; }
-    .faq-item { border-bottom: 1px solid #e8e8f0; padding: 1.2rem 0; }
-    .faq-item:last-child { border-bottom: none; }
-    .faq-item h3 { margin-top: 0; font-size: 1.1rem; color: #1a1a2e; }
-    .faq-item p { margin-bottom: 0; }
-    .highlight-box { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 18px 22px; border-radius: 6px; margin: 2rem 0; }
-    .case-study-block { background: #f0f9f0; border-left: 4px solid #10b981; padding: 20px 24px; border-radius: 6px; margin: 2rem 0; }
-    .case-study-block strong { display: block; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; color: #059669; margin-bottom: 8px; }
-    .pillar-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; margin: 2rem 0; }
-    .pillar-card { background: #f0f4ff; border-radius: 8px; padding: 20px; }
-    .pillar-card h4 { margin: 0 0 8px; font-size: 1rem; color: #0d0d1a; }
-    .pillar-card p { margin: 0; font-size: 0.9rem; color: #4b5563; }
-  </style>
-</head>
-<body>
-<article class="article-wrapper" itemscope itemtype="https://schema.org/Article">
-
-  <nav aria-label="Breadcrumb" style="font-size:0.85rem; color:#6b7280; margin-bottom:1.5rem;">
-    <a href="https://bankdemark.com" style="color:#6b7280;">Home</a> &rsaquo;
-    <a href="https://bankdemark.com/blog" style="color:#6b7280;">Blog</a> &rsaquo;
-    <span>StillAwake Media Case Study</span>
-  </nav>
-
-  <!-- SEO Metadata Block -->
-  <!-- SEO Title: StillAwake Media: SEO-First Digital Infrastructure -->
-  <!-- Meta Description: Inside StillAwake Media's approach to custom website development, SEO architecture, and digital infrastructure for modern online businesses. -->
-  <!-- Slug: stillawake-media-custom-website-development -->
-  <!-- Primary Keyword: custom website development -->
-  <!-- Secondary Keywords: creative agency, branding agency, brand development agency, digital infrastructure company, website infrastructure, website systems for businesses, framer website development, seo architecture -->
-  <!-- Search Intent: Informational / Commercial investigation / Case study -->
-
-  <div class="meta-block">
+<div class="meta-block">
     <span>By BankDeMark Editorial Team</span> &bull; <time datetime="2026-05-21">May 21, 2026</time> &bull; <span>Digital Infrastructure</span>
   </div>
 
@@ -226,26 +22,9 @@
     StillAwake Media is a creative development studio that builds SEO-first websites, brand systems, and digital infrastructure for entrepreneurs, ecommerce brands, and growing businesses. Their approach treats custom website development not as a visual exercise but as a technical and strategic investment — combining brand design, performance engineering, SEO architecture, and conversion strategy into a single, cohesive build process. This case study examines how that model works, what it produces, and why it matters for businesses serious about digital growth.
   </div>
 
-  <nav class="toc" aria-label="Table of Contents">
-    <h2>Table of Contents</h2>
-    <ol>
-      <li><a href="#the-problem-with-how-most-websites-get-built">The Problem With How Most Websites Get Built</a></li>
-      <li><a href="#what-is-stillawake-media">What Is StillAwake Media?</a></li>
-      <li><a href="#the-seo-first-development-philosophy">The SEO-First Development Philosophy</a></li>
-      <li><a href="#custom-website-development-vs-template-builds">Custom Website Development vs. Template Builds</a></li>
-      <li><a href="#how-stillawake-approaches-site-architecture">How StillAwake Approaches Site Architecture</a></li>
-      <li><a href="#brand-systems-the-infrastructure-layer-under-design">Brand Systems: The Infrastructure Layer Under Design</a></li>
-      <li><a href="#the-technology-stack-framer-nextjs-and-modern-tools">The Technology Stack: Framer, Next.js, and Modern Tools</a></li>
-      <li><a href="#template-products-and-code-as-a-scalable-revenue-model">Template Products and Code as a Scalable Revenue Model</a></li>
-      <li><a href="#case-clients-ecommerce-founders-and-service-businesses">Case Clients: Ecommerce, Founders, and Service Businesses</a></li>
-      <li><a href="#measuring-digital-infrastructure-roi">Measuring Digital Infrastructure ROI</a></li>
-      <li><a href="#how-to-evaluate-your-digital-infrastructure-needs">How to Evaluate Your Digital Infrastructure Needs</a></li>
-      <li><a href="#30-60-90-day-infrastructure-upgrade-plan">30/60/90-Day Infrastructure Upgrade Plan</a></li>
-      <li><a href="#faq">Frequently Asked Questions</a></li>
-    </ol>
-  </nav>
+  
 
-  <!-- SECTION 1 -->
+  
   <h2 id="the-problem-with-how-most-websites-get-built">The Problem With How Most Websites Get Built</h2>
 
   <p>Most small business websites are built the wrong way. Not wrong in the sense of being ugly — wrong in the sense of being disconnected from the actual business goals they are supposed to serve.</p>
@@ -254,16 +33,16 @@
 
   <p>The alternative approach — building a website as a strategic business asset from the very first decision — is what separates average digital infrastructure from high-performance digital infrastructure. It requires integrating brand strategy, technical SEO architecture, performance engineering, and conversion design into a single, coherent build process. That is a fundamentally different discipline from what most web designers provide.</p>
 
-  <p>At <a href="https://bankdemark.com">BankDeMark</a>, we write about business infrastructure decisions that have compounding effects on growth. A website is one of the highest-leverage infrastructure investments a business makes — it is always on, always visible, and either working for or against every other marketing effort the business runs. Getting the foundation right is not a luxury. It is a prerequisite for sustainable digital growth.</p>
+  <p>At <a href="">BankDeMark</a>, we write about business infrastructure decisions that have compounding effects on growth. A website is one of the highest-leverage infrastructure investments a business makes — it is always on, always visible, and either working for or against every other marketing effort the business runs. Getting the foundation right is not a luxury. It is a prerequisite for sustainable digital growth.</p>
 
   <div class="highlight-box">
     <strong>The infrastructure insight:</strong> A website built for aesthetics is a digital brochure. A website built as infrastructure is a growth engine. The difference is not in how it looks — it is in how it was designed to function at the architectural level.
   </div>
 
-  <!-- SECTION 2 -->
+  
   <h2 id="what-is-stillawake-media">What Is StillAwake Media?</h2>
 
-  <p><a href="https://stillawakemedia.com" target="_blank" rel="noopener">StillAwake Media</a> is a creative development studio specializing in SEO-first web design, custom website development, technical SEO, brand systems, and digital infrastructure for modern online businesses. The studio sits at the intersection of design craft and technical precision — building websites that are both visually distinct and architecturally sound.</p>
+  <p><a href="https://stillawakemedia.com">StillAwake Media</a> is a creative development studio specializing in SEO-first web design, custom website development, technical SEO, brand systems, and digital infrastructure for modern online businesses. The studio sits at the intersection of design craft and technical precision — building websites that are both visually distinct and architecturally sound.</p>
 
   <p>Unlike traditional web agencies that divide design and development into separate departments — or freelance networks where these disciplines are handled by different contractors who may never speak to each other — StillAwake operates as an integrated studio. Brand strategy, visual design, frontend development, SEO architecture, and conversion engineering are treated as components of a single deliverable, not sequential handoffs between separate teams.</p>
 
@@ -277,7 +56,7 @@
 
   <p>The studio also offers template products and code products — pre-built, premium design components and site templates that allow businesses at earlier stages to benefit from StillAwake's design standards at accessible price points. This product layer is an important part of how the studio models its work at scale, which we cover in more detail in a later section.</p>
 
-  <!-- SECTION 3 -->
+  
   <h2 id="the-seo-first-development-philosophy">The SEO-First Development Philosophy</h2>
 
   <p>The term "SEO-first" gets used loosely in the web industry. In StillAwake's context, it means something specific: every architectural decision made during the build process is evaluated against its SEO consequences before it is finalized.</p>
@@ -298,15 +77,15 @@
 
   <p>In an SEO-first studio, performance targets are not a checklist item at the end of a project. They are design constraints that shape every decision along the way. Target Core Web Vitals scores — Largest Contentful Paint under 2.5 seconds, Cumulative Layout Shift under 0.1, Interaction to Next Paint under 200ms — are defined at the outset and used to evaluate every image decision, font choice, and component implementation.</p>
 
-  <p>According to <a href="https://developers.google.com/search/docs" target="_blank" rel="noopener">Google Search Central</a>, Core Web Vitals are incorporated into Google's ranking systems. This means that performance is not just a user experience concern — it is a competitive advantage in search rankings. Studios that treat performance as a design constraint, rather than a post-launch fix, deliver sites that rank better from day one.</p>
+  <p>According to <a href="https://developers.google.com/search/docs">Google Search Central</a>, Core Web Vitals are incorporated into Google's ranking systems. This means that performance is not just a user experience concern — it is a competitive advantage in search rankings. Studios that treat performance as a design constraint, rather than a post-launch fix, deliver sites that rank better from day one.</p>
 
   <h3>Structured Data as Standard Practice</h3>
 
   <p>Many web agencies implement structured data only if a client specifically requests it, and then only incompletely. In an SEO-first development process, structured data implementation is standard on every project. Every page that could benefit from an Article, FAQPage, Organization, BreadcrumbList, LocalBusiness, Product, or Service schema gets that schema implemented correctly in JSON-LD format.</p>
 
-  <p>According to <a href="https://schema.org/" target="_blank" rel="noopener">Schema.org</a>, structured data gives Google and other search engines explicit, machine-readable information about what a page contains. This translates directly into rich results — enhanced search appearances that show star ratings, FAQs, prices, breadcrumbs, and other elements — all of which increase click-through rates from organic search.</p>
+  <p>According to <a href="https://schema.org/">Schema.org</a>, structured data gives Google and other search engines explicit, machine-readable information about what a page contains. This translates directly into rich results — enhanced search appearances that show star ratings, FAQs, prices, breadcrumbs, and other elements — all of which increase click-through rates from organic search.</p>
 
-  <!-- SECTION 4 -->
+  
   <h2 id="custom-website-development-vs-template-builds">Custom Website Development vs. Template Builds</h2>
 
   <p>One of the most common questions businesses face when investing in a website is whether to use a template-based platform or commission custom development. Understanding the genuine trade-offs — not the marketing version — is essential for making a rational decision.</p>
@@ -379,7 +158,7 @@
 
   <p>The brand has evolved beyond what the template can express. Visual differentiation matters in competitive markets. If the website looks like a hundred other businesses using the same theme, it is working against brand trust rather than building it.</p>
 
-  <!-- SECTION 5 -->
+  
   <h2 id="how-stillawake-approaches-site-architecture">How StillAwake Approaches Site Architecture</h2>
 
   <p>Site architecture is where the SEO-first approach is most visibly different from conventional web design. This section maps how a project actually begins — not at the visual design stage, but at the strategic architecture stage.</p>
@@ -390,7 +169,7 @@
 
   <p>If a business sells three categories of products or services, the site architecture should reflect those three clusters — with top-level category pages targeting broad, high-volume keywords, and supporting subcategory and product pages targeting more specific long-tail variations. Internal links between these pages should flow logically from broad to specific, reinforcing topical relationships that Google's systems use to evaluate domain expertise.</p>
 
-  <p>Tools like <a href="https://ahrefs.com/blog/ecommerce-seo/" target="_blank" rel="noopener">Ahrefs' ecommerce SEO guides</a> and <a href="https://www.semrush.com/blog/" target="_blank" rel="noopener">Semrush's content resources</a> are useful at this stage for validating keyword volumes, identifying content gaps, and mapping competitive landscape.</p>
+  <p>Tools like <a href="https://ahrefs.com/blog/ecommerce-seo/">Ahrefs' ecommerce SEO guides</a> and <a href="https://www.semrush.com/blog/">Semrush's content resources</a> are useful at this stage for validating keyword volumes, identifying content gaps, and mapping competitive landscape.</p>
 
   <h3>URL Structure as a Ranking Signal</h3>
 
@@ -406,7 +185,7 @@
 
   <p>This architecture is designed before content is written, because retrofitting it into an existing content library is labor-intensive and often incomplete. When the internal link structure is planned at the site architecture stage, every content template can be built to include appropriate contextual links by default.</p>
 
-  <!-- SECTION 6 -->
+  
   <h2 id="brand-systems-the-infrastructure-layer-under-design">Brand Systems: The Infrastructure Layer Under Design</h2>
 
   <p>Beyond the technical SEO architecture, StillAwake's work includes what is often called a "brand system" — a comprehensive set of visual and verbal standards that govern how a brand presents itself across all digital touchpoints.</p>
@@ -431,14 +210,14 @@
 
   <p>For businesses investing in content marketing and SEO, a strong brand system is the difference between a content library that looks and feels cohesive and authoritative, and one that looks like it was assembled by different people with different tools over many years. The former builds trust. The latter undermines it.</p>
 
-  <!-- SECTION 7 -->
+  
   <h2 id="the-technology-stack-framer-nextjs-and-modern-tools">The Technology Stack: Framer, Next.js, and Modern Tools</h2>
 
   <p>The choice of technology stack is one of the most consequential infrastructure decisions in a web build project. Different platforms and frameworks produce different levels of performance, different levels of SEO control, and different capacity for customization.</p>
 
   <h3>Framer for Design-Forward Sites</h3>
 
-  <p>For brand and marketing sites where visual design quality is paramount, <a href="https://www.framer.com/" target="_blank" rel="noopener">Framer</a> has become a leading tool in the modern web design toolkit. It occupies a distinctive position: it allows designers to build visually sophisticated sites without the abstraction gap that exists between design tools like Figma and production code.</p>
+  <p>For brand and marketing sites where visual design quality is paramount, <a href="https://www.framer.com/">Framer</a> has become a leading tool in the modern web design toolkit. It occupies a distinctive position: it allows designers to build visually sophisticated sites without the abstraction gap that exists between design tools like Figma and production code.</p>
 
   <p>From an SEO perspective, Framer generates clean HTML with proper semantic structure when developers use it correctly. It supports custom meta tags, canonical URLs, XML sitemaps, Open Graph tags, and JSON-LD structured data. Sites built on Framer can perform exceptionally well on Core Web Vitals benchmarks — often better than sites built on heavier platforms — because of how the platform handles CSS and asset delivery.</p>
 
@@ -446,21 +225,21 @@
 
   <h3>Next.js for Application-Layer Sites</h3>
 
-  <p><a href="https://nextjs.org/docs" target="_blank" rel="noopener">Next.js</a> is the preferred framework for more complex web applications — SaaS platforms, content-rich sites with dynamic data, applications requiring authentication, and sites where fine-grained control over rendering strategies is important. Its server-side rendering and static site generation capabilities make it one of the most SEO-friendly frameworks available for building modern web applications.</p>
+  <p><a href="https://nextjs.org/docs">Next.js</a> is the preferred framework for more complex web applications — SaaS platforms, content-rich sites with dynamic data, applications requiring authentication, and sites where fine-grained control over rendering strategies is important. Its server-side rendering and static site generation capabilities make it one of the most SEO-friendly frameworks available for building modern web applications.</p>
 
-  <p>Deploying on <a href="https://vercel.com/docs" target="_blank" rel="noopener">Vercel</a> adds edge-level caching, automatic image optimization via next/image, and global CDN distribution — all of which contribute directly to LCP scores and overall page performance.</p>
+  <p>Deploying on <a href="https://vercel.com/docs">Vercel</a> adds edge-level caching, automatic image optimization via next/image, and global CDN distribution — all of which contribute directly to LCP scores and overall page performance.</p>
 
   <h3>Shopify for Ecommerce Infrastructure</h3>
 
-  <p>For ecommerce clients, <a href="https://help.shopify.com/en/manual/online-store" target="_blank" rel="noopener">Shopify</a> remains the dominant infrastructure choice. StillAwake's approach to Shopify builds involves custom theme development rather than off-the-shelf themes, addressing the platform's known SEO constraints through custom URL management, structured data integration for products and collections, and content architecture designed around keyword clusters rather than default Shopify category structures.</p>
+  <p>For ecommerce clients, <a href="https://help.shopify.com/en/manual/online-store">Shopify</a> remains the dominant infrastructure choice. StillAwake's approach to Shopify builds involves custom theme development rather than off-the-shelf themes, addressing the platform's known SEO constraints through custom URL management, structured data integration for products and collections, and content architecture designed around keyword clusters rather than default Shopify category structures.</p>
 
-  <p>Pairing Shopify's ecommerce infrastructure with a content strategy built around <a href="https://bankdemark.com/blog/niche-ecommerce-topical-authority">topical authority in the niche</a> is what allows brands like <a href="https://blackwateraquatics.ca" target="_blank" rel="noopener">Blackwater Aquatics</a> to compete effectively in organic search without massive advertising budgets.</p>
+  <p>Pairing Shopify's ecommerce infrastructure with a content strategy built around <a href="/blog/niche-ecommerce-topical-authority">topical authority in the niche</a> is what allows brands like <a href="https://blackwateraquatics.ca">Blackwater Aquatics</a> to compete effectively in organic search without massive advertising budgets.</p>
 
   <h3>Supabase for Backend Data Infrastructure</h3>
 
-  <p>For clients requiring database-backed features — user accounts, dashboards, dynamic content, form submissions — <a href="https://supabase.com/docs" target="_blank" rel="noopener">Supabase</a> has become a standard part of the modern web development toolkit. As an open-source Firebase alternative built on PostgreSQL, it provides database, authentication, storage, and real-time subscriptions with generous free tiers and straightforward scaling. Combined with a Next.js frontend, it forms the backbone of a modern, SEO-friendly web application.</p>
+  <p>For clients requiring database-backed features — user accounts, dashboards, dynamic content, form submissions — <a href="https://supabase.com/docs">Supabase</a> has become a standard part of the modern web development toolkit. As an open-source Firebase alternative built on PostgreSQL, it provides database, authentication, storage, and real-time subscriptions with generous free tiers and straightforward scaling. Combined with a Next.js frontend, it forms the backbone of a modern, SEO-friendly web application.</p>
 
-  <!-- SECTION 8 -->
+  
   <h2 id="template-products-and-code-as-a-scalable-revenue-model">Template Products and Code as a Scalable Revenue Model</h2>
 
   <p>One of the more interesting aspects of how StillAwake Media operates is its product tier alongside client services. Template products and code products — pre-built design systems, site templates, and component libraries — represent a productization of the studio's expertise that serves both a commercial and a positioning function.</p>
@@ -481,32 +260,32 @@
 
   <p>Template product pages — if properly optimized — can rank for high-commercial-intent keywords like "Framer website template," "Shopify theme for aquarium store," or "Next.js business website template." These are searches made by buyers with immediate purchasing intent. An agency that has built SEO-authority around its product pages benefits from inbound discovery that a pure services business would never generate.</p>
 
-  <!-- SECTION 9 -->
+  
   <h2 id="case-clients-ecommerce-founders-and-service-businesses">Case Clients: Ecommerce, Founders, and Service Businesses</h2>
 
   <p>Understanding StillAwake Media's approach becomes clearest through the lens of specific client types and what the studio builds for each.</p>
 
   <h3>Niche Ecommerce: Blackwater Aquatics</h3>
 
-  <p><a href="https://blackwateraquatics.ca" target="_blank" rel="noopener">Blackwater Aquatics</a> represents the niche ecommerce archetype that StillAwake serves well: a specialist brand competing in a specific vertical where topical depth is the primary competitive advantage. For this type of client, the website architecture must do two things simultaneously: serve as a functional ecommerce store (clear product pages, streamlined checkout, trust signals) and serve as a content authority hub (deep, expert content that builds domain authority in the aquarium niche).</p>
+  <p><a href="https://blackwateraquatics.ca">Blackwater Aquatics</a> represents the niche ecommerce archetype that StillAwake serves well: a specialist brand competing in a specific vertical where topical depth is the primary competitive advantage. For this type of client, the website architecture must do two things simultaneously: serve as a functional ecommerce store (clear product pages, streamlined checkout, trust signals) and serve as a content authority hub (deep, expert content that builds domain authority in the aquarium niche).</p>
 
-  <p>Achieving both requires a custom architecture. An off-the-shelf Shopify theme cannot be configured to create the internal link structures, content cluster organization, and category page depth that topical authority requires. A custom-built site, designed around both ecommerce functionality and content strategy, is what enables a small niche brand to outrank larger generalist competitors in specific search queries. This is explored in depth in our <a href="https://bankdemark.com/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics case study</a> and the <a href="https://bankdemark.com/blog/niche-ecommerce-topical-authority">niche ecommerce topical authority guide</a>.</p>
+  <p>Achieving both requires a custom architecture. An off-the-shelf Shopify theme cannot be configured to create the internal link structures, content cluster organization, and category page depth that topical authority requires. A custom-built site, designed around both ecommerce functionality and content strategy, is what enables a small niche brand to outrank larger generalist competitors in specific search queries. This is explored in depth in our <a href="/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics case study</a> and the <a href="/blog/niche-ecommerce-topical-authority">niche ecommerce topical authority guide</a>.</p>
 
   <h3>AI and Software Platforms: ZYLX.ai</h3>
 
   <p>Building a website for a software platform presents different requirements than building for a content or ecommerce brand. The site must communicate a complex product clearly to diverse audiences (technical and non-technical), rank for category-level keywords in a competitive software market, and convert visitors at different intent levels — from awareness to trial to purchase.</p>
 
-  <p><a href="https://zylx.ai" target="_blank" rel="noopener">ZYLX.ai</a>'s web infrastructure reflects these requirements: a clean, fast-loading site with strong technical SEO foundations, structured data that positions the platform within the AI automation category, and a conversion architecture designed around the product's specific trial-to-activation pathway. The companion product <a href="https://app.zylx.ai" target="_blank" rel="noopener">app.zylx.ai</a> represents the application layer — and the web design connecting both must make the distinction between platform and product clear to both users and search engines. We cover the ZYLX.ai build in detail in our <a href="https://bankdemark.com/blog/zylx-ai-business-automation-case-study">AI automation platform case study</a>.</p>
+  <p><a href="https://zylx.ai">ZYLX.ai</a>'s web infrastructure reflects these requirements: a clean, fast-loading site with strong technical SEO foundations, structured data that positions the platform within the AI automation category, and a conversion architecture designed around the product's specific trial-to-activation pathway. The companion product <a href="https://app.zylx.ai">app.zylx.ai</a> represents the application layer — and the web design connecting both must make the distinction between platform and product clear to both users and search engines. We cover the ZYLX.ai build in detail in our <a href="/blog/zylx-ai-business-automation-case-study">AI automation platform case study</a>.</p>
 
   <h3>Service Business Modernization: Founder-Led Brands</h3>
 
   <p>Legacy service businesses investing in digital infrastructure face a unique design challenge: their credibility is built on relationships and reputation that does not translate automatically to online discovery. New visitors who find them through search have never heard of them and need to be convinced of their authority quickly — in the first few seconds of page load.</p>
 
-  <p>A Montreal-based travel advisor like <a href="https://lisatraveldesign.com" target="_blank" rel="noopener">Lisa Travel Design</a> — a founder with over twenty years of experience and deep domain expertise — needs a website that communicates that expertise instantly to someone who discovers it through organic search. This is not achieved by a template with a stock photo and a paragraph about "personalized travel planning." It is achieved by a custom website designed to surface credibility signals, experience, and specific client outcomes in a way that converts skeptical first-time visitors into inquiries.</p>
+  <p>A Montreal-based travel advisor like <a href="https://lisatraveldesign.com">Lisa Travel Design</a> — a founder with over twenty years of experience and deep domain expertise — needs a website that communicates that expertise instantly to someone who discovers it through organic search. This is not achieved by a template with a stock photo and a paragraph about "personalized travel planning." It is achieved by a custom website designed to surface credibility signals, experience, and specific client outcomes in a way that converts skeptical first-time visitors into inquiries.</p>
 
   <p>The site architecture for this type of client prioritizes local SEO signals, service-specific landing pages targeting the search queries potential clients actually use ("luxury travel planner Montreal," "custom travel itinerary Canada"), content that demonstrates expertise in specific destinations or travel types, and conversion pathways that match how clients typically make decisions in the travel category — which involves research, comparison, and a trust-building period before contact.</p>
 
-  <!-- SECTION 10 -->
+  
   <h2 id="measuring-digital-infrastructure-roi">Measuring Digital Infrastructure ROI</h2>
 
   <p>For business owners evaluating a web development investment, the question of return is not abstract — it requires a framework for connecting design decisions to revenue outcomes.</p>
@@ -525,11 +304,11 @@
 
   <h3>Tracking and Attribution</h3>
 
-  <p>Infrastructure ROI cannot be measured without proper analytics configuration. Every site StillAwake Media delivers should include <a href="https://support.google.com/analytics/" target="_blank" rel="noopener">Google Analytics 4</a> with goal tracking configured for all primary conversion events, <a href="https://www.google.com/business/" target="_blank" rel="noopener">Google Search Console</a> connected and verified, and baseline reporting that captures organic traffic, conversion rate, top-performing pages, and keyword rankings at the time of launch.</p>
+  <p>Infrastructure ROI cannot be measured without proper analytics configuration. Every site StillAwake Media delivers should include <a href="https://support.google.com/analytics/">Google Analytics 4</a> with goal tracking configured for all primary conversion events, <a href="https://www.google.com/business/">Google Search Console</a> connected and verified, and baseline reporting that captures organic traffic, conversion rate, top-performing pages, and keyword rankings at the time of launch.</p>
 
   <p>Without this baseline, it is impossible to measure whether the website investment is generating return. With it, monthly reviews can show exactly how organic traffic, rankings, and conversions are trending — making it possible to identify both what is working and what needs additional optimization.</p>
 
-  <!-- SECTION 11 -->
+  
   <h2 id="how-to-evaluate-your-digital-infrastructure-needs">How to Evaluate Your Digital Infrastructure Needs</h2>
 
   <p>Not every business needs a full custom website build. Understanding where your current infrastructure is limiting your growth is the starting point for making an informed investment decision.</p>
@@ -566,7 +345,7 @@
     </ul>
   </div>
 
-  <!-- SECTION 12 -->
+  
   <h2 id="30-60-90-day-infrastructure-upgrade-plan">30/60/90-Day Infrastructure Upgrade Plan</h2>
 
   <p>For businesses ready to upgrade their digital infrastructure — whether through StillAwake Media or another capable partner — this framework structures the work into a realistic three-month timeline.</p>
@@ -600,12 +379,14 @@
   <div class="cta-block">
     <h3>Build Digital Infrastructure That Earns Its Investment</h3>
     <p>BankDeMark covers the business systems, digital strategies, and financial frameworks that help entrepreneurs make smarter infrastructure decisions. Explore our full library of business and digital strategy guides.</p>
-    <a href="https://bankdemark.com/blog">Explore the BankDeMark Blog</a>
-    <a href="https://stillawakemedia.com" class="secondary" target="_blank" rel="noopener">Visit StillAwake Media</a>
+    <a href="/blog">Explore the BankDeMark Blog</a>
+    <a href="https://stillawakemedia.com" class="secondary">Visit StillAwake Media</a>
   </div>
 
-  <!-- FAQ -->
-  <section class="faq-section" id="faq">
+  
+  
+<section class="faq-section" id="faq">
+
     <h2>Frequently Asked Questions</h2>
 
     <div class="faq-item">
@@ -647,7 +428,8 @@
       <h3>How important are templates and code products for an agency's revenue model?</h3>
       <p>Template and code products allow agencies to productize expertise into scalable revenue beyond client project work. For agencies with a strong design and development brand, templates represent a product line that reinforces authority, reaches new audiences through search, and generates income independent of project-based capacity — creating financial stability and a discovery pathway for future clients.</p>
     </div>
-  </section>
+  
+</section>
 
   <div class="disclaimer">
     <strong>Disclaimer:</strong> This content is educational only and is not personalized financial, investment, tax, legal, or credit advice. References to specific businesses, platforms, and tools are for informational and illustrative purposes only. Cost estimates and performance benchmarks are approximate and will vary based on specific project scope and circumstances. Consult qualified professionals for advice specific to your business situation.
@@ -655,12 +437,8 @@
 
   <p style="font-size:0.85rem; color:#9ca3af; margin-top:2rem;">
     <strong>Internal Resources:</strong>
-    <a href="https://bankdemark.com/blog/seo-driven-web-design-for-business">Why Modern Businesses Need SEO-Driven Web Design</a> &bull;
-    <a href="https://bankdemark.com/blog/niche-ecommerce-topical-authority">How Niche Ecommerce Brands Build Topical Authority</a> &bull;
-    <a href="https://bankdemark.com/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics Niche Ecommerce Case Study</a> &bull;
-    <a href="https://bankdemark.com/blog/zylx-ai-business-automation-case-study">ZYLX.ai AI Automation Case Study</a>
+    <a href="/blog/seo-driven-web-design-for-business">Why Modern Businesses Need SEO-Driven Web Design</a> &bull;
+    <a href="/blog/niche-ecommerce-topical-authority">How Niche Ecommerce Brands Build Topical Authority</a> &bull;
+    <a href="/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics Niche Ecommerce Case Study</a> &bull;
+    <a href="/blog/zylx-ai-business-automation-case-study">ZYLX.ai AI Automation Case Study</a>
   </p>
-
-</article>
-</body>
-</html>
