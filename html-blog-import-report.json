@@ -1,0 +1,52 @@
+{
+  "imported": [
+    {
+      "file": "article-html-12-ecommerce-conversion-rate-optimization.html",
+      "slug": "ecommerce-conversion-rate-optimization",
+      "outFile": "src/content/blog/ecommerce-conversion-rate-optimization.md",
+      "words": 4041
+    },
+    {
+      "file": "article-html-13-content-marketing-strategy-revenue.html",
+      "slug": "content-marketing-strategy-revenue",
+      "outFile": "src/content/blog/content-marketing-strategy-revenue.md",
+      "words": 3301
+    },
+    {
+      "file": "article-html-14-local-seo-small-business.html",
+      "slug": "local-seo-for-small-business",
+      "outFile": "src/content/blog/local-seo-for-small-business.md",
+      "words": 3629
+    },
+    {
+      "file": "article-html-15-email-marketing-automation-ecommerce.html",
+      "slug": "email-marketing-automation-ecommerce",
+      "outFile": "src/content/blog/email-marketing-automation-ecommerce.md",
+      "words": 3086
+    },
+    {
+      "file": "article-html-16-pricing-strategy-small-business.html",
+      "slug": "pricing-strategy-small-business",
+      "outFile": "src/content/blog/pricing-strategy-small-business.md",
+      "words": 2843
+    },
+    {
+      "file": "article-html-17-small-business-financial-metrics.html",
+      "slug": "small-business-financial-metrics",
+      "outFile": "src/content/blog/small-business-financial-metrics.md",
+      "words": 2641
+    },
+    {
+      "file": "article-html-18-how-to-build-personal-brand-online.html",
+      "slug": "how-to-build-personal-brand-online",
+      "outFile": "src/content/blog/how-to-build-personal-brand-online.md",
+      "words": 2785
+    },
+    {
+      "file": "article-html-19-dropshipping-vs-inventory-ecommerce.html",
+      "slug": "dropshipping-vs-inventory-ecommerce",
+      "outFile": "src/content/blog/dropshipping-vs-inventory-ecommerce.md",
+      "words": 2293
+    }
+  ]
+}
