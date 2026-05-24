@@ -1,15 +1,27 @@
 import "./globals.css";
+import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import GlobalCalculatorShare from "./components/GlobalCalculatorShare";
 
 export const metadata = {
-  metadataBase: new URL("https://bankdemark.com"),
-
   title: {
-    default: "BankDeMark | Modern Finance Intelligence",
+    default: "BankDeMark — Modern Finance Intelligence, Investing & Wealth Building",
     template: "%s | BankDeMark",
   },
 
   description:
-    "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
+    "Expert-level finance intelligence covering investing, personal finance, business credit, wealth building, calculators, and modern money strategy without the jargon.",
+
+  metadataBase: new URL("https://bankdemark.com"),
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 
   icons: {
     icon: "/favicon.png",
@@ -21,17 +33,20 @@ export const metadata = {
     title: "BankDeMark | Modern Finance Intelligence",
     description:
       "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
+
     url: "https://bankdemark.com",
     siteName: "BankDeMark",
+
     images: [
       {
         url: "/branding/og-image.png",
         width: 1200,
         height: 630,
-        alt: "BankDeMark",
+        alt: "BankDeMark Finance Intelligence",
       },
     ],
-    locale: "en_CA",
+
+    locale: "en_US",
     type: "website",
   },
 
@@ -47,7 +62,23 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" data-scroll-behavior="smooth">
-      <body>{children}</body>
+      <head>
+        <script
+          src="https://analytics.ahrefs.com/analytics.js"
+          data-key="ekcbB/2wnUQrZrguhPkXyw"
+          async
+        />
+      </head>
+
+      <body>
+        <Nav />
+
+        <main>{children}</main>
+
+        <Footer />
+
+        <GlobalCalculatorShare />
+      </body>
     </html>
   );
 }
