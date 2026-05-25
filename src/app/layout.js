@@ -58,13 +58,6 @@ export const metadata = {
         height: 630,
         alt: "BankDeMark Finance Intelligence",
       },
-
-      {
-        url: "/bankdemark-og-square.png",
-        width: 1200,
-        height: 1200,
-        alt: "BankDeMark Finance Intelligence",
-      },
     ],
 
     locale: "en_US",
