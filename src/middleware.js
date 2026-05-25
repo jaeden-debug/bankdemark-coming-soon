@@ -56,7 +56,7 @@ const gonePatterns = [
   /\.swf$/i,
   /\.gif$/i,
   /\.jpg$/i,
-  /\.png$/i,
+  // /\.png$/i,
   /\.doc$/i,
   /\.xls$/i,
   /\.pdf$/i,
