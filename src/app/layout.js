@@ -33,9 +33,9 @@ export const metadata = {
 
     images: [
       {
-        url: "/branding/og-image.png",
+        url: "/bankdemark-finance-intelligence-square-og.png",
         width: 1200,
-        height: 630,
+        height: 1200,
         alt: "BankDeMark Finance Intelligence",
       },
     ],
@@ -49,7 +49,7 @@ export const metadata = {
     title: "BankDeMark | Modern Finance Intelligence",
     description:
       "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
-    images: ["/branding/og-image.png"],
+    images: ["/bankdemark-finance-intelligence-square-og.png"],
   },
 };
 
