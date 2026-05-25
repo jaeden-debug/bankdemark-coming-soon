@@ -53,14 +53,14 @@ export const metadata = {
 
     images: [
       {
-        url: "/og-image.png",
+        url: "/bankdemark-og.png",
         width: 1200,
         height: 630,
         alt: "BankDeMark Finance Intelligence",
       },
 
       {
-        url: "/og-image-square.png",
+        url: "/bankdemark-og-square.png",
         width: 1200,
         height: 1200,
         alt: "BankDeMark Finance Intelligence",
@@ -79,7 +79,7 @@ export const metadata = {
     description:
       "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
 
-    images: ["/twitter-image.png"],
+    images: ["/bankdemark-twitter.png"],
   },
 };
 
