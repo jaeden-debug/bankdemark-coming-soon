@@ -1,3 +1,18 @@
+
+const noindexBlogSlugs = new Set([
+  "content-marketing-strategy-revenue",
+  "dropshipping-vs-inventory-ecommerce",
+  "ecommerce-conversion-rate-optimization",
+  "email-marketing-automation-ecommerce",
+  "local-seo-for-small-business",
+  "how-to-build-an-ecommerce-brand",
+  "niche-ecommerce-topical-authority",
+  "shopify-seo-strategy",
+  "ai-seo-tools-small-business",
+  "shopify-seo-guide",
+  "ecommerce-seo-strategy",
+]);
+
 import { getAllPosts } from "@/lib/blog";
 
 const siteUrl = "https://bankdemark.com";
@@ -51,7 +66,7 @@ export default function sitemap() {
       changeFrequency: route === "" ? "daily" : "weekly",
       priority: route === "" ? 1 : route.startsWith("/calculators") ? 0.9 : 0.7,
     })),
-    ...posts.map((post) => ({
+    ...posts.filter((post) => !noindexBlogSlugs.has(post.slug)).map((post) => ({
       url: `${siteUrl}/blog/${post.slug}`,
       lastModified: safeDate(post.date),
       changeFrequency: "monthly",
