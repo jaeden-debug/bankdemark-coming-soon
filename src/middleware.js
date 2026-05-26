@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
-  /^/collections/live-foods/?$/,
-  /^/products/live-brine-shrimp/?$/,
-  /^/products/starter-daphnia-culture/?$/,
-  /^/blog/how-to-culture-daphnia/?$/,
+  /^\/collections\/live-foods\/?$/,
+  /^\/products\/live-brine-shrimp\/?$/,
+  /^\/products\/starter-daphnia-culture\/?$/,
+  /^\/blog\/how-to-culture-daphnia\/?$/,
   /^\/wpm/i,
   /^\/wpm%40/i,
 
