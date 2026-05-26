@@ -82,6 +82,19 @@ const gonePatterns = [
   /abadicash/i,
 ];
 
+
+const noindexPaths = new Set([
+  "/blog/shopify-seo-guide",
+  "/blog/shopify-seo-strategy",
+  "/blog/ecommerce-seo-strategy",
+  "/blog/ai-seo-tools-small-business",
+  "/blog/content-marketing-strategy-revenue",
+  "/blog/dropshipping-vs-inventory-ecommerce",
+  "/blog/ecommerce-conversion-rate-optimization",
+  "/blog/email-marketing-automation-ecommerce",
+  "/blog/local-seo-for-small-business",
+]);
+
 const legacyRedirects = {
   "/favicon.webp": "/icon.png",
 
@@ -327,6 +340,13 @@ if (
         "X-Robots-Tag": "noindex, nofollow",
       },
     });
+  }
+
+
+  if (noindexPaths.has(pathname)) {
+    const response = NextResponse.next();
+    response.headers.set("X-Robots-Tag", "noindex, follow");
+    return response;
   }
 
   return NextResponse.next();
