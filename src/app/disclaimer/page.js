@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Financial Disclaimer",
   description: "BankDeMark's financial disclaimer — important disclosures about the nature of our content and its limitations.",
+  alternates: { canonical: "/disclaimer" },
 };
 
 export default function DisclaimerPage() {

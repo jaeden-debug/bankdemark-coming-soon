@@ -7,6 +7,7 @@ import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
 import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
+  robots: { index: true, follow: true },
   title: "Mortgage Calculator | Free Monthly Mortgage Payment Calculator",
   description:
     "Use BankDeMark's free mortgage calculator to estimate monthly mortgage payments, interest, property taxes, home insurance, down payment, and total loan cost.",

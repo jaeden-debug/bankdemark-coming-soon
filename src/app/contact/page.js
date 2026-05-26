@@ -22,7 +22,10 @@ export default function ContactPage() {
       email: formData.get("email"),
       subject: formData.get("subject"),
       message: formData.get("message"),
-    };
+      alternates: {
+    canonical: "/contact",
+  },
+};
 
     const res = await fetch("/api/contact", {
       method: "POST",

@@ -5,6 +5,7 @@ export const metadata = {
   title: "Finance Pillars",
   description:
     "Explore BankDeMark's six core finance pillars: personal finance, investing, business credit, banking, debt management, and financial freedom.",
+  alternates: { canonical: "/pillars" },
 };
 
 export default function PillarsPage() {

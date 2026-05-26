@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Privacy Policy",
   description: "BankDeMark privacy policy covering how we collect, use, and protect your personal information.",
+  alternates: { canonical: "/privacy" },
 };
 
 export default function PrivacyPage() {

@@ -1,0 +1,322 @@
+{
+  "scannedPages": 31,
+  "pages": [
+    {
+      "route": "/about",
+      "words": 803,
+      "title": "About BankDeMark | Modern Finance, Business &amp; AI Intelligence | BankDeMark",
+      "description": "BankDeMark is a modern finance intelligence platform built around personal finance, business credit, investing, banking, debt management, and financial freedom.",
+      "canonical": "https://bankdemark.com/about",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/blog",
+      "words": 1968,
+      "title": "Finance Blog | BankDeMark | BankDeMark",
+      "description": "Expert articles on personal finance, investing, business credit, banking, debt management, AI tools, SEO, and financial freedom from BankDeMark.",
+      "canonical": "https://bankdemark.com/blog",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/budget-calculator",
+      "words": 539,
+      "title": "Budget Calculator | Free Monthly Budget Planner | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free budget calculator to estimate monthly cash flow, spending categories, savings rate, debt payments, and personal finance strategy.",
+      "canonical": "https://bankdemark.com/calculators/budget-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/compound-interest-calculator",
+      "words": 1130,
+      "title": "Compound Interest Calculator | Free Investment Growth Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free compound interest calculator to estimate investment growth, savings growth, monthly contributions, and long-term wealth building.",
+      "canonical": "https://bankdemark.com/calculators/compound-interest-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/credit-card-payoff-calculator",
+      "words": 700,
+      "title": "Credit Card Payoff Calculator | Avalanche vs Snowball Optimizer | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free credit card payoff calculator to compare debt avalanche vs debt snowball, optimize multiple card payments, estimate interest, and find your debt-free timeline.",
+      "canonical": "https://bankdemark.com/calculators/credit-card-payoff-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/debt-payoff-calculator",
+      "words": 558,
+      "title": "Debt Payoff Calculator | Free Debt Repayment Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free debt payoff calculator to estimate debt-free date, total interest, monthly payments, and extra payment strategies.",
+      "canonical": "https://bankdemark.com/calculators/debt-payoff-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/emergency-fund-calculator",
+      "words": 581,
+      "title": "Emergency Fund Calculator | Free Safety Savings Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free emergency fund calculator to estimate how much emergency savings you need, your savings gap, current coverage, and time to goal.",
+      "canonical": "https://bankdemark.com/calculators/emergency-fund-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/fire-calculator",
+      "words": 569,
+      "title": "FIRE Calculator | Coast FIRE Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free FIRE calculator and Coast FIRE calculator to estimate your FIRE number, time to financial independence, Coast FIRE age, and long-term wealth strategy.",
+      "canonical": "https://bankdemark.com/calculators/fire-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/investment-calculator",
+      "words": 862,
+      "title": "Investment Calculator | Free Portfolio Growth Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free investment calculator to estimate portfolio growth, monthly contributions, investment returns, fees, taxes, and long-term wealth building in Canada or the U.S.",
+      "canonical": "https://bankdemark.com/calculators/investment-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/mortgage-calculator",
+      "words": 10,
+      "title": "Mortgage Calculator | Free Monthly Mortgage Payment Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free mortgage calculator to estimate monthly mortgage payments, interest, property taxes, home insurance, down payment, and total loan cost.",
+      "canonical": "https://bankdemark.com/calculators/mortgage-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 0,
+      "issues": [
+        "Missing H1",
+        "Thin content"
+      ]
+    },
+    {
+      "route": "/calculators/net-worth-calculator",
+      "words": 692,
+      "title": "Net Worth Calculator | Free Assets and Liabilities Tracker | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free net worth calculator to track assets, liabilities, wealth stage, debt ratio, liquidity, and long-term financial progress in Canada or the U.S.",
+      "canonical": "https://bankdemark.com/calculators/net-worth-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators",
+      "words": 458,
+      "title": "Financial Calculators | Free Money Tools by BankDeMark | BankDeMark",
+      "description": "Explore BankDeMark&#x27;s free financial calculators for compound interest, mortgages, investing, retirement, RRSP, TFSA, budgeting, debt payoff, and FIRE planning.",
+      "canonical": "https://bankdemark.com/calculators",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/rent-vs-buy-calculator",
+      "words": 652,
+      "title": "Rent vs Buy Calculator | Should You Rent or Buy? | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free rent vs buy calculator to compare renting versus buying a home, including mortgage payments, rent increases, property taxes, home growth, investment returns, and long-term net worth.",
+      "canonical": "https://bankdemark.com/calculators/rent-vs-buy-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/retirement-calculator",
+      "words": 880,
+      "title": "Retirement Calculator | Free Retirement Savings Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free retirement calculator to estimate retirement savings, nest egg targets, monthly contributions, inflation-adjusted spending, and retirement readiness in Canada or the U.S.",
+      "canonical": "https://bankdemark.com/calculators/retirement-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/rrsp-calculator",
+      "words": 644,
+      "title": "RRSP Calculator Canada | Free RRSP Contribution &amp; Tax Refund Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free RRSP calculator for Canada to estimate RRSP contribution room, tax refund potential, projected RRSP growth, and retirement planning strategy.",
+      "canonical": "https://bankdemark.com/calculators/rrsp-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/calculators/tfsa-calculator",
+      "words": 611,
+      "title": "TFSA Calculator Canada | Free TFSA Contribution &amp; Growth Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free TFSA calculator for Canada to estimate TFSA contribution room, tax-free investment growth, projected account value, and long-term savings strategy.",
+      "canonical": "https://bankdemark.com/calculators/tfsa-calculator",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/contact",
+      "words": 139,
+      "title": "BankDeMark",
+      "description": "Expert-level finance intelligence covering investing, personal finance, business credit, wealth building, calculators, and modern money strategy without the jargon.",
+      "canonical": "https://bankdemark.com",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": [
+        "Thin content"
+      ]
+    },
+    {
+      "route": "/disclaimer",
+      "words": 422,
+      "title": "Financial Disclaimer | BankDeMark",
+      "description": "BankDeMark&#x27;s financial disclaimer — important disclosures about the nature of our content and its limitations.",
+      "canonical": "https://bankdemark.com",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/financial-freedom-quiz",
+      "words": 605,
+      "title": "Financial Freedom Quiz | Find Your Money Personality | BankDeMark",
+      "description": "Take BankDeMark&#x27;s Financial Freedom Quiz to find your money personality, wealth stage, financial strengths, and next best financial move.",
+      "canonical": "https://bankdemark.com/financial-freedom-quiz",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/financial-freedom-roadmap",
+      "words": 794,
+      "title": "Financial Freedom Roadmap Generator | Free Money Plan Tool | BankDeMark",
+      "description": "Use BankDeMark&#x27;s Financial Freedom Roadmap Generator to create a custom step-by-step money plan for budgeting, debt payoff, investing, retirement, and FIRE.",
+      "canonical": "https://bankdemark.com/financial-freedom-roadmap",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/money-health-score",
+      "words": 714,
+      "title": "Money Health Score | Free Financial Health Calculator | BankDeMark",
+      "description": "Use BankDeMark&#x27;s free Money Health Score tool to analyze your cash flow, debt, savings, investing, housing cost, credit strength, and next financial move.",
+      "canonical": "https://bankdemark.com/money-health-score",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/",
+      "words": 400,
+      "title": "BankDeMark | Modern Finance Intelligence",
+      "description": "BankDeMark delivers expert insights across personal finance, investing, business credit, and financial freedom. Built for clarity. Built for results.",
+      "canonical": "https://bankdemark.com",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/pillars/banking",
+      "words": 2480,
+      "title": "Banking Guide | Best Bank Accounts, HYSA &amp; Banking Strategy | BankDeMark",
+      "description": "A complete banking guide for Canada and the USA covering bank accounts, high-yield savings, online banking, fees, account structure, business banking, and banking optimization.",
+      "canonical": "https://bankdemark.com/pillars/banking",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/pillars/business-credit",
+      "words": 2118,
+      "title": "Business Credit Guide | Build Business Credit From Scratch | BankDeMark",
+      "description": "A complete business credit guide for startups, small businesses, and entrepreneurs. Learn how to build business credit, separate finances, use business credit cards, open business banking, and prepare for funding.",
+      "canonical": "https://bankdemark.com/pillars/business-credit",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/pillars/debt-management",
+      "words": 2386,
+      "title": "Debt Management Guide | Pay Off Debt, Rebuild Credit &amp; Escape the Cycle | BankDeMark",
+      "description": "A complete debt management guide for Canada and the USA covering debt payoff, credit card debt, debt snowball, debt avalanche, debt relief, credit rebuilding, and financial recovery.",
+      "canonical": "https://bankdemark.com/pillars/debt-management",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/pillars/financial-freedom",
+      "words": 2238,
+      "title": "Financial Freedom Guide | Financial Independence, FIRE &amp; Wealth Building | BankDeMark",
+      "description": "A complete financial freedom guide for Canada and the USA covering financial independence, FIRE, passive income, wealth building, saving rate, investing, debt freedom, and retirement planning.",
+      "canonical": "https://bankdemark.com/pillars/financial-freedom",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/pillars/investing",
+      "words": 1851,
+      "title": "Investing Guide | Investing for Beginners, ETFs, Index Funds &amp; Wealth Building | BankDeMark",
+      "description": "A complete investing guide for beginners in Canada and the USA. Learn how to start investing, build a diversified portfolio, use index funds and ETFs, manage risk, and grow long-term wealth.",
+      "canonical": "https://bankdemark.com/pillars/investing",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/pillars",
+      "words": 281,
+      "title": "Finance Pillars | BankDeMark",
+      "description": "Explore BankDeMark&#x27;s six core finance pillars: personal finance, investing, business credit, banking, debt management, and financial freedom.",
+      "canonical": "https://bankdemark.com",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/pillars/personal-finance",
+      "words": 1720,
+      "title": "Personal Finance Guide | Budgeting, Saving, Credit &amp; Money Management | BankDeMark",
+      "description": "The complete personal finance guide for beginners, young adults, families, students, entrepreneurs, Canada, and the USA. Learn budgeting, saving money, emergency funds, credit scores, debt payoff, banking, and financial freedom.",
+      "canonical": "https://bankdemark.com/pillars/personal-finance",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/privacy",
+      "words": 383,
+      "title": "Privacy Policy | BankDeMark",
+      "description": "BankDeMark privacy policy covering how we collect, use, and protect your personal information.",
+      "canonical": "https://bankdemark.com",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    },
+    {
+      "route": "/terms",
+      "words": 334,
+      "title": "Terms of Service | BankDeMark",
+      "description": "BankDeMark terms of service governing use of our platform.",
+      "canonical": "https://bankdemark.com",
+      "ogTitle": "BankDeMark | Modern Finance Intelligence",
+      "h1s": 1,
+      "issues": []
+    }
+  ],
+  "duplicateTitles": [],
+  "duplicateDescriptions": []
+}

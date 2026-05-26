@@ -1,6 +1,7 @@
 export const metadata = {
   title: "Terms of Service",
   description: "BankDeMark terms of service governing use of our platform.",
+  alternates: { canonical: "/terms" },
 };
 
 export default function TermsPage() {
