@@ -31,8 +31,8 @@ export default function MortgageCalculator() {
   });
 
   const result = useMemo(() => {
-    const baseLoan = Math.max(homePriceValue - downPaymentValue, 0);
-    const downPercent = homePriceValue > 0 ? downPaymentValue / homePriceValue : 0;
+    const baseLoan = Math.max(homePrice - downPayment, 0);
+    const downPercent = homePrice > 0 ? downPayment / homePrice : 0;
 
     let insurancePremium = 0;
 
@@ -43,8 +43,8 @@ export default function MortgageCalculator() {
     }
 
     const loan = baseLoan + insurancePremium;
-    const months = yearsValue * 12;
-    const monthlyRate = rateValue / 100 / 12;
+    const months = toNumber(years) * 12;
+    const monthlyRate = toNumber(rate) / 100 / 12;
 
     const principalInterest =
       monthlyRate === 0
@@ -53,9 +53,9 @@ export default function MortgageCalculator() {
           (monthlyRate * Math.pow(1 + monthlyRate, months)) /
           (Math.pow(1 + monthlyRate, months) - 1);
 
-    const monthlyTaxes = taxesValue / 12;
-    const monthlyInsurance = insuranceValue / 12;
-    const monthlyTotal = principalInterest + monthlyTaxes + monthlyInsurance + hoaValue;
+    const monthlyTaxes = toNumber(taxes) / 12;
+    const monthlyInsurance = insurance / 12;
+    const monthlyTotal = principalInterest + monthlyTaxes + monthlyInsurance + hoa;
     const totalPaid = monthlyTotal * months;
     const totalInterest = principalInterest * months - loan;
 
