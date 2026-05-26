@@ -47,8 +47,6 @@ export const metadata = {
     description:
       "Modern finance intelligence, calculators, investing tools, business credit, and financial freedom resources.",
 
-    url: "https://bankdemark.com",
-
     siteName: "BankDeMark",
 
     images: [
