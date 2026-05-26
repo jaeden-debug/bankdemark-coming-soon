@@ -45,7 +45,6 @@ export default function InvestingPage() {
     publisher: {
       "@type": "Organization",
       name: "BankDeMark",
-      url: "https://bankdemark.com",
     },
     mainEntityOfPage: "https://bankdemark.com/pillars/investing",
   };

@@ -85,6 +85,10 @@ const gonePatterns = [
 const legacyRedirects = {
   "/favicon.webp": "/icon.png",
 
+  "/index.html": "/",
+  "/default.html": "/",
+
+
   "/ua/services/phisic/vklad": "/calculators/compound-interest-calculator",
   "/ua/services_on_line": "/calculators",
   "/ua/services_on_line/converter": "/calculators",

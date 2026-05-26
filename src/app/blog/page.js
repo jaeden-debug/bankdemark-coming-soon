@@ -3,6 +3,9 @@ import { getAllPosts } from "../../lib/blog";
 import SEOLinkMap from "../components/SEOLinkMap";
 
 export const metadata = {
+  alternates: {
+    canonical: "/blog",
+  },
   title: "Finance Blog | BankDeMark",
   description:
     "Expert articles on personal finance, investing, business credit, banking, debt management, AI tools, SEO, and financial freedom from BankDeMark.",

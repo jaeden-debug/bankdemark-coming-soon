@@ -58,7 +58,6 @@ export default function BusinessCreditPage() {
     publisher: {
       "@type": "Organization",
       name: "BankDeMark",
-      url: "https://bankdemark.com",
     },
     mainEntityOfPage: "https://bankdemark.com/pillars/business-credit",
   };

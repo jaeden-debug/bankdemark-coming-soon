@@ -66,7 +66,6 @@ export default function AboutPage() {
     publisher: {
       "@type": "Organization",
       name: "BankDeMark",
-      url: "https://bankdemark.com",
       sameAs: ["https://stillawakemedia.com", "https://zylx.ai"],
     },
   };
