@@ -1,6 +1,10 @@
 import { NextResponse } from "next/server";
 
 const gonePatterns = [
+  /^/collections/live-foods/?$/,
+  /^/products/live-brine-shrimp/?$/,
+  /^/products/starter-daphnia-culture/?$/,
+  /^/blog/how-to-culture-daphnia/?$/,
   /^\/wpm/i,
   /^\/wpm%40/i,
 
@@ -96,6 +100,13 @@ const noindexPaths = new Set([
 ]);
 
 const legacyRedirects = {
+
+  "/business-credit": "/pillars/business-credit",
+  "/newsletter": "/contact",
+  "/blog/ai-operating-systems-for-entrepreneurs": "/blog/ai-operating-system-entrepreneurs",
+  "/blog/zylx-ai-business-automation-case-study": "/blog/zylx-ai-workflow-automation-case-study",
+  "/blog/blackwater-aquatics-niche-ecommerce-case-study": "/blog/blackwater-aquatics-case-study",
+
   "/favicon.webp": "/icon.png",
 
   "/index.html": "/",
