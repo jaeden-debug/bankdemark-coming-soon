@@ -67,6 +67,9 @@ export default function Footer() {
 
           <div className="footer-col">
             <p className="footer-heading">Legal</p>
+              <a href="https://command.bankdemark.com/command">AI Financial Dashboard</a>
+              <a href="https://command.bankdemark.com/command/marketplace">Financial Marketplace</a>
+              <a href="https://command.bankdemark.com/command/coach">AI Financial Coach</a>
             <Link href="/privacy">Privacy Policy</Link>
             <Link href="/terms">Terms of Service</Link>
             <Link href="/disclaimer">Disclaimer</Link>

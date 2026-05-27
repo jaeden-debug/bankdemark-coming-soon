@@ -147,6 +147,7 @@ export default function FinancialFreedomRoadmap() {
 
           <div className="roadmap-note">
             <strong>Roadmap note:</strong>
+              <p><a href="https://command.bankdemark.com/command">Turn this roadmap into a live AI financial dashboard →</a></p>
             <p>This roadmap is a planning snapshot. Use it with the Budget Calculator, Money Health Score, Net Worth Calculator, FIRE Calculator, and Retirement Calculator.</p>
           </div>
         </div>

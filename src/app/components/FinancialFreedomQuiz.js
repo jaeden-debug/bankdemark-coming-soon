@@ -164,6 +164,7 @@ export default function FinancialFreedomQuiz() {
 
           <div className="quiz-tools-card">
             <span>Recommended Next Tools</span>
+              <a href="https://command.bankdemark.com/command" className="networth-share-btn ready">Open your AI Financial Dashboard →</a>
             <div>
               {result.tools.map((tool) => (
                 <Link href={tool.href} key={tool.href}>{tool.label} →</Link>

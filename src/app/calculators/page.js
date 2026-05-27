@@ -121,6 +121,15 @@ export default function CalculatorsPage() {
         <p>
           AI-powered wealth tools for investing, debt payoff, retirement,
           budgeting, mortgages, and long-term financial strategy.
+
+          <div className="premium-actions">
+            <a href="https://command.bankdemark.com/command" className="premium-btn primary">
+              Open AI Financial Dashboard
+            </a>
+            <a href="https://command.bankdemark.com/command/marketplace" className="premium-btn secondary">
+              Explore Command Marketplace
+            </a>
+          </div>
         </p>
       </div>
 

@@ -61,14 +61,14 @@ export default function Home() {
             AI-powered calculators, strategic insights, and modern wealth intelligence.
           </p>
 
-          <div className="premium-actions">
-            <Link href="/calculators" className="premium-btn primary">
-              Explore Wealth Tools
-            </Link>
-            <Link href="/blog" className="premium-btn secondary">
-              Read Financial Guides
-            </Link>
-          </div>
+            <div className="premium-actions">
+              <Link href="/calculators" className="premium-btn primary">
+                Explore Wealth Tools
+              </Link>
+              <a href="https://command.bankdemark.com/command" className="premium-btn secondary">
+                Launch Command
+              </a>
+            </div>
         </div>
       </section>
 
