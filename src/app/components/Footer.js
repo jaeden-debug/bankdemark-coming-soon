@@ -65,15 +65,19 @@ export default function Footer() {
             <Link href="/pillars/financial-freedom">Financial Freedom</Link>
           </div>
 
-          <div className="footer-col">
-            <p className="footer-heading">Legal</p>
+            <div className="footer-col">
+              <p className="footer-heading">Command</p>
               <a href="https://command.bankdemark.com/command">AI Financial Dashboard</a>
               <a href="https://command.bankdemark.com/command/marketplace">Financial Marketplace</a>
               <a href="https://command.bankdemark.com/command/coach">AI Financial Coach</a>
-            <Link href="/privacy">Privacy Policy</Link>
-            <Link href="/terms">Terms of Service</Link>
-            <Link href="/disclaimer">Disclaimer</Link>
-          </div>
+            </div>
+
+            <div className="footer-col">
+              <p className="footer-heading">Legal</p>
+              <Link href="/privacy">Privacy Policy</Link>
+              <Link href="/terms">Terms of Service</Link>
+              <Link href="/disclaimer">Disclaimer</Link>
+            </div>
         </div>
       </div>
 
