@@ -21,6 +21,8 @@ function inferCategory(slug) {
 
 function cleanMarkdown(content) {
   return content
+    .replace(/^#\s+.*$/m, "")
+    .replace(/^By BankDeMark Editorial.*$/gim, "")
     .replace(/^[\s\S]*?\*\*By BankDeMark Editorial Team[\s\S]*?\*\*\s*/i, "")
     .replace(/^## SEO Metadata[\s\S]*?(?=^## |^# |>)/gim, "")
     .replace(/^SEO Metadata[\s\S]*?(?=^## |^# |>)/gim, "")
@@ -200,6 +202,10 @@ export function renderPostHtml(markdown) {
 
   html = html.replace(/<table>([\s\S]*?)<\/table>/g, (match) => {
     return `<div class="post-table-scroll">${match}</div>`;
+  });
+
+  html = html.replace(/<h2 id="([^"]+)">([\s\S]*?)(?=<h2 id="|$)/g, (match) => {
+    return `<section class="content-card">${match}</section>`;
   });
 
   return html;
