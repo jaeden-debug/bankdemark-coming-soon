@@ -225,7 +225,7 @@ excerpt: >-
     <li><strong>Clickable table of contents:</strong> Lists all major sections with anchor links. This both helps users navigate a long page and helps Google understand the page's coverage breadth.</li>
     <li><strong>Overview sections for each major subtopic (H2 level):</strong> Each subtopic section covers the key information at a summary level, then links to the relevant cluster article for complete coverage. This "hub and spoke" structure signals to Google that the pillar page is the gateway to a comprehensive body of knowledge.</li>
     <li><strong>Internal links to all cluster articles:</strong> Contextual, descriptive anchor text that uses the target keyword of each cluster article. Example: "For a complete step-by-step guide, see our article on <a href='/blog/how-to-culture-daphnia'>how to culture daphnia at home</a>."</li>
-    <li><strong>Internal links to commercial pages:</strong> Natural transitions from informational overview sections to relevant product categories. Example: "You can purchase high-quality live daphnia cultures from our <a href='/collections/live-foods'>Live Aquarium Food collection</a>."</li>
+    <li><strong>Internal links to commercial pages:</strong> Natural transitions from informational overview sections to relevant product categories. Example: "You can purchase high-quality live daphnia cultures from our <a href='https://blackwateraquatics.ca/collections/live-foods'>Live Aquarium Food collection</a>."</li>
     <li><strong>FAQ section with FAQPage schema:</strong> Addresses the most common questions Google sees for the broad topic keyword — these often match People Also Ask (PAA) results in the SERP and, when marked up with FAQPage schema, can earn rich result features.</li>
     <li><strong>Authoritative external citations:</strong> Links to relevant scientific research, governmental resources, or established industry references that support factual claims and demonstrate research quality to Google's quality evaluation systems.</li>
     <li><strong>Regular update schedule:</strong> Pillar pages should be reviewed and updated quarterly — Google tracks content freshness and may demote pages that have not been updated relative to competitor content that is more current.</li>
@@ -276,9 +276,9 @@ excerpt: >-
   <p>Within every cluster article, include at least one natural, contextual link to a relevant commercial page. The link should occur at the highest-intent moment in the article — typically where the reader has just learned enough to want to take action. Examples:</p>
 
   <ul>
-    <li>After explaining the benefits of live daphnia for bettas: "Ready to try live daphnia? Our <a href="/collections/live-foods">live aquarium food collection</a> is shipped live across Canada."</li>
-    <li>After comparing live vs. frozen brine shrimp: "We carry freshly harvested live brine shrimp — see our <a href="/products/live-brine-shrimp">live brine shrimp product page</a> for current availability and shipping information."</li>
-    <li>After a how-to-culture article that mentions equipment: "If you prefer to purchase a ready-to-go culture instead of starting from scratch, our <a href="/products/starter-daphnia-culture">starter daphnia cultures</a> arrive with established populations ready to feed your fish within 48 hours."</li>
+    <li>After explaining the benefits of live daphnia for bettas: "Ready to try live daphnia? Our <a href="https://blackwateraquatics.ca/collections/live-foods">live aquarium food collection</a> is shipped live across Canada."</li>
+    <li>After comparing live vs. frozen brine shrimp: "We carry freshly harvested live brine shrimp — see our <a href="https://blackwateraquatics.ca/products/live-brine-shrimp">live brine shrimp product page</a> for current availability and shipping information."</li>
+    <li>After a how-to-culture article that mentions equipment: "If you prefer to purchase a ready-to-go culture instead of starting from scratch, our <a href="https://blackwateraquatics.ca/products/starter-daphnia-culture">starter daphnia cultures</a> arrive with established populations ready to feed your fish within 48 hours."</li>
   </ul>
 
   <h3>Collection Page Content That Bridges Content and Commerce</h3>
@@ -414,7 +414,7 @@ excerpt: >-
   <div>
     <h3>Get the BankDeMark Business Intelligence Newsletter</h3>
     <p>Topical authority strategies, ecommerce SEO frameworks, and financial intelligence for brand builders — delivered weekly.</p>
-    <p><a href="/newsletter">Subscribe Free →</a></p>
+    <p><a href="/#newsletter">Subscribe Free →</a></p>
   </div>
 
 </section>

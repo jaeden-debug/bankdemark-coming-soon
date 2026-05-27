@@ -133,7 +133,7 @@ Tools like [ZYLX.ai](https://zylx.ai) are designed precisely for this kind of cr
  From financial metrics to business credit to pricing strategy — explore the complete library of financial guides and tools at BankDeMark.
 
  [Financial Calculators](https://bankdemark.com/calculators)
- [Business Credit Hub](https://bankdemark.com/business-credit)
+ [Business Credit Hub](https://bankdemark.com/pillars/business-credit)
 
  ## Frequently Asked Questions
 

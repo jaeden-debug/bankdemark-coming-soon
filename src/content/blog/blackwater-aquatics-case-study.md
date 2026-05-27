@@ -225,7 +225,7 @@ excerpt: >-
   <h4>Site Architecture</h4>
   <p>A clean, logical URL structure organized around product category (live food type) rather than product SKU complexity. Primary collection structure:</p>
   <ul>
-    <li>/collections/live-foods (primary commercial landing page)</li>
+    <li>https://blackwateraquatics.ca/collections/live-foods (primary commercial landing page)</li>
     <li>/collections/daphnia-cultures</li>
     <li>/collections/brine-shrimp</li>
     <li>/collections/blackworms</li>
@@ -347,7 +347,7 @@ excerpt: >-
   <div>
     <h3>Get the BankDeMark Business Intelligence Newsletter</h3>
     <p>Niche ecommerce case studies, business credit strategies, and financial intelligence for founders — delivered weekly.</p>
-    <p><a href="/newsletter">Subscribe Free →</a></p>
+    <p><a href="/#newsletter">Subscribe Free →</a></p>
   </div>
 
 </section>

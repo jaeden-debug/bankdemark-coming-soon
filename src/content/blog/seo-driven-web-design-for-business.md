@@ -372,7 +372,7 @@ excerpt: >-
 
   <h3>Ecommerce: Blackwater Aquatics</h3>
 
-  <p><a href="https://blackwateraquatics.ca">Blackwater Aquatics</a> is a Canadian niche ecommerce brand selling live fish food and aquarium supplies. Their SEO-driven website architecture — built around topical authority in the aquarium niche — demonstrates how a small business can compete with major retailers by building deep, well-structured content around a specific product domain. The site's architecture groups products within a broader content strategy that answers the questions real hobbyists search for, building trust and authority before asking for a sale. This approach, detailed in our <a href="/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics niche ecommerce case study</a>, illustrates how SEO and web design work together at the product and category level.</p>
+  <p><a href="https://blackwateraquatics.ca">Blackwater Aquatics</a> is a Canadian niche ecommerce brand selling live fish food and aquarium supplies. Their SEO-driven website architecture — built around topical authority in the aquarium niche — demonstrates how a small business can compete with major retailers by building deep, well-structured content around a specific product domain. The site's architecture groups products within a broader content strategy that answers the questions real hobbyists search for, building trust and authority before asking for a sale. This approach, detailed in our <a href="/blog/blackwater-aquatics-case-study">Blackwater Aquatics niche ecommerce case study</a>, illustrates how SEO and web design work together at the product and category level.</p>
 
   <h3>Service Business Modernization: Founder-Led Brands</h3>
 
@@ -382,7 +382,7 @@ excerpt: >-
 
   <h3>AI-Powered Business Platforms</h3>
 
-  <p>Web design for software platforms and SaaS tools requires a different but equally SEO-conscious approach. <a href="https://zylx.ai">ZYLX.ai</a>, an AI automation platform built for entrepreneurs, demonstrates how a modern software product site needs to balance product clarity, feature communication, and search visibility simultaneously. The architecture of such a site must rank for category-level keywords ("AI workflow automation for business"), communicate a complex product clearly to first-time visitors, and convert visitors toward trial or account creation — all without sacrificing the technical SEO foundation that makes organic discovery possible. You can explore how AI tools like <a href="https://app.zylx.ai">app.zylx.ai</a> intersect with digital business infrastructure in our <a href="/blog/zylx-ai-business-automation-case-study">ZYLX.ai case study</a>.</p>
+  <p>Web design for software platforms and SaaS tools requires a different but equally SEO-conscious approach. <a href="https://zylx.ai">ZYLX.ai</a>, an AI automation platform built for entrepreneurs, demonstrates how a modern software product site needs to balance product clarity, feature communication, and search visibility simultaneously. The architecture of such a site must rank for category-level keywords ("AI workflow automation for business"), communicate a complex product clearly to first-time visitors, and convert visitors toward trial or account creation — all without sacrificing the technical SEO foundation that makes organic discovery possible. You can explore how AI tools like <a href="https://app.zylx.ai">app.zylx.ai</a> intersect with digital business infrastructure in our <a href="/blog/zylx-ai-workflow-automation-case-study">ZYLX.ai case study</a>.</p>
 
   
   <h2 id="web-design-investment-roi-framework">Web Design Investment ROI Framework</h2>
@@ -466,7 +466,7 @@ excerpt: >-
     <h3>Build Your Business on Solid Digital Infrastructure</h3>
     <p>BankDeMark covers the business systems, digital strategies, and financial frameworks that modern entrepreneurs need to build intelligently. Explore our guides on ecommerce, automation, and business growth.</p>
     <a href="/blog">Explore the BankDeMark Blog</a>
-    <a href="/business-credit" class="secondary">Business Credit Resources</a>
+    <a href="/pillars/business-credit" class="secondary">Business Credit Resources</a>
   </div>
 
   
@@ -524,7 +524,7 @@ excerpt: >-
   <p style="font-size:0.85rem; color:#9ca3af; margin-top:2rem;">
     <strong>Internal Resources:</strong>
     <a href="/blog/niche-ecommerce-topical-authority">How Niche Ecommerce Brands Build Topical Authority</a> &bull;
-    <a href="/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics Case Study</a> &bull;
-    <a href="/blog/zylx-ai-business-automation-case-study">ZYLX.ai AI Automation Case Study</a> &bull;
+    <a href="/blog/blackwater-aquatics-case-study">Blackwater Aquatics Case Study</a> &bull;
+    <a href="/blog/zylx-ai-workflow-automation-case-study">ZYLX.ai AI Automation Case Study</a> &bull;
     <a href="/blog/shopify-seo-strategy">Shopify SEO Strategy Guide</a>
   </p>

@@ -15,7 +15,7 @@ export default function NewsletterForm() {
     const form = e.currentTarget;
     const formData = new FormData(form);
 
-    const res = await fetch("/api/newsletter", {
+    const res = await fetch("/api/#newsletter", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

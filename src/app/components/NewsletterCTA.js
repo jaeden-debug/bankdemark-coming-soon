@@ -35,7 +35,7 @@ export default function NewsletterCTA() {
     setStatus("Saving...");
 
     try {
-      const response = await fetch("/api/newsletter", {
+      const response = await fetch("/api/#newsletter", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ email, website, startedAt, source: "newsletter" }),

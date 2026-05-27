@@ -275,13 +275,13 @@ excerpt: >-
 
   <p><a href="https://blackwateraquatics.ca">Blackwater Aquatics</a> represents the niche ecommerce archetype that StillAwake serves well: a specialist brand competing in a specific vertical where topical depth is the primary competitive advantage. For this type of client, the website architecture must do two things simultaneously: serve as a functional ecommerce store (clear product pages, streamlined checkout, trust signals) and serve as a content authority hub (deep, expert content that builds domain authority in the aquarium niche).</p>
 
-  <p>Achieving both requires a custom architecture. An off-the-shelf Shopify theme cannot be configured to create the internal link structures, content cluster organization, and category page depth that topical authority requires. A custom-built site, designed around both ecommerce functionality and content strategy, is what enables a small niche brand to outrank larger generalist competitors in specific search queries. This is explored in depth in our <a href="/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics case study</a> and the <a href="/blog/niche-ecommerce-topical-authority">niche ecommerce topical authority guide</a>.</p>
+  <p>Achieving both requires a custom architecture. An off-the-shelf Shopify theme cannot be configured to create the internal link structures, content cluster organization, and category page depth that topical authority requires. A custom-built site, designed around both ecommerce functionality and content strategy, is what enables a small niche brand to outrank larger generalist competitors in specific search queries. This is explored in depth in our <a href="/blog/blackwater-aquatics-case-study">Blackwater Aquatics case study</a> and the <a href="/blog/niche-ecommerce-topical-authority">niche ecommerce topical authority guide</a>.</p>
 
   <h3>AI and Software Platforms: ZYLX.ai</h3>
 
   <p>Building a website for a software platform presents different requirements than building for a content or ecommerce brand. The site must communicate a complex product clearly to diverse audiences (technical and non-technical), rank for category-level keywords in a competitive software market, and convert visitors at different intent levels — from awareness to trial to purchase.</p>
 
-  <p><a href="https://zylx.ai">ZYLX.ai</a>'s web infrastructure reflects these requirements: a clean, fast-loading site with strong technical SEO foundations, structured data that positions the platform within the AI automation category, and a conversion architecture designed around the product's specific trial-to-activation pathway. The companion product <a href="https://app.zylx.ai">app.zylx.ai</a> represents the application layer — and the web design connecting both must make the distinction between platform and product clear to both users and search engines. We cover the ZYLX.ai build in detail in our <a href="/blog/zylx-ai-business-automation-case-study">AI automation platform case study</a>.</p>
+  <p><a href="https://zylx.ai">ZYLX.ai</a>'s web infrastructure reflects these requirements: a clean, fast-loading site with strong technical SEO foundations, structured data that positions the platform within the AI automation category, and a conversion architecture designed around the product's specific trial-to-activation pathway. The companion product <a href="https://app.zylx.ai">app.zylx.ai</a> represents the application layer — and the web design connecting both must make the distinction between platform and product clear to both users and search engines. We cover the ZYLX.ai build in detail in our <a href="/blog/zylx-ai-workflow-automation-case-study">AI automation platform case study</a>.</p>
 
   <h3>Service Business Modernization: Founder-Led Brands</h3>
 
@@ -445,6 +445,6 @@ excerpt: >-
     <strong>Internal Resources:</strong>
     <a href="/blog/seo-driven-web-design-for-business">Why Modern Businesses Need SEO-Driven Web Design</a> &bull;
     <a href="/blog/niche-ecommerce-topical-authority">How Niche Ecommerce Brands Build Topical Authority</a> &bull;
-    <a href="/blog/blackwater-aquatics-niche-ecommerce-case-study">Blackwater Aquatics Niche Ecommerce Case Study</a> &bull;
-    <a href="/blog/zylx-ai-business-automation-case-study">ZYLX.ai AI Automation Case Study</a>
+    <a href="/blog/blackwater-aquatics-case-study">Blackwater Aquatics Niche Ecommerce Case Study</a> &bull;
+    <a href="/blog/zylx-ai-workflow-automation-case-study">ZYLX.ai AI Automation Case Study</a>
   </p>

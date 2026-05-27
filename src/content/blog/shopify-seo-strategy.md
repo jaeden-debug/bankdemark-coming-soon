@@ -251,7 +251,7 @@ excerpt: >-
   <p>When a product appears in multiple collections, Shopify generates multiple URLs for the same product page:</p>
   <ul>
     <li><code>/products/live-daphnia-aquarium-food</code> (canonical)</li>
-    <li><code>/collections/live-foods/products/live-daphnia-aquarium-food</code></li>
+    <li><code>https://blackwateraquatics.ca/collections/live-foods/products/live-daphnia-aquarium-food</code></li>
     <li><code>/collections/betta-food/products/live-daphnia-aquarium-food</code></li>
   </ul>
   <p>Shopify automatically adds canonical tags pointing all collection-path URLs to the /products/ URL. This is the correct behavior and resolves the issue for most stores — however, it is worth verifying that your theme is implementing these canonical tags correctly by viewing the page source on a product accessed through a collection URL.</p>
@@ -259,9 +259,9 @@ excerpt: >-
   <h4>Issue 2: Tag and Filter Pages</h4>
   <p>Shopify creates additional URL variants for collections when visitors apply tag filters or sort options:</p>
   <ul>
-    <li><code>/collections/live-foods</code> (base collection)</li>
-    <li><code>/collections/live-foods/betta</code> (tagged collection)</li>
-    <li><code>/collections/live-foods?sort_by=best-selling</code> (sorted collection)</li>
+    <li><code>https://blackwateraquatics.ca/collections/live-foods</code> (base collection)</li>
+    <li><code>https://blackwateraquatics.ca/collections/live-foods/betta</code> (tagged collection)</li>
+    <li><code>https://blackwateraquatics.ca/collections/live-foods?sort_by=best-selling</code> (sorted collection)</li>
   </ul>
   <p>Tag pages create genuinely new content challenges: they contain the same products but in different arrangements, creating near-duplicate pages that consume crawl budget and dilute link equity from the base collection page. The standard approach is to noindex tag pages via the theme's layout.liquid or through an SEO app, or to canonicalize all tag/sort variants to the base collection URL.</p>
 
@@ -509,7 +509,7 @@ excerpt: >-
   "@type": "BreadcrumbList",
   "itemListElement": [
     {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://yourstore.com"},
-    {"@type": "ListItem", "position": 2, "name": "Live Foods", "item": "https://yourstore.com/collections/live-foods"},
+    {"@type": "ListItem", "position": 2, "name": "Live Foods", "item": "https://blackwateraquatics.ca/collections/live-foods"},
     {"@type": "ListItem", "position": 3, "name": "Live Daphnia", "item": "https://yourstore.com/products/live-daphnia"}
   ]
 }
@@ -627,7 +627,7 @@ excerpt: >-
   <div>
     <h3>Get the BankDeMark Finance & Business Intelligence Newsletter</h3>
     <p>Ecommerce SEO strategies, business finance insights, and financial intelligence — delivered weekly. No hype, no fluff.</p>
-    <p><a href="/newsletter">Subscribe Free →</a></p>
+    <p><a href="/#newsletter">Subscribe Free →</a></p>
   </div>
 
 </section>

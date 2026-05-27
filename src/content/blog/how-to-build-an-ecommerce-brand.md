@@ -506,7 +506,7 @@ excerpt: >-
   <div>
     <h3>Get the BankDeMark Finance & Business Intelligence Newsletter</h3>
     <p>Actionable strategies on ecommerce brand building, business credit, investing, and financial freedom — delivered weekly. No hype, no fluff.</p>
-    <p><a href="/newsletter">Subscribe Free →</a></p>
+    <p><a href="/#newsletter">Subscribe Free →</a></p>
   </div>
 
 </section>

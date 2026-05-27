@@ -172,7 +172,7 @@ excerpt: >-
   <div>
     <h3>Get the BankDeMark Business Intelligence Newsletter</h3>
     <p>AI workflow automation strategies, business intelligence, and financial frameworks for modern entrepreneurs — delivered weekly.</p>
-    <p><a href="/newsletter">Subscribe Free →</a></p>
+    <p><a href="/#newsletter">Subscribe Free →</a></p>
   </div>
 
 </section>

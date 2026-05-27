@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
   if (!post) return {};
 
   return {
-    title: `${post.title} | BankDeMark`,
+    title: post.title,
     description: post.excerpt,
     alternates: {
       canonical: `/blog/${post.slug}`,
