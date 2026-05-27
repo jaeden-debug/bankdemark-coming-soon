@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { decodeCalculatorState } from "@/app/lib/calculatorShare";
+import BrandText from "@/app/components/BrandText";
 
 function titleCaseSlug(slug = "financial-calculator") {
   return slug.replaceAll("-", " ").replace(/\b\w/g, (c) => c.toUpperCase());
@@ -63,12 +64,12 @@ export default async function SharedCalculatorPage({ params, searchParams }) {
           <div className="shared-trust-row">
             <span>Interactive</span>
             <span>Editable</span>
-            <span>Powered by BankDeMark</span>
+            <span>Powered by <BrandText /></span>
           </div>
         </div>
 
         <div className="shared-visual-card">
-          <div className="shared-card-chip">BankDeMark</div>
+          <div className="shared-card-chip"><BrandText /></div>
           <div className="shared-card-line"></div>
           <div className="shared-card-number">4242 4242 4242 4242</div>
           <div className="shared-card-bottom">

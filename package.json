@@ -41,6 +41,7 @@
     "linkinator": "^7.6.1",
     "markdownlint-cli": "^0.48.0",
     "pa11y": "^9.1.1",
+    "playwright": "^1.60.0",
     "postcss": "^8.5.15",
     "sitemap": "^8.0.3",
     "tailwindcss": "^4.3.0"

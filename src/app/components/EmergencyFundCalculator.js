@@ -1,16 +1,28 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { encodeCalculatorState } from "@/app/lib/calculatorShare";
+import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
 
 const toNumber = (value) => Number(value) || 0;
 
 export default function EmergencyFundCalculator() {
   const [country, setCountry] = useState("canada");
+  const [shareStatus, setShareStatus] = useState("idle");
+
   const [monthlyExpenses, setMonthlyExpenses] = useState("");
   const [currentSavings, setCurrentSavings] = useState("");
   const [targetMonths, setTargetMonths] = useState("");
   const [monthlyContribution, setMonthlyContribution] = useState("");
   const [jobStability, setJobStability] = useState("medium");
+
+  const switchCountry = (nextCountry) => {
+    if (nextCountry === country) return;
+    setMonthlyExpenses((v) => convertCurrencyAmount(v, country, nextCountry));
+    setCurrentSavings((v) => convertCurrencyAmount(v, country, nextCountry));
+    setMonthlyContribution((v) => convertCurrencyAmount(v, country, nextCountry));
+    setCountry(nextCountry);
+  };
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -22,63 +34,83 @@ export default function EmergencyFundCalculator() {
   });
 
   const result = useMemo(() => {
-    const recommendedMonths =
-      jobStability === "low" ? 9 : jobStability === "high" ? 3 : 6;
+    const recommendedMonths = jobStability === "low" ? 9 : jobStability === "high" ? 3 : 6;
 
-    const monthlyExpensesValue = toNumber(monthlyExpenses);
-    const currentSavingsValue = toNumber(currentSavings);
-    const targetMonthsValue = toNumber(targetMonths);
-    const monthlyContributionValue = toNumber(monthlyContribution);
+    const expenses = toNumber(monthlyExpenses);
+    const savings = toNumber(currentSavings);
+    const months = toNumber(targetMonths) || recommendedMonths;
+    const contribution = toNumber(monthlyContribution);
 
-    const target = monthlyExpensesValue * targetMonthsValue;
-    const recommendedTarget = monthlyExpensesValue * recommendedMonths;
-    const gap = Math.max(target - currentSavingsValue, 0);
-    const monthsToGoal =
-      monthlyContributionValue > 0 ? Math.ceil(gap / monthlyContributionValue) : Infinity;
-    const currentCoverage = monthlyExpensesValue > 0 ? currentSavingsValue / monthlyExpensesValue : 0;
+    const target = expenses * months;
+    const recommendedTarget = expenses * recommendedMonths;
+    const gap = Math.max(target - savings, 0);
+    const monthsToGoal = contribution > 0 ? Math.ceil(gap / contribution) : Infinity;
+    const currentCoverage = expenses > 0 ? savings / expenses : 0;
 
     let status = "Needs Work";
     let note = "Build your emergency fund before taking bigger financial risks.";
 
-    if (currentCoverage >= targetMonthsValue) {
+    if (currentCoverage >= months) {
       status = "Fully Funded";
       note = "Your emergency fund meets your selected target.";
-    } else if (currentCoverage >= targetMonthsValue / 2) {
+    } else if (currentCoverage >= months / 2) {
       status = "Building";
       note = "You have a partial safety buffer and should keep funding it.";
     }
 
-    return {
-      recommendedMonths,
-      target,
-      recommendedTarget,
-      gap,
-      monthsToGoal,
-      currentCoverage,
-      status,
-      note,
-    };
+    return { recommendedMonths, target, recommendedTarget, gap, monthsToGoal, currentCoverage, status, note };
   }, [monthlyExpenses, currentSavings, targetMonths, monthlyContribution, jobStability]);
+
+  const hasRequiredInputs = toNumber(monthlyExpenses) > 0 && toNumber(targetMonths || result.recommendedMonths) > 0;
+
+  async function handleShareResults() {
+    if (!hasRequiredInputs || typeof window === "undefined") return;
+
+    const payload = {
+      calculator: "emergency-fund-calculator",
+      country,
+      inputs: { monthlyExpenses, currentSavings, targetMonths, monthlyContribution, jobStability },
+      results: result,
+    };
+
+    const encoded = encodeCalculatorState(payload);
+    const shareUrl = `${window.location.origin}/share/emergency-fund-calculator?data=${encodeURIComponent(encoded)}`;
+
+    try {
+      setShareStatus("creating");
+
+      if (navigator.share && document.hasFocus()) {
+        await navigator.share({
+          title: "My Emergency Fund Snapshot | BankDeMark",
+          text: "View this BankDeMark emergency fund snapshot.",
+          url: shareUrl,
+        });
+        setShareStatus("shared");
+      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
+        await navigator.clipboard.writeText(shareUrl);
+        setShareStatus("copied");
+      } else {
+        window.location.href = shareUrl;
+        return;
+      }
+
+      window.setTimeout(() => setShareStatus("idle"), 2200);
+    } catch {
+      setShareStatus("idle");
+    }
+  }
 
   return (
     <section className="emergency-tool">
       <div className="country-toggle emergency-country-toggle">
-        <button type="button" className={isCanada ? "active" : ""} onClick={() => setCountry("canada")}>
-          <span>🇨🇦</span> Canada
-        </button>
-        <button type="button" className={!isCanada ? "active" : ""} onClick={() => setCountry("usa")}>
-          <span>🇺🇸</span> United States
-        </button>
-      </div>
-
-      <div className="emergency-market-badge">
-        {isCanada ? "🇨🇦 Emergency fund estimate shown in CAD." : "🇺🇸 Emergency fund estimate shown in USD."}
+        <button type="button" className={isCanada ? "active" : ""} onClick={() => switchCountry("canada")}>🇨🇦 Canada</button>
+        <button type="button" className={!isCanada ? "active" : ""} onClick={() => switchCountry("usa")}>🇺🇸 United States</button>
       </div>
 
       <div className="emergency-panel">
         <div className="emergency-left">
           <div className="emergency-title">
-            <span>▣</span>
+            <span>{isCanada ? "🇨🇦" : "🇺🇸"}</span>
             <div>
               <h2>Emergency Fund Calculator</h2>
               <p>Calculate your safety fund target, current coverage, savings gap, and time to goal.</p>
@@ -86,25 +118,10 @@ export default function EmergencyFundCalculator() {
           </div>
 
           <div className="emergency-fields">
-            <label>
-              <span>Monthly Essential Expenses</span>
-              <input type="text" inputMode="decimal" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(e.target.value)} />
-            </label>
-
-            <label>
-              <span>Current Emergency Savings</span>
-              <input type="text" inputMode="decimal" value={currentSavings} onChange={(e) => setCurrentSavings(e.target.value)} />
-            </label>
-
-            <label>
-              <span>Target Months</span>
-              <input type="text" inputMode="decimal" value={targetMonths} onChange={(e) => setTargetMonths(e.target.value)} />
-            </label>
-
-            <label>
-              <span>Monthly Contribution</span>
-              <input type="text" inputMode="decimal" value={monthlyContribution} onChange={(e) => setMonthlyContribution(e.target.value)} />
-            </label>
+            <label><span>Monthly Essential Expenses</span><input type="number" inputMode="numeric" placeholder="$3,500" value={monthlyExpenses} onChange={(e) => setMonthlyExpenses(e.target.value)} /></label>
+            <label><span>Current Emergency Savings</span><input type="number" inputMode="numeric" placeholder="$5,000" value={currentSavings} onChange={(e) => setCurrentSavings(e.target.value)} /></label>
+            <label><span>Target Months</span><input type="number" inputMode="numeric" placeholder="6" value={targetMonths} onChange={(e) => setTargetMonths(e.target.value)} /></label>
+            <label><span>Monthly Contribution</span><input type="number" inputMode="numeric" placeholder="$500" value={monthlyContribution} onChange={(e) => setMonthlyContribution(e.target.value)} /></label>
 
             <label className="emergency-wide">
               <span>Income Stability</span>
@@ -115,6 +132,22 @@ export default function EmergencyFundCalculator() {
               </select>
             </label>
           </div>
+
+          <button
+            type="button"
+            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+            onClick={handleShareResults}
+          >
+            {!hasRequiredInputs
+              ? "Results calculate automatically"
+              : shareStatus === "creating"
+                ? "Creating Share Link..."
+                : shareStatus === "copied"
+                  ? "Link Copied"
+                  : shareStatus === "shared"
+                    ? "Shared"
+                    : "Share Results"}
+          </button>
         </div>
 
         <div className="emergency-right">
@@ -135,10 +168,7 @@ export default function EmergencyFundCalculator() {
 
           <div className="emergency-note">
             <strong>Safety fund note:</strong>
-            <p>
-              A starter fund can protect against small shocks. A full emergency fund protects against job loss,
-              income gaps, urgent repairs, and major surprise expenses.
-            </p>
+            <p>A starter fund protects against small shocks. A full emergency fund protects against job loss, urgent repairs, income gaps, and major surprise expenses.</p>
           </div>
         </div>
       </div>

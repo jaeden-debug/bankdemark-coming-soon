@@ -1,42 +1,39 @@
 import Link from "next/link";
 import Script from "next/script";
-import CTABanner from "../../components/CTABanner";
 import RegisteredAccountCalculator from "../../components/RegisteredAccountCalculator";
 import SEOLinkMap from "../../components/SEOLinkMap";
-import GlobalCalculatorShare from "@/app/components/GlobalCalculatorShare";
 import CalculatorStateHydrator from "@/app/components/CalculatorStateHydrator";
 
 export const metadata = {
-  title: "TFSA Calculator Canada | Free TFSA Contribution & Growth Calculator",
+  title: "TFSA Calculator Canada | Contribution Room & Tax-Free Growth",
   description:
-    "Use BankDeMark's free TFSA calculator for Canada to estimate TFSA contribution room, tax-free investment growth, projected account value, and long-term savings strategy.",
-  alternates: {
-    canonical: "/calculators/tfsa-calculator",
-  },
+    "Use BankDeMark's TFSA calculator to estimate TFSA contribution room, tax-free growth, projected value, and long-term savings potential.",
+  alternates: { canonical: "/calculators/tfsa-calculator" },
 };
 
 const faq = [
   {
     q: "What is a TFSA calculator?",
-    a: "A TFSA calculator estimates TFSA contribution room, projected tax-free growth, and future account value based on contributions, current balance, return, and timeline.",
-  },
-  {
-    q: "What is the TFSA limit for 2026?",
-    a: "The 2026 TFSA dollar limit is $7,000. Unused contribution room can carry forward if you were eligible.",
+    a: "A TFSA calculator estimates contribution room, tax-free growth, projected account value, and long-term savings potential.",
   },
   {
     q: "Are TFSA withdrawals taxable?",
-    a: "Eligible TFSA withdrawals are generally tax-free. Withdrawn amounts are added back to contribution room on January 1 of the following year.",
+    a: "Eligible TFSA withdrawals are generally tax-free.",
   },
   {
-    q: "Is a TFSA better than an RRSP?",
-    a: "A TFSA may be better for flexible tax-free withdrawals, while an RRSP may be better when tax deductions are valuable. The best choice depends on income, tax bracket, goals, and timeline.",
+    q: "Do TFSA withdrawals create new room?",
+    a: "TFSA withdrawals are generally added back to contribution room on January 1 of the following year.",
+  },
+  {
+    q: "Should I use a TFSA or RRSP?",
+    a: "TFSAs are often useful for flexible tax-free growth, while RRSPs may be useful when your current tax rate is high.",
   },
 ];
 
 export default async function TFSACalculatorPage({ searchParams }) {
   const resolvedSearchParams = await searchParams;
   const sharedData = resolvedSearchParams?.data || "";
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -51,117 +48,80 @@ export default async function TFSACalculatorPage({ searchParams }) {
     "@context": "https://schema.org",
     "@type": "HowTo",
     name: "How to use a TFSA calculator",
-    description:
-      "Estimate TFSA contribution room, tax-free growth, and projected account value.",
     step: [
       { "@type": "HowToStep", name: "Enter current TFSA balance" },
       { "@type": "HowToStep", name: "Enter planned contribution" },
       { "@type": "HowToStep", name: "Add unused contribution room" },
-      { "@type": "HowToStep", name: "Set expected return and timeline" },
-      { "@type": "HowToStep", name: "Review projected TFSA value and tax-free growth" },
+      { "@type": "HowToStep", name: "Choose timeline and return assumption" },
+      { "@type": "HowToStep", name: "Review projected TFSA value" },
     ],
   };
 
   return (
     <>
       <CalculatorStateHydrator encodedData={sharedData} />
+
       <Script id="tfsa-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Script id="tfsa-howto-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
-      <div className="page-hero">
-        <p className="eyebrow">Canada Finance Calculator</p>
-        <h1>TFSA Calculator Canada</h1>
+      <RegisteredAccountCalculator mode="tfsa" />
 
-<div className="zylx-powered">
-  <span>Powered by</span>
-  <strong>ZYLX.ai</strong>
-</div>
+      <section className="calculator-seo-section">
+        <aside className="calculator-toc-card">
+          <span>In this guide</span>
+          <a href="#what-is-a-tfsa-calculator">What is a TFSA calculator?</a>
+          <a href="#how-tfsa-room-works">How TFSA room works</a>
+          <a href="#tax-free-growth">Tax-free growth</a>
+          <a href="#tfsa-mistakes">Common mistakes</a>
+          <a href="#tfsa-faq">FAQ</a>
+        </aside>
 
-        <p>
-          Estimate TFSA contribution room, tax-free growth, and long-term account value for Canadian investors.
-        </p>
-      </div>
+        <div className="calculator-seo-content">
+          <section id="what-is-a-tfsa-calculator">
+            <span className="calculator-seo-kicker">TFSA Calculator</span>
+            <h2>What Is a TFSA Calculator?</h2>
+            <p>A TFSA calculator estimates how your Tax-Free Savings Account could grow based on your balance, planned contribution, unused room, timeline, and return assumption.</p>
+          </section>
 
-      <div className="pillar-page">
-        <RegisteredAccountCalculator mode="tfsa" />
+          <section id="how-tfsa-room-works">
+            <h2>How TFSA Contribution Room Works</h2>
+            <p>TFSA contribution room depends on eligibility, annual limits, unused room, and previous withdrawals. Confirm exact room with CRA before contributing.</p>
+          </section>
 
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            <li><a href="#what-is-a-tfsa-calculator">What a TFSA calculator is</a></li>
-            <li><a href="#how-tfsas-work">How TFSAs work</a></li>
-            <li><a href="#tfsa-vs-rrsp">TFSA vs RRSP</a></li>
-            <li><a href="#mistakes">Common TFSA mistakes</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ol>
+          <section id="tax-free-growth">
+            <h2>Why TFSA Growth Matters</h2>
+            <p>TFSA growth can be powerful because eligible withdrawals are generally tax-free. This makes the TFSA useful for investing, savings goals, emergency flexibility, and long-term wealth building.</p>
+            <p>
+              Pair this with the{" "}
+              <Link href="/calculators/rrsp-calculator">RRSP calculator</Link>,{" "}
+              <Link href="/calculators/investment-calculator">investment calculator</Link>, and{" "}
+              <Link href="/pillars/investing">investing guide</Link>.
+            </p>
+          </section>
+
+          <section id="tfsa-mistakes">
+            <h2>Common TFSA Calculator Mistakes</h2>
+            <ul className="seo-steps">
+              <li>Over-contributing without checking CRA room.</li>
+              <li>Assuming withdrawals return room immediately.</li>
+              <li>Using the TFSA only as cash when investing may fit the goal.</li>
+              <li>Forgetting that contribution room depends on eligibility.</li>
+            </ul>
+          </section>
+
+          <section id="tfsa-faq">
+            <h2>TFSA Calculator FAQ</h2>
+            {faq.map((item) => (
+              <div className="faq-card" key={item.q}>
+                <h3>{item.q}</h3>
+                <p>{item.a}</p>
+              </div>
+            ))}
+          </section>
         </div>
-
-        <div id="what-is-a-tfsa-calculator" className="pillar-section">
-          <h2>What Is a TFSA Calculator?</h2>
-          <p>
-            A TFSA calculator helps Canadians estimate contribution room, projected tax-free growth, and future account value.
-          </p>
-          <p>
-            BankDeMark’s TFSA calculator is built for flexible savings, investing, tax-free compounding, and long-term Canadian wealth planning.
-          </p>
-        </div>
-
-        <div id="how-tfsas-work" className="pillar-section">
-          <h2>How TFSAs Work</h2>
-          <p>
-            TFSA contributions are not tax-deductible, but eligible growth and withdrawals are generally tax-free. This makes the TFSA one of Canada’s most flexible wealth-building accounts.
-          </p>
-          <ul>
-            <li><strong>Contribution room:</strong> annual limits plus unused room and eligible re-contribution room.</li>
-            <li><strong>Tax-free growth:</strong> eligible investment gains are sheltered from tax.</li>
-            <li><strong>Withdrawals:</strong> generally tax-free.</li>
-            <li><strong>Re-contribution:</strong> withdrawn amounts return to room the following January 1.</li>
-          </ul>
-        </div>
-
-        <div id="tfsa-vs-rrsp" className="pillar-section">
-          <h2>TFSA vs RRSP</h2>
-          <p>
-            A TFSA is often better for flexibility, tax-free withdrawals, emergency funds, medium-term goals, and long-term investing. An RRSP may be better when the tax deduction is valuable.
-          </p>
-          <p>
-            Compare this with the <Link href="/calculators/rrsp-calculator">RRSP calculator</Link>,{" "}
-            <Link href="/calculators/investment-calculator">investment calculator</Link>, and{" "}
-            <Link href="/pillars/investing">investing guide</Link>.
-          </p>
-        </div>
-
-        <div id="mistakes" className="pillar-section">
-          <h2>Common TFSA Mistakes</h2>
-          <ul>
-            <li>Contributing without checking available room.</li>
-            <li>Re-contributing withdrawals too early.</li>
-            <li>Using the TFSA only as a savings account when investing may fit long-term goals.</li>
-            <li>Over-contributing and creating penalties.</li>
-            <li>Ignoring the TFSA when building a retirement plan.</li>
-          </ul>
-        </div>
-
-        <div id="faq" className="pillar-section">
-          <h2>TFSA Calculator FAQ</h2>
-          {faq.map((item) => (
-            <div key={item.q} style={{ marginBottom: "28px" }}>
-              <h3>{item.q}</h3>
-              <p>{item.a}</p>
-            </div>
-          ))}
-        </div>
-      </div>
+      </section>
 
       <SEOLinkMap currentPath="/calculators/tfsa-calculator" />
-
-      <CTABanner
-        title="Turn TFSA room into tax-free growth."
-        sub="Use BankDeMark calculators and finance pillars to compare TFSAs, RRSPs, investing, savings, and financial freedom."
-        btnText="Join the Newsletter"
-        btnHref="/contact"
-      />
-          <GlobalCalculatorShare />
     </>
   );
 }

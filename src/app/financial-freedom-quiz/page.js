@@ -1,34 +1,31 @@
 import Link from "next/link";
 import Script from "next/script";
-import CTABanner from "../components/CTABanner";
 import FinancialFreedomQuiz from "../components/FinancialFreedomQuiz";
 import SEOLinkMap from "../components/SEOLinkMap";
 
 export const metadata = {
-  title: "Financial Freedom Quiz | Find Your Money Personality",
+  title: "Financial Freedom Quiz | Money Personality & Wealth Stage",
   description:
-    "Take BankDeMark's Financial Freedom Quiz to find your money personality, wealth stage, financial strengths, and next best financial move.",
-  alternates: {
-    canonical: "/financial-freedom-quiz",
-  },
+    "Take BankDeMark's financial freedom quiz to find your money personality, wealth stage, financial score, and next best move.",
+  alternates: { canonical: "/financial-freedom-quiz" },
 };
 
 const faq = [
   {
-    q: "What is the Financial Freedom Quiz?",
-    a: "The Financial Freedom Quiz is a quick diagnostic that estimates your money personality, wealth stage, and next best financial move.",
+    q: "What is a financial freedom quiz?",
+    a: "A financial freedom quiz helps assess your cash flow, debt, emergency savings, investing habits, goals, and confidence to estimate your current financial stage.",
   },
   {
-    q: "Is this a financial plan?",
-    a: "No. It is an educational diagnostic. Use it as a starting point with calculators, guides, and professional advice when needed.",
+    q: "What does the quiz score mean?",
+    a: "The score is a directional snapshot of financial readiness based on stability, debt control, emergency savings, investing consistency, and confidence.",
   },
   {
-    q: "What money personalities can I get?",
-    a: "Results can include The Stabilizer, The Climber, The Builder, and The Wealth Architect depending on your answers.",
+    q: "Is this financial advice?",
+    a: "No. The quiz is an educational planning tool and does not replace personalized financial, tax, or legal advice.",
   },
   {
     q: "What should I do after the quiz?",
-    a: "Use the recommended tools, especially the Money Health Score, Financial Freedom Roadmap, Budget Calculator, and Net Worth Calculator.",
+    a: "Use the recommended BankDeMark calculators and guides to improve the weakest areas in your financial system.",
   },
 ];
 
@@ -43,94 +40,103 @@ export default function FinancialFreedomQuizPage() {
     })),
   };
 
+  const appSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    name: "BankDeMark Financial Freedom Quiz",
+    url: "https://bankdemark.com/financial-freedom-quiz",
+    applicationCategory: "FinanceApplication",
+    operatingSystem: "All",
+    offers: { "@type": "Offer", price: "0", priceCurrency: "CAD" },
+  };
+
   return (
     <>
-      <Script id="freedom-quiz-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <Script id="financial-freedom-quiz-faq-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
+      <Script id="financial-freedom-quiz-app-schema" type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }} />
 
-      <div className="page-hero quiz-page-hero">
-        <p className="eyebrow">Financial Freedom Diagnostic</p>
-        <h1>Financial Freedom Quiz</h1>
-        <p>
-          Find your money personality, wealth stage, and the next financial move that
-          can create the most momentum.
-        </p>
-      </div>
+      <FinancialFreedomQuiz />
 
-      <div className="pillar-page">
-        <FinancialFreedomQuiz />
+      <section className="calculator-seo-section">
+        <aside className="calculator-toc-card">
+          <span>In this guide</span>
+          <a href="#what-is-financial-freedom-quiz">What is the quiz?</a>
+          <a href="#how-score-works">How the score works</a>
+          <a href="#money-stages">Money stages</a>
+          <a href="#next-steps">Next steps</a>
+          <a href="#quiz-faq">FAQ</a>
+        </aside>
 
-        <div className="pillar-toc">
-          <h4>In this guide</h4>
-          <ol>
-            <li><a href="#what-it-is">What the quiz is</a></li>
-            <li><a href="#personalities">Money personalities</a></li>
-            <li><a href="#next-steps">Next steps</a></li>
-            <li><a href="#lead-magnet">Email capture angle</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ol>
-        </div>
+        <div className="calculator-seo-content">
+          <section id="what-is-financial-freedom-quiz">
+            <span className="calculator-seo-kicker">Financial Freedom Quiz</span>
+            <h2>What Is a Financial Freedom Quiz?</h2>
+            <p>
+              A financial freedom quiz gives you a fast snapshot of your current money system.
+              It looks at cash flow, debt, emergency savings, investing habits, goals, and confidence.
+            </p>
+            <p>
+              The goal is not to label you permanently. The goal is to reveal your next best move.
+            </p>
+          </section>
 
-        <div id="what-it-is" className="pillar-section">
-          <h2>What Is the Financial Freedom Quiz?</h2>
-          <p>
-            The Financial Freedom Quiz is a fast diagnostic that helps visitors identify
-            their current money stage. It turns basic answers about cash flow, debt,
-            savings, investing, and confidence into a simple result and recommended path.
-          </p>
-        </div>
+          <section id="how-score-works">
+            <h2>How the Financial Freedom Score Works</h2>
+            <p>
+              The quiz score is based on the major foundations of personal finance: monthly cash flow,
+              consumer debt, safety savings, investing consistency, and confidence.
+            </p>
 
-        <div id="personalities" className="pillar-section">
-          <h2>Money Personalities</h2>
-          <ul>
-            <li><strong>The Stabilizer:</strong> needs safety, structure, and margin.</li>
-            <li><strong>The Climber:</strong> has progress but needs a sharper system.</li>
-            <li><strong>The Builder:</strong> has traction and should scale consistency.</li>
-            <li><strong>The Wealth Architect:</strong> should optimize investing, taxes, and freedom design.</li>
-          </ul>
-        </div>
-
-        <div id="next-steps" className="pillar-section">
-          <h2>What to Do After the Quiz</h2>
-          <p>
-            Use the quiz result as the entry point, then send visitors deeper into
-            BankDeMark’s tool ecosystem.
-          </p>
-          <p>
-            Start with the <Link href="/money-health-score">Money Health Score</Link>,{" "}
-            <Link href="/financial-freedom-roadmap">Financial Freedom Roadmap</Link>,{" "}
-            <Link href="/calculators/budget-calculator">Budget Calculator</Link>, and{" "}
-            <Link href="/calculators/net-worth-calculator">Net Worth Calculator</Link>.
-          </p>
-        </div>
-
-        <div id="lead-magnet" className="pillar-section">
-          <h2>Email Capture Angle</h2>
-          <p>
-            This quiz is a strong lead magnet because the result feels personal. Later,
-            connect the result to a newsletter form with a CTA like “Send me my custom
-            financial freedom roadmap.”
-          </p>
-        </div>
-
-        <div id="faq" className="pillar-section">
-          <h2>Financial Freedom Quiz FAQ</h2>
-          {faq.map((item) => (
-            <div key={item.q} style={{ marginBottom: "28px" }}>
-              <h3>{item.q}</h3>
-              <p>{item.a}</p>
+            <div className="seo-two-column">
+              <div><h3>Cash flow</h3><p>Shows whether your income creates margin or pressure.</p></div>
+              <div><h3>Debt</h3><p>Measures how much debt is slowing financial progress.</p></div>
+              <div><h3>Emergency savings</h3><p>Shows how protected you are from surprise expenses.</p></div>
+              <div><h3>Investing</h3><p>Shows whether your money is building long-term wealth.</p></div>
             </div>
-          ))}
+          </section>
+
+          <section id="money-stages">
+            <h2>Financial Freedom Stages</h2>
+            <p>
+              Most people move through stages: foundation, growth, momentum, and optimization.
+              Each stage has a different priority.
+            </p>
+            <ul className="seo-steps">
+              <li>Foundation: stabilize cash flow, debt, and emergency savings.</li>
+              <li>Growth: fix the weakest link and start building consistency.</li>
+              <li>Momentum: increase savings, investing, and net worth tracking.</li>
+              <li>Optimization: improve investing strategy, taxes, retirement, and freedom planning.</li>
+            </ul>
+          </section>
+
+          <section id="next-steps">
+            <h2>What to Do After the Quiz</h2>
+            <p>
+              Use your result as a starting point, then run the tools that match your weakest area.
+            </p>
+            <p>
+              Pair this with the{" "}
+              <Link href="/money-health-score">Money Health Score</Link>,{" "}
+              <Link href="/financial-freedom-roadmap">Financial Freedom Roadmap</Link>,{" "}
+              <Link href="/calculators/budget-calculator">Budget Calculator</Link>,{" "}
+              <Link href="/calculators/net-worth-calculator">Net Worth Calculator</Link>, and{" "}
+              <Link href="/calculators/fire-calculator">FIRE Calculator</Link>.
+            </p>
+          </section>
+
+          <section id="quiz-faq">
+            <h2>Financial Freedom Quiz FAQ</h2>
+            {faq.map((item) => (
+              <div className="faq-card" key={item.q}>
+                <h3>{item.q}</h3>
+                <p>{item.a}</p>
+              </div>
+            ))}
+          </section>
         </div>
-      </div>
+      </section>
 
       <SEOLinkMap currentPath="/financial-freedom-quiz" />
-
-      <CTABanner
-        title="Turn your quiz result into a roadmap."
-        sub="Use BankDeMark tools to diagnose your money system, build a plan, and move toward financial freedom."
-        btnText="Generate Roadmap"
-        btnHref="/financial-freedom-roadmap"
-      />
     </>
   );
 }

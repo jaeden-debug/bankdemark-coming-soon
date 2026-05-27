@@ -1,12 +1,15 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
 
 const toNumber = (value) => Number(value) || 0;
 
 export default function BudgetCalculator() {
   const [country, setCountry] = useState("canada");
+  const [shareStatus, setShareStatus] = useState("idle");
+
   const [income, setIncome] = useState("");
   const [housing, setHousing] = useState("");
   const [food, setFood] = useState("");
@@ -17,6 +20,7 @@ export default function BudgetCalculator() {
 
   const switchCountry = (nextCountry) => {
     if (nextCountry === country) return;
+
     setIncome((v) => convertCurrencyAmount(v, country, nextCountry));
     setHousing((v) => convertCurrencyAmount(v, country, nextCountry));
     setFood((v) => convertCurrencyAmount(v, country, nextCountry));
@@ -24,6 +28,7 @@ export default function BudgetCalculator() {
     setDebt((v) => convertCurrencyAmount(v, country, nextCountry));
     setSavings((v) => convertCurrencyAmount(v, country, nextCountry));
     setOther((v) => convertCurrencyAmount(v, country, nextCountry));
+
     setCountry(nextCountry);
   };
 
@@ -37,13 +42,65 @@ export default function BudgetCalculator() {
   });
 
   const result = useMemo(() => {
-    const expenses = toNumber(housing) + toNumber(food) + toNumber(transport) + toNumber(debt) + toNumber(savings) + toNumber(other);
-    const leftover = toNumber(income) - expenses;
+    const incomeValue = toNumber(income);
+    const expenses =
+      toNumber(housing) +
+      toNumber(food) +
+      toNumber(transport) +
+      toNumber(debt) +
+      toNumber(savings) +
+      toNumber(other);
+
+    const leftover = incomeValue - expenses;
     const needs = toNumber(housing) + toNumber(food) + toNumber(transport);
-    const wants = toNumber(other);
     const future = toNumber(savings) + toNumber(debt);
-    return { expenses, leftover, needs, wants, future };
+    const wants = toNumber(other);
+    const savingsRate = incomeValue > 0 ? (toNumber(savings) / incomeValue) * 100 : 0;
+    const expenseRate = incomeValue > 0 ? (expenses / incomeValue) * 100 : 0;
+
+    return { incomeValue, expenses, leftover, needs, future, wants, savingsRate, expenseRate };
   }, [income, housing, food, transport, debt, savings, other]);
+
+  const hasRequiredInputs =
+    toNumber(income) > 0 &&
+    [housing, food, transport, debt, savings, other].some((v) => toNumber(v) > 0);
+
+  async function handleShareResults() {
+    if (!hasRequiredInputs || typeof window === "undefined") return;
+
+    const payload = {
+      calculator: "budget-calculator",
+      country,
+      inputs: { income, housing, food, transport, debt, savings, other },
+      results: result,
+    };
+
+    const encoded = encodeCalculatorState(payload);
+    const shareUrl = `${window.location.origin}/share/budget-calculator?data=${encodeURIComponent(encoded)}`;
+
+    try {
+      setShareStatus("creating");
+
+      if (navigator.share && document.hasFocus()) {
+        await navigator.share({
+          title: "My Budget Snapshot | BankDeMark",
+          text: "View this BankDeMark budget snapshot.",
+          url: shareUrl,
+        });
+        setShareStatus("shared");
+      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
+        await navigator.clipboard.writeText(shareUrl);
+        setShareStatus("copied");
+      } else {
+        window.location.href = shareUrl;
+        return;
+      }
+
+      window.setTimeout(() => setShareStatus("idle"), 2200);
+    } catch {
+      setShareStatus("idle");
+    }
+  }
 
   return (
     <section className="bdm-tool budget-tool">
@@ -52,14 +109,10 @@ export default function BudgetCalculator() {
         <button className={!isCanada ? "active" : ""} onClick={() => switchCountry("usa")} type="button">🇺🇸 United States</button>
       </div>
 
-      <div className="bdm-market-badge">
-        {isCanada ? "🇨🇦 Monthly budget estimate shown in CAD." : "🇺🇸 Monthly budget estimate shown in USD."}
-      </div>
-
       <div className="bdm-panel">
         <div className="bdm-left">
           <div className="bdm-title">
-            <span>≡</span>
+            <span>{isCanada ? "🇨🇦" : "🇺🇸"}</span>
             <div>
               <h2>Budget Calculator</h2>
               <p>Build a monthly money map across income, needs, debt, savings, and lifestyle spending.</p>
@@ -67,14 +120,30 @@ export default function BudgetCalculator() {
           </div>
 
           <div className="bdm-fields">
-            <label><span>Monthly Take-Home Income</span><input type="text" inputMode="decimal" value={income} onChange={(e) => setIncome(e.target.value)} /></label>
-            <label><span>Housing</span><input type="text" inputMode="decimal" value={housing} onChange={(e) => setHousing(e.target.value)} /></label>
-            <label><span>Food / Groceries</span><input type="text" inputMode="decimal" value={food} onChange={(e) => setFood(e.target.value)} /></label>
-            <label><span>Transportation</span><input type="text" inputMode="decimal" value={transport} onChange={(e) => setTransport(e.target.value)} /></label>
-            <label><span>Debt Payments</span><input type="text" inputMode="decimal" value={debt} onChange={(e) => setDebt(e.target.value)} /></label>
-            <label><span>Savings / Investing</span><input type="text" inputMode="decimal" value={savings} onChange={(e) => setSavings(e.target.value)} /></label>
-            <label className="bdm-wide"><span>Other Spending</span><input type="text" inputMode="decimal" value={other} onChange={(e) => setOther(e.target.value)} /></label>
+            <label><span>Monthly Take-Home Income</span><input type="number" inputMode="numeric" placeholder="$5,000" value={income} onChange={(e) => setIncome(e.target.value)} /></label>
+            <label><span>Housing</span><input type="number" inputMode="numeric" placeholder="$1,600" value={housing} onChange={(e) => setHousing(e.target.value)} /></label>
+            <label><span>Food / Groceries</span><input type="number" inputMode="numeric" placeholder="$700" value={food} onChange={(e) => setFood(e.target.value)} /></label>
+            <label><span>Transportation</span><input type="number" inputMode="numeric" placeholder="$450" value={transport} onChange={(e) => setTransport(e.target.value)} /></label>
+            <label><span>Debt Payments</span><input type="number" inputMode="numeric" placeholder="$300" value={debt} onChange={(e) => setDebt(e.target.value)} /></label>
+            <label><span>Savings / Investing</span><input type="number" inputMode="numeric" placeholder="$750" value={savings} onChange={(e) => setSavings(e.target.value)} /></label>
+            <label className="bdm-wide"><span>Other Spending</span><input type="number" inputMode="numeric" placeholder="$500" value={other} onChange={(e) => setOther(e.target.value)} /></label>
           </div>
+
+          <button
+            type="button"
+            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+            onClick={handleShareResults}
+          >
+            {!hasRequiredInputs
+              ? "Results calculate automatically"
+              : shareStatus === "creating"
+                ? "Creating Share Link..."
+                : shareStatus === "copied"
+                  ? "Link Copied"
+                  : shareStatus === "shared"
+                    ? "Shared"
+                    : "Share Results"}
+          </button>
         </div>
 
         <div className="bdm-right">
@@ -85,15 +154,17 @@ export default function BudgetCalculator() {
           </div>
 
           <div className="bdm-metrics">
+            <div><span>Total Income</span><strong>{formatter.format(result.incomeValue)}</strong></div>
             <div><span>Total Expenses</span><strong>{formatter.format(result.expenses)}</strong></div>
             <div><span>Needs</span><strong>{formatter.format(result.needs)}</strong></div>
             <div><span>Debt + Future</span><strong>{formatter.format(result.future)}</strong></div>
-            <div><span>Lifestyle / Other</span><strong>{formatter.format(result.wants)}</strong></div>
+            <div><span>Savings Rate</span><strong>{result.savingsRate.toFixed(1)}%</strong></div>
+            <div><span>Expense Rate</span><strong>{result.expenseRate.toFixed(1)}%</strong></div>
           </div>
 
           <div className="bdm-note">
             <strong>Budget strategy note:</strong>
-            <p>A strong budget does not just track spending. It creates margin for debt payoff, emergency savings, investing, and financial freedom.</p>
+            <p>A strong budget creates margin for debt payoff, emergency savings, investing, and financial freedom.</p>
           </div>
         </div>
       </div>

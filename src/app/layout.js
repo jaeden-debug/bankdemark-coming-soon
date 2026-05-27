@@ -1,7 +1,7 @@
 import "./globals.css";
 import Nav from "./components/Nav";
 import Footer from "./components/Footer";
-import GlobalCalculatorShare from "./components/GlobalCalculatorShare";
+import NewsletterCTA from "./components/NewsletterCTA";
 
 export const metadata = {
   title: {
@@ -90,10 +90,10 @@ export default function RootLayout({ children }) {
 
         <main>{children}</main>
 
-        <Footer />
+        <NewsletterCTA />
 
-        <GlobalCalculatorShare />
-      </body>
+        <Footer />
+</body>
     </html>
   );
 }

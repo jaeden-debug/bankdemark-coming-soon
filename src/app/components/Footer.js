@@ -1,28 +1,51 @@
 import Link from "next/link";
+import BrandText from "./BrandText";
+import Image from "next/image";
 
 export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <Link href="/" className="brand">
-            Bank<span>DeMark</span>
-          </Link>
-          <p className="footer-tagline">
-            Modern finance intelligence for smarter business, money, and wealth decisions.
-          </p>
-          <p className="footer-credit">
-            Built by{" "}
-            {/* Added a modern, glowing gold underline animation on hover */}
-            <a 
-              href="https://stillawakemedia.com" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="text-(--cream) relative font-medium transition-colors hover:text-(--gold) duration-200 after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-(--gold) after:transition-all after:duration-300"
-            >
-              StillAwake Media
-            </a>
-          </p>
+
+          <div className="footer-brand-top">
+
+            <div className="footer-brand-logo">
+              <Image
+                src="/branding/transparent-BankDeMark-logo.png"
+                alt="BankDeMark Logo"
+                width={56}
+                height={56}
+                priority
+              />
+            </div>
+
+            <div>
+
+              <Link href="/" className="brand">
+                <BrandText />
+              </Link>
+
+              <p className="footer-tagline">
+                Financial intelligence, strategic calculators, and modern wealth frameworks.
+              </p>
+
+              <p className="footer-credit">
+                Built by{" "}
+                <a 
+                  href="https://stillawakemedia.com" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-(--cream) relative font-medium transition-colors hover:text-(--gold) duration-200 after:absolute after:-bottom-0.5 after:left-0 after:h-px after:w-0 hover:after:w-full after:bg-(--gold) after:transition-all after:duration-300"
+                >
+                  StillAwake Media
+                </a>
+              </p>
+
+            </div>
+
+          </div>
+
         </div>
 
         <div className="footer-cols">

@@ -1,5 +1,6 @@
 import Link from "next/link";
 import SEOLinkMap from "../components/SEOLinkMap";
+import BrandText from "../components/BrandText";
 
 export const metadata = {
   title: "Financial Calculators | Free Money Tools by BankDeMark",
@@ -112,25 +113,21 @@ const calculators = [
 export default function CalculatorsPage() {
   return (
     <>
-      <div className="page-hero">
-        <p className="eyebrow">Free Financial Tools</p>
-        <h1>Financial Calculators</h1>
+      <div className="page-hero hub-hero">
+        <p className="eyebrow"><BrandText dotcom /></p>
 
-<div className="zylx-powered">
-  <span>Powered by</span>
-  <strong>ZYLX.ai</strong>
-</div>
+        <h1>Financial Planning Calculators</h1>
 
         <p>
-          Use BankDeMark’s free calculators to plan investing, debt payoff,
-          retirement, budgeting, mortgages, and financial freedom.
+          AI-powered wealth tools for investing, debt payoff, retirement,
+          budgeting, mortgages, and long-term financial strategy.
         </p>
       </div>
 
-      <section className="calculators-hub">
-        <div className="calculators-grid">
+      <section className="hub-section calculators-hub">
+        <div className="hub-grid calculators-grid">
           {calculators.map((tool) => (
-            <Link href={tool.href} className="calculator-hub-card" key={tool.href}>
+            <Link href={tool.href} className="hub-card calculator-hub-card" key={tool.href}>
               <span>{tool.tag}</span>
               <h2>{tool.title}</h2>
               <p>{tool.desc}</p>

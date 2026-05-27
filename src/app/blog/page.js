@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getAllPosts } from "../../lib/blog";
 import SEOLinkMap from "../components/SEOLinkMap";
+import BrandText from "../components/BrandText";
 
 export const metadata = {
   alternates: {
@@ -16,8 +17,8 @@ export default function BlogPage() {
 
   return (
     <>
-      <div className="page-hero">
-        <p className="eyebrow">The BankDeMark Blog</p>
+      <div className="page-hero hub-hero">
+        <p className="eyebrow"><BrandText dotcom /></p>
         <h1>Finance intelligence, no filler.</h1>
         <p>
           Deep-dive guides for building wealth, eliminating debt, improving
@@ -25,10 +26,10 @@ export default function BlogPage() {
         </p>
       </div>
 
-      <section className="section" style={{ paddingTop: 0 }}>
-        <div className="blog-grid">
+      <section className="hub-section section">
+        <div className="hub-grid blog-grid">
           {posts.map((post) => (
-            <Link key={post.slug} href={`/blog/${post.slug}`} className="blog-card">
+            <Link key={post.slug} href={`/blog/${post.slug}`} className="hub-card blog-card">
               <span className="blog-cat">{post.category}</span>
               <h3>{post.title}</h3>
               <p>{post.excerpt}</p>

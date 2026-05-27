@@ -295,6 +295,20 @@ export const seoNodes = {
     links: ["/calculators", "/pillars", "/money-health-score", "/financial-freedom-roadmap"],
   },
 
+  "/about": {
+    label: "About BankDeMark",
+    cluster: "hub",
+    links: [
+      "/calculators",
+      "/pillars",
+      "/blog",
+      "/money-health-score",
+      "/financial-freedom-roadmap",
+      "/calculators/net-worth-calculator",
+      "/calculators/debt-payoff-calculator"
+    ],
+  },
+
   "/pillars": {
     label: "Pillar Hub",
     cluster: "hub",

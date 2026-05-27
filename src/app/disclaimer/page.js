@@ -1,3 +1,4 @@
+import SEOLinkMap from "../components/SEOLinkMap";
 export const metadata = {
   title: "Financial Disclaimer",
   description: "BankDeMark's financial disclaimer — important disclosures about the nature of our content and its limitations.",
@@ -38,6 +39,7 @@ export default function DisclaimerPage() {
         <h2>Questions</h2>
         <p>If you have questions about this disclaimer, please <a href="/contact">contact us</a>.</p>
       </div>
+      <SEOLinkMap currentPath="/disclaimer" />
     </>
   );
 }

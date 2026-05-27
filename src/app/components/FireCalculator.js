@@ -1,12 +1,15 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
 
 const toNumber = (value) => Number(value) || 0;
 
 export default function FireCalculator() {
   const [country, setCountry] = useState("canada");
+  const [shareStatus, setShareStatus] = useState("idle");
+
   const [age, setAge] = useState("");
   const [invested, setInvested] = useState("");
   const [annualSpending, setAnnualSpending] = useState("");
@@ -37,19 +40,13 @@ export default function FireCalculator() {
     const annualSpendingValue = toNumber(annualSpending);
     const monthlyContributionValue = toNumber(monthlyContribution);
     const returnRateValue = toNumber(returnRate);
+    const rawWithdrawalRateValue = toNumber(withdrawalRate) || 4;
+    const withdrawalRateValue = Math.min(Math.max(rawWithdrawalRateValue, 1), 10);
+    const unrealisticWithdrawal = rawWithdrawalRateValue > 10;
 
-    const rawWithdrawalRateValue = toNumber(withdrawalRate);
-    const withdrawalRateValue =
-      Math.min(Math.max(rawWithdrawalRateValue, 1), 10);
-
-    const unrealisticWithdrawal =
-      rawWithdrawalRateValue > 10;
-
-    const fireNumber =
-      withdrawalRateValue > 0
-        ? annualSpendingValue / (withdrawalRateValue / 100)
-        : Infinity;
+    const fireNumber = annualSpendingValue / (withdrawalRateValue / 100);
     const monthlyRate = returnRateValue / 100 / 12;
+
     let balance = investedValue;
     let months = 0;
 
@@ -58,13 +55,13 @@ export default function FireCalculator() {
       months++;
     }
 
-    const coastYears = investedValue > 0 && returnRateValue > 0 && fireNumber !== Infinity
-      ? Math.max(Math.log(fireNumber / investedValue) / Math.log(1 + returnRateValue / 100), 0)
-      : Infinity;
+    const coastYears =
+      investedValue > 0 && returnRateValue > 0 && fireNumber > 0
+        ? Math.max(Math.log(fireNumber / investedValue) / Math.log(1 + returnRateValue / 100), 0)
+        : Infinity;
 
     return {
       fireNumber,
-      unrealisticWithdrawal,
       withdrawalRateValue,
       unrealisticWithdrawal,
       monthsToFire: months >= 1200 ? Infinity : months,
@@ -75,6 +72,48 @@ export default function FireCalculator() {
     };
   }, [age, invested, annualSpending, monthlyContribution, returnRate, withdrawalRate]);
 
+  const hasRequiredInputs =
+    toNumber(age) > 0 &&
+    toNumber(annualSpending) > 0 &&
+    toNumber(returnRate) >= 0;
+
+  async function handleShareResults() {
+    if (!hasRequiredInputs || typeof window === "undefined") return;
+
+    const payload = {
+      calculator: "fire-calculator",
+      country,
+      inputs: { age, invested, annualSpending, monthlyContribution, returnRate, withdrawalRate },
+      results: result,
+    };
+
+    const encoded = encodeCalculatorState(payload);
+    const shareUrl = `${window.location.origin}/share/fire-calculator?data=${encodeURIComponent(encoded)}`;
+
+    try {
+      setShareStatus("creating");
+
+      if (navigator.share && document.hasFocus()) {
+        await navigator.share({
+          title: "My FIRE Snapshot | BankDeMark",
+          text: "View this BankDeMark FIRE calculator snapshot.",
+          url: shareUrl,
+        });
+        setShareStatus("shared");
+      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
+        await navigator.clipboard.writeText(shareUrl);
+        setShareStatus("copied");
+      } else {
+        window.location.href = shareUrl;
+        return;
+      }
+
+      window.setTimeout(() => setShareStatus("idle"), 2200);
+    } catch {
+      setShareStatus("idle");
+    }
+  }
+
   return (
     <section className="bdm-tool fire-tool">
       <div className="country-toggle">
@@ -82,14 +121,10 @@ export default function FireCalculator() {
         <button className={!isCanada ? "active" : ""} onClick={() => switchCountry("usa")} type="button">🇺🇸 United States</button>
       </div>
 
-      <div className="bdm-market-badge">
-        {isCanada ? "🇨🇦 FIRE estimate shown in CAD." : "🇺🇸 FIRE estimate shown in USD."}
-      </div>
-
       <div className="bdm-panel">
         <div className="bdm-left">
           <div className="bdm-title">
-            <span>🔥</span>
+            <span>{isCanada ? "🇨🇦" : "🇺🇸"}</span>
             <div>
               <h2>FIRE / Coast FIRE Calculator</h2>
               <p>Estimate your FIRE number, time to financial independence, and Coast FIRE timeline.</p>
@@ -97,11 +132,12 @@ export default function FireCalculator() {
           </div>
 
           <div className="bdm-fields">
-            <label><span>Current Age</span><input type="text" inputMode="decimal" value={age} onChange={(e) => setAge(e.target.value)} /></label>
-            <label><span>Current Invested Assets</span><input type="text" inputMode="decimal" value={invested} onChange={(e) => setInvested(e.target.value)} /></label>
-            <label><span>Annual Spending Goal</span><input type="text" inputMode="decimal" value={annualSpending} onChange={(e) => setAnnualSpending(e.target.value)} /></label>
-            <label><span>Monthly Investment</span><input type="text" inputMode="decimal" value={monthlyContribution} onChange={(e) => setMonthlyContribution(e.target.value)} /></label>
-            <label><span>Expected Annual Return (%)</span><input type="text" inputMode="decimal" step="0.1" value={returnRate} onChange={(e) => setReturnRate(e.target.value)} /></label>
+            <label><span>Current Age</span><input type="number" inputMode="numeric" placeholder="32" value={age} onChange={(e) => setAge(e.target.value)} /></label>
+            <label><span>Current Invested Assets</span><input type="number" inputMode="numeric" placeholder="$75,000" value={invested} onChange={(e) => setInvested(e.target.value)} /></label>
+            <label><span>Annual Spending Goal</span><input type="number" inputMode="numeric" placeholder="$55,000" value={annualSpending} onChange={(e) => setAnnualSpending(e.target.value)} /></label>
+            <label><span>Monthly Investment</span><input type="number" inputMode="numeric" placeholder="$1,000" value={monthlyContribution} onChange={(e) => setMonthlyContribution(e.target.value)} /></label>
+            <label><span>Expected Annual Return (%)</span><input type="number" inputMode="decimal" step="0.1" placeholder="7" value={returnRate} onChange={(e) => setReturnRate(e.target.value)} /></label>
+
             <label className={result.unrealisticWithdrawal ? "bdm-field-warning" : ""}>
               {result.unrealisticWithdrawal && (
                 <div className="bdm-input-bubble">
@@ -109,21 +145,31 @@ export default function FireCalculator() {
                 </div>
               )}
               <span>Withdrawal Rate (%)</span>
-              <input
-                type="text"
-                inputMode="decimal"
-                step="0.1"
-                value={withdrawalRate}
-                onChange={(e) => setWithdrawalRate(e.target.value)}
-              />
+              <input type="number" inputMode="decimal" step="0.1" placeholder="4" value={withdrawalRate} onChange={(e) => setWithdrawalRate(e.target.value)} />
             </label>
           </div>
+
+          <button
+            type="button"
+            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+            onClick={handleShareResults}
+          >
+            {!hasRequiredInputs
+              ? "Results calculate automatically"
+              : shareStatus === "creating"
+                ? "Creating Share Link..."
+                : shareStatus === "copied"
+                  ? "Link Copied"
+                  : shareStatus === "shared"
+                    ? "Shared"
+                    : "Share Results"}
+          </button>
         </div>
 
         <div className="bdm-right">
           <div className="bdm-result-hero">
             <small>Your FIRE Number</small>
-            <strong>{result.fireNumber === Infinity ? "—" : formatter.format(result.fireNumber)}</strong>
+            <strong>{result.fireNumber ? formatter.format(result.fireNumber) : "—"}</strong>
             <p>Based on annual spending and withdrawal rate.</p>
           </div>
 
@@ -136,11 +182,7 @@ export default function FireCalculator() {
 
           <div className="bdm-note">
             <strong>FIRE strategy note:</strong>
-            <p>
-              FIRE math is sensitive to spending, returns, inflation, taxes,
-              and withdrawal assumptions. Test conservative scenarios before
-              making life decisions.
-            </p>
+            <p>FIRE math is sensitive to spending, returns, inflation, taxes, and withdrawal assumptions. Test conservative scenarios before making life decisions.</p>
           </div>
         </div>
       </div>

@@ -1,16 +1,14 @@
 import Link from "next/link";
 import Script from "next/script";
-import CTABanner from "../components/CTABanner";
-import { pillars } from "../data/pillars";
+import BrandText from "../components/BrandText";
 import SEOLinkMap from "../components/SEOLinkMap";
+import { pillars } from "../data/pillars";
 
 export const metadata = {
-  title: "About BankDeMark | Modern Finance, Business & AI Intelligence",
+  title: "About BankDeMark | Modern Finance Intelligence Platform",
   description:
-    "BankDeMark is a modern finance intelligence platform built around personal finance, business credit, investing, banking, debt management, and financial freedom.",
-  alternates: {
-    canonical: "/about",
-  },
+    "BankDeMark is a modern finance intelligence platform built around calculators, money guides, investing systems, business credit, banking, debt payoff, and financial freedom.",
+  alternates: { canonical: "/about" },
 };
 
 const faq = [
@@ -20,7 +18,7 @@ const faq = [
   },
   {
     q: "What does BankDeMark cover?",
-    a: "BankDeMark is organized around six core pillars: personal finance, business credit, investing, banking, debt management, and financial freedom.",
+    a: "BankDeMark covers personal finance, investing, business credit, banking, debt management, calculators, financial diagnostics, and financial freedom planning.",
   },
   {
     q: "Is BankDeMark financial advice?",
@@ -31,27 +29,21 @@ const faq = [
 const platformLinks = [
   {
     href: "/calculators",
-    icon: "🧮",
-    title: "Financial Calculators",
-    desc: "Use BankDeMark tools for budgeting, debt payoff, investing, retirement, mortgages, FIRE, net worth, and more.",
-  },
-  {
-    href: "/blog",
-    icon: "✍️",
-    title: "Finance Blog",
-    desc: "Read practical guides, comparisons, and strategy articles built around modern money decisions.",
+    tag: "Tools",
+    title: "Financial calculators",
+    desc: "Run projections for investing, debt payoff, retirement, mortgages, net worth, budgeting, TFSA, RRSP, and FIRE.",
   },
   {
     href: "/money-health-score",
-    icon: "◆",
+    tag: "Diagnostic",
     title: "Money Health Score",
-    desc: "Diagnose cash flow, debt, savings, investing, housing load, credit strength, and your next best move.",
+    desc: "Analyze cash flow, debt load, savings strength, investing progress, housing pressure, and financial stability.",
   },
   {
     href: "/financial-freedom-roadmap",
-    icon: "🧭",
+    tag: "Plan",
     title: "Freedom Roadmap",
-    desc: "Generate a custom step-by-step plan for cash flow, debt, savings, investing, retirement, and financial freedom.",
+    desc: "Turn your current money situation into a practical 30-day, 90-day, and 12-month financial plan.",
   },
 ];
 
@@ -62,7 +54,7 @@ export default function AboutPage() {
     name: "About BankDeMark",
     url: "https://bankdemark.com/about",
     description:
-      "BankDeMark is a modern finance, business, and AI intelligence platform built around personal finance, business credit, investing, banking, debt management, and financial freedom.",
+      "BankDeMark is a modern finance intelligence platform built around calculators, guides, diagnostics, and financial systems.",
     publisher: {
       "@type": "Organization",
       name: "BankDeMark",
@@ -96,153 +88,135 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
-      <div className="page-hero about-hero">
-        <p className="eyebrow">About BankDeMark</p>
-        <h1>Modern finance intelligence for serious builders.</h1>
-        <p>
-          BankDeMark simplifies money, credit, investing, banking, debt, and
-          financial freedom into one clear system for modern decision makers.
-        </p>
+      <section className="premium-hero about-hero-full">
+        <div className="premium-hero-inner">
+          <p className="premium-kicker"><BrandText dotcom /></p>
 
-        <div className="about-hero-actions">
-          <Link href="/calculators" className="btn-primary">
-            Explore products
-          </Link>
-          <Link href="/blog" className="btn-ghost">
-            Read the Blog
-          </Link>
-        </div>
-      </div>
+          <h1>Modern finance intelligence for serious builders.</h1>
 
-      <section className="about-shell">
-        <div className="about-feature-grid">
-          <div className="about-feature-main">
-            <p className="eyebrow">The Mission</p>
-            <h2>Financial clarity should be a system, not a guessing game.</h2>
-            <p>
-              Most finance content is either too shallow, too technical, too
-              biased, or too disconnected from real decisions. BankDeMark is
-              being built as a cleaner alternative: practical education,
-              interactive tools, and connected financial systems.
-            </p>
-            <p>
-              The platform focuses on personal finance, business credit,
-              investing, banking optimization, debt payoff, retirement planning,
-              and long-term financial independence.
-            </p>
-          </div>
+          <p className="premium-sub">
+            BankDeMark simplifies money, credit, investing, banking, debt, and
+            financial freedom into one clear system for modern decision makers.
+          </p>
 
-          <div className="about-feature-card">
-            <span>01</span>
-            <h3>Clarity Over Complexity</h3>
-            <p>
-              Practical frameworks that turn confusing money topics into steps
-              people can understand and use.
-            </p>
-          </div>
-
-          <div className="about-feature-card">
-            <span>02</span>
-            <h3>Built Around Six Pillars</h3>
-            <p>
-              Every guide connects back to personal finance, business credit,
-              investing, banking, debt management, or financial freedom.
-            </p>
-          </div>
-
-          <div className="about-feature-card">
-            <span>03</span>
-            <h3>Tools First</h3>
-            <p>
-              Calculators and diagnostics help users act instead of only reading
-              passive finance content.
-            </p>
+          <div className="premium-actions">
+            <Link href="/calculators" className="premium-btn primary">
+              Explore Wealth Tools
+            </Link>
+            <Link href="/blog" className="premium-btn secondary">
+              Read Financial Guides
+            </Link>
           </div>
         </div>
       </section>
 
-      <section className="section about-section-tight">
-        <div className="section-header">
-          <span className="eyebrow">Platform System</span>
-          <h2>Start with the tool that matches your next decision.</h2>
+      <section className="about-overhaul">
+        <div className="about-intro-card">
+          <span className="eyebrow">The Mission</span>
+          <h2>Turn scattered money advice into a connected financial system.</h2>
           <p>
-            BankDeMark combines calculators, guides, diagnostics, and roadmap
-            tools into one connected money system.
+            BankDeMark is built for people who want practical financial clarity:
+            calculators, guides, diagnostics, and frameworks that connect instead
+            of living as disconnected articles.
           </p>
         </div>
 
-        <div className="about-tool-grid">
+        <div className="about-principles">
+          <div>
+            <span>01</span>
+            <h3>Clarity over noise</h3>
+            <p>Simple systems for budgeting, credit, debt, investing, banking, and wealth building.</p>
+          </div>
+          <div>
+            <span>02</span>
+            <h3>Tools before theory</h3>
+            <p>Interactive calculators and diagnostics help users act, not just read.</p>
+          </div>
+          <div>
+            <span>03</span>
+            <h3>Built for topical authority</h3>
+            <p>Every major page connects into a crawlable finance ecosystem for users and search engines.</p>
+          </div>
+        </div>
+      </section>
+
+      <section className="about-platform-section">
+        <div className="section-header">
+          <span className="eyebrow">Platform System</span>
+          <h2>Start with the path that matches your next decision.</h2>
+          <p>
+            BankDeMark connects calculators, finance education, diagnostics,
+            roadmap tools, and pillar guides into one modern money platform.
+          </p>
+        </div>
+
+        <div className="about-platform-grid">
           {platformLinks.map((item) => (
-            <Link href={item.href} className="about-tool-card" key={item.href}>
-              <span className="about-tool-icon">{item.icon}</span>
+            <Link href={item.href} className="pillar-card" key={item.href}>
+              <span>{item.tag}</span>
               <h3>{item.title}</h3>
               <p>{item.desc}</p>
-              <strong>Open →</strong>
+              <strong>Open resource →</strong>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="section about-section-tight">
+      <section className="about-pillars-section">
         <div className="section-header">
           <span className="eyebrow">The Six Pillar System</span>
           <h2>Complete financial clarity, organized by topic.</h2>
           <p>
-            BankDeMark is structured for topical authority, internal linking,
-            and real user value across the major areas of modern finance.
+            The site is structured around six core finance pillars so every
+            calculator, article, and guide supports a stronger crawlable content system.
           </p>
         </div>
 
         <div className="pillars-grid">
           {pillars.map((p) => (
             <Link key={p.slug} href={`/pillars/${p.slug}`} className="pillar-card">
-              <span className="pillar-icon">{p.icon}</span>
+              <span>Finance Pillar</span>
               <h3>{p.title}</h3>
-              <span className="sub">{p.subtitle}</span>
               <p>{p.description}</p>
-              <span className="pillar-link">Read full guide →</span>
+              <strong>Read full guide →</strong>
             </Link>
           ))}
         </div>
       </section>
 
-      <section className="about-shell">
+      <section className="about-authority-section">
         <div className="about-authority-card">
-          <p className="eyebrow">Authority Map</p>
-          <h2>The topics BankDeMark is built to own.</h2>
+          <span className="eyebrow">Authority Map</span>
+          <h2>Built to own high-value financial decision topics.</h2>
           <p>
-            BankDeMark is designed to build authority across high-value finance,
-            business, and automation topics: personal finance education,
-            investing education, business credit strategies, debt payoff,
-            financial planning, banking optimization, wealth building, AI tools,
-            business automation, and online business systems.
+            BankDeMark is built around modern financial decision-making:
+            personal finance, investing, business credit, banking optimization,
+            debt reduction, retirement systems, calculators, diagnostics, and
+            long-term wealth building.
           </p>
           <p>
-            For founders who need the execution layer behind those systems,{" "}
-            <a href="https://stillawakemedia.com" target="_blank" rel="noopener noreferrer">
-              StillAwake Media
-            </a>{" "}
-            builds websites, software, SaaS platforms, creative systems, and
-            modern digital infrastructure.{" "}
-            <a href="https://zylx.ai" target="_blank" rel="noopener noreferrer">
-              ZYLX.ai
-            </a>{" "}
-            expands that ecosystem into AI agents, dashboards, and business
-            operating systems.
+            The platform combines strategic education, interactive tools, and
+            connected internal links so readers can move naturally from learning
+            to planning to action.
           </p>
-
-          <div className="about-button-row">
-            <Link href="/pillars" className="btn-ghost">
-              Explore Pillars
-            </Link>
-            <Link href="/calculators" className="btn-primary">
-              Open Calculator Hub
-            </Link>
-          </div>
         </div>
       </section>
 
-      <section className="section about-section-tight">
+      <section className="about-semantics-section">
+        <div className="section-header">
+          <span className="eyebrow">Financial Intelligence Platform</span>
+          <h2>Built for modern money decisions.</h2>
+          <p>
+            BankDeMark helps users understand budgeting, investing, retirement
+            planning, debt payoff, net worth growth, credit optimization,
+            business finance, banking systems, and long-term financial
+            independence through calculators, strategic guides, and connected
+            financial frameworks.
+          </p>
+        </div>
+      </section>
+
+      <section className="about-faq-section">
         <div className="section-header">
           <span className="eyebrow">FAQ</span>
           <h2>Frequently asked questions</h2>
@@ -258,39 +232,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section about-section-tight">
-        <div className="pillars-grid">
-          <Link href="/" className="pillar-card">
-            <span className="pillar-icon">⌂</span>
-            <h3>Home</h3>
-            <p>Return to the main BankDeMark finance intelligence hub.</p>
-            <span className="pillar-link">Visit homepage →</span>
-          </Link>
+      <SEOLinkMap currentPath="/about" />
 
-          <Link href="/blog" className="pillar-card">
-            <span className="pillar-icon">✍️</span>
-            <h3>Blog Hub</h3>
-            <p>Read BankDeMark finance guides, comparisons, and strategy articles.</p>
-            <span className="pillar-link">Read the blog →</span>
-          </Link>
-
-          <Link href="/calculators" className="pillar-card">
-            <span className="pillar-icon">🧮</span>
-            <h3>Calculator Hub</h3>
-            <p>Use every BankDeMark calculator, quiz, roadmap, and diagnostic tool.</p>
-            <span className="pillar-link">Open calculators →</span>
-          </Link>
-        </div>
-      </section>
-
-      <SEOLinkMap currentPath="/pillars" />
-
-      <CTABanner
-        title="Start with the system. Build from there."
-        sub="Explore BankDeMark’s finance pillars, calculators, blog guides, and roadmap tools."
-        btnText="Explore Finance Pillars"
-        btnHref="/pillars"
-      />
     </>
   );
 }

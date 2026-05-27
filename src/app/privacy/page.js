@@ -1,3 +1,4 @@
+import SEOLinkMap from "../components/SEOLinkMap";
 export const metadata = {
   title: "Privacy Policy",
   description: "BankDeMark privacy policy covering how we collect, use, and protect your personal information.",
@@ -35,6 +36,7 @@ export default function PrivacyPage() {
         <h2>10. Contact</h2>
         <p>Questions about this privacy policy? Reach us through our <a href="/contact">contact page</a>.</p>
       </div>
+      <SEOLinkMap currentPath="/privacy" />
     </>
   );
 }

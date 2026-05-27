@@ -1,3 +1,4 @@
+import SEOLinkMap from "../components/SEOLinkMap";
 export const metadata = {
   title: "Terms of Service",
   description: "BankDeMark terms of service governing use of our platform.",
@@ -32,6 +33,7 @@ export default function TermsPage() {
         <h2>9. Contact</h2>
         <p>Questions about these terms? <a href="/contact">Contact us here.</a></p>
       </div>
+      <SEOLinkMap currentPath="/terms" />
     </>
   );
 }

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import NewsletterForm from "../components/NewsletterForm";
+import SEOLinkMap from "../components/SEOLinkMap";
 
 export default function ContactPage() {
   const [sent, setSent] = useState(false);
@@ -118,6 +119,7 @@ export default function ContactPage() {
           <NewsletterForm />
         </div>
       </section>
+          <SEOLinkMap currentPath="/contact" />
     </>
   );
 }

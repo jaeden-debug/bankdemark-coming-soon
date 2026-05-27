@@ -1,11 +1,58 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 
 const toNumber = (value) => Number(value) || 0;
 
 export default function NetWorthCalculator() {
   const [country, setCountry] = useState("canada");
+  const [shareStatus, setShareStatus] = useState("idle");
+
+  useEffect(() => {
+  const id = requestAnimationFrame(() => {
+    const localeText = [
+      navigator.language || "",
+      ...(navigator.languages || []),
+      Intl.DateTimeFormat().resolvedOptions().locale || "",
+      Intl.DateTimeFormat().resolvedOptions().timeZone || "",
+    ]
+      .join(" ")
+      .toLowerCase();
+
+    if (
+      localeText.includes("-ca") ||
+      localeText.includes("en-ca") ||
+      localeText.includes("fr-ca") ||
+      localeText.includes("toronto") ||
+      localeText.includes("vancouver") ||
+      localeText.includes("montreal")
+    ) {
+      setCountry("canada");
+      return;
+    }
+
+    if (
+      localeText.includes("-us") ||
+      localeText.includes("en-us") ||
+      localeText.includes("america") ||
+      localeText.includes("new_york") ||
+      localeText.includes("los_angeles")
+    ) {
+      setCountry("usa");
+    }
+  });
+
+  return () => cancelAnimationFrame(id);
+}, []);
+  const resultsRef = useRef(null);
+
+  const scrollToResults = () => {
+    resultsRef.current?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  };
 
   const [cash, setCash] = useState("");
   const [investments, setInvestments] = useState("");
@@ -30,14 +77,22 @@ export default function NetWorthCalculator() {
     maximumFractionDigits: 0,
   });
 
+  const hasRequiredInputs = [
+    cash,
+    investments,
+    retirement,
+    realEstate,
+    vehicles,
+    businessAssets,
+    otherAssets,
+    mortgage,
+    creditCards,
+    loans,
+    studentDebt,
+    otherDebt,
+  ].some((value) => String(value).trim() !== "");
+
   const result = useMemo(() => {
-    const totalAssets =
-      cash + investments + retirement + realEstate + vehicles + businessAssets + otherAssets;
-
-    const totalLiabilities =
-      mortgage + creditCards + loans + studentDebt + otherDebt;
-
-    const netWorth = totalAssets - totalLiabilities;
     const cashValue = toNumber(cash);
     const investmentsValue = toNumber(investments);
     const retirementValue = toNumber(retirement);
@@ -50,6 +105,14 @@ export default function NetWorthCalculator() {
     const loansValue = toNumber(loans);
     const studentDebtValue = toNumber(studentDebt);
     const otherDebtValue = toNumber(otherDebt);
+
+    const totalAssets =
+      cashValue + investmentsValue + retirementValue + realEstateValue + vehiclesValue + businessAssetsValue + otherAssetsValue;
+
+    const totalLiabilities =
+      mortgageValue + creditCardsValue + loansValue + studentDebtValue + otherDebtValue;
+
+    const netWorth = totalAssets - totalLiabilities;
 
     const liquidAssets = cashValue + investmentsValue;
     const investableAssets = investmentsValue + retirementValue;
@@ -85,13 +148,13 @@ export default function NetWorthCalculator() {
     }
 
     const assetMix = [
-      { label: "Cash", value: cash },
-      { label: "Investments", value: investments },
-      { label: "Retirement", value: retirement },
-      { label: "Real Estate", value: realEstate },
-      { label: "Vehicles", value: vehicles },
-      { label: "Business", value: businessAssets },
-      { label: "Other", value: otherAssets },
+      { label: "Cash", value: cashValue },
+      { label: "Investments", value: investmentsValue },
+      { label: "Retirement", value: retirementValue },
+      { label: "Real Estate", value: realEstateValue },
+      { label: "Vehicles", value: vehiclesValue },
+      { label: "Business", value: businessAssetsValue },
+      { label: "Other", value: otherAssetsValue },
     ].map((item) => ({
       ...item,
       percent: totalAssets > 0 ? (item.value / totalAssets) * 100 : 0,
@@ -125,6 +188,68 @@ export default function NetWorthCalculator() {
     otherDebt,
   ]);
 
+
+  async function handleShareResults() {
+    if (!hasRequiredInputs || typeof window === "undefined") return;
+
+    const payload = {
+      calculator: "net-worth-calculator",
+      country,
+      inputs: {
+        cash,
+        investments,
+        retirement,
+        realEstate,
+        vehicles,
+        businessAssets,
+        otherAssets,
+        mortgage,
+        creditCards,
+        loans,
+        studentDebt,
+        otherDebt,
+      },
+      results: {
+        totalAssets: result.totalAssets,
+        totalLiabilities: result.totalLiabilities,
+        netWorth: result.netWorth,
+        liquidAssets: result.liquidAssets,
+        investableAssets: result.investableAssets,
+        debtToAssetRatio: result.debtToAssetRatio,
+        liquidRatio: result.liquidRatio,
+        stage: result.stage,
+        stageNote: result.stageNote,
+        nextMove: result.nextMove,
+      },
+    };
+
+    const encoded = encodeCalculatorState(payload);
+    const shareUrl = `${window.location.origin}/share/net-worth-calculator?data=${encodeURIComponent(encoded)}`;
+
+    try {
+      setShareStatus("creating");
+
+      if (navigator.share && document.hasFocus()) {
+        await navigator.share({
+          title: "My Net Worth Snapshot | BankDeMark",
+          text: "View this BankDeMark net worth snapshot.",
+          url: shareUrl,
+        });
+        setShareStatus("shared");
+      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
+        await navigator.clipboard.writeText(shareUrl);
+        setShareStatus("copied");
+      } else {
+        window.location.href = shareUrl;
+        return;
+      }
+
+      window.setTimeout(() => setShareStatus("idle"), 2200);
+    } catch (error) {
+      setShareStatus("idle");
+    }
+  }
+
   return (
     <section className="networth-tool">
       <div className="country-toggle networth-country-toggle">
@@ -145,16 +270,10 @@ export default function NetWorthCalculator() {
         </button>
       </div>
 
-      <div className="networth-market-badge">
-        {isCanada
-          ? "🇨🇦 Net worth estimate shown in CAD."
-          : "🇺🇸 Net worth estimate shown in USD."}
-      </div>
-
       <div className="networth-panel">
         <div className="networth-inputs">
           <div className="networth-title">
-            <span>◆</span>
+            <span>{isCanada ? "🇨🇦" : "🇺🇸"}</span>
             <div>
               <h2>Net Worth Tracker Calculator</h2>
               <p>
@@ -167,27 +286,43 @@ export default function NetWorthCalculator() {
           <div className="networth-section-label">Assets</div>
 
           <div className="networth-fields">
-            <label><span>Cash / Emergency Fund</span><input type="text" inputMode="decimal" value={cash} onChange={(e) => setCash(e.target.value)} /></label>
-            <label><span>Investments</span><input type="text" inputMode="decimal" value={investments} onChange={(e) => setInvestments(e.target.value)} /></label>
-            <label><span>Retirement Accounts</span><input type="text" inputMode="decimal" value={retirement} onChange={(e) => setRetirement(e.target.value)} /></label>
-            <label><span>Real Estate Value</span><input type="text" inputMode="decimal" value={realEstate} onChange={(e) => setRealEstate(e.target.value)} /></label>
-            <label><span>Vehicles</span><input type="text" inputMode="decimal" value={vehicles} onChange={(e) => setVehicles(e.target.value)} /></label>
-            <label><span>Business Assets</span><input type="text" inputMode="decimal" value={businessAssets} onChange={(e) => setBusinessAssets(e.target.value)} /></label>
-            <label className="networth-wide"><span>Other Assets</span><input type="text" inputMode="decimal" value={otherAssets} onChange={(e) => setOtherAssets(e.target.value)} /></label>
+            <label><span>Cash / Emergency Fund</span><input type="number" inputMode="numeric" placeholder="$15,000" value={cash} onChange={(e) => setCash(e.target.value)} /></label>
+            <label><span>Investments</span><input type="number" inputMode="numeric" placeholder="$50,000" value={investments} onChange={(e) => setInvestments(e.target.value)} /></label>
+            <label><span>Retirement Accounts</span><input type="number" inputMode="numeric" placeholder="$120,000" value={retirement} onChange={(e) => setRetirement(e.target.value)} /></label>
+            <label><span>Real Estate Value</span><input type="number" inputMode="numeric" placeholder="$450,000" value={realEstate} onChange={(e) => setRealEstate(e.target.value)} /></label>
+            <label><span>Vehicles</span><input type="number" inputMode="numeric" placeholder="$18,000" value={vehicles} onChange={(e) => setVehicles(e.target.value)} /></label>
+            <label><span>Business Assets</span><input type="number" inputMode="numeric" placeholder="$25,000" value={businessAssets} onChange={(e) => setBusinessAssets(e.target.value)} /></label>
+            <label className="networth-wide"><span>Other Assets</span><input type="number" inputMode="numeric" placeholder="$5,000" value={otherAssets} onChange={(e) => setOtherAssets(e.target.value)} /></label>
           </div>
 
           <div className="networth-section-label liabilities">Liabilities</div>
 
           <div className="networth-fields">
-            <label><span>Mortgage Balance</span><input type="text" inputMode="decimal" value={mortgage} onChange={(e) => setMortgage(e.target.value)} /></label>
-            <label><span>Credit Card Debt</span><input type="text" inputMode="decimal" value={creditCards} onChange={(e) => setCreditCards(e.target.value)} /></label>
-            <label><span>Personal / Auto Loans</span><input type="text" inputMode="decimal" value={loans} onChange={(e) => setLoans(e.target.value)} /></label>
-            <label><span>Student Debt</span><input type="text" inputMode="decimal" value={studentDebt} onChange={(e) => setStudentDebt(e.target.value)} /></label>
-            <label className="networth-wide"><span>Other Debt</span><input type="text" inputMode="decimal" value={otherDebt} onChange={(e) => setOtherDebt(e.target.value)} /></label>
+            <label><span>Mortgage Balance</span><input type="number" inputMode="numeric" placeholder="$320,000" value={mortgage} onChange={(e) => setMortgage(e.target.value)} /></label>
+            <label><span>Credit Card Debt</span><input type="number" inputMode="numeric" placeholder="$4,500" value={creditCards} onChange={(e) => setCreditCards(e.target.value)} /></label>
+            <label><span>Personal / Auto Loans</span><input type="number" inputMode="numeric" placeholder="$12,000" value={loans} onChange={(e) => setLoans(e.target.value)} /></label>
+            <label><span>Student Debt</span><input type="number" inputMode="numeric" placeholder="$18,000" value={studentDebt} onChange={(e) => setStudentDebt(e.target.value)} /></label>
+            <label className="networth-wide"><span>Other Debt</span><input type="number" inputMode="numeric" placeholder="$2,500" value={otherDebt} onChange={(e) => setOtherDebt(e.target.value)} /></label>
           </div>
+
+          <button
+            type="button"
+            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+            onClick={handleShareResults}
+          >
+            {!hasRequiredInputs
+              ? "Results calculate automatically"
+              : shareStatus === "creating"
+                ? "Creating Share Link..."
+                : shareStatus === "copied"
+                  ? "Link Copied"
+                  : shareStatus === "shared"
+                    ? "Shared"
+                    : "Share Results"}
+          </button>
         </div>
 
-        <div className="networth-results">
+        <div className="networth-results" ref={resultsRef}>
           <div className="networth-hero-card">
             <small>Your Net Worth</small>
             <strong>{formatter.format(result.netWorth)}</strong>
@@ -209,19 +344,16 @@ export default function NetWorthCalculator() {
             <div><span>Liquidity Ratio</span><strong>{(result.liquidRatio * 100).toFixed(1)}%</strong></div>
           </div>
 
-          <div className="networth-breakdown">
+          <div className="networth-asset-mix-card">
             <span>Asset Mix</span>
-            {result.assetMix.map((item) => (
-              <div key={item.label}>
-                <div className="networth-breakdown-row">
-                  <p>{item.label}</p>
+            <div className="networth-asset-mix">
+              {result.assetMix.map((item) => (
+                <div className="networth-asset-pill" key={item.label}>
+                  <span>{item.label}</span>
                   <strong>{item.percent.toFixed(1)}%</strong>
                 </div>
-                <div className="networth-bar">
-                  <i style={{ width: `${item.percent}%` }} />
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
 
           <div className="networth-note">
