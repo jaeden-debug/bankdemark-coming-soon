@@ -194,19 +194,45 @@ export function renderPostHtml(markdown) {
 
   let html = marked.parse(markdown);
 
+  // Collapse multiple consecutive <hr> tags (artifact of markdown stripping) into one
+  html = html.replace(/(<hr>\s*){2,}/g, "<hr>\n");
+
+  // Add IDs to h2/h3 headings
   html = html.replace(/<h([2-3])>(.*?)<\/h\1>/g, (match, level, inner) => {
     const id = slugifyHeading(inner);
     if (!id) return match;
     return `<h${level} id="${id}">${inner}</h${level}>`;
   });
 
+  // Wrap tables in scroll container
   html = html.replace(/<table>([\s\S]*?)<\/table>/g, (match) => {
     return `<div class="post-table-scroll">${match}</div>`;
   });
 
-  html = html.replace(/<h2 id="([^"]+)">([\s\S]*?)(?=<h2 id="|$)/g, (match) => {
-    return `<section class="content-card">${match}</section>`;
+  // Split preamble (before first h2) from section body
+  const firstH2 = html.search(/<h2 id="/);
+  let preamble = "";
+  let body = html;
+
+  if (firstH2 > 0) {
+    preamble = html.slice(0, firstH2).trim();
+    body = html.slice(firstH2);
+  }
+
+  // Wrap preamble in intro card only if it has real content beyond lone HRs/H1
+  const preambleMeat = preamble.replace(/<hr>/g, "").replace(/<h1[^>]*>.*?<\/h1>/g, "").trim();
+  if (preambleMeat) {
+    preamble = `<div class="post-intro-card">${preamble}</div>`;
+  } else {
+    preamble = "";
+  }
+
+  // Wrap h2 sections in content-cards, detect FAQ sections for special styling
+  body = body.replace(/<h2 id="([^"]+)">([\s\S]*?)(?=<h2 id="|$)/g, (match, id) => {
+    const isFaq = /^faq|frequently.asked|questions/.test(id);
+    const cls = isFaq ? "content-card faq-section" : "content-card";
+    return `<section class="${cls}">${match}</section>`;
   });
 
-  return html;
+  return preamble + body;
 }
