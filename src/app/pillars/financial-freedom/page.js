@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
-import AutoTOC from "@/components/AutoTOC";
+import GeneratedTOC from "@/components/GeneratedTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -120,9 +120,9 @@ export default function FinancialFreedomPage() {
       </div>
 
       <div className="pillar-page">
-        <AutoTOC selector=".pillar-section h2" />
+        <GeneratedTOC selector=".pillar-section h2" />
 
-        <div id="definition" className="pillar-section">
+        <div id="definition" className="content-body pillar-section">
           <h2>What Financial Freedom Means</h2>
           <p>
             Financial freedom means your life is no longer controlled by financial pressure. It does
@@ -149,7 +149,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="why" className="pillar-section">
+        <div id="why" className="content-body pillar-section">
           <h2>Why Financial Freedom Matters</h2>
           <p>
             Most people do not want money for the money itself. They want options. They want to stop
@@ -172,7 +172,7 @@ export default function FinancialFreedomPage() {
           </ul>
         </div>
 
-        <div id="stages" className="pillar-section">
+        <div id="stages" className="content-body pillar-section">
           <h2>The 7 Stages of Financial Freedom</h2>
           <p>
             Financial freedom is not one giant leap. It is a progression. Each stage gives you more
@@ -213,7 +213,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="number" className="pillar-section">
+        <div id="number" className="content-body pillar-section">
           <h2>Your Financial Independence Number</h2>
           <p>
             Your financial independence number is the amount of invested assets you would need to
@@ -240,7 +240,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="cashflow" className="pillar-section">
+        <div id="cashflow" className="content-body pillar-section">
           <h2>Cash Flow and Saving Rate</h2>
           <p>
             Your saving rate is one of the most powerful numbers in financial freedom. It shows what
@@ -268,7 +268,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="debt" className="pillar-section">
+        <div id="debt" className="content-body pillar-section">
           <h2>Debt Freedom</h2>
           <p>
             Debt can delay financial freedom because it consumes cash flow that could be used for
@@ -296,7 +296,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="investing" className="pillar-section">
+        <div id="investing" className="content-body pillar-section">
           <h2>Investing for Financial Freedom</h2>
           <p>
             Saving money creates stability. Investing creates long-term freedom. Cash protects you
@@ -322,7 +322,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="fire" className="pillar-section">
+        <div id="fire" className="content-body pillar-section">
           <h2>The FIRE Movement</h2>
           <p>
             FIRE stands for Financial Independence, Retire Early. It is a movement built around high
@@ -357,7 +357,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="passive-income" className="pillar-section">
+        <div id="passive-income" className="content-body pillar-section">
           <h2>Passive Income</h2>
           <p>
             Passive income is income that does not require direct hourly labor forever. It can come
@@ -385,7 +385,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="business" className="pillar-section">
+        <div id="business" className="content-body pillar-section">
           <h2>Business, AI, and Scalable Income</h2>
           <p>
             Financial freedom does not have to come only from a salary and an investment account.
@@ -417,7 +417,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="canada-usa" className="pillar-section">
+        <div id="canada-usa" className="content-body pillar-section">
           <h2>Canada vs USA Financial Freedom Notes</h2>
           <p>
             Financial freedom principles are universal, but the tools differ between Canada and the
@@ -445,7 +445,7 @@ export default function FinancialFreedomPage() {
           </p>
         </div>
 
-        <div id="mistakes" className="pillar-section">
+        <div id="mistakes" className="content-body pillar-section">
           <h2>Common Financial Freedom Mistakes</h2>
           <p>
             Most people do not fail because financial freedom is impossible. They fail because the
@@ -464,7 +464,7 @@ export default function FinancialFreedomPage() {
           </ul>
         </div>
 
-        <div id="roadmap" className="pillar-section">
+        <div id="roadmap" className="content-body pillar-section">
           <h2>90-Day Financial Freedom Roadmap</h2>
           <p>
             The first 90 days should turn financial freedom from a vague dream into a measurable system.
@@ -503,7 +503,7 @@ export default function FinancialFreedomPage() {
           </ul>
         </div>
 
-        <div id="faq" className="pillar-section">
+        <div id="faq" className="content-body pillar-section">
           <h2>Financial Freedom FAQ</h2>
           {faq.map((item) => (
             <div key={item.q} style={{ marginBottom: "28px" }}>
@@ -513,7 +513,7 @@ export default function FinancialFreedomPage() {
           ))}
         </div>
 
-        <div className="pillar-section">
+        <div className="content-body pillar-section">
           <h2>Continue Building Financial Intelligence</h2>
           <p>
             Financial freedom is the destination, but the path is built from the other BankDeMark

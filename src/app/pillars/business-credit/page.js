@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
-import AutoTOC from "@/components/AutoTOC";
+import GeneratedTOC from "@/components/GeneratedTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -86,9 +86,9 @@ export default function BusinessCreditPage() {
       </div>
 
       <div className="pillar-page">
-        <AutoTOC selector=".pillar-section h2" />
+        <GeneratedTOC selector=".pillar-section h2" />
 
-        <div id="definition" className="pillar-section">
+        <div id="definition" className="content-body pillar-section">
           <h2>What Business Credit Is</h2>
           <p>
             Business credit is the financial reputation of a company. It helps lenders, credit card
@@ -108,7 +108,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="why" className="pillar-section">
+        <div id="why" className="content-body pillar-section">
           <h2>Why Business Credit Matters</h2>
           <p>
             Business credit matters because growth usually requires capital. Inventory, software,
@@ -130,7 +130,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="foundation" className="pillar-section">
+        <div id="foundation" className="content-body pillar-section">
           <h2>Business Credit Foundation</h2>
           <p>
             Before applying for vendor accounts, business credit cards, or business financing, the
@@ -153,7 +153,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="structure" className="pillar-section">
+        <div id="structure" className="content-body pillar-section">
           <h2>LLC, EIN & Business Identity</h2>
           <p>
             In the United States, many businesses use an LLC or corporation and apply for an EIN. In
@@ -174,7 +174,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="banking" className="pillar-section">
+        <div id="banking" className="content-body pillar-section">
           <h2>Business Banking Setup</h2>
           <p>
             A business bank account is one of the most important steps in building a fundable business.
@@ -195,7 +195,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="bureaus" className="pillar-section">
+        <div id="bureaus" className="content-body pillar-section">
           <h2>Business Credit Bureaus</h2>
           <p>
             Business credit reporting is different from personal credit reporting. The main business
@@ -215,7 +215,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="score" className="pillar-section">
+        <div id="score" className="content-body pillar-section">
           <h2>Business Credit Score</h2>
           <p>
             A business credit score is a risk signal. It helps institutions estimate whether a company
@@ -237,7 +237,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="net30" className="pillar-section">
+        <div id="net30" className="content-body pillar-section">
           <h2>Net 30 Vendors & Tradelines</h2>
           <p>
             Net 30 vendors are suppliers that allow a business to buy now and pay within 30 days. These
@@ -259,7 +259,7 @@ export default function BusinessCreditPage() {
           </ul>
         </div>
 
-        <div id="cards" className="pillar-section">
+        <div id="cards" className="content-body pillar-section">
           <h2>Business Credit Cards</h2>
           <p>
             Business credit cards are one of the most searched and valuable parts of business credit.
@@ -285,7 +285,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="funding" className="pillar-section">
+        <div id="funding" className="content-body pillar-section">
           <h2>Business Funding & Financing</h2>
           <p>
             Business credit becomes powerful when it supports funding readiness. A fundable company is
@@ -310,7 +310,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="canada-usa" className="pillar-section">
+        <div id="canada-usa" className="content-body pillar-section">
           <h2>Canada vs USA Business Credit Notes</h2>
           <p>
             Business credit exists in both Canada and the United States, but the systems, terminology,
@@ -330,7 +330,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="ai" className="pillar-section">
+        <div id="ai" className="content-body pillar-section">
           <h2>AI, Automation & Financial Systems</h2>
           <p>
             Modern business credit is not only about cards and loans. It is about financial systems.
@@ -359,7 +359,7 @@ export default function BusinessCreditPage() {
           </p>
         </div>
 
-        <div id="mistakes" className="pillar-section">
+        <div id="mistakes" className="content-body pillar-section">
           <h2>Common Business Credit Mistakes</h2>
           <p>
             Most business credit mistakes come from moving too fast, applying before the company is
@@ -378,7 +378,7 @@ export default function BusinessCreditPage() {
           </ul>
         </div>
 
-        <div id="roadmap" className="pillar-section">
+        <div id="roadmap" className="content-body pillar-section">
           <h2>90-Day Business Credit Roadmap</h2>
           <p>
             Building business credit is a process. The first 90 days should be focused on foundation,
@@ -414,7 +414,7 @@ export default function BusinessCreditPage() {
           </ul>
         </div>
 
-        <div id="faq" className="pillar-section">
+        <div id="faq" className="content-body pillar-section">
           <h2>Business Credit FAQ</h2>
           {faq.map((item) => (
             <div key={item.q} style={{ marginBottom: "28px" }}>
@@ -424,7 +424,7 @@ export default function BusinessCreditPage() {
           ))}
         </div>
 
-        <div className="pillar-section">
+        <div className="content-body pillar-section">
           <h2>Continue Building Financial Intelligence</h2>
           <p>
             Business credit is one pillar of the BankDeMark system. To understand the full financial

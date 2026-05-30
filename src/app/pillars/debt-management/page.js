@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
-import AutoTOC from "@/components/AutoTOC";
+import GeneratedTOC from "@/components/GeneratedTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -120,9 +120,9 @@ export default function DebtManagementPage() {
       </div>
 
       <div className="pillar-page">
-        <AutoTOC selector=".pillar-section h2" />
+        <GeneratedTOC selector=".pillar-section h2" />
 
-        <div id="definition" className="pillar-section">
+        <div id="definition" className="content-body pillar-section">
           <h2>What Debt Management Means</h2>
           <p>
             Debt management is the system you use to understand, organize, reduce, refinance,
@@ -150,7 +150,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="why" className="pillar-section">
+        <div id="why" className="content-body pillar-section">
           <h2>Why Debt Becomes a Trap</h2>
           <p>
             Debt becomes dangerous when the monthly payment hides the true cost. A payment may look
@@ -176,7 +176,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="audit" className="pillar-section">
+        <div id="audit" className="content-body pillar-section">
           <h2>Debt Audit: Know Exactly What You Owe</h2>
           <p>
             You cannot manage debt that you have not mapped. The first step is a full debt audit.
@@ -201,7 +201,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="cashflow" className="pillar-section">
+        <div id="cashflow" className="content-body pillar-section">
           <h2>Cash Flow and Budgeting: The Engine Behind Debt Payoff</h2>
           <p>
             Debt payoff does not work without cash flow. Cash flow is the money left after income
@@ -230,7 +230,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="avalanche" className="pillar-section">
+        <div id="avalanche" className="content-body pillar-section">
           <h2>Debt Avalanche Method</h2>
           <p>
             The debt avalanche method prioritizes the highest-interest debt first. You make minimum
@@ -256,7 +256,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="snowball" className="pillar-section">
+        <div id="snowball" className="content-body pillar-section">
           <h2>Debt Snowball Method</h2>
           <p>
             The debt snowball method prioritizes the smallest balance first. You make minimum payments
@@ -281,7 +281,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="credit-card-debt" className="pillar-section">
+        <div id="credit-card-debt" className="content-body pillar-section">
           <h2>Credit Card Debt</h2>
           <p>
             Credit card debt deserves special attention because it often combines high interest,
@@ -305,7 +305,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="consolidation" className="pillar-section">
+        <div id="consolidation" className="content-body pillar-section">
           <h2>Debt Consolidation</h2>
           <p>
             Debt consolidation means combining multiple debts into one new payment. This may be done
@@ -334,7 +334,7 @@ export default function DebtManagementPage() {
           </ul>
         </div>
 
-        <div id="relief" className="pillar-section">
+        <div id="relief" className="content-body pillar-section">
           <h2>Debt Relief, Settlement, and Negotiation</h2>
           <p>
             Debt relief is a broad term. It can include negotiating interest rates, hardship programs,
@@ -362,7 +362,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="credit" className="pillar-section">
+        <div id="credit" className="content-body pillar-section">
           <h2>Rebuilding Credit After Debt Problems</h2>
           <p>
             Rebuilding credit is not about tricks. It is about proving stability over time. Payment
@@ -387,7 +387,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="canada-usa" className="pillar-section">
+        <div id="canada-usa" className="content-body pillar-section">
           <h2>Canada vs USA Debt Management Notes</h2>
           <p>
             Debt management exists in both Canada and the United States, but the systems, terminology,
@@ -415,7 +415,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="prevention" className="pillar-section">
+        <div id="prevention" className="content-body pillar-section">
           <h2>Preventing Future Debt</h2>
           <p>
             Paying off debt is only half the work. The deeper goal is building a system that makes
@@ -441,7 +441,7 @@ export default function DebtManagementPage() {
           </p>
         </div>
 
-        <div id="roadmap" className="pillar-section">
+        <div id="roadmap" className="content-body pillar-section">
           <h2>90-Day Debt Management Roadmap</h2>
           <p>
             Use this 90-day plan to move from confusion to control. The goal is not to fix everything
@@ -480,7 +480,7 @@ export default function DebtManagementPage() {
           </ul>
         </div>
 
-        <div id="faq" className="pillar-section">
+        <div id="faq" className="content-body pillar-section">
           <h2>Debt Management FAQ</h2>
           {faq.map((item) => (
             <div key={item.q} style={{ marginBottom: "28px" }}>
@@ -490,7 +490,7 @@ export default function DebtManagementPage() {
           ))}
         </div>
 
-        <div className="pillar-section">
+        <div className="content-body pillar-section">
           <h2>Continue Building Financial Intelligence</h2>
           <p>
             Debt management is one pillar of the BankDeMark system. Once debt is mapped, controlled,

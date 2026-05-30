@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
-import AutoTOC from "@/components/AutoTOC";
+import GeneratedTOC from "@/components/GeneratedTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -86,9 +86,9 @@ export default function InvestingPage() {
       </div>
 
       <div className="pillar-page">
-        <AutoTOC selector=".pillar-section h2" />
+        <GeneratedTOC selector=".pillar-section h2" />
 
-        <div id="definition" className="pillar-section">
+        <div id="definition" className="content-body pillar-section">
           <h2>What Investing Is</h2>
           <p>
             Investing is the process of putting money into assets that have the potential to grow,
@@ -106,7 +106,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="why" className="pillar-section">
+        <div id="why" className="content-body pillar-section">
           <h2>Why Investing Matters</h2>
           <p>
             Saving money is essential, but saving alone is usually not enough to build long-term wealth.
@@ -127,7 +127,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="before" className="pillar-section">
+        <div id="before" className="content-body pillar-section">
           <h2>Before You Start Investing</h2>
           <p>
             Investing works best when your financial foundation is stable. Before investing aggressively,
@@ -156,7 +156,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="beginner" className="pillar-section">
+        <div id="beginner" className="content-body pillar-section">
           <h2>Investing for Beginners</h2>
           <p>
             Beginner investing should be simple. The biggest mistake new investors make is trying to
@@ -178,7 +178,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="stocks" className="pillar-section">
+        <div id="stocks" className="content-body pillar-section">
           <h2>Stock Market Investing</h2>
           <p>
             The stock market allows investors to own shares of public companies. When you buy a stock,
@@ -197,7 +197,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="index-etf" className="pillar-section">
+        <div id="index-etf" className="content-body pillar-section">
           <h2>Index Funds & ETFs</h2>
           <p>
             Index funds and ETFs are core tools for long-term investors. They allow investors to buy a
@@ -222,7 +222,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="allocation" className="pillar-section">
+        <div id="allocation" className="content-body pillar-section">
           <h2>Asset Allocation</h2>
           <p>
             Asset allocation is how you divide your portfolio across different types of investments.
@@ -242,7 +242,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="risk" className="pillar-section">
+        <div id="risk" className="content-body pillar-section">
           <h2>Risk Management in Investing</h2>
           <p>
             Risk management is what keeps investors alive long enough for compounding to work. Every
@@ -262,7 +262,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="accounts" className="pillar-section">
+        <div id="accounts" className="content-body pillar-section">
           <h2>Canada & USA Investment Accounts</h2>
           <p>
             The right account can matter as much as the investment itself. Canada and the United States
@@ -292,7 +292,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="compound" className="pillar-section">
+        <div id="compound" className="content-body pillar-section">
           <h2>Compound Growth</h2>
           <p>
             Compound growth is one of the most powerful ideas in investing. It happens when investment
@@ -309,7 +309,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="dca" className="pillar-section">
+        <div id="dca" className="content-body pillar-section">
           <h2>Dollar Cost Averaging</h2>
           <p>
             Dollar cost averaging means investing a fixed amount on a regular schedule, regardless of
@@ -328,7 +328,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="comparisons" className="pillar-section">
+        <div id="comparisons" className="content-body pillar-section">
           <h2>Key Investing Comparisons</h2>
           <p>
             Comparison keywords are a major SEO opportunity. Investors search for clear answers before
@@ -351,7 +351,7 @@ export default function InvestingPage() {
           </p>
         </div>
 
-        <div id="mistakes" className="pillar-section">
+        <div id="mistakes" className="content-body pillar-section">
           <h2>Common Investing Mistakes</h2>
           <p>
             Most investing mistakes are behavioral. People panic during downturns, chase hot trends,
@@ -369,7 +369,7 @@ export default function InvestingPage() {
           </ul>
         </div>
 
-        <div id="roadmap" className="pillar-section">
+        <div id="roadmap" className="content-body pillar-section">
           <h2>90-Day Investing Roadmap</h2>
           <p>
             The first 90 days should be focused on foundation, education, account setup, and consistent
@@ -405,7 +405,7 @@ export default function InvestingPage() {
           </ul>
         </div>
 
-        <div id="faq" className="pillar-section">
+        <div id="faq" className="content-body pillar-section">
           <h2>Investing FAQ</h2>
           {faq.map((item) => (
             <div key={item.q} style={{ marginBottom: "28px" }}>
@@ -415,7 +415,7 @@ export default function InvestingPage() {
           ))}
         </div>
 
-        <div className="pillar-section">
+        <div className="content-body pillar-section">
           <h2>Continue Building Financial Intelligence</h2>
           <p>
             Investing is one pillar of the BankDeMark system. To build the full picture, connect this

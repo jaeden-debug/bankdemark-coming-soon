@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
-import AutoTOC from "@/components/AutoTOC";
+import GeneratedTOC from "@/components/GeneratedTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -120,9 +120,9 @@ export default function BankingPage() {
       </div>
 
       <div className="pillar-page">
-        <AutoTOC selector=".pillar-section h2" />
+        <GeneratedTOC selector=".pillar-section h2" />
 
-        <div id="definition" className="pillar-section">
+        <div id="definition" className="content-body pillar-section">
           <h2>What Banking Optimization Means</h2>
           <p>
             Banking optimization is the process of structuring your bank
@@ -155,7 +155,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="why" className="pillar-section">
+        <div id="why" className="content-body pillar-section">
           <h2>Why Banking Matters More Than Most People Think</h2>
           <p>
             Banking is not just where you store money. It is the operating system
@@ -201,7 +201,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="checking" className="pillar-section">
+        <div id="checking" className="content-body pillar-section">
           <h2>Checking and Chequing Accounts</h2>
           <p>
             In the United States, the everyday spending account is usually called
@@ -234,7 +234,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="savings" className="pillar-section">
+        <div id="savings" className="content-body pillar-section">
           <h2>Savings Accounts and High-Yield Savings Accounts</h2>
           <p>
             Savings accounts are for money you need to protect, not money you
@@ -272,7 +272,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="fees" className="pillar-section">
+        <div id="fees" className="content-body pillar-section">
           <h2>Banking Fees: The Invisible Wealth Leak</h2>
           <p>
             Banking fees are dangerous because they often feel small. A few
@@ -312,7 +312,7 @@ export default function BankingPage() {
           </ul>
         </div>
 
-        <div id="structure" className="pillar-section">
+        <div id="structure" className="content-body pillar-section">
           <h2>Account Structure Strategy</h2>
           <p>
             The best banking setup is not always the one with the highest
@@ -353,7 +353,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="online" className="pillar-section">
+        <div id="online" className="content-body pillar-section">
           <h2>Online Banking and Digital Bank Accounts</h2>
           <p>
             Online banking has changed how people compare accounts. Traditional
@@ -391,7 +391,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="canada-usa" className="pillar-section">
+        <div id="canada-usa" className="content-body pillar-section">
           <h2>Canada vs USA Banking Notes</h2>
           <p>
             Banking in Canada and the United States shares many principles, but
@@ -426,7 +426,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="business" className="pillar-section">
+        <div id="business" className="content-body pillar-section">
           <h2>Business Banking</h2>
           <p>
             Business banking is not optional for serious operators. If you run a
@@ -462,7 +462,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="security" className="pillar-section">
+        <div id="security" className="content-body pillar-section">
           <h2>Banking Security</h2>
           <p>
             A good banking system is not only efficient. It is secure. Banking
@@ -487,7 +487,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="automation" className="pillar-section">
+        <div id="automation" className="content-body pillar-section">
           <h2>Banking Automation and Financial Dashboards</h2>
           <p>
             Banking becomes powerful when it is automated. Instead of relying on
@@ -524,7 +524,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="mistakes" className="pillar-section">
+        <div id="mistakes" className="content-body pillar-section">
           <h2>Common Banking Mistakes</h2>
           <p>
             Banking mistakes usually come from neglect. People keep old
@@ -549,7 +549,7 @@ export default function BankingPage() {
           </p>
         </div>
 
-        <div id="roadmap" className="pillar-section">
+        <div id="roadmap" className="content-body pillar-section">
           <h2>90-Day Banking Optimization Roadmap</h2>
           <p>
             You do not need to rebuild everything in one day. Use a 90-day plan
@@ -586,7 +586,7 @@ export default function BankingPage() {
           </ul>
         </div>
 
-        <div id="faq" className="pillar-section">
+        <div id="faq" className="content-body pillar-section">
           <h2>Banking FAQ</h2>
           {faq.map((item) => (
             <div key={item.q} style={{ marginBottom: "28px" }}>
@@ -596,7 +596,7 @@ export default function BankingPage() {
           ))}
         </div>
 
-        <div className="pillar-section">
+        <div className="content-body pillar-section">
           <h2>Continue Building Financial Intelligence</h2>
           <p>
             Banking is one part of the BankDeMark system. Once your accounts,

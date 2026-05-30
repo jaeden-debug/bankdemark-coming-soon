@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Script from "next/script";
-import AutoTOC from "@/components/AutoTOC";
+import GeneratedTOC from "@/components/GeneratedTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -89,9 +89,9 @@ export default function PersonalFinancePage() {
       </div>
 
       <div className="pillar-page">
-        <AutoTOC selector=".pillar-section h2" />
+        <GeneratedTOC selector=".pillar-section h2" />
 
-        <div id="definition" className="pillar-section">
+        <div id="definition" className="content-body pillar-section">
           <h2>What Personal Finance Is</h2>
           <p>
             Personal finance is the complete system of managing your money. It
@@ -112,7 +112,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="why" className="pillar-section">
+        <div id="why" className="content-body pillar-section">
           <h2>Why Personal Finance Matters</h2>
           <p>
             Personal finance matters because money problems usually compound.
@@ -135,7 +135,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="foundation" className="pillar-section">
+        <div id="foundation" className="content-body pillar-section">
           <h2>The Money Foundation</h2>
           <p>
             Before chasing investing, passive income, or advanced wealth
@@ -156,7 +156,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="budgeting" className="pillar-section">
+        <div id="budgeting" className="content-body pillar-section">
           <h2>Budgeting & Cash Flow</h2>
           <p>
             Budgeting is not restriction. It is cash flow control. A good budget
@@ -194,7 +194,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="saving" className="pillar-section">
+        <div id="saving" className="content-body pillar-section">
           <h2>Saving Money & Emergency Funds</h2>
           <p>
             Saving money is not only about spending less. It is about building
@@ -220,7 +220,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="debt" className="pillar-section">
+        <div id="debt" className="content-body pillar-section">
           <h2>Debt Payoff & Financial Stress</h2>
           <p>
             Debt is one of the biggest personal finance pressure points.
@@ -255,7 +255,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="credit" className="pillar-section">
+        <div id="credit" className="content-body pillar-section">
           <h2>Credit Score & Credit Building</h2>
           <p>
             Your credit score affects borrowing, credit cards, loans, housing,
@@ -286,7 +286,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="banking" className="pillar-section">
+        <div id="banking" className="content-body pillar-section">
           <h2>Banking & Financial Accounts</h2>
           <p>
             Banking is the infrastructure layer of personal finance. The right
@@ -314,7 +314,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="tools" className="pillar-section">
+        <div id="tools" className="content-body pillar-section">
           <h2>Apps, Dashboards & AI Finance Tools</h2>
           <p>
             Modern personal finance is increasingly software-driven. Budgeting
@@ -354,7 +354,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="canada-usa" className="pillar-section">
+        <div id="canada-usa" className="content-body pillar-section">
           <h2>Canada vs USA Personal Finance Notes</h2>
           <p>
             Personal finance principles are universal, but the products,
@@ -374,7 +374,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="roadmap" className="pillar-section">
+        <div id="roadmap" className="content-body pillar-section">
           <h2>90-Day Personal Finance Roadmap</h2>
           <p>
             Personal finance becomes easier when it is broken into phases. The
@@ -415,7 +415,7 @@ export default function PersonalFinancePage() {
           </ul>
         </div>
 
-        <div id="mistakes" className="pillar-section">
+        <div id="mistakes" className="content-body pillar-section">
           <h2>Common Money Mistakes</h2>
           <p>
             Most money problems come from patterns, not single events. The same
@@ -438,7 +438,7 @@ export default function PersonalFinancePage() {
           </p>
         </div>
 
-        <div id="faq" className="pillar-section">
+        <div id="faq" className="content-body pillar-section">
           <h2>Personal Finance FAQ</h2>
           {faq.map((item) => (
             <div key={item.q} style={{ marginBottom: "28px" }}>
@@ -448,7 +448,7 @@ export default function PersonalFinancePage() {
           ))}
         </div>
 
-        <div className="pillar-section">
+        <div className="content-body pillar-section">
           <h2>Continue Building Financial Intelligence</h2>
           <p>
             Personal finance is the foundation of the BankDeMark system. Once

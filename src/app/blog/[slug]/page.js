@@ -1,7 +1,7 @@
 import { getAllPosts, getPostBySlug, renderPostHtml } from "../../../lib/blog";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import AutoTOC from "@/components/AutoTOC";
+import GeneratedTOC from "@/components/GeneratedTOC";
 import CTABanner from "../../components/CTABanner";
 import SEOLinkMap from "../../components/SEOLinkMap";
 
@@ -36,7 +36,7 @@ export default async function BlogPostPage({ params }) {
 
   return (
     <>
-      <article>
+      <article className="content-page blog-article">
         <div className="post-header">
           <span className="blog-cat">{post.category}</span>
           <h1>{post.title}</h1>
@@ -50,9 +50,10 @@ export default async function BlogPostPage({ params }) {
 
         <hr className="divider" />
 
-        <AutoTOC selector="article .post-prose h2" />
+        <GeneratedTOC selector=".post-prose h2" />
+
         <div
-          className="prose post-prose"
+          className="content-body prose post-prose"
           dangerouslySetInnerHTML={{ __html: html }}
         />
 
