@@ -2,7 +2,7 @@
 title: "Personal Finance Dashboard: How to Track Your Entire Financial Life in One Place"
 metaTitle: "Personal Finance Dashboard: Track Everything | BankDeMark"
 metaDescription: "A personal finance dashboard consolidates your income, expenses, savings, and net worth in one view. Here's how to build and use one effectively."
-slug: /financial-dashboard/personal-finance-dashboard
+slug: /blog/personal-finance-dashboard
 canonicalUrl: https://bankdemark.com/financial-dashboard/personal-finance-dashboard
 datePublished: 2026-01-01
 dateModified: 2026-05-01

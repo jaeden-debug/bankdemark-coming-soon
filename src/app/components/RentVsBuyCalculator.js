@@ -3,7 +3,7 @@
 import CommandCenterCTA from "@/app/components/CommandCenterCTA";
 
 import { useMemo, useState } from "react";
-import { encodeCalculatorState } from "@/app/lib/calculatorShare";
+import { useCalculatorShare } from "@/app/lib/useCalculatorShare";
 import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
 
 const toNumber = (value) => Number(value) || 0;

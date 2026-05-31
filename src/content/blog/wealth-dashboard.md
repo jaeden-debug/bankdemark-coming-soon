@@ -2,7 +2,7 @@
 title: "Wealth Dashboard: Monitor Your Net Worth, Assets, and Investment Performance"
 metaTitle: "Wealth Dashboard: Track Your Net Worth | BankDeMark"
 metaDescription: "A wealth dashboard monitors your net worth, assets, investments, and liabilities in real time. Learn how to set one up and what metrics to track."
-slug: /financial-dashboard/wealth-dashboard
+slug: /blog/wealth-dashboard
 canonicalUrl: https://bankdemark.com/financial-dashboard/wealth-dashboard
 datePublished: 2026-01-01
 dateModified: 2026-05-01

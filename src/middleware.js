@@ -107,6 +107,18 @@ const legacyRedirects = {
   "/blog/zylx-ai-business-automation-case-study": "/blog/zylx-ai-workflow-automation-case-study",
   "/blog/blackwater-aquatics-niche-ecommerce-case-study": "/blog/blackwater-aquatics-case-study",
 
+  // Compound interest — old/renamed slugs
+  "/blog/compound-interest-calculator-canada": "/blog/compound-interest-canada",
+  "/blog/how-compound-interest-works": "/blog/what-is-compound-interest",
+  "/blog/daily-vs-monthly-compound-interest": "/blog/daily-compound-interest",
+
+  // Financial dashboard cluster — old nested slugs redirected to flat slugs
+  "/blog/financial-dashboard/what-is-a-financial-dashboard": "/blog/what-is-a-financial-dashboard",
+  "/blog/financial-dashboard/best-financial-dashboard-software": "/blog/best-financial-dashboard-software",
+  "/blog/financial-dashboard/personal-finance-dashboard": "/blog/personal-finance-dashboard",
+  "/blog/financial-dashboard/wealth-dashboard": "/blog/wealth-dashboard",
+  "/blog/financial-dashboard/money-dashboard": "/blog/money-dashboard",
+
   "/favicon.webp": "/icon.png",
 
   "/index.html": "/",

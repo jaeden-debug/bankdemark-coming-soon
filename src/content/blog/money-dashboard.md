@@ -2,7 +2,7 @@
 title: "Money Dashboard: Take Control of Your Monthly Cashflow"
 metaTitle: "Money Dashboard: Control Your Monthly Budget | BankDeMark"
 metaDescription: "A money dashboard gives you a live overview of your income, spending, savings, and bills. Here's how to build one that actually changes your habits."
-slug: /financial-dashboard/money-dashboard
+slug: /blog/money-dashboard
 canonicalUrl: https://bankdemark.com/financial-dashboard/money-dashboard
 datePublished: 2026-01-01
 dateModified: 2026-05-01

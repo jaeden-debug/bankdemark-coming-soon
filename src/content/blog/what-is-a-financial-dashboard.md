@@ -2,7 +2,7 @@
 title: "What Is a Financial Dashboard? Definition, Components & How It Works"
 metaTitle: "What Is a Financial Dashboard? | BankDeMark"
 metaDescription: "A financial dashboard is a single screen showing your full money picture. Learn what it tracks, how it works, and why you need one in 2026."
-slug: /financial-dashboard/what-is-a-financial-dashboard
+slug: /blog/what-is-a-financial-dashboard
 canonicalUrl: https://bankdemark.com/financial-dashboard/what-is-a-financial-dashboard
 datePublished: 2026-01-01
 dateModified: 2026-05-01

@@ -2,7 +2,7 @@
 title: "The Complete Guide to Financial Dashboards (2026)"
 metaTitle: "Financial Dashboard: The Complete Guide | BankDeMark"
 metaDescription: "Everything you need to know about financial dashboards — what they track, how to build one, and the best tools for Canada and the U.S. in 2026."
-slug: /financial-dashboard
+slug: /blog/financial-dashboard
 canonicalUrl: https://bankdemark.com/financial-dashboard
 datePublished: 2026-01-01
 dateModified: 2026-05-01
