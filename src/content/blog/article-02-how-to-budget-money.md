@@ -1,4 +1,8 @@
 ---
+slug: "/blog/how-to-budget-money"
+title: "How to Budget Money: A Step-by-Step Guide"
+category: "Personal Finance"
+date: "2026-05-02"
 excerpt: >-
   To budget money, track your income and expenses, assign spending categories,
   use a framework like 50/30/20 or zero-based budgeting, automate savings

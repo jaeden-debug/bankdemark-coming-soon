@@ -169,13 +169,13 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
         <div className="registered-right">
           <div className="registered-result-hero">
             <small>{activeRRSP ? "Projected RRSP Value" : "Projected TFSA Value"}</small>
-            <strong>{formatter.format(result.projectedValue)}</strong>
+            <strong className="money-green">{formatter.format(result.projectedValue)}</strong>
             <p>Estimated future value after current balance, contribution, return, and timeline.</p>
           </div>
 
           <div className={result.overContribution > 0 ? "registered-alert danger" : "registered-alert safe"}>
             <small>{result.overContribution > 0 ? "Possible Over-Contribution" : "Estimated Room Check"}</small>
-            <strong>{result.overContribution > 0 ? formatter.format(result.overContribution) : "Within estimate"}</strong>
+            <strong className={result.overContribution > 0 ? "money-red" : "money-green"}>{result.overContribution > 0 ? formatter.format(result.overContribution) : "Within estimate"}</strong>
             <p>
               {result.overContribution > 0
                 ? "Reduce the contribution or confirm exact CRA room before contributing."
@@ -186,8 +186,8 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
           <div className="registered-metrics">
             <div><span>Estimated Contribution Room</span><strong>{formatter.format(result.estimatedRoom)}</strong></div>
             <div><span>Allowed Contribution Used</span><strong>{formatter.format(result.allowedContribution)}</strong></div>
-            <div><span>{activeRRSP ? "Estimated Tax Refund" : "Estimated Tax-Free Growth"}</span><strong>{formatter.format(activeRRSP ? result.taxRefund : result.taxFreeGrowth)}</strong></div>
-            <div><span>{activeRRSP ? "Tax-Deferred Growth" : "Withdrawal Treatment"}</span><strong>{activeRRSP ? formatter.format(result.taxDeferredGrowth) : "Tax-free"}</strong></div>
+            <div><span>{activeRRSP ? "Estimated Tax Refund" : "Estimated Tax-Free Growth"}</span><strong className="money-green">{formatter.format(activeRRSP ? result.taxRefund : result.taxFreeGrowth)}</strong></div>
+            <div><span>{activeRRSP ? "Tax-Deferred Growth" : "Withdrawal Treatment"}</span><strong className="money-green">{activeRRSP ? formatter.format(result.taxDeferredGrowth) : "Tax-free"}</strong></div>
           </div>
 
           <div className="registered-note">

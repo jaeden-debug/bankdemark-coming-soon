@@ -1,4 +1,8 @@
 ---
+slug: "/blog/ai-finance-tools"
+title: "Best AI Finance Tools for Personal and Business Money Management"
+category: "Personal Finance"
+date: "2026-05-10"
 excerpt: >-
   AI finance tools are transforming money management by automating routine tasks
   (expense categorization, bill payment, savings transfers), providing

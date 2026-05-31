@@ -235,14 +235,14 @@ export default function RentVsBuyCalculator() {
           </div>
 
           <div className="rentbuy-compare-grid">
-            <div><span>Owner Equity</span><strong>{formatter.format(result.ownerEquity)}</strong><p>Future home value minus remaining mortgage.</p></div>
-            <div><span>Renter Investment Value</span><strong>{formatter.format(result.renterInvestmentValue)}</strong><p>Down payment and ownership cost savings invested.</p></div>
+            <div><span>Owner Equity</span><strong className="money-green">{formatter.format(result.ownerEquity)}</strong><p>Future home value minus remaining mortgage.</p></div>
+            <div><span>Renter Investment Value</span><strong className="money-green">{formatter.format(result.renterInvestmentValue)}</strong><p>Down payment and ownership cost savings invested.</p></div>
           </div>
 
           <div className="rentbuy-metrics">
             <div><span>Monthly Mortgage</span><strong>{formatter.format(result.mortgagePayment)}</strong></div>
             <div><span>Loan Amount</span><strong>{formatter.format(result.loan)}</strong></div>
-            <div><span>Future Home Value</span><strong>{formatter.format(result.futureHomeValue)}</strong></div>
+            <div><span>Future Home Value</span><strong className="money-green">{formatter.format(result.futureHomeValue)}</strong></div>
             <div><span>Remaining Mortgage</span><strong>{formatter.format(result.remainingMortgage)}</strong></div>
             <div><span>Total Buying Cost</span><strong>{formatter.format(result.totalBuyingCost)}</strong></div>
             <div><span>Total Rent Paid</span><strong>{formatter.format(result.totalRentCost)}</strong></div>

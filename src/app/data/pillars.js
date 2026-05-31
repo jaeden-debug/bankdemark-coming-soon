@@ -41,4 +41,18 @@ export const pillars = [
     icon: "🚀",
     description: "The strategies, mindsets, and milestones used by those who achieved financial independence and how you can too.",
   },
+  {
+    slug: "financial-calculators",
+    title: "Financial Calculators",
+    subtitle: "Project every number that builds wealth.",
+    icon: "🧮",
+    description: "Free calculators for compound interest, retirement, investing, FIRE, budgeting, net worth, debt payoff, and Canadian registered accounts.",
+  },
+  {
+    slug: "compound-interest-calculator",
+    title: "Compound Interest Calculator",
+    subtitle: "Model how money compounds over time.",
+    icon: "📊",
+    description: "The complete guide to compound interest: formula, calculator inputs, Canada and U.S. account strategies, and the math behind long-term wealth building.",
+  },
 ];

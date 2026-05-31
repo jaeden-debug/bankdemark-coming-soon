@@ -161,13 +161,13 @@ export default function InvestmentCalculator() {
         <div className="investment-right">
           <div className="investment-result-hero">
             <small>Projected Portfolio Value</small>
-            <strong>{formatter.format(result.endingBalance)}</strong>
+            <strong className="money-green">{formatter.format(result.endingBalance)}</strong>
             <p>Estimated final value after contributions, returns, annual fees, and optional tax drag.</p>
           </div>
 
           <div className="investment-metrics">
             <div><span>Total Invested</span><strong>{formatter.format(result.totalInvested)}</strong></div>
-            <div><span>Estimated Gain</span><strong>{formatter.format(result.estimatedGain)}</strong></div>
+            <div><span>Estimated Gain</span><strong className={result.estimatedGain >= 0 ? "money-green" : "money-red"}>{formatter.format(result.estimatedGain)}</strong></div>
             <div><span>Fees / Drag</span><strong>{formatter.format(result.estimatedFeesAndDrag)}</strong></div>
             <div><span>Net Annual Return</span><strong>{(result.netAnnualRate * 100).toFixed(2)}%</strong></div>
           </div>

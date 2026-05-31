@@ -145,12 +145,12 @@ export default function BudgetCalculator() {
         <div className="bdm-right">
           <div className="bdm-result-hero">
             <small>Remaining Monthly Margin</small>
-            <strong>{formatter.format(result.leftover)}</strong>
+            <strong className={result.leftover >= 0 ? "money-green" : "money-red"}>{formatter.format(result.leftover)}</strong>
             <p>{result.leftover >= 0 ? "Money left after planned monthly expenses." : "You are spending more than monthly income."}</p>
           </div>
 
           <div className="bdm-metrics">
-            <div><span>Total Income</span><strong>{formatter.format(result.incomeValue)}</strong></div>
+            <div><span>Total Income</span><strong className="money-green">{formatter.format(result.incomeValue)}</strong></div>
             <div><span>Total Expenses</span><strong>{formatter.format(result.expenses)}</strong></div>
             <div><span>Needs</span><strong>{formatter.format(result.needs)}</strong></div>
             <div><span>Debt + Future</span><strong>{formatter.format(result.future)}</strong></div>

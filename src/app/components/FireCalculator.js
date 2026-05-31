@@ -168,7 +168,7 @@ export default function FireCalculator() {
         <div className="bdm-right">
           <div className="bdm-result-hero">
             <small>Your FIRE Number</small>
-            <strong>{result.fireNumber ? formatter.format(result.fireNumber) : "—"}</strong>
+            <strong className="money-green">{result.fireNumber ? formatter.format(result.fireNumber) : "—"}</strong>
             <p>Based on annual spending and withdrawal rate.</p>
           </div>
 

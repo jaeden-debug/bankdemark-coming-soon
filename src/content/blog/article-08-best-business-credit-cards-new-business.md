@@ -1,4 +1,8 @@
 ---
+slug: "/blog/best-business-credit-cards-new-business"
+title: "Best Business Credit Cards for New Businesses"
+category: "Business Credit"
+date: "2026-05-08"
 excerpt: >-
   New businesses can qualify for business credit cards — but most will require a
   personal guarantee and evaluate the owner's personal credit score during the

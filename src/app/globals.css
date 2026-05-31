@@ -5559,3 +5559,37 @@ select:focus {
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Calculator value colors */
+.money-green,
+strong.money-green,
+.bdm-result-hero strong,
+.bdm-metrics strong,
+.investment-result-hero strong,
+.investment-metrics strong,
+.emergency-metrics strong,
+.emergency-hero-card strong,
+.fire-result-hero strong,
+.retirement-result-hero strong,
+.retirement-metrics strong,
+.networth-result-main strong,
+.networth-metrics strong,
+.networth-hero-card strong,
+.registered-result-hero strong,
+.registered-metrics strong,
+.rentbuy-metrics strong,
+.rentbuy-hero-card strong,
+.rentbuy-compare-grid strong,
+.mortgage-main-result strong,
+.result-card.featured strong {
+  color: #22c55e;
+}
+
+.money-red,
+strong.money-red,
+.retirement-status.negative strong,
+.registered-alert.danger strong,
+.bdm-field-warning strong {
+  color: #ef4444;
+}

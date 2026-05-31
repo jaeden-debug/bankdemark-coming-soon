@@ -1,4 +1,8 @@
 ---
+slug: "/blog/personal-finance-for-beginners"
+title: "Personal Finance for Beginners: The Complete Money System"
+category: "Personal Finance"
+date: "2026-05-01"
 excerpt: >-
   Personal finance for beginners starts with understanding your cash flow,
   building a budget, saving an emergency fund, eliminating high-interest debt,

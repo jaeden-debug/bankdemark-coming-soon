@@ -396,7 +396,7 @@ export default function NetWorthCalculator() {
         <div className="networth-results" ref={resultsRef}>
           <div className="networth-hero-card">
             <small>Your Net Worth</small>
-            <strong>{formatter.format(result.netWorth)}</strong>
+            <strong className={result.netWorth >= 0 ? "money-green" : "money-red"}>{formatter.format(result.netWorth)}</strong>
             <p>{result.stageNote}</p>
           </div>
 
@@ -407,10 +407,10 @@ export default function NetWorthCalculator() {
           </div>
 
           <div className="networth-metrics">
-            <div><span>Total Assets</span><strong>{formatter.format(result.totalAssets)}</strong></div>
+            <div><span>Total Assets</span><strong className="money-green">{formatter.format(result.totalAssets)}</strong></div>
             <div><span>Total Liabilities</span><strong>{formatter.format(result.totalLiabilities)}</strong></div>
-            <div><span>Liquid Assets</span><strong>{formatter.format(result.liquidAssets)}</strong></div>
-            <div><span>Investable Assets</span><strong>{formatter.format(result.investableAssets)}</strong></div>
+            <div><span>Liquid Assets</span><strong className="money-green">{formatter.format(result.liquidAssets)}</strong></div>
+            <div><span>Investable Assets</span><strong className="money-green">{formatter.format(result.investableAssets)}</strong></div>
             <div><span>Debt / Asset Ratio</span><strong>{(result.debtToAssetRatio * 100).toFixed(1)}%</strong></div>
             <div><span>Liquidity Ratio</span><strong>{(result.liquidRatio * 100).toFixed(1)}%</strong></div>
           </div>

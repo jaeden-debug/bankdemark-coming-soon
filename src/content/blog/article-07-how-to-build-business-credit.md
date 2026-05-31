@@ -1,4 +1,8 @@
 ---
+slug: "/blog/how-to-build-business-credit"
+title: "How to Build Business Credit: Complete Framework"
+category: "Business Credit"
+date: "2026-05-07"
 excerpt: >-
   Building business credit starts with establishing your business as a legal
   entity separate from you personally, obtaining an EIN (USA) or Business Number

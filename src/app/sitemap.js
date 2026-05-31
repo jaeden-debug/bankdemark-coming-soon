@@ -23,6 +23,8 @@ const staticRoutes = [
   { path: "/pillars/debt-management",                  freq: "weekly",  priority: 0.85 },
   { path: "/pillars/financial-freedom",                freq: "weekly",  priority: 0.85 },
   { path: "/pillars/banking",                          freq: "weekly",  priority: 0.85 },
+  { path: "/pillars/financial-calculators",            freq: "weekly",  priority: 0.9  },
+  { path: "/pillars/compound-interest-calculator",     freq: "weekly",  priority: 0.9  },
   { path: "/calculators/compound-interest-calculator", freq: "weekly",  priority: 0.9 },
   { path: "/calculators/investment-calculator",        freq: "weekly",  priority: 0.9 },
   { path: "/calculators/retirement-calculator",        freq: "weekly",  priority: 0.9 },

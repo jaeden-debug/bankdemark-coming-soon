@@ -1,4 +1,8 @@
 ---
+slug: "/blog/how-to-save-money-emergency-fund"
+title: "How to Save Money and Build an Emergency Fund"
+category: "Personal Finance"
+date: "2026-05-03"
 excerpt: >-
   To save money and build an emergency fund: calculate your target (3–6 months
   of essential expenses), open a dedicated high-yield savings account, automate

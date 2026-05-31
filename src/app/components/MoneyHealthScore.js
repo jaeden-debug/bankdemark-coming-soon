@@ -260,11 +260,11 @@ export default function MoneyHealthScore() {
           <div className="health-metrics-grid">
             <div>
               <span>Monthly Margin</span>
-              <strong>{formatter.format(result.surplus)}</strong>
+              <strong className={result.surplus >= 0 ? "money-green" : "money-red"}>{formatter.format(result.surplus)}</strong>
             </div>
             <div>
               <span>Savings Rate</span>
-              <strong>{(result.savingsRate * 100).toFixed(1)}%</strong>
+              <strong className={result.savingsRate > 0 ? "money-green" : undefined}>{(result.savingsRate * 100).toFixed(1)}%</strong>
             </div>
             <div>
               <span>Emergency Fund</span>
@@ -280,7 +280,7 @@ export default function MoneyHealthScore() {
             </div>
             <div>
               <span>Net Worth Estimate</span>
-              <strong>{formatter.format(result.netWorthEstimate)}</strong>
+              <strong className={result.netWorthEstimate >= 0 ? "money-green" : "money-red"}>{formatter.format(result.netWorthEstimate)}</strong>
             </div>
           </div>
 

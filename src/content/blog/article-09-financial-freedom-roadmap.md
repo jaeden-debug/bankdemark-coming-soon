@@ -1,4 +1,8 @@
 ---
+slug: "/blog/financial-freedom-roadmap"
+title: "Financial Freedom Roadmap: Your Step-by-Step Plan"
+category: "Financial Freedom"
+date: "2026-05-09"
 excerpt: >-
   Financial freedom is the point where your passive income and invested assets
   can sustain your living expenses without requiring you to work. Getting there

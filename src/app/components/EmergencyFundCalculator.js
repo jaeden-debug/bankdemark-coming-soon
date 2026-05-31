@@ -156,11 +156,11 @@ export default function EmergencyFundCalculator() {
           </div>
 
           <div className="emergency-metrics">
-            <div><span>Your Target</span><strong>{formatter.format(result.target)}</strong></div>
-            <div><span>Savings Gap</span><strong>{formatter.format(result.gap)}</strong></div>
+            <div><span>Your Target</span><strong className="money-green">{formatter.format(result.target)}</strong></div>
+            <div><span>Savings Gap</span><strong className={result.gap > 0 ? "money-red" : "money-green"}>{formatter.format(result.gap)}</strong></div>
             <div><span>Current Coverage</span><strong>{result.currentCoverage.toFixed(1)} mo</strong></div>
             <div><span>Time to Goal</span><strong>{result.monthsToGoal === Infinity ? "—" : `${result.monthsToGoal} mo`}</strong></div>
-            <div><span>Risk-Based Target</span><strong>{formatter.format(result.recommendedTarget)}</strong></div>
+            <div><span>Risk-Based Target</span><strong className="money-green">{formatter.format(result.recommendedTarget)}</strong></div>
             <div><span>Recommended Months</span><strong>{result.recommendedMonths} mo</strong></div>
           </div>
 

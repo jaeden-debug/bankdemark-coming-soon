@@ -44,6 +44,9 @@ export default function CompoundInterestCalculator() {
     const months = yearsValue * 12;
 
     const futurePrincipal = principalValue * Math.pow(1 + r / n, n * t);
+    // Lump sum compounds at the selected compounding frequency.
+    // Monthly contributions are treated as end-of-month deposits, so they compound monthly.
+    // FV = PV(1 + r/n)^(nt) + PMT * [((1 + r/12)^(12t) - 1) / (r/12)]
     const monthlyRate = r / 12;
 
     const futureContributions =
@@ -180,8 +183,8 @@ export default function CompoundInterestCalculator() {
           </div>
 
           <div className="compound-metrics bdm-metrics">
-            <div><span>Total Contributions</span><strong>{formatter.format(result.totalContributions)}</strong></div>
-            <div><span>Estimated Growth</span><strong>{formatter.format(result.estimatedGrowth)}</strong></div>
+            <div><span>Total Contributions</span><strong className="money-green">{formatter.format(result.totalContributions)}</strong></div>
+            <div><span>Estimated Growth</span><strong className={result.estimatedGrowth >= 0 ? "money-green" : "money-red"}>{formatter.format(result.estimatedGrowth)}</strong></div>
           </div>
 
           <div className="tool-note">

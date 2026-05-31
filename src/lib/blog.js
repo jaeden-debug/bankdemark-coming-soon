@@ -11,7 +11,18 @@ function cleanSlug(file) {
 
 function inferCategory(slug) {
   if (slug.includes("business-credit")) return "Business Credit";
-  if (slug.includes("investing") || slug.includes("index-funds") || slug.includes("etfs")) return "Investing";
+  if (
+    slug.includes("compound") ||
+    slug.includes("investing") ||
+    slug.includes("index-funds") ||
+    slug.includes("etfs") ||
+    slug.includes("how-much-will") ||
+    slug.includes("how-long-to-reach") ||
+    slug.includes("million-investing") ||
+    slug.includes("growth-calculator") ||
+    slug.includes("investment-calculator") ||
+    slug.includes("financial-calculator")
+  ) return "Investing";
   if (slug.includes("budget") || slug.includes("save-money") || slug.includes("emergency") || slug.includes("personal-finance")) return "Personal Finance";
   if (slug.includes("financial-freedom")) return "Financial Freedom";
   if (slug.includes("seo") || slug.includes("shopify") || slug.includes("ecommerce") || slug.includes("ai")) return "Business Systems";

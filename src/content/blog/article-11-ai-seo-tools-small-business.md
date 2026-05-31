@@ -1,4 +1,8 @@
 ---
+slug: "/blog/ai-seo-tools-small-business"
+title: "Best AI SEO Tools for Small Business"
+category: "Business Credit"
+date: "2026-05-11"
 excerpt: >-
   AI SEO tools automate the most time-intensive parts of search engine
   optimization — keyword research, content briefs, on-page optimization, and

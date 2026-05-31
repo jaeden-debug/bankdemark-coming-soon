@@ -170,13 +170,13 @@ export default function RetirementCalculator() {
         <div className="retirement-right">
           <div className="retirement-result-hero">
             <small>Projected Retirement Nest Egg</small>
-            <strong>{formatter.format(result.projectedNestEgg)}</strong>
+            <strong className="money-green">{formatter.format(result.projectedNestEgg)}</strong>
             <p>Estimated value at retirement after savings, contributions, and investment growth.</p>
           </div>
 
           <div className={result.gap >= 0 ? "retirement-status positive" : "retirement-status negative"}>
             <small>{result.gap >= 0 ? "Projected Surplus" : "Projected Gap"}</small>
-            <strong>{formatter.format(Math.abs(result.gap))}</strong>
+            <strong className={result.gap >= 0 ? "money-green" : "money-red"}>{formatter.format(Math.abs(result.gap))}</strong>
             <p>Compared against a 25x annual spending target.</p>
           </div>
 

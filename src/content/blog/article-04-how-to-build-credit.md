@@ -1,4 +1,8 @@
 ---
+slug: "/blog/how-to-build-credit"
+title: "How to Build Credit: A Complete Guide"
+category: "Personal Finance"
+date: "2026-05-04"
 excerpt: >-
   To build credit from scratch, open a secured credit card or credit-builder
   loan, make all payments on time, keep your credit utilization below 30%, and

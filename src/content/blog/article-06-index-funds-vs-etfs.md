@@ -1,4 +1,8 @@
 ---
+slug: "/blog/index-funds-vs-etfs"
+title: "Index Funds vs ETFs: Which Should You Choose?"
+category: "Investing"
+date: "2026-05-06"
 excerpt: >-
   Both index funds and ETFs can be excellent choices for beginners. The key
   insight is that ETF is a *structure* (traded on an exchange) while "index
