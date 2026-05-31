@@ -455,7 +455,7 @@ export default function FinancialCalculatorsPage() {
           </p>
           <ul>
             <li>
-              <Link href="/command">Build Your Personal Financial Dashboard — BankDeMark Command</Link>
+              <a href="https://command.bankdemark.com/command" target="_blank" rel="noopener noreferrer">Build Your Personal Financial Dashboard — BankDeMark Command</a>
             </li>
             <li>
               <Link href="/calculators">Open the Full Calculator Hub</Link>

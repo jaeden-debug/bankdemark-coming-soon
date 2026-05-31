@@ -462,7 +462,7 @@ export default function CompoundInterestCalculatorPage() {
           </p>
           <ul>
             <li>
-              <Link href="/command">Build Your Personal Financial Dashboard — BankDeMark Command</Link>
+              <a href="https://command.bankdemark.com/command" target="_blank" rel="noopener noreferrer">Build Your Personal Financial Dashboard — BankDeMark Command</a>
             </li>
           </ul>
         </div>

@@ -27,7 +27,6 @@ export const seoNodes = {
       "/calculators/mortgage-calculator",
       "/pillars/investing",
       "/pillars/financial-freedom",
-      "/command",
     ],
   },
   "/pillars/compound-interest-calculator": {
@@ -50,7 +49,6 @@ export const seoNodes = {
       "/blog/how-long-to-reach-1-million-investing",
       "/pillars/investing",
       "/pillars/financial-freedom",
-      "/command",
     ],
   },
 
@@ -170,7 +168,6 @@ export const seoNodes = {
       "/pillars/investing",
       "/pillars/financial-freedom",
       "/blog/compound-interest-canada",
-      "/command",
     ],
   },
   "/blog/how-much-will-100-a-month-grow": {
@@ -213,7 +210,6 @@ export const seoNodes = {
       "/calculators/retirement-calculator",
       "/pillars/financial-freedom",
       "/blog/how-much-will-500-a-month-grow",
-      "/command",
     ],
   },
   "/blog/compound-interest-savings-account": {
