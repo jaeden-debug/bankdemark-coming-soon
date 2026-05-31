@@ -18,23 +18,34 @@ export default function GeneratedTOC({
   const [items, setItems] = useState([]);
 
   useEffect(() => {
-    const headings = Array.from(document.querySelectorAll(selector));
-    const seen = new Map();
+    let cancelled = false;
 
-    const nextItems = headings
-      .filter((h) => h.textContent?.trim())
-      .map((h) => {
-        const base = h.id || slugify(h.textContent);
-        const count = seen.get(base) || 0;
-        const id = count ? `${base}-${count + 1}` : base;
+    const raf = requestAnimationFrame(() => {
+      if (cancelled) return;
 
-        seen.set(base, count + 1);
-        h.id = id;
+      const headings = Array.from(document.querySelectorAll(selector));
+      const seen = new Map();
 
-        return { id, text: h.textContent.trim() };
-      });
+      const nextItems = headings
+        .filter((h) => h.textContent?.trim())
+        .map((h) => {
+          const base = h.id || slugify(h.textContent);
+          const count = seen.get(base) || 0;
+          const id = count ? `${base}-${count + 1}` : base;
 
-    setItems(nextItems);
+          seen.set(base, count + 1);
+          h.id = id;
+
+          return { id, text: h.textContent.trim() };
+        });
+
+      setItems(nextItems);
+    });
+
+    return () => {
+      cancelled = true;
+      cancelAnimationFrame(raf);
+    };
   }, [selector]);
 
   if (items.length < 2) return null;

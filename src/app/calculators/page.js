@@ -119,18 +119,17 @@ export default function CalculatorsPage() {
         <h1>Financial Planning Calculators</h1>
 
         <p>
-          AI-powered wealth tools for investing, debt payoff, retirement,
+          Explore calculators for compound interest, retirement, investing,
           budgeting, mortgages, and long-term financial strategy.
-
-          <div className="premium-actions">
-            <a href="https://command.bankdemark.com/command" className="premium-btn primary">
-              Open AI Financial Dashboard
-            </a>
-            <a href="https://command.bankdemark.com/command/marketplace" className="premium-btn secondary">
-              Explore Command Marketplace
-            </a>
-          </div>
         </p>
+        <div className="premium-actions">
+          <a href="https://command.bankdemark.com/command" className="premium-btn primary">
+            Open AI Financial Dashboard
+          </a>
+          <a href="https://command.bankdemark.com/command/marketplace" className="premium-btn secondary">
+            Explore Command Marketplace
+          </a>
+        </div>
       </div>
 
       <section className="hub-section calculators-hub">

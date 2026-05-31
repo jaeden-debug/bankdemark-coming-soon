@@ -2570,6 +2570,99 @@ backdrop-filter: blur(14px);
   background: rgba(255,255,255,.11);
 }
 
+/* --- Smart link type chip (icon + label) --- */
+.smart-link-type {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--bdm-gold) !important;
+  font-size: .72rem !important;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .14em;
+}
+
+.smart-link-type i {
+  font-style: normal;
+  font-size: .9em;
+  opacity: .85;
+}
+
+/* --- Description text inside cards --- */
+.smart-link-featured .smart-link-desc {
+  margin: 4px 0 0;
+  color: rgba(255,255,255,.58);
+  font-size: .92rem;
+  line-height: 1.55;
+  max-width: 480px;
+}
+
+.smart-link-row .smart-link-desc {
+  color: rgba(255,255,255,.48);
+  font-size: .82rem;
+  line-height: 1.45;
+  margin: 0;
+}
+
+/* --- CTA text on featured card --- */
+.smart-link-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  color: var(--bdm-gold-light);
+  font-size: .82rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+/* --- Arrow on row cards --- */
+.smart-link-arrow {
+  color: rgba(255,255,255,.38);
+  font-size: 1rem;
+  font-weight: 400;
+  transition: color .2s, transform .2s;
+}
+
+.smart-link-row:hover .smart-link-arrow {
+  color: var(--bdm-gold);
+  transform: translateX(3px);
+}
+
+/* Fix row layout for new 4-element grid (type / title / desc / arrow) */
+.smart-link-list {
+  display: grid;
+  gap: 10px;
+}
+
+.smart-link-row {
+  grid-template-columns: auto 1fr auto !important;
+  grid-template-rows: auto auto;
+  align-items: start;
+}
+
+.smart-link-row .smart-link-type {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.smart-link-row strong {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.smart-link-row .smart-link-desc {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.smart-link-row .smart-link-arrow {
+  grid-column: 3;
+  grid-row: 1 / 3;
+  align-self: center;
+}
+
 @media (max-width: 900px) {
   .smart-link-inner {
     grid-template-columns: 1fr;

@@ -58,7 +58,7 @@ function processFile(file) {
 
   const usedIds = [];
 
-  function useId(id) {
+  function trackId(id) {
     if (!usedIds.includes(id)) usedIds.push(id);
     return usedIds.indexOf(id) + 1;
   }
@@ -67,7 +67,7 @@ function processFile(file) {
     const found = findSource(label);
     if (!found) return `[SOURCE NEEDED: ${label.trim()}]`;
     changed = true;
-    const n = useId(found.id);
+    const n = trackId(found.id);
     return citationHtml(found.id, n);
   });
 
@@ -80,7 +80,7 @@ function processFile(file) {
   for (const ref of explicitRefs) {
     const id = ref[1];
     if (!registry[id]) continue;
-    const n = useId(id);
+    const n = trackId(id);
     content = content.replace(ref[0], citationHtml(id, n));
     changed = true;
   }
