@@ -1,5 +1,7 @@
 "use client";
 
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
+
 import { useMemo, useState } from "react";
 import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
@@ -8,7 +10,6 @@ const toNumber = (value) => Number(value) || 0;
 
 export default function FireCalculator() {
   const [country, setCountry] = useState("canada");
-  const [shareStatus, setShareStatus] = useState("idle");
 
   const [age, setAge] = useState("");
   const [invested, setInvested] = useState("");
@@ -24,6 +25,7 @@ export default function FireCalculator() {
     setMonthlyContribution((v) => convertCurrencyAmount(v, country, nextCountry));
     setCountry(nextCountry);
   };
+
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -72,47 +74,25 @@ export default function FireCalculator() {
     };
   }, [age, invested, annualSpending, monthlyContribution, returnRate, withdrawalRate]);
 
+  const { shareStatus, shareUrl, handleShare, copyShareUrl } = useCalculatorShare({
+    calculator: "fire-calculator",
+    getInputs: () => ({
+        "Annual Expenses": String(annualExpenses ?? ""),
+        "Current Savings": String(currentSavings ?? ""),
+        "Annual Savings": String(annualSavings ?? ""),
+        "Annual Return (%)": String(annualReturn ?? ""),
+    }),
+    getResults: () => ({
+        "FIRE Number": String(formatter.format(result.fireNumber)),
+        "Years to FIRE": String(String(result.yearsToFire)),
+    }),
+  });
+
+
   const hasRequiredInputs =
     toNumber(age) > 0 &&
     toNumber(annualSpending) > 0 &&
     toNumber(returnRate) >= 0;
-
-  async function handleShareResults() {
-    if (!hasRequiredInputs || typeof window === "undefined") return;
-
-    const payload = {
-      calculator: "fire-calculator",
-      country,
-      inputs: { age, invested, annualSpending, monthlyContribution, returnRate, withdrawalRate },
-      results: result,
-    };
-
-    const encoded = encodeCalculatorState(payload);
-    const shareUrl = `${window.location.origin}/share/fire-calculator?data=${encodeURIComponent(encoded)}`;
-
-    try {
-      setShareStatus("creating");
-
-      if (navigator.share && document.hasFocus()) {
-        await navigator.share({
-          title: "My FIRE Snapshot | BankDeMark",
-          text: "View this BankDeMark FIRE calculator snapshot.",
-          url: shareUrl,
-        });
-        setShareStatus("shared");
-      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
-        await navigator.clipboard.writeText(shareUrl);
-        setShareStatus("copied");
-      } else {
-        window.location.href = shareUrl;
-        return;
-      }
-
-      window.setTimeout(() => setShareStatus("idle"), 2200);
-    } catch {
-      setShareStatus("idle");
-    }
-  }
 
   return (
     <section className="bdm-tool fire-tool">
@@ -149,21 +129,40 @@ export default function FireCalculator() {
             </label>
           </div>
 
-          <button
-            type="button"
-            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
-            onClick={handleShareResults}
-          >
-            {!hasRequiredInputs
-              ? "Results calculate automatically"
-              : shareStatus === "creating"
-                ? "Creating Share Link..."
-                : shareStatus === "copied"
-                  ? "Link Copied"
+          <div className="share-btn-group">
+            <button
+              type="button"
+              className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+              onClick={handleShare}
+              disabled={shareStatus === "creating"}
+            >
+              {!hasRequiredInputs
+                ? "Results calculate automatically"
+                : shareStatus === "creating"
+                  ? "Creating link…"
                   : shareStatus === "shared"
-                    ? "Shared"
-                    : "Share Results"}
-          </button>
+                    ? "✓ Shared on mobile"
+                    : shareStatus === "copied"
+                      ? "✓ Link copied to clipboard"
+                      : shareStatus === "error"
+                        ? "Share failed — try again"
+                        : "Share Results"}
+            </button>
+            {shareUrl && (shareStatus === "ready" || shareStatus === "shared" || shareStatus === "copied") && (
+              <div className="share-url-field">
+                <input
+                  type="text"
+                  readOnly
+                  value={shareUrl}
+                  onClick={(e) => { e.target.select(); copyShareUrl(); }}
+                  aria-label="Share link — click to copy"
+                />
+                <button type="button" onClick={copyShareUrl} className="share-url-copy-btn">
+                  {shareStatus === "copied" ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="bdm-right">
@@ -186,6 +185,8 @@ export default function FireCalculator() {
           </div>
         </div>
       </div>
+
+      <CommandCenterCTA />
     </section>
   );
 }

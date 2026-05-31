@@ -1,5 +1,7 @@
 "use client";
 
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
+
 import { useMemo, useState } from "react";
 import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 
@@ -7,7 +9,6 @@ const toNumber = (value) => Number(value) || 0;
 
 export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
   const [accountType, setAccountType] = useState(mode);
-  const [shareStatus, setShareStatus] = useState("idle");
 
   const [annualIncome, setAnnualIncome] = useState("");
   const [currentBalance, setCurrentBalance] = useState("");
@@ -19,6 +20,7 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
 
   const activeRRSP = accountType === "rrsp";
   const calculatorSlug = activeRRSP ? "rrsp-calculator" : "tfsa-calculator";
+
 
   const formatter = new Intl.NumberFormat("en-CA", {
     style: "currency",
@@ -68,6 +70,20 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
     };
   }, [annualIncome, currentBalance, contribution, unusedRoom, years, annualReturn, taxRate, activeRRSP]);
 
+  const { shareStatus, shareUrl, handleShare, copyShareUrl } = useCalculatorShare({
+    calculator: "registered-account-calculator",
+    getInputs: () => ({
+        "Annual Contribution": String(annualContribution ?? ""),
+        "Annual Return (%)": String(annualReturn ?? ""),
+        "Years": String(years ?? ""),
+    }),
+    getResults: () => ({
+        "Future Value": String(formatter.format(result.futureValue)),
+        "Total Contributions": String(formatter.format(result.totalContributions)),
+    }),
+  });
+
+
   const hasRequiredInputs =
     toNumber(currentBalance) > 0 ||
     (toNumber(contribution) > 0 && toNumber(years) > 0);
@@ -75,54 +91,7 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
   const switchType = (type) => {
     setAccountType(type);
     setContribution("");
-    setShareStatus("idle");
   };
-
-  async function handleShareResults() {
-    if (!hasRequiredInputs || typeof window === "undefined") return;
-
-    const payload = {
-      calculator: calculatorSlug,
-      country: "canada",
-      inputs: {
-        accountType,
-        annualIncome,
-        currentBalance,
-        contribution,
-        unusedRoom,
-        years,
-        annualReturn,
-        taxRate,
-      },
-      results: result,
-    };
-
-    const encoded = encodeCalculatorState(payload);
-    const shareUrl = `${window.location.origin}/share/${calculatorSlug}?data=${encodeURIComponent(encoded)}`;
-
-    try {
-      setShareStatus("creating");
-
-      if (navigator.share && document.hasFocus()) {
-        await navigator.share({
-          title: `My ${activeRRSP ? "RRSP" : "TFSA"} Projection | BankDeMark`,
-          text: `View this BankDeMark ${activeRRSP ? "RRSP" : "TFSA"} projection.`,
-          url: shareUrl,
-        });
-        setShareStatus("shared");
-      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
-        await navigator.clipboard.writeText(shareUrl);
-        setShareStatus("copied");
-      } else {
-        window.location.href = shareUrl;
-        return;
-      }
-
-      window.setTimeout(() => setShareStatus("idle"), 2200);
-    } catch {
-      setShareStatus("idle");
-    }
-  }
 
   return (
     <section className="registered-tool">
@@ -161,21 +130,40 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
             )}
           </div>
 
-          <button
-            type="button"
-            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
-            onClick={handleShareResults}
-          >
-            {!hasRequiredInputs
-              ? "Results calculate automatically"
-              : shareStatus === "creating"
-                ? "Creating Share Link..."
-                : shareStatus === "copied"
-                  ? "Link Copied"
+          <div className="share-btn-group">
+            <button
+              type="button"
+              className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+              onClick={handleShare}
+              disabled={shareStatus === "creating"}
+            >
+              {!hasRequiredInputs
+                ? "Results calculate automatically"
+                : shareStatus === "creating"
+                  ? "Creating link…"
                   : shareStatus === "shared"
-                    ? "Shared"
-                    : "Share Results"}
-          </button>
+                    ? "✓ Shared on mobile"
+                    : shareStatus === "copied"
+                      ? "✓ Link copied to clipboard"
+                      : shareStatus === "error"
+                        ? "Share failed — try again"
+                        : "Share Results"}
+            </button>
+            {shareUrl && (shareStatus === "ready" || shareStatus === "shared" || shareStatus === "copied") && (
+              <div className="share-url-field">
+                <input
+                  type="text"
+                  readOnly
+                  value={shareUrl}
+                  onClick={(e) => { e.target.select(); copyShareUrl(); }}
+                  aria-label="Share link — click to copy"
+                />
+                <button type="button" onClick={copyShareUrl} className="share-url-copy-btn">
+                  {shareStatus === "copied" ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="registered-right">
@@ -212,6 +200,8 @@ export default function RegisteredAccountCalculator({ mode = "rrsp" }) {
           </div>
         </div>
       </div>
+
+      <CommandCenterCTA />
     </section>
   );
 }

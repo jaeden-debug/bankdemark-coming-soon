@@ -1,5 +1,7 @@
 "use client";
 
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
+
 import { useMemo, useState } from "react";
 import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
@@ -8,7 +10,6 @@ const toNumber = (value) => Number(value) || 0;
 
 export default function DebtPayoffCalculator() {
   const [country, setCountry] = useState("canada");
-  const [shareStatus, setShareStatus] = useState("idle");
 
   const [balance, setBalance] = useState("");
   const [rate, setRate] = useState("");
@@ -22,6 +23,7 @@ export default function DebtPayoffCalculator() {
     setExtraPayment((v) => convertCurrencyAmount(v, country, nextCountry));
     setCountry(nextCountry);
   };
+
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -65,47 +67,25 @@ export default function DebtPayoffCalculator() {
     };
   }, [balance, rate, monthlyPayment, extraPayment]);
 
+  const { shareStatus, shareUrl, handleShare, copyShareUrl } = useCalculatorShare({
+    calculator: "debt-payoff-calculator",
+    getInputs: () => ({
+        "Balance": String(balance ?? ""),
+        "Interest Rate (%)": String(rate ?? ""),
+        "Monthly Payment": String(payment ?? ""),
+    }),
+    getResults: () => ({
+        "Months to Payoff": String(String(result.months)),
+        "Total Interest Paid": String(formatter.format(result.totalInterest)),
+        "Total Paid": String(formatter.format(result.totalPaid)),
+    }),
+  });
+
+
   const hasRequiredInputs =
     toNumber(balance) > 0 &&
     toNumber(monthlyPayment) > 0 &&
     toNumber(rate) >= 0;
-
-  async function handleShareResults() {
-    if (!hasRequiredInputs || typeof window === "undefined") return;
-
-    const payload = {
-      calculator: "debt-payoff-calculator",
-      country,
-      inputs: { balance, rate, monthlyPayment, extraPayment },
-      results: result,
-    };
-
-    const encoded = encodeCalculatorState(payload);
-    const shareUrl = `${window.location.origin}/share/debt-payoff-calculator?data=${encodeURIComponent(encoded)}`;
-
-    try {
-      setShareStatus("creating");
-
-      if (navigator.share && document.hasFocus()) {
-        await navigator.share({
-          title: "My Debt Payoff Snapshot | BankDeMark",
-          text: "View this BankDeMark debt payoff snapshot.",
-          url: shareUrl,
-        });
-        setShareStatus("shared");
-      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
-        await navigator.clipboard.writeText(shareUrl);
-        setShareStatus("copied");
-      } else {
-        window.location.href = shareUrl;
-        return;
-      }
-
-      window.setTimeout(() => setShareStatus("idle"), 2200);
-    } catch {
-      setShareStatus("idle");
-    }
-  }
 
   return (
     <section className="bdm-tool debt-tool">
@@ -131,21 +111,40 @@ export default function DebtPayoffCalculator() {
             <label><span>Extra Monthly Payment</span><input type="number" inputMode="numeric" placeholder="$100" value={extraPayment} onChange={(e) => setExtraPayment(e.target.value)} /></label>
           </div>
 
-          <button
-            type="button"
-            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
-            onClick={handleShareResults}
-          >
-            {!hasRequiredInputs
-              ? "Results calculate automatically"
-              : shareStatus === "creating"
-                ? "Creating Share Link..."
-                : shareStatus === "copied"
-                  ? "Link Copied"
+          <div className="share-btn-group">
+            <button
+              type="button"
+              className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+              onClick={handleShare}
+              disabled={shareStatus === "creating"}
+            >
+              {!hasRequiredInputs
+                ? "Results calculate automatically"
+                : shareStatus === "creating"
+                  ? "Creating link…"
                   : shareStatus === "shared"
-                    ? "Shared"
-                    : "Share Results"}
-          </button>
+                    ? "✓ Shared on mobile"
+                    : shareStatus === "copied"
+                      ? "✓ Link copied to clipboard"
+                      : shareStatus === "error"
+                        ? "Share failed — try again"
+                        : "Share Results"}
+            </button>
+            {shareUrl && (shareStatus === "ready" || shareStatus === "shared" || shareStatus === "copied") && (
+              <div className="share-url-field">
+                <input
+                  type="text"
+                  readOnly
+                  value={shareUrl}
+                  onClick={(e) => { e.target.select(); copyShareUrl(); }}
+                  aria-label="Share link — click to copy"
+                />
+                <button type="button" onClick={copyShareUrl} className="share-url-copy-btn">
+                  {shareStatus === "copied" ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="bdm-right">
@@ -168,6 +167,8 @@ export default function DebtPayoffCalculator() {
           </div>
         </div>
       </div>
+
+      <CommandCenterCTA />
     </section>
   );
 }

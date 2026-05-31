@@ -1,5 +1,7 @@
 "use client";
 
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
+
 import { useMemo, useState } from "react";
 import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
@@ -8,7 +10,6 @@ const toNumber = (value) => Number(value) || 0;
 
 export default function RetirementCalculator() {
   const [country, setCountry] = useState("canada");
-  const [shareStatus, setShareStatus] = useState("idle");
 
   const [currentAge, setCurrentAge] = useState("");
   const [retirementAge, setRetirementAge] = useState("");
@@ -26,6 +27,7 @@ export default function RetirementCalculator() {
     setRetirementSpending((v) => convertCurrencyAmount(v, country, nextCountry));
     setCountry(nextCountry);
   };
+
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -80,56 +82,26 @@ export default function RetirementCalculator() {
     };
   }, [currentAge, retirementAge, lifeExpectancy, currentSavings, monthlyContribution, annualReturn, inflation, retirementSpending]);
 
+  const { shareStatus, shareUrl, handleShare, copyShareUrl } = useCalculatorShare({
+    calculator: "retirement-calculator",
+    getInputs: () => ({
+        "Current Age": String(currentAge ?? ""),
+        "Retirement Age": String(retirementAge ?? ""),
+        "Current Savings": String(currentSavings ?? ""),
+        "Monthly Contribution": String(monthlyContribution ?? ""),
+        "Annual Return (%)": String(annualReturn ?? ""),
+    }),
+    getResults: () => ({
+        "Projected Balance": String(formatter.format(result.projectedBalance)),
+        "Total Contributions": String(formatter.format(result.totalContributions)),
+    }),
+  });
+
+
   const hasRequiredInputs =
     toNumber(currentAge) > 0 &&
     toNumber(retirementAge) > 0 &&
     (toNumber(currentSavings) > 0 || toNumber(monthlyContribution) > 0);
-
-  async function handleShareResults() {
-    if (!hasRequiredInputs || typeof window === "undefined") return;
-
-    const payload = {
-      calculator: "retirement-calculator",
-      country,
-      inputs: {
-        currentAge,
-        retirementAge,
-        lifeExpectancy,
-        currentSavings,
-        monthlyContribution,
-        annualReturn,
-        inflation,
-        retirementSpending,
-      },
-      results: result,
-    };
-
-    const encoded = encodeCalculatorState(payload);
-    const shareUrl = `${window.location.origin}/share/retirement-calculator?data=${encodeURIComponent(encoded)}`;
-
-    try {
-      setShareStatus("creating");
-
-      if (navigator.share && document.hasFocus()) {
-        await navigator.share({
-          title: "My Retirement Projection | BankDeMark",
-          text: "View this BankDeMark retirement projection.",
-          url: shareUrl,
-        });
-        setShareStatus("shared");
-      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
-        await navigator.clipboard.writeText(shareUrl);
-        setShareStatus("copied");
-      } else {
-        window.location.href = shareUrl;
-        return;
-      }
-
-      window.setTimeout(() => setShareStatus("idle"), 2200);
-    } catch {
-      setShareStatus("idle");
-    }
-  }
 
   return (
     <section className="retirement-tool">
@@ -159,17 +131,40 @@ export default function RetirementCalculator() {
             <label><span>Desired Annual Retirement Spending</span><input type="number" inputMode="numeric" placeholder="$60,000" value={retirementSpending} onChange={(e) => setRetirementSpending(e.target.value)} /></label>
           </div>
 
-          <button type="button" className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"} onClick={handleShareResults}>
-            {!hasRequiredInputs
-              ? "Results calculate automatically"
-              : shareStatus === "creating"
-                ? "Creating Share Link..."
-                : shareStatus === "copied"
-                  ? "Link Copied"
+          <div className="share-btn-group">
+            <button
+              type="button"
+              className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+              onClick={handleShare}
+              disabled={shareStatus === "creating"}
+            >
+              {!hasRequiredInputs
+                ? "Results calculate automatically"
+                : shareStatus === "creating"
+                  ? "Creating link…"
                   : shareStatus === "shared"
-                    ? "Shared"
-                    : "Share Results"}
-          </button>
+                    ? "✓ Shared on mobile"
+                    : shareStatus === "copied"
+                      ? "✓ Link copied to clipboard"
+                      : shareStatus === "error"
+                        ? "Share failed — try again"
+                        : "Share Results"}
+            </button>
+            {shareUrl && (shareStatus === "ready" || shareStatus === "shared" || shareStatus === "copied") && (
+              <div className="share-url-field">
+                <input
+                  type="text"
+                  readOnly
+                  value={shareUrl}
+                  onClick={(e) => { e.target.select(); copyShareUrl(); }}
+                  aria-label="Share link — click to copy"
+                />
+                <button type="button" onClick={copyShareUrl} className="share-url-copy-btn">
+                  {shareStatus === "copied" ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="retirement-right">
@@ -204,6 +199,8 @@ export default function RetirementCalculator() {
           </div>
         </div>
       </div>
+
+      <CommandCenterCTA />
     </section>
   );
 }

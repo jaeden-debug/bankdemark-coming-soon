@@ -1,5 +1,7 @@
 "use client";
 
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
+
 import { useMemo, useState } from "react";
 import { encodeCalculatorState } from "@/app/lib/calculatorShare";
 import { convertCurrencyAmount } from "@/app/lib/currencyConversion";
@@ -8,7 +10,6 @@ const toNumber = (value) => Number(value) || 0;
 
 export default function InvestmentCalculator() {
   const [country, setCountry] = useState("canada");
-  const [shareStatus, setShareStatus] = useState("idle");
 
   const [startingAmount, setStartingAmount] = useState("");
   const [monthlyContribution, setMonthlyContribution] = useState("");
@@ -23,6 +24,7 @@ export default function InvestmentCalculator() {
     setMonthlyContribution((v) => convertCurrencyAmount(v, country, nextCountry));
     setCountry(nextCountry);
   };
+
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -74,46 +76,25 @@ export default function InvestmentCalculator() {
     };
   }, [startingAmount, monthlyContribution, annualReturn, years, annualFee, taxDrag]);
 
+  const { shareStatus, shareUrl, handleShare, copyShareUrl } = useCalculatorShare({
+    calculator: "investment-calculator",
+    getInputs: () => ({
+        "Initial Investment": String(initialInvestment ?? ""),
+        "Monthly Contribution": String(monthlyContribution ?? ""),
+        "Annual Return (%)": String(annualReturn ?? ""),
+        "Timeline (years)": String(years ?? ""),
+    }),
+    getResults: () => ({
+        "Future Value": String(formatter.format(result.futureValue)),
+        "Total Invested": String(formatter.format(result.totalInvested)),
+        "Total Growth": String(formatter.format(result.totalGrowth)),
+    }),
+  });
+
+
   const hasRequiredInputs =
     toNumber(startingAmount) > 0 ||
     (toNumber(monthlyContribution) > 0 && toNumber(years) > 0);
-
-  async function handleShareResults() {
-    if (!hasRequiredInputs || typeof window === "undefined") return;
-
-    const payload = {
-      calculator: "investment-calculator",
-      country,
-      inputs: { startingAmount, monthlyContribution, annualReturn, years, annualFee, taxDrag },
-      results: result,
-    };
-
-    const encoded = encodeCalculatorState(payload);
-    const shareUrl = `${window.location.origin}/share/investment-calculator?data=${encodeURIComponent(encoded)}`;
-
-    try {
-      setShareStatus("creating");
-
-      if (navigator.share && document.hasFocus()) {
-        await navigator.share({
-          title: "My Investment Projection | BankDeMark",
-          text: "View this BankDeMark investment projection.",
-          url: shareUrl,
-        });
-        setShareStatus("shared");
-      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
-        await navigator.clipboard.writeText(shareUrl);
-        setShareStatus("copied");
-      } else {
-        window.location.href = shareUrl;
-        return;
-      }
-
-      window.setTimeout(() => setShareStatus("idle"), 2200);
-    } catch {
-      setShareStatus("idle");
-    }
-  }
 
   return (
     <section className="investment-tool">
@@ -141,21 +122,40 @@ export default function InvestmentCalculator() {
             <label><span>Optional Tax Drag (%)</span><input type="number" inputMode="decimal" placeholder="0" value={taxDrag} onChange={(e) => setTaxDrag(e.target.value)} /></label>
           </div>
 
-          <button
-            type="button"
-            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
-            onClick={handleShareResults}
-          >
-            {!hasRequiredInputs
-              ? "Results calculate automatically"
-              : shareStatus === "creating"
-                ? "Creating Share Link..."
-                : shareStatus === "copied"
-                  ? "Link Copied"
+          <div className="share-btn-group">
+            <button
+              type="button"
+              className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+              onClick={handleShare}
+              disabled={shareStatus === "creating"}
+            >
+              {!hasRequiredInputs
+                ? "Results calculate automatically"
+                : shareStatus === "creating"
+                  ? "Creating link…"
                   : shareStatus === "shared"
-                    ? "Shared"
-                    : "Share Results"}
-          </button>
+                    ? "✓ Shared on mobile"
+                    : shareStatus === "copied"
+                      ? "✓ Link copied to clipboard"
+                      : shareStatus === "error"
+                        ? "Share failed — try again"
+                        : "Share Results"}
+            </button>
+            {shareUrl && (shareStatus === "ready" || shareStatus === "shared" || shareStatus === "copied") && (
+              <div className="share-url-field">
+                <input
+                  type="text"
+                  readOnly
+                  value={shareUrl}
+                  onClick={(e) => { e.target.select(); copyShareUrl(); }}
+                  aria-label="Share link — click to copy"
+                />
+                <button type="button" onClick={copyShareUrl} className="share-url-copy-btn">
+                  {shareStatus === "copied" ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="investment-right">
@@ -182,6 +182,8 @@ export default function InvestmentCalculator() {
           </div>
         </div>
       </div>
+
+      <CommandCenterCTA />
     </section>
   );
 }

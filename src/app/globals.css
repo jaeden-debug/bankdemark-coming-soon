@@ -2025,6 +2025,485 @@ backdrop-filter: blur(14px);
 
 
 /* =========================================================
+   COMMAND CENTER CTA
+   Reusable bottom-of-calculator CTA strip → command.bankdemark.com
+========================================================= */
+
+.cmd-cta-wrap {
+  width: 100%;
+  padding: 48px 0 0;
+}
+
+.cmd-cta-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding: 44px 48px;
+  border-radius: 28px;
+  border: 1px solid rgba(198,162,74,.22);
+  background:
+    radial-gradient(circle at 8% 80%, rgba(198,162,74,.15), transparent 40%),
+    radial-gradient(circle at 92% 10%, rgba(198,162,74,.10), transparent 38%),
+    linear-gradient(140deg, rgba(11,18,32,.98), rgba(14,21,38,.95));
+  box-shadow:
+    0 32px 80px rgba(15,23,42,.22),
+    inset 0 1px 0 rgba(255,255,255,.07);
+  position: relative;
+  overflow: hidden;
+}
+
+.cmd-cta-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  background: radial-gradient(ellipse at 50% -20%, rgba(198,162,74,.09), transparent 60%);
+  pointer-events: none;
+}
+
+/* Left column */
+.cmd-cta-left {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cmd-cta-eyebrow {
+  display: inline-block;
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--bdm-gold);
+  opacity: .85;
+}
+
+.cmd-cta-headline {
+  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-weight: 800;
+  letter-spacing: -.03em;
+  line-height: 1.2;
+  color: #fff;
+  margin: 0;
+}
+
+.cmd-cta-sub {
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.65);
+  margin: 0;
+  max-width: 420px;
+}
+
+.cmd-cta-primary-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 6px;
+  padding: 13px 26px;
+  border-radius: 12px;
+  font-size: .95rem;
+  font-weight: 700;
+  letter-spacing: -.01em;
+  color: var(--bdm-ink);
+  background: linear-gradient(135deg, var(--bdm-gold-light), var(--bdm-gold));
+  box-shadow: 0 4px 18px rgba(198,162,74,.35);
+  text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, filter .18s ease;
+  align-self: flex-start;
+}
+
+.cmd-cta-primary-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(198,162,74,.45);
+  filter: brightness(1.06);
+}
+
+/* Right column */
+.cmd-cta-right {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.cmd-cta-tools-label {
+  font-size: .72rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,.45);
+}
+
+.cmd-cta-tools-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.cmd-cta-tool-link {
+  display: block;
+  padding: 11px 14px;
+  border-radius: 10px;
+  border: 1px solid rgba(198,162,74,.14);
+  background: rgba(255,255,255,.04);
+  font-size: .875rem;
+  font-weight: 600;
+  color: rgba(255,255,255,.78);
+  text-decoration: none;
+  transition: background .16s ease, border-color .16s ease, color .16s ease;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.cmd-cta-tool-link:hover {
+  background: rgba(198,162,74,.12);
+  border-color: rgba(198,162,74,.32);
+  color: var(--bdm-gold-light);
+}
+
+/* Responsive */
+@media (max-width: 820px) {
+  .cmd-cta-card {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 32px 24px;
+  }
+
+  .cmd-cta-tools-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .cmd-cta-tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   SHARED RESULTS PAGE  /s/[id]
+========================================================= */
+
+.shared-results-page {
+  width: min(1100px, calc(100% - 36px));
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+/* Hero */
+.shared-hero {
+  max-width: 820px;
+  margin: 0 auto 52px;
+  padding: 96px clamp(22px, 5vw, 60px) 56px;
+  border-radius: 36px;
+  border: 1px solid rgba(198,162,74,.16);
+  background:
+    radial-gradient(circle at 88% 12%, rgba(198,162,74,.18), transparent 36%),
+    linear-gradient(135deg, rgba(11,18,32,.97), rgba(17,24,39,.93));
+  box-shadow:
+    0 28px 90px rgba(15,23,42,.18),
+    inset 0 1px 0 rgba(255,255,255,.07);
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+
+.shared-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 36px;
+  background: radial-gradient(ellipse at 50% -15%, rgba(198,162,74,.09), transparent 55%);
+  pointer-events: none;
+}
+
+.shared-hero h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 900;
+  letter-spacing: -.04em;
+  color: #fff;
+  line-height: 1.08;
+  margin: 10px 0 16px;
+}
+
+.shared-hero-sub {
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.7);
+  max-width: 580px;
+  margin: 0 0 24px;
+}
+
+.shared-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.shared-hero-chips span {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 100px;
+  border: 1px solid rgba(198,162,74,.28);
+  background: rgba(198,162,74,.08);
+  font-size: .8rem;
+  font-weight: 600;
+  letter-spacing: .04em;
+  color: var(--bdm-gold-light);
+}
+
+/* Results/Inputs grid */
+.shared-results-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-bottom: 32px;
+}
+
+.shared-card {
+  border-radius: 24px;
+  border: 1px solid rgba(198,162,74,.12);
+  background: rgba(255,255,255,.78);
+  box-shadow:
+    0 12px 40px rgba(15,23,42,.06),
+    inset 0 1px 0 rgba(255,255,255,.9);
+  overflow: hidden;
+}
+
+.shared-card-gold {
+  border-color: rgba(198,162,74,.24);
+  background:
+    radial-gradient(circle at 96% 4%, rgba(198,162,74,.10), transparent 36%),
+    rgba(255,255,255,.82);
+}
+
+.shared-card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 22px 24px 16px;
+  border-bottom: 1px solid rgba(198,162,74,.10);
+}
+
+.shared-card-num {
+  font-size: .75rem;
+  font-weight: 800;
+  letter-spacing: .1em;
+  color: var(--bdm-gold);
+  opacity: .7;
+}
+
+.shared-card-header h2 {
+  font-size: 1rem;
+  font-weight: 800;
+  letter-spacing: -.02em;
+  color: var(--bdm-ink);
+  margin: 0;
+}
+
+.shared-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  padding: 13px 24px;
+  border-bottom: 1px solid rgba(15,23,42,.05);
+  font-size: .9rem;
+}
+
+.shared-row:last-child {
+  border-bottom: none;
+}
+
+.shared-row span {
+  color: var(--bdm-muted);
+  font-weight: 500;
+}
+
+.shared-row strong {
+  color: var(--bdm-ink);
+  font-weight: 700;
+  text-align: right;
+}
+
+.shared-card-gold .shared-row strong {
+  color: var(--bdm-gold);
+}
+
+.shared-empty {
+  padding: 20px 24px;
+  font-size: .9rem;
+  color: var(--bdm-muted);
+  font-style: italic;
+}
+
+/* Try this calculator CTA */
+.shared-try-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 36px 40px;
+  margin-bottom: 32px;
+  border-radius: 24px;
+  border: 1px solid rgba(198,162,74,.16);
+  background: rgba(255,255,255,.72);
+  box-shadow: 0 8px 32px rgba(15,23,42,.05);
+}
+
+.shared-try-copy h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  letter-spacing: -.03em;
+  color: var(--bdm-ink);
+  margin: 0 0 6px;
+}
+
+.shared-try-copy p {
+  font-size: .92rem;
+  color: var(--bdm-muted);
+  margin: 0;
+  max-width: 480px;
+}
+
+.shared-open-tool {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 26px;
+  border-radius: 12px;
+  background: var(--bdm-ink);
+  color: #fff;
+  font-size: .92rem;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background .18s ease, transform .18s ease;
+  flex-shrink: 0;
+}
+
+.shared-open-tool:hover {
+  background: rgba(11,18,32,.82);
+  transform: translateY(-1px);
+}
+
+/* Command CTA */
+.shared-command-cta {
+  margin-bottom: 32px;
+  border-radius: 28px;
+  border: 1px solid rgba(198,162,74,.22);
+  background:
+    radial-gradient(circle at 8% 80%, rgba(198,162,74,.15), transparent 40%),
+    radial-gradient(circle at 92% 10%, rgba(198,162,74,.10), transparent 38%),
+    linear-gradient(140deg, rgba(11,18,32,.98), rgba(14,21,38,.95));
+  box-shadow:
+    0 24px 70px rgba(15,23,42,.20),
+    inset 0 1px 0 rgba(255,255,255,.07);
+  overflow: hidden;
+}
+
+.shared-command-inner {
+  padding: 52px 52px;
+  max-width: 680px;
+}
+
+.shared-command-inner h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 900;
+  letter-spacing: -.04em;
+  color: #fff;
+  margin: 10px 0 16px;
+  line-height: 1.15;
+}
+
+.shared-command-inner p {
+  font-size: 1rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.65);
+  margin: 0 0 28px;
+  max-width: 540px;
+}
+
+.shared-command-btns {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.shared-command-primary {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 26px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--bdm-gold-light), var(--bdm-gold));
+  color: var(--bdm-ink);
+  font-size: .95rem;
+  font-weight: 700;
+  text-decoration: none;
+  box-shadow: 0 4px 18px rgba(198,162,74,.35);
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.shared-command-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(198,162,74,.45);
+}
+
+.shared-command-secondary {
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 26px;
+  border-radius: 12px;
+  border: 1px solid rgba(198,162,74,.3);
+  color: rgba(255,255,255,.8);
+  font-size: .95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color .18s ease, color .18s ease;
+}
+
+.shared-command-secondary:hover {
+  border-color: rgba(198,162,74,.6);
+  color: var(--bdm-gold-light);
+}
+
+/* Newsletter wrap */
+.shared-newsletter-wrap {
+  margin-bottom: 48px;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .shared-results-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .shared-try-cta {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 28px 24px;
+    gap: 20px;
+  }
+
+  .shared-open-tool {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .shared-command-inner {
+    padding: 36px 24px;
+  }
+
+  .shared-hero {
+    margin-bottom: 28px;
+  }
+}
+
+
+/* =========================================================
    LEGAL & SUPPORT PAGES
    Covers: /privacy, /terms, /disclaimer, /contact
 ========================================================= */
@@ -4747,6 +5226,93 @@ select:focus {
 /* NET WORTH AUTO-CALC / SHARE BUTTON */
 .networth-calculate-btn {
   display: none !important;
+}
+
+/* Share button group — primary + copy-link fallback */
+.share-btn-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-top: 18px;
+}
+
+.share-btn-group .networth-share-btn {
+  margin-top: 0;
+}
+
+.share-copy-fallback {
+  width: 100%;
+  padding: 11px 20px;
+  border-radius: 14px;
+  border: 1px solid rgba(198,162,74,.28);
+  background: rgba(198,162,74,.06);
+  color: var(--bdm-gold);
+  font-size: .85rem;
+  font-weight: 600;
+  letter-spacing: .02em;
+  cursor: pointer;
+  transition: background .16s ease, border-color .16s ease;
+  text-align: center;
+}
+
+.share-copy-fallback:hover {
+  background: rgba(198,162,74,.14);
+  border-color: rgba(198,162,74,.5);
+}
+
+/* Share URL field — visible copyable link shown on desktop after share created */
+.share-url-field {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  border-radius: 14px;
+  border: 1px solid rgba(198,162,74,.32);
+  background: rgba(198,162,74,.05);
+  overflow: hidden;
+}
+
+.share-url-field input[type="text"] {
+  flex: 1;
+  padding: 11px 14px;
+  border: none;
+  background: transparent;
+  font-size: .82rem;
+  font-weight: 500;
+  color: var(--bdm-ink);
+  letter-spacing: -.01em;
+  cursor: pointer;
+  outline: none;
+  min-width: 0;
+  /* truncate long URLs */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.share-url-field input[type="text"]:focus {
+  outline: none;
+  background: rgba(198,162,74,.06);
+}
+
+.share-url-copy-btn {
+  flex-shrink: 0;
+  padding: 11px 16px;
+  border: none;
+  border-left: 1px solid rgba(198,162,74,.28);
+  background: rgba(198,162,74,.10);
+  color: var(--bdm-gold);
+  font-size: .82rem;
+  font-weight: 700;
+  letter-spacing: .02em;
+  cursor: pointer;
+  transition: background .15s ease, color .15s ease;
+  white-space: nowrap;
+}
+
+.share-url-copy-btn:hover {
+  background: rgba(198,162,74,.22);
+  color: #8a6820;
 }
 
 .networth-share-btn {

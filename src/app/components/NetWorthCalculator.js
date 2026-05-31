@@ -1,13 +1,38 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
-import { encodeCalculatorState } from "@/app/lib/calculatorShare";
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
+
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 
 const toNumber = (value) => Number(value) || 0;
 
 export default function NetWorthCalculator() {
   const [country, setCountry] = useState("canada");
   const [shareStatus, setShareStatus] = useState("idle");
+  const [shareUrl, setShareUrl] = useState(null);
+  const shareResetTimer = useRef(null);
+
+  function scheduleShareReset(delay = 4000) {
+    if (shareResetTimer.current) clearTimeout(shareResetTimer.current);
+    shareResetTimer.current = setTimeout(() => {
+      setShareStatus((s) => (s === "shared" || s === "copied" ? "ready" : s));
+    }, delay);
+  }
+
+  const copyShareUrl = useCallback(async () => {
+    if (!shareUrl) return;
+    try {
+      if (navigator.clipboard?.writeText) {
+        await navigator.clipboard.writeText(shareUrl);
+      } else {
+        window.prompt("Copy this share link:", shareUrl);
+      }
+    } catch {
+      window.prompt("Copy this share link:", shareUrl);
+    }
+    setShareStatus("copied");
+    scheduleShareReset(4000);
+  }, [shareUrl]);
 
   useEffect(() => {
   const id = requestAnimationFrame(() => {
@@ -192,61 +217,88 @@ export default function NetWorthCalculator() {
   async function handleShareResults() {
     if (!hasRequiredInputs || typeof window === "undefined") return;
 
-    const payload = {
-      calculator: "net-worth-calculator",
-      country,
-      inputs: {
-        cash,
-        investments,
-        retirement,
-        realEstate,
-        vehicles,
-        businessAssets,
-        otherAssets,
-        mortgage,
-        creditCards,
-        loans,
-        studentDebt,
-        otherDebt,
-      },
-      results: {
-        totalAssets: result.totalAssets,
-        totalLiabilities: result.totalLiabilities,
-        netWorth: result.netWorth,
-        liquidAssets: result.liquidAssets,
-        investableAssets: result.investableAssets,
-        debtToAssetRatio: result.debtToAssetRatio,
-        liquidRatio: result.liquidRatio,
-        stage: result.stage,
-        stageNote: result.stageNote,
-        nextMove: result.nextMove,
-      },
+    setShareStatus("creating");
+
+    // ── Step 1: Save to Supabase via /api/shares ──────────────
+    let createdUrl = null;
+    try {
+      const res = await fetch("/api/shares", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          calculator: "net-worth-calculator",
+          inputs: {
+            Cash: String(cash ?? ""),
+            Investments: String(investments ?? ""),
+            "Retirement Accounts": String(retirement ?? ""),
+            "Real Estate": String(realEstate ?? ""),
+            Vehicles: String(vehicles ?? ""),
+            "Business Assets": String(businessAssets ?? ""),
+            "Other Assets": String(otherAssets ?? ""),
+            Mortgage: String(mortgage ?? ""),
+            "Credit Cards": String(creditCards ?? ""),
+            Loans: String(loans ?? ""),
+            "Student Debt": String(studentDebt ?? ""),
+            "Other Debt": String(otherDebt ?? ""),
+          },
+          results: {
+            "Net Worth": formatter.format(result.netWorth),
+            "Total Assets": formatter.format(result.totalAssets),
+            "Total Liabilities": formatter.format(result.totalLiabilities),
+            "Liquid Assets": formatter.format(result.liquidAssets),
+            "Investable Assets": formatter.format(result.investableAssets),
+            Stage: String(result.stage ?? ""),
+          },
+        }),
+      });
+
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+
+      const data = await res.json();
+      createdUrl =
+        data.absoluteUrl?.trim() ||
+        (data.url ? `${window.location.origin}${data.url}` : null);
+
+      if (!createdUrl?.startsWith("http")) throw new Error("Invalid share URL returned");
+      setShareUrl(createdUrl);
+    } catch (err) {
+      console.error("[NetWorthCalculator] share create failed:", err?.message);
+      setShareStatus("error");
+      scheduleShareReset(5000);
+      return;
+    }
+
+    // ── Step 2: Native share or clipboard ────────────────────
+    const sharePayload = {
+      title: "Net Worth Snapshot | BankDeMark",
+      text: `View my Net Worth snapshot on BankDeMark:\n${createdUrl}`,
+      url: createdUrl,
     };
 
-    const encoded = encodeCalculatorState(payload);
-    const shareUrl = `${window.location.origin}/share/net-worth-calculator?data=${encodeURIComponent(encoded)}`;
+    const canUseNativeShare =
+      typeof navigator.share === "function" &&
+      (!navigator.canShare || navigator.canShare(sharePayload));
 
-    try {
-      setShareStatus("creating");
-
-      if (navigator.share && document.hasFocus()) {
-        await navigator.share({
-          title: "My Net Worth Snapshot | BankDeMark",
-          text: "View this BankDeMark net worth snapshot.",
-          url: shareUrl,
-        });
+    if (canUseNativeShare) {
+      try {
+        await navigator.share(sharePayload);
         setShareStatus("shared");
-      } else if (navigator.clipboard?.writeText && document.hasFocus()) {
-        await navigator.clipboard.writeText(shareUrl);
-        setShareStatus("copied");
-      } else {
-        window.location.href = shareUrl;
-        return;
+        scheduleShareReset(4000);
+      } catch (shareErr) {
+        if (shareErr?.name === "AbortError") {
+          // User dismissed — keep URL available via Copy Link
+          setShareStatus("ready");
+        } else {
+          // Real failure — fall back to clipboard
+          try { await navigator.clipboard.writeText(createdUrl); } catch { window.prompt("Copy this share link:", createdUrl); }
+          setShareStatus("copied");
+          scheduleShareReset(3500);
+        }
       }
-
-      window.setTimeout(() => setShareStatus("idle"), 2200);
-    } catch (error) {
-      setShareStatus("idle");
+    } else {
+      try { await navigator.clipboard.writeText(createdUrl); } catch { window.prompt("Copy this share link:", createdUrl); }
+      setShareStatus("copied");
+      scheduleShareReset(3500);
     }
   }
 
@@ -305,21 +357,40 @@ export default function NetWorthCalculator() {
             <label className="networth-wide"><span>Other Debt</span><input type="number" inputMode="numeric" placeholder="$2,500" value={otherDebt} onChange={(e) => setOtherDebt(e.target.value)} /></label>
           </div>
 
-          <button
-            type="button"
-            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
-            onClick={handleShareResults}
-          >
-            {!hasRequiredInputs
-              ? "Results calculate automatically"
-              : shareStatus === "creating"
-                ? "Creating Share Link..."
-                : shareStatus === "copied"
-                  ? "Link Copied"
+          <div className="share-btn-group">
+            <button
+              type="button"
+              className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+              onClick={handleShareResults}
+              disabled={shareStatus === "creating"}
+            >
+              {!hasRequiredInputs
+                ? "Results calculate automatically"
+                : shareStatus === "creating"
+                  ? "Creating link…"
                   : shareStatus === "shared"
-                    ? "Shared"
-                    : "Share Results"}
-          </button>
+                    ? "✓ Shared on mobile"
+                    : shareStatus === "copied"
+                      ? "✓ Link copied to clipboard"
+                      : shareStatus === "error"
+                        ? "Share failed — try again"
+                        : "Share Results"}
+            </button>
+            {shareUrl && (shareStatus === "ready" || shareStatus === "shared" || shareStatus === "copied") && (
+              <div className="share-url-field">
+                <input
+                  type="text"
+                  readOnly
+                  value={shareUrl}
+                  onClick={(e) => { e.target.select(); copyShareUrl(); }}
+                  aria-label="Share link — click to copy"
+                />
+                <button type="button" onClick={copyShareUrl} className="share-url-copy-btn">
+                  {shareStatus === "copied" ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="networth-results" ref={resultsRef}>
@@ -365,6 +436,8 @@ export default function NetWorthCalculator() {
           </div>
         </div>
       </div>
+
+      <CommandCenterCTA />
     </section>
   );
 }

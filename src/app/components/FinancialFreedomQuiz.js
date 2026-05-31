@@ -3,6 +3,7 @@
 import { useMemo, useState } from "react";
 import Link from "next/link";
 import { encodeCalculatorState } from "@/app/lib/calculatorShare";
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
 
 export default function FinancialFreedomQuiz() {
   const [country, setCountry] = useState("canada");
@@ -162,15 +163,7 @@ export default function FinancialFreedomQuiz() {
             <p>{result.next}</p>
           </div>
 
-          <div className="quiz-tools-card">
-            <span>Recommended Next Tools</span>
-              <a href="https://command.bankdemark.com/command" className="networth-share-btn ready">Open your AI Financial Dashboard →</a>
-            <div>
-              {result.tools.map((tool) => (
-                <Link href={tool.href} key={tool.href}>{tool.label} →</Link>
-              ))}
-            </div>
-          </div>
+          <CommandCenterCTA links={result.tools} />
         </div>
       </div>
     </section>

@@ -1,7 +1,9 @@
 "use client";
 
+import CommandCenterCTA from "@/app/components/CommandCenterCTA";
+
 import { useMemo, useState } from "react";
-import { triggerCalculatorShare } from "@/app/lib/triggerCalculatorShare";
+import { useCalculatorShare } from "@/app/lib/useCalculatorShare";
 
 const toNumber = (value) => Number(value) || 0;
 
@@ -12,6 +14,7 @@ export default function CompoundInterestCalculator() {
   const [annualReturn, setAnnualReturn] = useState("");
   const [years, setYears] = useState("");
   const [compoundFrequency, setCompoundFrequency] = useState("12");
+
 
   const isCanada = country === "canada";
   const currency = isCanada ? "CAD" : "USD";
@@ -59,6 +62,22 @@ export default function CompoundInterestCalculator() {
       estimatedGrowth,
     };
   }, [principal, monthlyContribution, annualReturn, years, compoundFrequency]);
+
+  const { shareStatus, shareUrl, handleShare, copyShareUrl } = useCalculatorShare({
+    calculator: "compound-interest-calculator",
+    getInputs: () => ({
+        "Principal": String(principal ?? ""),
+        "Monthly Contribution": String(monthlyContribution ?? ""),
+        "Annual Return (%)": String(annualReturn ?? ""),
+        "Timeline (years)": String(years ?? ""),
+    }),
+    getResults: () => ({
+        "Future Value": String(formatter.format(result.futureValue)),
+        "Total Contributions": String(formatter.format(result.totalContributions)),
+        "Estimated Growth": String(formatter.format(result.estimatedGrowth)),
+    }),
+  });
+
 
   return (
     <section className="compound-tool">
@@ -117,13 +136,40 @@ export default function CompoundInterestCalculator() {
             </label>
           </div>
 
-          <button
-            type="button"
-            className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
-            onClick={() => hasRequiredInputs && triggerCalculatorShare()}
-          >
-            {hasRequiredInputs ? "Share Results" : "Results calculate automatically"}
-          </button>
+          <div className="share-btn-group">
+            <button
+              type="button"
+              className={hasRequiredInputs ? "networth-share-btn ready" : "networth-share-btn"}
+              onClick={handleShare}
+              disabled={shareStatus === "creating"}
+            >
+              {shareStatus === "creating"
+                ? "Creating link…"
+                : shareStatus === "shared"
+                ? "✓ Shared on mobile"
+                : shareStatus === "copied"
+                ? "✓ Link copied to clipboard"
+                : shareStatus === "error"
+                ? "Share failed — try again"
+                : hasRequiredInputs
+                ? "Share Results"
+                : "Results calculate automatically"}
+            </button>
+            {shareUrl && (shareStatus === "ready" || shareStatus === "shared" || shareStatus === "copied") && (
+              <div className="share-url-field">
+                <input
+                  type="text"
+                  readOnly
+                  value={shareUrl}
+                  onClick={(e) => { e.target.select(); copyShareUrl(); }}
+                  aria-label="Share link — click to copy"
+                />
+                <button type="button" onClick={copyShareUrl} className="share-url-copy-btn">
+                  {shareStatus === "copied" ? "Copied!" : "Copy"}
+                </button>
+              </div>
+            )}
+          </div>
         </div>
 
         <div className="tool-column tool-results">
@@ -147,6 +193,8 @@ export default function CompoundInterestCalculator() {
           </div>
         </div>
       </div>
+
+      <CommandCenterCTA />
     </section>
   );
 }
