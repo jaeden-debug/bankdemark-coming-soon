@@ -25,6 +25,7 @@ const staticRoutes = [
   { path: "/pillars/banking",                          freq: "weekly",  priority: 0.85 },
   { path: "/pillars/financial-calculators",            freq: "weekly",  priority: 0.9  },
   { path: "/pillars/compound-interest-calculator",     freq: "weekly",  priority: 0.9  },
+  { path: "/pillars/command",                          freq: "weekly",  priority: 0.95 },
   { path: "/calculators/compound-interest-calculator", freq: "weekly",  priority: 0.9 },
   { path: "/calculators/investment-calculator",        freq: "weekly",  priority: 0.9 },
   { path: "/calculators/retirement-calculator",        freq: "weekly",  priority: 0.9 },

@@ -27,6 +27,7 @@ export const seoNodes = {
       "/calculators/mortgage-calculator",
       "/pillars/investing",
       "/pillars/financial-freedom",
+      "/pillars/command",
     ],
   },
   "/pillars/compound-interest-calculator": {
@@ -770,6 +771,7 @@ export const seoNodes = {
       "/calculators/rrsp-calculator",
       "/blog/investing-for-beginners",
       "/blog/index-funds-vs-etfs",
+      "/pillars/command",
     ],
   },
   "/pillars/debt-management": {
@@ -797,6 +799,7 @@ export const seoNodes = {
       "/calculators/compound-interest-calculator",
       "/financial-freedom-roadmap",
       "/financial-freedom-quiz",
+      "/pillars/command",
     ],
   },
   "/pillars/banking": {
@@ -828,6 +831,29 @@ export const seoNodes = {
   },
 
   // ----------------------------------------------------------
+  // COMMAND — FINANCIAL OPERATING SYSTEM
+  // ----------------------------------------------------------
+  "/pillars/command": {
+    label: "Command by BankDeMark — Financial Operating System",
+    cluster: "command",
+    desc: "Command is a personal financial operating system: net worth tracking, retirement planning, investment forecasting, FIRE planning, debt optimization, and financial health scoring in one dashboard.",
+    links: [
+      "/calculators/net-worth-calculator",
+      "/calculators/retirement-calculator",
+      "/calculators/fire-calculator",
+      "/calculators/investment-calculator",
+      "/calculators/compound-interest-calculator",
+      "/calculators/debt-payoff-calculator",
+      "/calculators/budget-calculator",
+      "/pillars/financial-calculators",
+      "/pillars/financial-freedom",
+      "/pillars/investing",
+      "/money-health-score",
+      "/financial-freedom-roadmap",
+    ],
+  },
+
+  // ----------------------------------------------------------
   // CALCULATORS
   // ----------------------------------------------------------
   "/calculators/compound-interest-calculator": {
@@ -854,6 +880,7 @@ export const seoNodes = {
       "/pillars/financial-freedom",
       "/blog/investing-for-beginners",
       "/blog/index-funds-vs-etfs",
+      "/pillars/command",
     ],
   },
   "/calculators/retirement-calculator": {
@@ -867,6 +894,7 @@ export const seoNodes = {
       "/pillars/financial-freedom",
       "/financial-freedom-roadmap",
       "/blog/how-long-to-reach-1-million-investing",
+      "/pillars/command",
     ],
   },
   "/calculators/budget-calculator": {
@@ -893,6 +921,7 @@ export const seoNodes = {
       "/calculators/investment-calculator",
       "/pillars/financial-freedom",
       "/financial-freedom-roadmap",
+      "/pillars/command",
     ],
   },
   "/calculators/net-worth-calculator": {
@@ -906,6 +935,7 @@ export const seoNodes = {
       "/calculators/compound-interest-calculator",
       "/calculators/retirement-calculator",
       "/money-health-score",
+      "/pillars/command",
     ],
   },
   "/calculators/debt-payoff-calculator": {

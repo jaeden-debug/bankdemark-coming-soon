@@ -55,4 +55,11 @@ export const pillars = [
     icon: "📊",
     description: "The complete guide to compound interest: formula, calculator inputs, Canada and U.S. account strategies, and the math behind long-term wealth building.",
   },
+  {
+    slug: "command",
+    title: "Command by BankDeMark",
+    subtitle: "Your personal financial operating system.",
+    icon: "⚡",
+    description: "Command is a financial operating system that unifies net worth tracking, retirement planning, investment forecasting, FIRE planning, debt optimization, and financial health scoring into one dashboard.",
+  },
 ];
