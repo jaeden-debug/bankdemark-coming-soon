@@ -831,6 +831,73 @@ export const seoNodes = {
   },
 
   // ----------------------------------------------------------
+  // STATISTICS & BENCHMARK PAGES
+  // ----------------------------------------------------------
+  "/statistics": {
+    label: "Canadian Financial Statistics Hub",
+    cluster: "statistics",
+    desc: "Canadian benchmarks for net worth, retirement savings, debt, credit, investments, and wealth distribution.",
+    links: [
+      "/average-net-worth-by-age-canada",
+      "/average-retirement-savings-by-age",
+      "/fire-calculator",
+      "/calculators/net-worth-calculator",
+      "/calculators/retirement-calculator",
+      "/calculators/investment-calculator",
+      "/calculators/fire-calculator",
+      "/pillars/financial-freedom",
+    ],
+  },
+  "/average-net-worth-by-age-canada": {
+    label: "Average Net Worth by Age Canada",
+    cluster: "statistics",
+    desc: "Median and average net worth benchmarks by age group in Canada — top 10%, top 1%, and provincial data.",
+    links: [
+      "/statistics",
+      "/calculators/net-worth-calculator",
+      "/average-retirement-savings-by-age",
+      "/fire-calculator",
+      "/calculators/retirement-calculator",
+      "/calculators/investment-calculator",
+      "/calculators/compound-interest-calculator",
+      "/pillars/financial-freedom",
+      "/pillars/command",
+    ],
+  },
+  "/average-retirement-savings-by-age": {
+    label: "Average Retirement Savings by Age",
+    cluster: "statistics",
+    desc: "How much Canadians have saved for retirement by age group — benchmarks, gap analysis, and readiness score.",
+    links: [
+      "/statistics",
+      "/calculators/retirement-calculator",
+      "/average-net-worth-by-age-canada",
+      "/fire-calculator",
+      "/calculators/rrsp-calculator",
+      "/calculators/tfsa-calculator",
+      "/calculators/investment-calculator",
+      "/pillars/financial-freedom",
+      "/pillars/command",
+    ],
+  },
+  "/fire-calculator": {
+    label: "FIRE Calculator — FIRE Number, Lean FIRE, Fat FIRE, Coast FIRE",
+    cluster: "freedom",
+    desc: "Calculate your FIRE number, Lean FIRE, Fat FIRE, Coast FIRE, and years to financial independence with inflation and tax drag.",
+    links: [
+      "/calculators/retirement-calculator",
+      "/calculators/net-worth-calculator",
+      "/calculators/investment-calculator",
+      "/calculators/compound-interest-calculator",
+      "/average-net-worth-by-age-canada",
+      "/average-retirement-savings-by-age",
+      "/pillars/financial-freedom",
+      "/financial-freedom-roadmap",
+      "/pillars/command",
+    ],
+  },
+
+  // ----------------------------------------------------------
   // COMMAND — FINANCIAL OPERATING SYSTEM
   // ----------------------------------------------------------
   "/pillars/command": {
@@ -888,6 +955,7 @@ export const seoNodes = {
     cluster: "freedom",
     desc: "Find out if you're on track for your retirement number.",
     links: [
+      "/average-retirement-savings-by-age",
       "/calculators/fire-calculator",
       "/calculators/investment-calculator",
       "/calculators/compound-interest-calculator",
@@ -915,10 +983,12 @@ export const seoNodes = {
     cluster: "freedom",
     desc: "Calculate your FIRE number and timeline to financial independence.",
     links: [
+      "/fire-calculator",
       "/calculators/retirement-calculator",
       "/calculators/net-worth-calculator",
       "/calculators/compound-interest-calculator",
       "/calculators/investment-calculator",
+      "/average-net-worth-by-age-canada",
       "/pillars/financial-freedom",
       "/financial-freedom-roadmap",
       "/pillars/command",
@@ -929,6 +999,7 @@ export const seoNodes = {
     cluster: "freedom",
     desc: "Track your total financial position across all assets and liabilities.",
     links: [
+      "/average-net-worth-by-age-canada",
       "/pillars/financial-freedom",
       "/calculators/fire-calculator",
       "/calculators/investment-calculator",

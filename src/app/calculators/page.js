@@ -19,6 +19,24 @@ const calculators = [
     desc: "Find your money personality, wealth stage, and next best financial move.",
   },
   {
+    href: "/average-net-worth-by-age-canada",
+    title: "Average Net Worth by Age Canada",
+    tag: "Statistics",
+    desc: "See median, average, and top percentile net worth benchmarks for every Canadian age group. Compare where you stand.",
+  },
+  {
+    href: "/average-retirement-savings-by-age",
+    title: "Average Retirement Savings by Age",
+    tag: "Retirement",
+    desc: "Compare your retirement savings against Canadian benchmarks. Get a readiness score and gap projection.",
+  },
+  {
+    href: "/statistics",
+    title: "Canadian Financial Statistics Hub",
+    tag: "Data Hub",
+    desc: "Comprehensive Canadian benchmarks for net worth, retirement savings, debt levels, credit scores, and wealth distribution.",
+  },
+  {
     href: "/calculators/emergency-fund-calculator",
     title: "Emergency Fund Calculator",
     tag: "Safety Fund",

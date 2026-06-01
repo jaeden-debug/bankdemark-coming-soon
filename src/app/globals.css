@@ -1553,6 +1553,83 @@ backdrop-filter: blur(14px);
   line-height: 1.86;
 }
 
+/* ── Pillar page TOC card ── */
+.pillar-toc {
+  width: min(920px, 100%);
+  margin: 0 auto 34px;
+  padding: 24px 26px;
+  border-radius: 28px;
+  border: 1px solid rgba(198,162,74,.20);
+  background: rgba(255,255,255,.72);
+  box-shadow:
+    0 22px 70px rgba(15,23,42,.08),
+    inset 0 1px 0 rgba(255,255,255,.80);
+}
+
+.pillar-toc h4 {
+  margin: 0 0 14px;
+  color: var(--bdm-ink);
+  font-size: .78rem;
+  font-weight: 950;
+  text-transform: uppercase;
+  letter-spacing: .16em;
+}
+
+.pillar-toc ol {
+  margin: 0;
+  padding-left: 1.15rem;
+  columns: 2;
+  column-gap: 38px;
+}
+
+.pillar-toc li {
+  margin: 9px 0;
+  break-inside: avoid;
+  color: rgba(15,23,42,.38);
+  font-size: .9rem;
+}
+
+.pillar-toc a {
+  color: rgba(15,23,42,.68);
+  font-weight: 780;
+  text-decoration: none;
+  border-bottom: none !important;
+}
+
+.pillar-toc a:hover {
+  color: var(--bdm-gold);
+  border-bottom: none !important;
+}
+
+/* ── Pillar section card ── */
+.pillar-section {
+  position: relative;
+  margin: 28px auto;
+  padding: clamp(28px, 4vw, 50px);
+  border-radius: 30px;
+  border: 1px solid rgba(198,162,74,.16);
+  background:
+    radial-gradient(circle at top left, rgba(198,162,74,.10), transparent 34%),
+    rgba(255,255,255,.68);
+  box-shadow:
+    0 24px 72px rgba(15,23,42,.07),
+    inset 0 1px 0 rgba(255,255,255,.84);
+  overflow: hidden;
+}
+
+.pillar-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  height: 3px;
+  background: linear-gradient(90deg, rgba(198,162,74,0), rgba(198,162,74,.70), rgba(198,162,74,0));
+}
+
+@media (max-width: 600px) {
+  .pillar-toc ol { columns: 1; }
+}
+
+
 .post-prose {
   padding: 4px 0 56px;
 }
@@ -5592,4 +5669,598 @@ strong.money-red,
 .registered-alert.danger strong,
 .bdm-field-warning strong {
   color: #ef4444;
+}
+
+/* ============================================================
+   AVERAGE NET WORTH BY AGE CALCULATOR
+   ============================================================ */
+
+.nwage-tool {
+  width: min(1180px, calc(100% - 44px));
+  margin: 0 auto 90px;
+}
+
+.nwage-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.nwage-control-group {
+  display: grid;
+  gap: 6px;
+  color: var(--bdm-muted);
+  font-size: .82rem;
+  font-weight: 850;
+  letter-spacing: -.01em;
+  min-width: 200px;
+}
+
+.nwage-control-group select {
+  min-height: 46px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(198,162,74,.22);
+  background: rgba(255,255,255,.72);
+  color: var(--bdm-ink);
+  font-size: .9rem;
+  font-weight: 700;
+  cursor: pointer;
+  appearance: auto;
+}
+
+.nwage-panel {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(300px, .9fr);
+  gap: 22px;
+  align-items: start;
+  padding: 24px;
+  border-radius: 30px;
+  border: 1px solid rgba(198,162,74,.18);
+  background:
+    radial-gradient(circle at top left, rgba(198,162,74,.16), transparent 34%),
+    rgba(255,255,255,.64);
+  box-shadow:
+    0 28px 80px rgba(15,23,42,.10),
+    inset 0 1px 0 rgba(255,255,255,.86);
+}
+
+@media (max-width: 768px) {
+  .nwage-panel { grid-template-columns: 1fr; }
+  .nwage-controls { flex-direction: column; align-items: stretch; }
+  .nwage-control-group { min-width: unset; }
+}
+
+.nwage-title h2 {
+  margin: 0 0 6px;
+  font-size: clamp(1.1rem, 2vw, 1.6rem);
+  font-weight: 950;
+  letter-spacing: -.04em;
+  color: var(--bdm-ink);
+  line-height: 1.1;
+}
+
+.nwage-title p {
+  font-size: .82rem;
+  color: var(--bdm-muted);
+  margin: 0 0 1.5rem;
+  line-height: 1.5;
+}
+
+.nwage-benchmark-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.nwage-benchmark-card {
+  background: rgba(255,255,255,.56);
+  border: 1px solid rgba(198,162,74,.18);
+  border-radius: 14px;
+  padding: 1rem;
+}
+
+.nwage-benchmark-card.featured {
+  border-color: rgba(198,162,74,.42);
+  background: rgba(198,162,74,.08);
+}
+
+.nwage-benchmark-card small {
+  display: block;
+  font-size: .72rem;
+  color: var(--bdm-muted);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 800;
+  margin-bottom: .35rem;
+}
+
+.nwage-benchmark-card strong {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--bdm-ink);
+  margin-bottom: .25rem;
+}
+
+.nwage-benchmark-card p {
+  font-size: .76rem;
+  color: var(--bdm-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+.nwage-pct-table {
+  background: rgba(255,255,255,.56);
+  border: 1px solid rgba(198,162,74,.18);
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.nwage-pct-header {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  gap: .5rem;
+  padding: .6rem 1rem;
+  background: rgba(198,162,74,.10);
+  font-size: .72rem;
+  font-weight: 800;
+  color: var(--bdm-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  border-bottom: 1px solid rgba(198,162,74,.18);
+}
+
+.nwage-pct-row {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1.5fr;
+  gap: .5rem;
+  padding: .5rem 1rem;
+  border-bottom: 1px solid rgba(198,162,74,.10);
+  font-size: .83rem;
+  align-items: center;
+  color: var(--bdm-ink);
+}
+
+.nwage-pct-row:last-child { border-bottom: none; }
+
+.nwage-pct-row.median-row {
+  background: rgba(198,162,74,.08);
+  font-weight: 700;
+}
+
+.nwage-pct-row strong {
+  font-weight: 800;
+  font-size: .86rem;
+  color: var(--bdm-ink);
+}
+
+.nwage-pct-row span:last-child {
+  font-size: .76rem;
+  color: var(--bdm-muted);
+}
+
+/* Right panel */
+.nwage-compare-card {
+  background: rgba(255,255,255,.56);
+  border: 1px solid rgba(198,162,74,.18);
+  border-radius: 14px;
+  padding: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.nwage-compare-card h3 {
+  margin: 0 0 .35rem;
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--bdm-ink);
+  letter-spacing: -.03em;
+}
+
+.nwage-compare-card > p {
+  font-size: .83rem;
+  color: var(--bdm-muted);
+  margin: 0 0 1rem;
+}
+
+.nwage-compare-card label {
+  display: grid;
+  gap: 6px;
+  font-size: .82rem;
+  font-weight: 850;
+  color: var(--bdm-muted);
+  letter-spacing: -.01em;
+}
+
+.nwage-compare-card input {
+  min-height: 46px;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(198,162,74,.22);
+  background: rgba(255,255,255,.8);
+  font-size: .95rem;
+  font-weight: 700;
+  color: var(--bdm-ink);
+  width: 100%;
+}
+
+.nwage-compare-card input:focus {
+  outline: none;
+  border-color: rgba(198,162,74,.55);
+  box-shadow: 0 0 0 3px rgba(198,162,74,.12);
+}
+
+.nwage-result {
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(198,162,74,.18);
+}
+
+.nwage-result-label {
+  margin-bottom: .75rem;
+}
+
+.nwage-result-label small {
+  display: block;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 800;
+  color: var(--bdm-muted);
+  margin-bottom: .2rem;
+}
+
+.nwage-result-label strong {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--bdm-ink);
+}
+
+.nwage-progress-wrap {
+  margin-bottom: 1rem;
+}
+
+.nwage-progress-bar {
+  height: 10px;
+  background: rgba(198,162,74,.15);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: .5rem;
+}
+
+.nwage-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--bdm-gold), var(--bdm-gold-light));
+  transition: width .6s ease;
+}
+
+.nwage-progress-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: .7rem;
+  color: var(--bdm-muted);
+  line-height: 1.3;
+}
+
+.nwage-gap-metrics {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+}
+
+.nwage-gap-metrics > div {
+  background: rgba(255,255,255,.6);
+  border: 1px solid rgba(198,162,74,.15);
+  border-radius: 10px;
+  padding: .65rem .75rem;
+}
+
+.nwage-gap-metrics span {
+  display: block;
+  font-size: .68rem;
+  color: var(--bdm-muted);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  margin-bottom: .2rem;
+}
+
+.nwage-gap-metrics strong {
+  display: block;
+  font-size: .9rem;
+  font-weight: 800;
+  color: var(--bdm-ink);
+}
+
+.nwage-empty {
+  margin-top: .75rem;
+  font-size: .83rem;
+  color: var(--bdm-muted);
+  font-style: italic;
+}
+
+/* ============================================================
+   AVERAGE RETIREMENT SAVINGS CALCULATOR
+   ============================================================ */
+
+.retsavings-tool {
+  width: min(1180px, calc(100% - 44px));
+  margin: 0 auto 90px;
+}
+
+.retsavings-readiness-card {
+  background: rgba(255,255,255,.56);
+  border: 1px solid rgba(198,162,74,.22);
+  border-radius: 14px;
+  padding: 1.25rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.retsavings-readiness-card small {
+  display: block;
+  font-size: .72rem;
+  text-transform: uppercase;
+  letter-spacing: .05em;
+  font-weight: 800;
+  color: var(--bdm-muted);
+  margin-bottom: .5rem;
+}
+
+.retsavings-readiness-card > strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--bdm-ink);
+  margin-top: .4rem;
+}
+
+.retsavings-grade {
+  font-size: 2.8rem;
+  font-weight: 950;
+  color: var(--bdm-gold);
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.retsavings-progress {
+  margin-top: .75rem;
+}
+
+.retsavings-progress-bar {
+  height: 10px;
+  background: rgba(198,162,74,.15);
+  border-radius: 999px;
+  overflow: hidden;
+  margin-bottom: .4rem;
+}
+
+.retsavings-progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--bdm-gold), var(--bdm-gold-light));
+  transition: width .6s ease;
+}
+
+.retsavings-progress span {
+  font-size: .76rem;
+  color: var(--bdm-muted);
+  font-weight: 700;
+}
+
+.retsavings-benchmark {
+  background: rgba(255,255,255,.56);
+  border: 1px solid rgba(198,162,74,.18);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+.retsavings-benchmark-header {
+  font-size: .78rem;
+  font-weight: 900;
+  color: var(--bdm-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  margin-bottom: .75rem;
+  padding-bottom: .6rem;
+  border-bottom: 1px solid rgba(198,162,74,.14);
+}
+
+.retsavings-gap {
+  background: rgba(255,255,255,.56);
+  border: 1px solid rgba(198,162,74,.18);
+  border-radius: 14px;
+  padding: 1.1rem 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* ============================================================
+   STATISTICS HUB PAGE
+   ============================================================ */
+
+.stats-toc-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  padding: 1.5rem 1.5rem 0;
+  max-width: 1100px;
+  margin: 0 auto 2rem;
+}
+
+.stats-toc-chip {
+  padding: .5rem 1rem;
+  border-radius: 999px;
+  border: 1px solid rgba(198,162,74,.22);
+  background: rgba(255,255,255,.6);
+  color: var(--bdm-muted);
+  font-size: .82rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.stats-toc-chip:hover {
+  border-color: rgba(198,162,74,.5);
+  background: rgba(198,162,74,.12);
+  color: var(--bdm-ink);
+}
+
+.stats-hub {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.stats-section {
+  padding: 1.75rem;
+  border-radius: 20px;
+  border: 1px solid rgba(198,162,74,.18);
+  background:
+    radial-gradient(circle at top left, rgba(198,162,74,.10), transparent 34%),
+    rgba(255,255,255,.6);
+  box-shadow: 0 8px 40px rgba(15,23,42,.07);
+}
+
+.stats-section-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.stats-section-icon {
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: rgba(198,162,74,.14);
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.stats-section-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+  font-weight: 950;
+  letter-spacing: -.04em;
+  color: var(--bdm-ink);
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 12px;
+  margin-bottom: 1.25rem;
+}
+
+.stats-card {
+  background: rgba(255,255,255,.56);
+  border: 1px solid rgba(198,162,74,.15);
+  border-radius: 12px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .35rem;
+}
+
+.stats-value {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #16a34a;
+  letter-spacing: -.03em;
+  line-height: 1.1;
+}
+
+.stats-label {
+  font-size: .78rem;
+  font-weight: 700;
+  color: var(--bdm-ink);
+  line-height: 1.3;
+}
+
+.stats-note {
+  font-size: .68rem;
+  color: var(--bdm-muted);
+  line-height: 1.3;
+}
+
+.stats-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: .85rem;
+  border-top: 1px solid rgba(198,162,74,.12);
+}
+
+.stats-tools > span {
+  font-size: .76rem;
+  font-weight: 800;
+  color: var(--bdm-muted);
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.stats-tool-link {
+  padding: .35rem .85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(198,162,74,.22);
+  background: rgba(255,255,255,.6);
+  color: var(--bdm-ink);
+  font-size: .78rem;
+  font-weight: 800;
+  transition: all .2s;
+}
+
+.stats-tool-link:hover,
+.stats-tool-link.article:hover {
+  border-color: rgba(198,162,74,.5);
+  background: rgba(198,162,74,.12);
+}
+
+.stats-command-cta {
+  background: rgba(198,162,74,.10);
+  border: 1px solid rgba(198,162,74,.25);
+  border-radius: 16px;
+  padding: 1.5rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.stats-command-cta h3 {
+  margin: 0 0 .5rem;
+  font-size: 1.2rem;
+  font-weight: 950;
+  letter-spacing: -.04em;
+  color: var(--bdm-ink);
+}
+
+.stats-command-cta p {
+  color: var(--bdm-muted);
+  font-size: .9rem;
+  margin: 0 0 1.25rem;
+}
+
+/* ============================================================
+   SHARED UTILITY
+   ============================================================ */
+
+.disclaimer-note {
+  font-size: .78rem;
+  color: var(--bdm-muted);
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(198,162,74,.12);
 }
