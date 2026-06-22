@@ -4,6 +4,16 @@ const nextConfig = {
   async redirects() {
     return [
       {
+        source: "/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
+        source: "/%D0%BA%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D1%8B/",
+        destination: "/contact",
+        permanent: true,
+      },
+      {
         source: "/ua/services/phisic/vklad",
         destination: "/calculators/compound-interest-calculator",
         permanent: true,
