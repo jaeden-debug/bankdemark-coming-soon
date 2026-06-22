@@ -1,7 +1,28 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  skipTrailingSlashRedirect: true,
   async redirects() {
     return [
+      {
+        source: "/ua/services/phisic/vklad",
+        destination: "/calculators/compound-interest-calculator",
+        permanent: true,
+      },
+      {
+        source: "/ua/services/phisic/vklad/:path*",
+        destination: "/calculators/compound-interest-calculator",
+        permanent: true,
+      },
+      {
+        source: "/images/stories/file/zvit_2013.pdf",
+        destination: "/about",
+        permanent: true,
+      },
+      {
+        source: "/default.html",
+        destination: "/",
+        permanent: true,
+      },
       {
         source: "/category/blog",
         destination: "/blog",
